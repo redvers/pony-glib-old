@@ -259,7 +259,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [FundamentalType(unsigned int) size=32]
 */
-  fun g_array_append_vals(array: NullablePointer[GArray] tag, data: Pointer[None] tag, len: U32): NullablePointer[GArray] =>
+  fun g_array_append_vals[A: Any val](array: NullablePointer[GArray] tag, data: Pointer[A] tag, len: U32): NullablePointer[GArray] =>
     @g_array_append_vals(array, data, len)
 
 

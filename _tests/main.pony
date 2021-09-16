@@ -1,6 +1,7 @@
 use "lib:glib-2.0"
 use "../GLibSys"
 use "ponytest"
+use "debug"
 
 actor Main is TestList
   new create(env: Env) => PonyTest(env, this)
@@ -29,8 +30,17 @@ class iso _TestGArray is UnitTest
     let a: Array[U32] = [ U32(100); U32(200); U32(400); U32(800) ]
     let ap: Pointer[U32] tag = a.cpointer()
 
-//   fun g_array_append_vals(array: NullablePointer[GArray] tag, data: Pointer[None] tag, len: U32): NullablePointer[GArray] =>
-    GLibSys.g_array_append_vals(tarray, ap, U32(4))
+    GLibSys.g_array_append_vals[U32](tarray, ap, U32(4))
+
+    try
+      let myarray: Array[U8] = Array[U8].from_cpointer(tarray.apply()?.data, (USize(4)*tarray.apply()?.len.usize()))
+      h.assert_eq[U32](U32(100), myarray.read_u32(0*4)?)
+      h.assert_eq[U32](U32(200), myarray.read_u32(1*4)?)
+      h.assert_eq[U32](U32(400), myarray.read_u32(2*4)?)
+      h.assert_eq[U32](U32(800), myarray.read_u32(3*4)?)
+    else
+      Debug.out("BOOOOOOOORKED XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    end
 
 //   fun g_filename_to_uri(filename: Pointer[U8] tag, hostname: Pointer[U8] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[U8] =>
 //
