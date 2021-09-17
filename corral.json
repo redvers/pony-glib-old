@@ -1,0 +1,12 @@
+{
+  "packages": ["GLibSys"],
+  "deps": [],
+  "info": {
+    "description": "Pony wrapper for GLib",
+    "homepage": "",
+    "license": "",
+    "documentation_url": "",
+    "version": "0.1",
+    "name": "GLibSys"
+  }
+}
