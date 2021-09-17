@@ -1,3 +1,8 @@
+use "lib:glib-2.0"
+use "lib:gio-2.0"
+use "lib:gobject-2.0"
+
+
 primitive GLibSys
 
 
