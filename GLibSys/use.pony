@@ -344,7 +344,7 @@ use @g_array_remove_range[NullablePointer[GArray]](array: NullablePointer[GArray
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_array_sort[None](array: NullablePointer[GArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_array_sort[None](array: NullablePointer[GArray] tag, comparefunc: Pointer[None] tag)
 
 
 
@@ -359,7 +359,7 @@ use @g_array_sort[None](array: NullablePointer[GArray] tag, comparefunc: Nullabl
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_array_sort_with_data[None](array: NullablePointer[GArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_array_sort_with_data[None](array: NullablePointer[GArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -375,7 +375,7 @@ use @g_array_sort_with_data[None](array: NullablePointer[GArray] tag, comparefun
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
 */
-use @g_array_binary_search[I32](array: NullablePointer[GArray] tag, target: Pointer[None] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, outmatchindex: Pointer[U32] tag)
+use @g_array_binary_search[I32](array: NullablePointer[GArray] tag, target: Pointer[None] tag, comparefunc: Pointer[None] tag, outmatchindex: Pointer[U32] tag)
 
 
 
@@ -389,7 +389,7 @@ use @g_array_binary_search[I32](array: NullablePointer[GArray] tag, target: Poin
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_array_set_clear_func[None](array: NullablePointer[GArray] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_array_set_clear_func[None](array: NullablePointer[GArray] tag, clearfunc: Pointer[None] tag)
 
 
 
@@ -414,7 +414,7 @@ use @g_ptr_array_new[NullablePointer[GPtrArray]]()
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_ptr_array_new_with_free_func[NullablePointer[GPtrArray]](elementfreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_ptr_array_new_with_free_func[NullablePointer[GPtrArray]](elementfreefunc: Pointer[None] tag)
 
 
 
@@ -443,7 +443,7 @@ use @g_ptr_array_steal[NullablePointer[Pointer[None]]](array: NullablePointer[GP
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_ptr_array_copy[NullablePointer[GPtrArray]](array: NullablePointer[GPtrArray] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_ptr_array_copy[NullablePointer[GPtrArray]](array: NullablePointer[GPtrArray] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -470,7 +470,7 @@ use @g_ptr_array_sized_new[NullablePointer[GPtrArray]](reservedsize: U32)
     [FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_ptr_array_new_full[NullablePointer[GPtrArray]](reservedsize: U32, elementfreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_ptr_array_new_full[NullablePointer[GPtrArray]](reservedsize: U32, elementfreefunc: Pointer[None] tag)
 
 
 
@@ -524,7 +524,7 @@ use @g_ptr_array_unref[None](array: NullablePointer[GPtrArray] tag)
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_ptr_array_set_free_func[None](array: NullablePointer[GPtrArray] tag, elementfreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_ptr_array_set_free_func[None](array: NullablePointer[GPtrArray] tag, elementfreefunc: Pointer[None] tag)
 
 
 
@@ -667,7 +667,7 @@ use @g_ptr_array_add[None](array: NullablePointer[GPtrArray] tag, data: Pointer[
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_ptr_array_extend[None](arraytoextend: NullablePointer[GPtrArray] tag, array: NullablePointer[GPtrArray] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_ptr_array_extend[None](arraytoextend: NullablePointer[GPtrArray] tag, array: NullablePointer[GPtrArray] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -710,7 +710,7 @@ use @g_ptr_array_insert[None](array: NullablePointer[GPtrArray] tag, index: I32,
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_ptr_array_sort[None](array: NullablePointer[GPtrArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_ptr_array_sort[None](array: NullablePointer[GPtrArray] tag, comparefunc: Pointer[None] tag)
 
 
 
@@ -725,7 +725,7 @@ use @g_ptr_array_sort[None](array: NullablePointer[GPtrArray] tag, comparefunc: 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_ptr_array_sort_with_data[None](array: NullablePointer[GPtrArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_ptr_array_sort_with_data[None](array: NullablePointer[GPtrArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -740,7 +740,7 @@ use @g_ptr_array_sort_with_data[None](array: NullablePointer[GPtrArray] tag, com
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_ptr_array_foreach[None](array: NullablePointer[GPtrArray] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_ptr_array_foreach[None](array: NullablePointer[GPtrArray] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -771,7 +771,7 @@ use @g_ptr_array_find[I32](haystack: NullablePointer[GPtrArray] tag, needle: Poi
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
 */
-use @g_ptr_array_find_with_equal_func[I32](haystack: NullablePointer[GPtrArray] tag, needle: Pointer[None] tag, equalfunc: NullablePointer[FUNCTIONTYPE] tag, index: Pointer[U32] tag)
+use @g_ptr_array_find_with_equal_func[I32](haystack: NullablePointer[GPtrArray] tag, needle: Pointer[None] tag, equalfunc: Pointer[None] tag, index: Pointer[U32] tag)
 
 
 
@@ -978,7 +978,7 @@ use @g_byte_array_remove_range[NullablePointer[GByteArray]](array: NullablePoint
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_byte_array_sort[None](array: NullablePointer[GByteArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_byte_array_sort[None](array: NullablePointer[GByteArray] tag, comparefunc: Pointer[None] tag)
 
 
 
@@ -993,7 +993,7 @@ use @g_byte_array_sort[None](array: NullablePointer[GByteArray] tag, comparefunc
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_byte_array_sort_with_data[None](array: NullablePointer[GByteArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_byte_array_sort_with_data[None](array: NullablePointer[GByteArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -1324,7 +1324,7 @@ use @g_intern_static_string[Pointer[U8]](string: Pointer[U8] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_error_domain_register_static[U32](errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: NullablePointer[FUNCTIONTYPE] tag, errortypecopy: NullablePointer[FUNCTIONTYPE] tag, errortypeclear: NullablePointer[FUNCTIONTYPE] tag)
+use @g_error_domain_register_static[U32](errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: Pointer[None] tag, errortypecopy: Pointer[None] tag, errortypeclear: Pointer[None] tag)
 
 
 
@@ -1341,7 +1341,7 @@ use @g_error_domain_register_static[U32](errortypename: Pointer[U8] tag, errorty
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_error_domain_register[U32](errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: NullablePointer[FUNCTIONTYPE] tag, errortypecopy: NullablePointer[FUNCTIONTYPE] tag, errortypeclear: NullablePointer[FUNCTIONTYPE] tag)
+use @g_error_domain_register[U32](errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: Pointer[None] tag, errortypecopy: Pointer[None] tag, errortypeclear: Pointer[None] tag)
 
 
 
@@ -1699,7 +1699,7 @@ use @g_get_user_cache_dir[Pointer[U8]]()
 
   Arguments:
 */
-use @g_get_system_data_dirs[NullablePointer[Pointer[U8]]]()
+use @g_get_system_data_dirs[Pointer[Pointer[U8]]]()
 
 
 
@@ -1711,7 +1711,7 @@ use @g_get_system_data_dirs[NullablePointer[Pointer[U8]]]()
 
   Arguments:
 */
-use @g_get_system_config_dirs[NullablePointer[Pointer[U8]]]()
+use @g_get_system_config_dirs[Pointer[Pointer[U8]]]()
 
 
 
@@ -1848,7 +1848,7 @@ use @g_format_size_for_display[Pointer[U8]](size: I64)
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_atexit[None](func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_atexit[None](func: Pointer[None] tag)
 
 
 
@@ -1996,7 +1996,7 @@ use @g_thread_unref[None](thread: NullablePointer[GThread] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_thread_new[NullablePointer[GThread]](name: Pointer[U8] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_thread_new[NullablePointer[GThread]](name: Pointer[U8] tag, func: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -2012,7 +2012,7 @@ use @g_thread_new[NullablePointer[GThread]](name: Pointer[U8] tag, func: Nullabl
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_thread_try_new[NullablePointer[GThread]](name: Pointer[U8] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_thread_try_new[NullablePointer[GThread]](name: Pointer[U8] tag, func: Pointer[None] tag, data: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -2433,7 +2433,7 @@ use @g_private_replace[None](key: NullablePointer[GPrivate] tag, value: Pointer[
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_once_impl[Pointer[None]](once: NullablePointer[GOnce] tag, func: NullablePointer[FUNCTIONTYPE] tag, arg: Pointer[None] tag)
+use @g_once_impl[Pointer[None]](once: NullablePointer[GOnce] tag, func: Pointer[None] tag, arg: Pointer[None] tag)
 
 
 
@@ -2601,7 +2601,7 @@ use @g_async_queue_new[NullablePointer[GAsyncQueue]]()
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_async_queue_new_full[NullablePointer[GAsyncQueue]](itemfreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_async_queue_new_full[NullablePointer[GAsyncQueue]](itemfreefunc: Pointer[None] tag)
 
 
 
@@ -2723,7 +2723,7 @@ use @g_async_queue_push_unlocked[None](queue: NullablePointer[GAsyncQueue] tag, 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_async_queue_push_sorted[None](queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_async_queue_push_sorted[None](queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -2739,7 +2739,7 @@ use @g_async_queue_push_sorted[None](queue: NullablePointer[GAsyncQueue] tag, da
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_async_queue_push_sorted_unlocked[None](queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_async_queue_push_sorted_unlocked[None](queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -2860,7 +2860,7 @@ use @g_async_queue_length_unlocked[I32](queue: NullablePointer[GAsyncQueue] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_async_queue_sort[None](queue: NullablePointer[GAsyncQueue] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_async_queue_sort[None](queue: NullablePointer[GAsyncQueue] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -2875,7 +2875,7 @@ use @g_async_queue_sort[None](queue: NullablePointer[GAsyncQueue] tag, func: Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_async_queue_sort_unlocked[None](queue: NullablePointer[GAsyncQueue] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_async_queue_sort_unlocked[None](queue: NullablePointer[GAsyncQueue] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -4108,7 +4108,7 @@ use @g_bookmark_file_load_from_data[I32](bookmark: NullablePointer[GBookmarkFile
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_bookmark_file_load_from_data_dirs[I32](bookmark: NullablePointer[GBookmarkFile] tag, file: Pointer[U8] tag, fullpath: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_bookmark_file_load_from_data_dirs[I32](bookmark: NullablePointer[GBookmarkFile] tag, file: Pointer[U8] tag, fullpath: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -4244,7 +4244,7 @@ use @g_bookmark_file_get_mime_type[Pointer[U8]](bookmark: NullablePointer[GBookm
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-use @g_bookmark_file_set_groups[None](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, groups: NullablePointer[Pointer[U8]] tag, length: U64)
+use @g_bookmark_file_set_groups[None](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, groups: Pointer[Pointer[U8]] tag, length: U64)
 
 
 
@@ -4291,7 +4291,7 @@ use @g_bookmark_file_has_group[I32](bookmark: NullablePointer[GBookmarkFile] tag
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_bookmark_file_get_groups[NullablePointer[Pointer[U8]]](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_bookmark_file_get_groups[Pointer[Pointer[U8]]](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -4339,7 +4339,7 @@ use @g_bookmark_file_has_application[I32](bookmark: NullablePointer[GBookmarkFil
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_bookmark_file_get_applications[NullablePointer[Pointer[U8]]](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_bookmark_file_get_applications[Pointer[Pointer[U8]]](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -4396,7 +4396,7 @@ use @g_bookmark_file_set_application_info[I32](bookmark: NullablePointer[GBookma
     [PointerType size=64]->[FundamentalType(long int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_bookmark_file_get_app_info[I32](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: NullablePointer[Pointer[U8]] tag, count: Pointer[U32] tag, stamp: Pointer[I64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_bookmark_file_get_app_info[I32](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: Pointer[Pointer[U8]] tag, count: Pointer[U32] tag, stamp: Pointer[I64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -4415,7 +4415,7 @@ use @g_bookmark_file_get_app_info[I32](bookmark: NullablePointer[GBookmarkFile] 
     [PointerType size=64]->[PointerType size=64]->[Struct size=,fid: f59]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_bookmark_file_get_application_info[I32](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: NullablePointer[Pointer[U8]] tag, count: Pointer[U32] tag, stamp: NullablePointer[NullablePointer[GDateTime]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_bookmark_file_get_application_info[I32](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: Pointer[Pointer[U8]] tag, count: Pointer[U32] tag, stamp: NullablePointer[NullablePointer[GDateTime]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -4478,7 +4478,7 @@ use @g_bookmark_file_set_icon[None](bookmark: NullablePointer[GBookmarkFile] tag
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_bookmark_file_get_icon[I32](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, href: NullablePointer[Pointer[U8]] tag, mimetype: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_bookmark_file_get_icon[I32](bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, href: Pointer[Pointer[U8]] tag, mimetype: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -4699,7 +4699,7 @@ use @g_bookmark_file_get_size[I32](bookmark: NullablePointer[GBookmarkFile] tag)
     [PointerType size=64]->[Struct size=,fid: f60]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_bookmark_file_get_uris[NullablePointer[Pointer[U8]]](bookmark: NullablePointer[GBookmarkFile] tag, length: Pointer[U64] tag)
+use @g_bookmark_file_get_uris[Pointer[Pointer[U8]]](bookmark: NullablePointer[GBookmarkFile] tag, length: Pointer[U64] tag)
 
 
 
@@ -4820,7 +4820,7 @@ use @g_bytes_new_static[NullablePointer[GBytes]](data: Pointer[None] tag, size: 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_bytes_new_with_free_func[NullablePointer[GBytes]](data: Pointer[None] tag, size: U64, freefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_bytes_new_with_free_func[NullablePointer[GBytes]](data: Pointer[None] tag, size: U64, freefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -4969,7 +4969,7 @@ use @g_bytes_compare[I32](bytes1: Pointer[None] tag, bytes2: Pointer[None] tag)
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_get_charset[I32](charset: NullablePointer[Pointer[U8]] tag)
+use @g_get_charset[I32](charset: Pointer[Pointer[U8]] tag)
 
 
 
@@ -4994,7 +4994,7 @@ use @g_get_codeset[Pointer[U8]]()
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_get_console_charset[I32](charset: NullablePointer[Pointer[U8]] tag)
+use @g_get_console_charset[I32](charset: Pointer[Pointer[U8]] tag)
 
 
 
@@ -5006,7 +5006,7 @@ use @g_get_console_charset[I32](charset: NullablePointer[Pointer[U8]] tag)
 
   Arguments:
 */
-use @g_get_language_names[NullablePointer[Pointer[U8]]]()
+use @g_get_language_names[Pointer[Pointer[U8]]]()
 
 
 
@@ -5019,7 +5019,7 @@ use @g_get_language_names[NullablePointer[Pointer[U8]]]()
   Arguments:
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_get_language_names_with_category[NullablePointer[Pointer[U8]]](categoryname: Pointer[U8] tag)
+use @g_get_language_names_with_category[Pointer[Pointer[U8]]](categoryname: Pointer[U8] tag)
 
 
 
@@ -5032,7 +5032,7 @@ use @g_get_language_names_with_category[NullablePointer[Pointer[U8]]](categoryna
   Arguments:
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_get_locale_variants[NullablePointer[Pointer[U8]]](locale: Pointer[U8] tag)
+use @g_get_locale_variants[Pointer[Pointer[U8]]](locale: Pointer[U8] tag)
 
 
 
@@ -5227,7 +5227,7 @@ use @g_iconv_open[NullablePointer[GIConv]](tocodeset: Pointer[U8] tag, fromcodes
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_iconv[U64](converter: NullablePointer[GIConv] tag, inbuf: NullablePointer[Pointer[U8]] tag, inbytesleft: Pointer[U64] tag, outbuf: NullablePointer[Pointer[U8]] tag, outbytesleft: Pointer[U64] tag)
+use @g_iconv[U64](converter: NullablePointer[GIConv] tag, inbuf: Pointer[Pointer[U8]] tag, inbytesleft: Pointer[U64] tag, outbuf: Pointer[Pointer[U8]] tag, outbytesleft: Pointer[U64] tag)
 
 
 
@@ -5380,7 +5380,7 @@ use @g_filename_from_utf8[Pointer[U8]](utf8string: Pointer[U8] tag, len: I64, by
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_filename_from_uri[Pointer[U8]](uri: Pointer[U8] tag, hostname: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_filename_from_uri[Pointer[U8]](uri: Pointer[U8] tag, hostname: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -5421,7 +5421,7 @@ use @g_filename_display_name[Pointer[U8]](filename: Pointer[U8] tag)
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_get_filename_charsets[I32](filenamecharsets: NullablePointer[NullablePointer[Pointer[U8]]] tag)
+use @g_get_filename_charsets[I32](filenamecharsets: Pointer[Pointer[Pointer[U8]]])
 
 
 
@@ -5447,7 +5447,7 @@ use @g_filename_display_basename[Pointer[U8]](filename: Pointer[U8] tag)
   Arguments:
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_uri_list_extract_uris[NullablePointer[Pointer[U8]]](urilist: Pointer[U8] tag)
+use @g_uri_list_extract_uris[Pointer[Pointer[U8]]](urilist: Pointer[U8] tag)
 
 
 
@@ -5503,7 +5503,7 @@ use @g_datalist_id_get_data[Pointer[None]](datalist: NullablePointer[NullablePoi
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_datalist_id_set_data_full[None](datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_datalist_id_set_data_full[None](datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: Pointer[None] tag)
 
 
 
@@ -5519,7 +5519,7 @@ use @g_datalist_id_set_data_full[None](datalist: NullablePointer[NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_datalist_id_dup_data[Pointer[None]](datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, dupfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_datalist_id_dup_data[Pointer[None]](datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -5537,7 +5537,7 @@ use @g_datalist_id_dup_data[Pointer[None]](datalist: NullablePointer[NullablePoi
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_datalist_id_replace_data[I32](datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag, olddestroy: NullablePointer[NullablePointer[FUNCTIONTYPE]] tag)
+use @g_datalist_id_replace_data[I32](datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag)
 
 
 
@@ -5566,7 +5566,7 @@ use @g_datalist_id_remove_no_notify[Pointer[None]](datalist: NullablePointer[Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_datalist_foreach[None](datalist: NullablePointer[NullablePointer[GData]] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_datalist_foreach[None](datalist: NullablePointer[NullablePointer[GData]] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -5664,7 +5664,7 @@ use @g_datalist_get_data[Pointer[None]](datalist: NullablePointer[NullablePointe
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_dataset_id_set_data_full[None](datasetlocation: Pointer[None] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_dataset_id_set_data_full[None](datasetlocation: Pointer[None] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: Pointer[None] tag)
 
 
 
@@ -5693,7 +5693,7 @@ use @g_dataset_id_remove_no_notify[Pointer[None]](datasetlocation: Pointer[None]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dataset_foreach[None](datasetlocation: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dataset_foreach[None](datasetlocation: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -6468,7 +6468,7 @@ use @g_unsetenv[None](variable: Pointer[U8] tag)
 
   Arguments:
 */
-use @g_listenv[NullablePointer[Pointer[U8]]]()
+use @g_listenv[Pointer[Pointer[U8]]]()
 
 
 
@@ -6480,7 +6480,7 @@ use @g_listenv[NullablePointer[Pointer[U8]]]()
 
   Arguments:
 */
-use @g_get_environ[NullablePointer[Pointer[U8]]]()
+use @g_get_environ[Pointer[Pointer[U8]]]()
 
 
 
@@ -6494,7 +6494,7 @@ use @g_get_environ[NullablePointer[Pointer[U8]]]()
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_environ_getenv[Pointer[U8]](envp: NullablePointer[Pointer[U8]] tag, variable: Pointer[U8] tag)
+use @g_environ_getenv[Pointer[U8]](envp: Pointer[Pointer[U8]] tag, variable: Pointer[U8] tag)
 
 
 
@@ -6510,7 +6510,7 @@ use @g_environ_getenv[Pointer[U8]](envp: NullablePointer[Pointer[U8]] tag, varia
     [PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-use @g_environ_setenv[NullablePointer[Pointer[U8]]](envp: NullablePointer[Pointer[U8]] tag, variable: Pointer[U8] tag, value: Pointer[U8] tag, overwrite: I32)
+use @g_environ_setenv[Pointer[Pointer[U8]]](envp: Pointer[Pointer[U8]] tag, variable: Pointer[U8] tag, value: Pointer[U8] tag, overwrite: I32)
 
 
 
@@ -6524,7 +6524,7 @@ use @g_environ_setenv[NullablePointer[Pointer[U8]]](envp: NullablePointer[Pointe
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_environ_unsetenv[NullablePointer[Pointer[U8]]](envp: NullablePointer[Pointer[U8]] tag, variable: Pointer[U8] tag)
+use @g_environ_unsetenv[Pointer[Pointer[U8]]](envp: Pointer[Pointer[U8]] tag, variable: Pointer[U8] tag)
 
 
 
@@ -6579,7 +6579,7 @@ use @g_file_test[I32](filename: Pointer[U8] tag, test: I32)
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_get_contents[I32](filename: Pointer[U8] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_get_contents[I32](filename: Pointer[U8] tag, contents: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -6697,7 +6697,7 @@ use @g_mkstemp_full[I32](tmpl: Pointer[U8] tag, flags: I32, mode: I32)
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_open_tmp[I32](tmpl: Pointer[U8] tag, nameused: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_open_tmp[I32](tmpl: Pointer[U8] tag, nameused: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -6739,7 +6739,7 @@ use @g_build_path[Pointer[U8]](separator: Pointer[U8] tag, firstelement: Pointer
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_build_pathv[Pointer[U8]](separator: Pointer[U8] tag, args: NullablePointer[Pointer[U8]] tag)
+use @g_build_pathv[Pointer[U8]](separator: Pointer[U8] tag, args: Pointer[Pointer[U8]] tag)
 
 
 
@@ -6765,7 +6765,7 @@ use @g_build_filename[Pointer[U8]](firstelement: Pointer[U8] tag, ...)
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_build_filenamev[Pointer[U8]](args: NullablePointer[Pointer[U8]] tag)
+use @g_build_filenamev[Pointer[U8]](args: Pointer[Pointer[U8]] tag)
 
 
 
@@ -7000,7 +7000,7 @@ use @g_free[None](mem: Pointer[None] tag)
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_clear_pointer[None](pp: NullablePointer[Pointer[None]] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_clear_pointer[None](pp: NullablePointer[Pointer[None]] tag, destroy: Pointer[None] tag)
 
 
 
@@ -7270,7 +7270,7 @@ use @g_node_unlink[None](node: NullablePointer[GNode] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_node_copy_deep[NullablePointer[GNode]](node: NullablePointer[GNode] tag, copyfunc: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_node_copy_deep[NullablePointer[GNode]](node: NullablePointer[GNode] tag, copyfunc: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -7430,7 +7430,7 @@ use @g_node_find[NullablePointer[GNode]](root: NullablePointer[GNode] tag, order
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_node_traverse[None](root: NullablePointer[GNode] tag, order: I32, flags: I32, maxdepth: I32, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_node_traverse[None](root: NullablePointer[GNode] tag, order: I32, flags: I32, maxdepth: I32, func: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -7459,7 +7459,7 @@ use @g_node_max_height[U32](root: NullablePointer[GNode] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_node_children_foreach[None](node: NullablePointer[GNode] tag, flags: I32, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_node_children_foreach[None](node: NullablePointer[GNode] tag, flags: I32, func: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -7633,7 +7633,7 @@ use @g_list_free_1[None](list: NullablePointer[GList] tag)
     [PointerType size=64]->[Struct size=192,fid: f75]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_list_free_full[None](list: NullablePointer[GList] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_list_free_full[None](list: NullablePointer[GList] tag, freefunc: Pointer[None] tag)
 
 
 
@@ -7691,7 +7691,7 @@ use @g_list_insert[NullablePointer[GList]](list: NullablePointer[GList] tag, dat
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_list_insert_sorted[NullablePointer[GList]](list: NullablePointer[GList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_list_insert_sorted[NullablePointer[GList]](list: NullablePointer[GList] tag, data: Pointer[None] tag, func: Pointer[None] tag)
 
 
 
@@ -7707,7 +7707,7 @@ use @g_list_insert_sorted[NullablePointer[GList]](list: NullablePointer[GList] t
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_list_insert_sorted_with_data[NullablePointer[GList]](list: NullablePointer[GList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_list_insert_sorted_with_data[NullablePointer[GList]](list: NullablePointer[GList] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -7848,7 +7848,7 @@ use @g_list_copy[NullablePointer[GList]](list: NullablePointer[GList] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_list_copy_deep[NullablePointer[GList]](list: NullablePointer[GList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_list_copy_deep[NullablePointer[GList]](list: NullablePointer[GList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -7905,7 +7905,7 @@ use @g_list_find[NullablePointer[GList]](list: NullablePointer[GList] tag, data:
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_list_find_custom[NullablePointer[GList]](list: NullablePointer[GList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_list_find_custom[NullablePointer[GList]](list: NullablePointer[GList] tag, data: Pointer[None] tag, func: Pointer[None] tag)
 
 
 
@@ -7987,7 +7987,7 @@ use @g_list_length[U32](list: NullablePointer[GList] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_list_foreach[None](list: NullablePointer[GList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_list_foreach[None](list: NullablePointer[GList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -8001,7 +8001,7 @@ use @g_list_foreach[None](list: NullablePointer[GList] tag, func: NullablePointe
     [PointerType size=64]->[Struct size=192,fid: f75]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_list_sort[NullablePointer[GList]](list: NullablePointer[GList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_list_sort[NullablePointer[GList]](list: NullablePointer[GList] tag, comparefunc: Pointer[None] tag)
 
 
 
@@ -8016,7 +8016,7 @@ use @g_list_sort[NullablePointer[GList]](list: NullablePointer[GList] tag, compa
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_list_sort_with_data[NullablePointer[GList]](list: NullablePointer[GList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_list_sort_with_data[NullablePointer[GList]](list: NullablePointer[GList] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -8044,7 +8044,7 @@ use @g_list_nth_data[Pointer[None]](list: NullablePointer[GList] tag, n: U32)
     [PointerType size=64]->[PointerType size=64]->[Struct size=192,fid: f75]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_clear_list[None](listptr: NullablePointer[NullablePointer[GList]] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_clear_list[None](listptr: NullablePointer[NullablePointer[GList]] tag, destroy: Pointer[None] tag)
 
 
 
@@ -8058,7 +8058,7 @@ use @g_clear_list[None](listptr: NullablePointer[NullablePointer[GList]] tag, de
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_hash_table_new[NullablePointer[GHashTable]](hashfunc: NullablePointer[FUNCTIONTYPE] tag, keyequalfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_hash_table_new[NullablePointer[GHashTable]](hashfunc: Pointer[None] tag, keyequalfunc: Pointer[None] tag)
 
 
 
@@ -8074,7 +8074,7 @@ use @g_hash_table_new[NullablePointer[GHashTable]](hashfunc: NullablePointer[FUN
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_hash_table_new_full[NullablePointer[GHashTable]](hashfunc: NullablePointer[FUNCTIONTYPE] tag, keyequalfunc: NullablePointer[FUNCTIONTYPE] tag, keydestroyfunc: NullablePointer[FUNCTIONTYPE] tag, valuedestroyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_hash_table_new_full[NullablePointer[GHashTable]](hashfunc: Pointer[None] tag, keyequalfunc: Pointer[None] tag, keydestroyfunc: Pointer[None] tag, valuedestroyfunc: Pointer[None] tag)
 
 
 
@@ -8260,7 +8260,7 @@ use @g_hash_table_lookup_extended[I32](hashtable: NullablePointer[GHashTable] ta
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_hash_table_foreach[None](hashtable: NullablePointer[GHashTable] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_hash_table_foreach[None](hashtable: NullablePointer[GHashTable] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -8275,7 +8275,7 @@ use @g_hash_table_foreach[None](hashtable: NullablePointer[GHashTable] tag, func
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_hash_table_find[Pointer[None]](hashtable: NullablePointer[GHashTable] tag, predicate: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_hash_table_find[Pointer[None]](hashtable: NullablePointer[GHashTable] tag, predicate: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -8290,7 +8290,7 @@ use @g_hash_table_find[Pointer[None]](hashtable: NullablePointer[GHashTable] tag
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_hash_table_foreach_remove[U32](hashtable: NullablePointer[GHashTable] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_hash_table_foreach_remove[U32](hashtable: NullablePointer[GHashTable] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -8305,7 +8305,7 @@ use @g_hash_table_foreach_remove[U32](hashtable: NullablePointer[GHashTable] tag
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_hash_table_foreach_steal[U32](hashtable: NullablePointer[GHashTable] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_hash_table_foreach_steal[U32](hashtable: NullablePointer[GHashTable] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -8901,7 +8901,7 @@ use @g_hook_insert_before[None](hooklist: NullablePointer[GHookList] tag, siblin
     [PointerType size=64]->[Struct size=512,fid: f78]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_hook_insert_sorted[None](hooklist: NullablePointer[GHookList] tag, hook: NullablePointer[GHook] tag, func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_hook_insert_sorted[None](hooklist: NullablePointer[GHookList] tag, hook: NullablePointer[GHook] tag, func: Pointer[None] tag)
 
 
 
@@ -8931,7 +8931,7 @@ use @g_hook_get[NullablePointer[GHook]](hooklist: NullablePointer[GHookList] tag
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_hook_find[NullablePointer[GHook]](hooklist: NullablePointer[GHookList] tag, needvalids: I32, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_hook_find[NullablePointer[GHook]](hooklist: NullablePointer[GHookList] tag, needvalids: I32, func: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -9064,7 +9064,7 @@ use @g_hook_list_invoke_check[None](hooklist: NullablePointer[GHookList] tag, ma
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_hook_list_marshal[None](hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: NullablePointer[FUNCTIONTYPE] tag, marshaldata: Pointer[None] tag)
+use @g_hook_list_marshal[None](hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: Pointer[None] tag, marshaldata: Pointer[None] tag)
 
 
 
@@ -9080,7 +9080,7 @@ use @g_hook_list_marshal[None](hooklist: NullablePointer[GHookList] tag, mayrecu
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_hook_list_marshal_check[None](hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: NullablePointer[FUNCTIONTYPE] tag, marshaldata: Pointer[None] tag)
+use @g_hook_list_marshal_check[None](hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: Pointer[None] tag, marshaldata: Pointer[None] tag)
 
 
 
@@ -9212,7 +9212,7 @@ use @g_slist_free_1[None](list: NullablePointer[GSList] tag)
     [PointerType size=64]->[Struct size=128,fid: f81]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_slist_free_full[None](list: NullablePointer[GSList] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_slist_free_full[None](list: NullablePointer[GSList] tag, freefunc: Pointer[None] tag)
 
 
 
@@ -9270,7 +9270,7 @@ use @g_slist_insert[NullablePointer[GSList]](list: NullablePointer[GSList] tag, 
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_slist_insert_sorted[NullablePointer[GSList]](list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_slist_insert_sorted[NullablePointer[GSList]](list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: Pointer[None] tag)
 
 
 
@@ -9286,7 +9286,7 @@ use @g_slist_insert_sorted[NullablePointer[GSList]](list: NullablePointer[GSList
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_slist_insert_sorted_with_data[NullablePointer[GSList]](list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_slist_insert_sorted_with_data[NullablePointer[GSList]](list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -9412,7 +9412,7 @@ use @g_slist_copy[NullablePointer[GSList]](list: NullablePointer[GSList] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_slist_copy_deep[NullablePointer[GSList]](list: NullablePointer[GSList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_slist_copy_deep[NullablePointer[GSList]](list: NullablePointer[GSList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -9455,7 +9455,7 @@ use @g_slist_find[NullablePointer[GSList]](list: NullablePointer[GSList] tag, da
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_slist_find_custom[NullablePointer[GSList]](list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_slist_find_custom[NullablePointer[GSList]](list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: Pointer[None] tag)
 
 
 
@@ -9524,7 +9524,7 @@ use @g_slist_length[U32](list: NullablePointer[GSList] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_slist_foreach[None](list: NullablePointer[GSList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_slist_foreach[None](list: NullablePointer[GSList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -9538,7 +9538,7 @@ use @g_slist_foreach[None](list: NullablePointer[GSList] tag, func: NullablePoin
     [PointerType size=64]->[Struct size=128,fid: f81]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_slist_sort[NullablePointer[GSList]](list: NullablePointer[GSList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_slist_sort[NullablePointer[GSList]](list: NullablePointer[GSList] tag, comparefunc: Pointer[None] tag)
 
 
 
@@ -9553,7 +9553,7 @@ use @g_slist_sort[NullablePointer[GSList]](list: NullablePointer[GSList] tag, co
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_slist_sort_with_data[NullablePointer[GSList]](list: NullablePointer[GSList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_slist_sort_with_data[NullablePointer[GSList]](list: NullablePointer[GSList] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -9581,7 +9581,7 @@ use @g_slist_nth_data[Pointer[None]](list: NullablePointer[GSList] tag, n: U32)
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f81]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_clear_slist[None](slistptr: NullablePointer[NullablePointer[GSList]] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_clear_slist[None](slistptr: NullablePointer[NullablePointer[GSList]] tag, destroy: Pointer[None] tag)
 
 
 
@@ -9842,7 +9842,7 @@ use @g_main_context_dispatch[None](context: NullablePointer[GMainContext] tag)
     [PointerType size=64]->[Struct size=,fid: f82]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_main_context_set_poll_func[None](context: NullablePointer[GMainContext] tag, func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_main_context_set_poll_func[None](context: NullablePointer[GMainContext] tag, func: Pointer[None] tag)
 
 
 
@@ -9855,7 +9855,7 @@ use @g_main_context_set_poll_func[None](context: NullablePointer[GMainContext] t
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f82]
 */
-use @g_main_context_get_poll_func[NullablePointer[FUNCTIONTYPE]](context: NullablePointer[GMainContext] tag)
+use @g_main_context_get_poll_func[Pointer[None]](context: NullablePointer[GMainContext] tag)
 
 
 
@@ -10104,7 +10104,7 @@ use @g_source_new[NullablePointer[GSource]](sourcefuncs: NullablePointer[GSource
     [PointerType size=64]->[Struct size=768,fid: f82]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_source_set_dispose_function[None](source: NullablePointer[GSource] tag, dispose: NullablePointer[FUNCTIONTYPE] tag)
+use @g_source_set_dispose_function[None](source: NullablePointer[GSource] tag, dispose: Pointer[None] tag)
 
 
 
@@ -10253,7 +10253,7 @@ use @g_source_get_context[NullablePointer[GMainContext]](source: NullablePointer
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_source_set_callback[None](source: NullablePointer[GSource] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_source_set_callback[None](source: NullablePointer[GSource] tag, func: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -10646,7 +10646,7 @@ use @g_source_remove_by_funcs_user_data[I32](funcs: NullablePointer[GSourceFuncs
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_clear_handle_id[None](tagptr: Pointer[U32] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_clear_handle_id[None](tagptr: Pointer[U32] tag, clearfunc: Pointer[None] tag)
 
 
 
@@ -10663,7 +10663,7 @@ use @g_clear_handle_id[None](tagptr: Pointer[U32] tag, clearfunc: NullablePointe
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_timeout_add_full[U32](priority: I32, interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_timeout_add_full[U32](priority: I32, interval: U32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -10678,7 +10678,7 @@ use @g_timeout_add_full[U32](priority: I32, interval: U32, function: NullablePoi
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_timeout_add[U32](interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_timeout_add[U32](interval: U32, function: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -10695,7 +10695,7 @@ use @g_timeout_add[U32](interval: U32, function: NullablePointer[FUNCTIONTYPE] t
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_timeout_add_seconds_full[U32](priority: I32, interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_timeout_add_seconds_full[U32](priority: I32, interval: U32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -10710,7 +10710,7 @@ use @g_timeout_add_seconds_full[U32](priority: I32, interval: U32, function: Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_timeout_add_seconds[U32](interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_timeout_add_seconds[U32](interval: U32, function: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -10727,7 +10727,7 @@ use @g_timeout_add_seconds[U32](interval: U32, function: NullablePointer[FUNCTIO
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_child_watch_add_full[U32](priority: I32, pid: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_child_watch_add_full[U32](priority: I32, pid: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -10742,7 +10742,7 @@ use @g_child_watch_add_full[U32](priority: I32, pid: I32, function: NullablePoin
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_child_watch_add[U32](pid: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_child_watch_add[U32](pid: I32, function: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -10756,7 +10756,7 @@ use @g_child_watch_add[U32](pid: I32, function: NullablePointer[FUNCTIONTYPE] ta
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_idle_add[U32](function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_idle_add[U32](function: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -10772,7 +10772,7 @@ use @g_idle_add[U32](function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_idle_add_full[U32](priority: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_idle_add_full[U32](priority: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -10802,7 +10802,7 @@ use @g_idle_remove_by_data[I32](data: Pointer[None] tag)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_main_context_invoke_full[None](context: NullablePointer[GMainContext] tag, priority: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_main_context_invoke_full[None](context: NullablePointer[GMainContext] tag, priority: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -10817,7 +10817,7 @@ use @g_main_context_invoke_full[None](context: NullablePointer[GMainContext] tag
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_main_context_invoke[None](context: NullablePointer[GMainContext] tag, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_main_context_invoke[None](context: NullablePointer[GMainContext] tag, function: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -11612,7 +11612,7 @@ use @g_unichar_to_utf8[I32](c: U32, outbuf: Pointer[U8] tag)
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_utf8_validate[I32](str: Pointer[U8] tag, maxlen: I64, g_end: NullablePointer[Pointer[U8]] tag)
+use @g_utf8_validate[I32](str: Pointer[U8] tag, maxlen: I64, g_end: Pointer[Pointer[U8]] tag)
 
 
 
@@ -11627,7 +11627,7 @@ use @g_utf8_validate[I32](str: Pointer[U8] tag, maxlen: I64, g_end: NullablePoin
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_utf8_validate_len[I32](str: Pointer[U8] tag, maxlen: U64, g_end: NullablePointer[Pointer[U8]] tag)
+use @g_utf8_validate_len[I32](str: Pointer[U8] tag, maxlen: U64, g_end: Pointer[Pointer[U8]] tag)
 
 
 
@@ -12385,7 +12385,7 @@ use @g_io_channel_shutdown[I32](channel: NullablePointer[GIOChannel] tag, flush:
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_io_add_watch_full[U32](channel: NullablePointer[GIOChannel] tag, priority: I32, condition: I32, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_io_add_watch_full[U32](channel: NullablePointer[GIOChannel] tag, priority: I32, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -12415,7 +12415,7 @@ use @g_io_create_watch[NullablePointer[GSource]](channel: NullablePointer[GIOCha
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_io_add_watch[U32](channel: NullablePointer[GIOChannel] tag, condition: I32, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_io_add_watch[U32](channel: NullablePointer[GIOChannel] tag, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -12625,7 +12625,7 @@ use @g_io_channel_flush[I32](channel: NullablePointer[GIOChannel] tag, g_error: 
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_io_channel_read_line[I32](channel: NullablePointer[GIOChannel] tag, strreturn: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, terminatorpos: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_io_channel_read_line[I32](channel: NullablePointer[GIOChannel] tag, strreturn: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, terminatorpos: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -12657,7 +12657,7 @@ use @g_io_channel_read_line_string[I32](channel: NullablePointer[GIOChannel] tag
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_io_channel_read_to_end[I32](channel: NullablePointer[GIOChannel] tag, strreturn: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_io_channel_read_to_end[I32](channel: NullablePointer[GIOChannel] tag, strreturn: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -12947,7 +12947,7 @@ use @g_key_file_load_from_bytes[I32](keyfile: NullablePointer[GKeyFile] tag, byt
     [Enumeration size=32,fid: f86]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_key_file_load_from_dirs[I32](keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, searchdirs: NullablePointer[Pointer[U8]] tag, fullpath: NullablePointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_key_file_load_from_dirs[I32](keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, searchdirs: Pointer[Pointer[U8]] tag, fullpath: Pointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -12964,7 +12964,7 @@ use @g_key_file_load_from_dirs[I32](keyfile: NullablePointer[GKeyFile] tag, file
     [Enumeration size=32,fid: f86]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_key_file_load_from_data_dirs[I32](keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, fullpath: NullablePointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_key_file_load_from_data_dirs[I32](keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, fullpath: Pointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -13021,7 +13021,7 @@ use @g_key_file_get_start_group[Pointer[U8]](keyfile: NullablePointer[GKeyFile] 
     [PointerType size=64]->[Struct size=,fid: f86]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_key_file_get_groups[NullablePointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, length: Pointer[U64] tag)
+use @g_key_file_get_groups[Pointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, length: Pointer[U64] tag)
 
 
 
@@ -13037,7 +13037,7 @@ use @g_key_file_get_groups[NullablePointer[Pointer[U8]]](keyfile: NullablePointe
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_key_file_get_keys[NullablePointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_key_file_get_keys[Pointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -13358,7 +13358,7 @@ use @g_key_file_set_double[None](keyfile: NullablePointer[GKeyFile] tag, groupna
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_key_file_get_string_list[NullablePointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_key_file_get_string_list[Pointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -13375,7 +13375,7 @@ use @g_key_file_get_string_list[NullablePointer[Pointer[U8]]](keyfile: NullableP
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-use @g_key_file_set_string_list[None](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, list: NullablePointer[Pointer[U8]] tag, length: U64)
+use @g_key_file_set_string_list[None](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, list: Pointer[Pointer[U8]] tag, length: U64)
 
 
 
@@ -13393,7 +13393,7 @@ use @g_key_file_set_string_list[None](keyfile: NullablePointer[GKeyFile] tag, gr
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_key_file_get_locale_string_list[NullablePointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_key_file_get_locale_string_list[Pointer[Pointer[U8]]](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -13411,7 +13411,7 @@ use @g_key_file_get_locale_string_list[NullablePointer[Pointer[U8]]](keyfile: Nu
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-use @g_key_file_set_locale_string_list[None](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, list: NullablePointer[Pointer[U8]] tag, length: U64)
+use @g_key_file_set_locale_string_list[None](keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, list: Pointer[Pointer[U8]] tag, length: U64)
 
 
 
@@ -13729,7 +13729,7 @@ use @g_markup_error_quark[U32]()
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_markup_parse_context_new[NullablePointer[GMarkupParseContext]](parser: NullablePointer[GMarkupParser] tag, flags: I32, userdata: Pointer[None] tag, userdatadnotify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_markup_parse_context_new[NullablePointer[GMarkupParseContext]](parser: NullablePointer[GMarkupParser] tag, flags: I32, userdata: Pointer[None] tag, userdatadnotify: Pointer[None] tag)
 
 
 
@@ -13939,7 +13939,7 @@ use @g_markup_vprintf_escaped[Pointer[U8]](format: Pointer[U8] tag, args: Nullab
     [Enumeration size=32,fid: f88]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_markup_collect_attributes[I32](elementname: Pointer[U8] tag, attributenames: NullablePointer[Pointer[U8]] tag, attributevalues: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag, firsttype: I32, firstattr: Pointer[U8] tag, ...)
+use @g_markup_collect_attributes[I32](elementname: Pointer[U8] tag, attributenames: Pointer[Pointer[U8]] tag, attributevalues: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag, firsttype: I32, firstattr: Pointer[U8] tag, ...)
 
 
 
@@ -13967,7 +13967,7 @@ use @g_variant_type_string_is_valid[I32](typestring: Pointer[U8] tag)
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_variant_type_string_scan[I32](string: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag)
+use @g_variant_type_string_scan[I32](string: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag)
 
 
 
@@ -14727,7 +14727,7 @@ use @g_variant_new_variant[NullablePointer[GVariant]](value: NullablePointer[GVa
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long int) size=64]
 */
-use @g_variant_new_strv[NullablePointer[GVariant]](strv: NullablePointer[Pointer[U8]] tag, length: I64)
+use @g_variant_new_strv[NullablePointer[GVariant]](strv: Pointer[Pointer[U8]] tag, length: I64)
 
 
 
@@ -14741,7 +14741,7 @@ use @g_variant_new_strv[NullablePointer[GVariant]](strv: NullablePointer[Pointer
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long int) size=64]
 */
-use @g_variant_new_objv[NullablePointer[GVariant]](strv: NullablePointer[Pointer[U8]] tag, length: I64)
+use @g_variant_new_objv[NullablePointer[GVariant]](strv: Pointer[Pointer[U8]] tag, length: I64)
 
 
 
@@ -14768,7 +14768,7 @@ use @g_variant_new_bytestring[NullablePointer[GVariant]](string: Pointer[U8] tag
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long int) size=64]
 */
-use @g_variant_new_bytestring_array[NullablePointer[GVariant]](strv: NullablePointer[Pointer[U8]] tag, length: I64)
+use @g_variant_new_bytestring_array[NullablePointer[GVariant]](strv: Pointer[Pointer[U8]] tag, length: I64)
 
 
 
@@ -14969,7 +14969,7 @@ use @g_variant_dup_string[Pointer[U8]](value: NullablePointer[GVariant] tag, len
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_variant_get_strv[NullablePointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
+use @g_variant_get_strv[Pointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
 
 
 
@@ -14983,7 +14983,7 @@ use @g_variant_get_strv[NullablePointer[Pointer[U8]]](value: NullablePointer[GVa
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_variant_dup_strv[NullablePointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
+use @g_variant_dup_strv[Pointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
 
 
 
@@ -14997,7 +14997,7 @@ use @g_variant_dup_strv[NullablePointer[Pointer[U8]]](value: NullablePointer[GVa
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_variant_get_objv[NullablePointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
+use @g_variant_get_objv[Pointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
 
 
 
@@ -15011,7 +15011,7 @@ use @g_variant_get_objv[NullablePointer[Pointer[U8]]](value: NullablePointer[GVa
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_variant_dup_objv[NullablePointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
+use @g_variant_dup_objv[Pointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
 
 
 
@@ -15052,7 +15052,7 @@ use @g_variant_dup_bytestring[Pointer[U8]](value: NullablePointer[GVariant] tag,
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_variant_get_bytestring_array[NullablePointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
+use @g_variant_get_bytestring_array[Pointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
 
 
 
@@ -15066,7 +15066,7 @@ use @g_variant_get_bytestring_array[NullablePointer[Pointer[U8]]](value: Nullabl
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_variant_dup_bytestring_array[NullablePointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
+use @g_variant_dup_bytestring_array[Pointer[Pointer[U8]]](value: NullablePointer[GVariant] tag, length: Pointer[U64] tag)
 
 
 
@@ -15404,7 +15404,7 @@ use @g_variant_new_from_bytes[NullablePointer[GVariant]](g_type: NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_variant_new_from_data[NullablePointer[GVariant]](g_type: NullablePointer[GVariantType] tag, data: Pointer[None] tag, size: U64, trusted: I32, notify: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_variant_new_from_data[NullablePointer[GVariant]](g_type: NullablePointer[GVariantType] tag, data: Pointer[None] tag, size: U64, trusted: I32, notify: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -15725,7 +15725,7 @@ use @g_variant_get[None](value: NullablePointer[GVariant] tag, formatstring: Poi
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[ArrayType size=(0-0)]->[Struct size=192,fid: f0]  UNSUPPORTED - FIXME
 */
-use @g_variant_new_va[NullablePointer[GVariant]](formatstring: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, app: NullablePointer[Pointer[Valisttag]] tag)
+use @g_variant_new_va[NullablePointer[GVariant]](formatstring: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag, app: NullablePointer[Pointer[Valisttag]] tag)
 
 
 
@@ -15741,7 +15741,7 @@ use @g_variant_new_va[NullablePointer[GVariant]](formatstring: Pointer[U8] tag, 
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[ArrayType size=(0-0)]->[Struct size=192,fid: f0]  UNSUPPORTED - FIXME
 */
-use @g_variant_get_va[None](value: NullablePointer[GVariant] tag, formatstring: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, app: NullablePointer[Pointer[Valisttag]] tag)
+use @g_variant_get_va[None](value: NullablePointer[GVariant] tag, formatstring: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag, app: NullablePointer[Pointer[Valisttag]] tag)
 
 
 
@@ -15773,7 +15773,7 @@ use @g_variant_check_format_string[I32](value: NullablePointer[GVariant] tag, fo
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_variant_parse[NullablePointer[GVariant]](g_type: NullablePointer[GVariantType] tag, text: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_variant_parse[NullablePointer[GVariant]](g_type: NullablePointer[GVariantType] tag, text: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -16025,7 +16025,7 @@ use @g_printf_string_upper_bound[U64](format: Pointer[U8] tag, args: NullablePoi
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_log_set_handler[U32](logdomain: Pointer[U8] tag, loglevels: I32, logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_log_set_handler[U32](logdomain: Pointer[U8] tag, loglevels: I32, logfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -16042,7 +16042,7 @@ use @g_log_set_handler[U32](logdomain: Pointer[U8] tag, loglevels: I32, logfunc:
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_log_set_handler_full[U32](logdomain: Pointer[U8] tag, loglevels: I32, logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_log_set_handler_full[U32](logdomain: Pointer[U8] tag, loglevels: I32, logfunc: Pointer[None] tag, userdata: Pointer[None] tag, destroy: Pointer[None] tag)
 
 
 
@@ -16086,7 +16086,7 @@ use @g_log_default_handler[None](logdomain: Pointer[U8] tag, loglevel: I32, mess
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_log_set_default_handler[NullablePointer[FUNCTIONTYPE]](logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_log_set_default_handler[Pointer[None]](logfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -16203,7 +16203,7 @@ use @g_log_variant[None](logdomain: Pointer[U8] tag, loglevel: I32, fields: Null
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_log_set_writer_func[None](func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafree: NullablePointer[FUNCTIONTYPE] tag)
+use @g_log_set_writer_func[None](func: Pointer[None] tag, userdata: Pointer[None] tag, userdatafree: Pointer[None] tag)
 
 
 
@@ -16429,7 +16429,7 @@ use @g_print[None](format: Pointer[U8] tag, ...)
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_set_print_handler[NullablePointer[FUNCTIONTYPE]](func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_set_print_handler[Pointer[None]](func: Pointer[None] tag)
 
 
 
@@ -16455,7 +16455,7 @@ use @g_printerr[None](format: Pointer[U8] tag, ...)
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_set_printerr_handler[NullablePointer[FUNCTIONTYPE]](func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_set_printerr_handler[Pointer[None]](func: Pointer[None] tag)
 
 
 
@@ -16659,7 +16659,7 @@ use @g_option_context_add_main_entries[None](context: NullablePointer[GOptionCon
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_option_context_parse[I32](context: NullablePointer[GOptionContext] tag, argc: Pointer[I32] tag, argv: NullablePointer[NullablePointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_option_context_parse[I32](context: NullablePointer[GOptionContext] tag, argc: Pointer[I32] tag, argv: Pointer[Pointer[Pointer[U8]]], g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -16674,7 +16674,7 @@ use @g_option_context_parse[I32](context: NullablePointer[GOptionContext] tag, a
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_option_context_parse_strv[I32](context: NullablePointer[GOptionContext] tag, arguments: NullablePointer[NullablePointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_option_context_parse_strv[I32](context: NullablePointer[GOptionContext] tag, arguments: Pointer[Pointer[Pointer[U8]]], g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -16690,7 +16690,7 @@ use @g_option_context_parse_strv[I32](context: NullablePointer[GOptionContext] t
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_option_context_set_translate_func[None](context: NullablePointer[GOptionContext] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, destroynotify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_option_context_set_translate_func[None](context: NullablePointer[GOptionContext] tag, func: Pointer[None] tag, data: Pointer[None] tag, destroynotify: Pointer[None] tag)
 
 
 
@@ -16777,7 +16777,7 @@ use @g_option_context_get_help[Pointer[U8]](context: NullablePointer[GOptionCont
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_option_group_new[NullablePointer[GOptionGroup]](name: Pointer[U8] tag, description: Pointer[U8] tag, helpdescription: Pointer[U8] tag, userdata: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_option_group_new[NullablePointer[GOptionGroup]](name: Pointer[U8] tag, description: Pointer[U8] tag, helpdescription: Pointer[U8] tag, userdata: Pointer[None] tag, destroy: Pointer[None] tag)
 
 
 
@@ -16792,7 +16792,7 @@ use @g_option_group_new[NullablePointer[GOptionGroup]](name: Pointer[U8] tag, de
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_option_group_set_parse_hooks[None](group: NullablePointer[GOptionGroup] tag, preparsefunc: NullablePointer[FUNCTIONTYPE] tag, postparsefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_option_group_set_parse_hooks[None](group: NullablePointer[GOptionGroup] tag, preparsefunc: Pointer[None] tag, postparsefunc: Pointer[None] tag)
 
 
 
@@ -16806,7 +16806,7 @@ use @g_option_group_set_parse_hooks[None](group: NullablePointer[GOptionGroup] t
     [PointerType size=64]->[Struct size=,fid: f92]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_option_group_set_error_hook[None](group: NullablePointer[GOptionGroup] tag, errorfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_option_group_set_error_hook[None](group: NullablePointer[GOptionGroup] tag, errorfunc: Pointer[None] tag)
 
 
 
@@ -16875,7 +16875,7 @@ use @g_option_group_add_entries[None](group: NullablePointer[GOptionGroup] tag, 
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_option_group_set_translate_func[None](group: NullablePointer[GOptionGroup] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, destroynotify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_option_group_set_translate_func[None](group: NullablePointer[GOptionGroup] tag, func: Pointer[None] tag, data: Pointer[None] tag, destroynotify: Pointer[None] tag)
 
 
 
@@ -17003,7 +17003,7 @@ use @g_spaced_primes_closest[U32](num: U32)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_qsort_with_data[None](pbase: Pointer[None] tag, totalelems: I32, size: U64, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_qsort_with_data[None](pbase: Pointer[None] tag, totalelems: I32, size: U64, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -17042,7 +17042,7 @@ use @g_queue_free[None](queue: NullablePointer[GQueue] tag)
     [PointerType size=64]->[Struct size=192,fid: f96]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_queue_free_full[None](queue: NullablePointer[GQueue] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_queue_free_full[None](queue: NullablePointer[GQueue] tag, freefunc: Pointer[None] tag)
 
 
 
@@ -17095,7 +17095,7 @@ use @g_queue_is_empty[I32](queue: NullablePointer[GQueue] tag)
     [PointerType size=64]->[Struct size=192,fid: f96]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_queue_clear_full[None](queue: NullablePointer[GQueue] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_queue_clear_full[None](queue: NullablePointer[GQueue] tag, freefunc: Pointer[None] tag)
 
 
 
@@ -17149,7 +17149,7 @@ use @g_queue_copy[NullablePointer[GQueue]](queue: NullablePointer[GQueue] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_queue_foreach[None](queue: NullablePointer[GQueue] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_queue_foreach[None](queue: NullablePointer[GQueue] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -17178,7 +17178,7 @@ use @g_queue_find[NullablePointer[GList]](queue: NullablePointer[GQueue] tag, da
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_queue_find_custom[NullablePointer[GList]](queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag)
+use @g_queue_find_custom[NullablePointer[GList]](queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag)
 
 
 
@@ -17193,7 +17193,7 @@ use @g_queue_find_custom[NullablePointer[GList]](queue: NullablePointer[GQueue] 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_queue_sort[None](queue: NullablePointer[GQueue] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_queue_sort[None](queue: NullablePointer[GQueue] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -17434,7 +17434,7 @@ use @g_queue_insert_after_link[None](queue: NullablePointer[GQueue] tag, sibling
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_queue_insert_sorted[None](queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_queue_insert_sorted[None](queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -17894,7 +17894,7 @@ use @g_rc_box_release[None](memblock: Pointer[None] tag)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_rc_box_release_full[None](memblock: Pointer[None] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_rc_box_release_full[None](memblock: Pointer[None] tag, clearfunc: Pointer[None] tag)
 
 
 
@@ -17987,7 +17987,7 @@ use @g_atomic_rc_box_release[None](memblock: Pointer[None] tag)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_atomic_rc_box_release_full[None](memblock: Pointer[None] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_atomic_rc_box_release_full[None](memblock: Pointer[None] tag, clearfunc: Pointer[None] tag)
 
 
 
@@ -18474,7 +18474,7 @@ use @g_regex_match_all_full[I32](regex: NullablePointer[GRegex] tag, string: Poi
     [Enumeration size=32,fid: f101]
     [Enumeration size=32,fid: f101]
 */
-use @g_regex_split_simple[NullablePointer[Pointer[U8]]](pattern: Pointer[U8] tag, string: Pointer[U8] tag, compileoptions: I32, matchoptions: I32)
+use @g_regex_split_simple[Pointer[Pointer[U8]]](pattern: Pointer[U8] tag, string: Pointer[U8] tag, compileoptions: I32, matchoptions: I32)
 
 
 
@@ -18489,7 +18489,7 @@ use @g_regex_split_simple[NullablePointer[Pointer[U8]]](pattern: Pointer[U8] tag
     [PointerType size=64]->[FundamentalType(char) size=8]
     [Enumeration size=32,fid: f101]
 */
-use @g_regex_split[NullablePointer[Pointer[U8]]](regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, matchoptions: I32)
+use @g_regex_split[Pointer[Pointer[U8]]](regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, matchoptions: I32)
 
 
 
@@ -18508,7 +18508,7 @@ use @g_regex_split[NullablePointer[Pointer[U8]]](regex: NullablePointer[GRegex] 
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_regex_split_full[NullablePointer[Pointer[U8]]](regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, maxtokens: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_regex_split_full[Pointer[Pointer[U8]]](regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, maxtokens: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -18566,7 +18566,7 @@ use @g_regex_replace_literal[Pointer[U8]](regex: NullablePointer[GRegex] tag, st
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_regex_replace_eval[Pointer[U8]](regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, eval: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_regex_replace_eval[Pointer[U8]](regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, eval: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -18787,7 +18787,7 @@ use @g_match_info_fetch_named_pos[I32](matchinfo: NullablePointer[GMatchInfo] ta
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f101]
 */
-use @g_match_info_fetch_all[NullablePointer[Pointer[U8]]](matchinfo: NullablePointer[GMatchInfo] tag)
+use @g_match_info_fetch_all[Pointer[Pointer[U8]]](matchinfo: NullablePointer[GMatchInfo] tag)
 
 
 
@@ -19022,7 +19022,7 @@ use @g_scanner_scope_lookup_symbol[Pointer[None]](scanner: NullablePointer[GScan
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_scanner_scope_foreach_symbol[None](scanner: NullablePointer[GScanner] tag, scopeid: U32, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_scanner_scope_foreach_symbol[None](scanner: NullablePointer[GScanner] tag, scopeid: U32, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -19096,7 +19096,7 @@ use @g_scanner_warn[None](scanner: NullablePointer[GScanner] tag, format: Pointe
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_sequence_new[NullablePointer[GSequence]](datadestroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_sequence_new[NullablePointer[GSequence]](datadestroy: Pointer[None] tag)
 
 
 
@@ -19137,7 +19137,7 @@ use @g_sequence_get_length[I32](seq: NullablePointer[GSequence] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_foreach[None](seq: NullablePointer[GSequence] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_sequence_foreach[None](seq: NullablePointer[GSequence] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -19153,7 +19153,7 @@ use @g_sequence_foreach[None](seq: NullablePointer[GSequence] tag, func: Nullabl
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_foreach_range[None](begin: NullablePointer[GSequenceNode] tag, g_end: NullablePointer[GSequenceNode] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_sequence_foreach_range[None](begin: NullablePointer[GSequenceNode] tag, g_end: NullablePointer[GSequenceNode] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -19168,7 +19168,7 @@ use @g_sequence_foreach_range[None](begin: NullablePointer[GSequenceNode] tag, g
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_sort[None](seq: NullablePointer[GSequence] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_sort[None](seq: NullablePointer[GSequence] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19183,7 +19183,7 @@ use @g_sequence_sort[None](seq: NullablePointer[GSequence] tag, cmpfunc: Nullabl
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_sort_iter[None](seq: NullablePointer[GSequence] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_sort_iter[None](seq: NullablePointer[GSequence] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19322,7 +19322,7 @@ use @g_sequence_swap[None](a: NullablePointer[GSequenceNode] tag, b: NullablePoi
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_insert_sorted[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_insert_sorted[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19338,7 +19338,7 @@ use @g_sequence_insert_sorted[NullablePointer[GSequenceNode]](seq: NullablePoint
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_insert_sorted_iter[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_insert_sorted_iter[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19353,7 +19353,7 @@ use @g_sequence_insert_sorted_iter[NullablePointer[GSequenceNode]](seq: Nullable
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_sort_changed[None](iter: NullablePointer[GSequenceNode] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_sort_changed[None](iter: NullablePointer[GSequenceNode] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19368,7 +19368,7 @@ use @g_sequence_sort_changed[None](iter: NullablePointer[GSequenceNode] tag, cmp
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_sort_changed_iter[None](iter: NullablePointer[GSequenceNode] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_sort_changed_iter[None](iter: NullablePointer[GSequenceNode] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19426,7 +19426,7 @@ use @g_sequence_move_range[None](dest: NullablePointer[GSequenceNode] tag, begin
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_search[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_search[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19442,7 +19442,7 @@ use @g_sequence_search[NullablePointer[GSequenceNode]](seq: NullablePointer[GSeq
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_search_iter[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_search_iter[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19458,7 +19458,7 @@ use @g_sequence_search_iter[NullablePointer[GSequenceNode]](seq: NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_lookup[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_lookup[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19474,7 +19474,7 @@ use @g_sequence_lookup[NullablePointer[GSequenceNode]](seq: NullablePointer[GSeq
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_sequence_lookup_iter[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag)
+use @g_sequence_lookup_iter[NullablePointer[GSequenceNode]](seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag)
 
 
 
@@ -19676,7 +19676,7 @@ use @g_shell_unquote[Pointer[U8]](quotedstring: Pointer[U8] tag, g_error: Nullab
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_shell_parse_argv[I32](commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: NullablePointer[NullablePointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_shell_parse_argv[I32](commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: Pointer[Pointer[Pointer[U8]]], g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -19831,7 +19831,7 @@ use @g_spawn_exit_error_quark[U32]()
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_spawn_async[I32](workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_spawn_async[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -19854,7 +19854,7 @@ use @g_spawn_async[I32](workingdirectory: Pointer[U8] tag, argv: NullablePointer
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_spawn_async_with_pipes[I32](workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, standardinput: Pointer[I32] tag, standardoutput: Pointer[I32] tag, standarderror: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_spawn_async_with_pipes[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, standardinput: Pointer[I32] tag, standardoutput: Pointer[I32] tag, standarderror: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -19883,7 +19883,7 @@ use @g_spawn_async_with_pipes[I32](workingdirectory: Pointer[U8] tag, argv: Null
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_spawn_async_with_pipes_and_fds[I32](workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, sourcefds: Pointer[I32] tag, targetfds: Pointer[I32] tag, nfds: U64, childpidout: Pointer[I32] tag, stdinpipeout: Pointer[I32] tag, stdoutpipeout: Pointer[I32] tag, stderrpipeout: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_spawn_async_with_pipes_and_fds[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, sourcefds: Pointer[I32] tag, targetfds: Pointer[I32] tag, nfds: U64, childpidout: Pointer[I32] tag, stdinpipeout: Pointer[I32] tag, stdoutpipeout: Pointer[I32] tag, stderrpipeout: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -19906,7 +19906,7 @@ use @g_spawn_async_with_pipes_and_fds[I32](workingdirectory: Pointer[U8] tag, ar
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_spawn_async_with_fds[I32](workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_spawn_async_with_fds[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -19928,7 +19928,7 @@ use @g_spawn_async_with_fds[I32](workingdirectory: Pointer[U8] tag, argv: Nullab
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_spawn_sync[I32](workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, standardoutput: NullablePointer[Pointer[U8]] tag, standarderror: NullablePointer[Pointer[U8]] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_spawn_sync[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -19945,7 +19945,7 @@ use @g_spawn_sync[I32](workingdirectory: Pointer[U8] tag, argv: NullablePointer[
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_spawn_command_line_sync[I32](commandline: Pointer[U8] tag, standardoutput: NullablePointer[Pointer[U8]] tag, standarderror: NullablePointer[Pointer[U8]] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_spawn_command_line_sync[I32](commandline: Pointer[U8] tag, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -20223,7 +20223,7 @@ use @g_str_has_prefix[I32](str: Pointer[U8] tag, prefix: Pointer[U8] tag)
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_strtod[F64](nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag)
+use @g_strtod[F64](nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag)
 
 
 
@@ -20237,7 +20237,7 @@ use @g_strtod[F64](nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] t
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_ascii_strtod[F64](nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag)
+use @g_ascii_strtod[F64](nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag)
 
 
 
@@ -20252,7 +20252,7 @@ use @g_ascii_strtod[F64](nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(unsigned int) size=32]
 */
-use @g_ascii_strtoull[U64](nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, base: U32)
+use @g_ascii_strtoull[U64](nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag, base: U32)
 
 
 
@@ -20267,7 +20267,7 @@ use @g_ascii_strtoull[U64](nptr: Pointer[U8] tag, endptr: NullablePointer[Pointe
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(unsigned int) size=32]
 */
-use @g_ascii_strtoll[I64](nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, base: U32)
+use @g_ascii_strtoll[I64](nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag, base: U32)
 
 
 
@@ -20613,7 +20613,7 @@ use @g_memdup2[Pointer[None]](mem: Pointer[None] tag, bytesize: U64)
     [PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-use @g_strsplit[NullablePointer[Pointer[U8]]](string: Pointer[U8] tag, delimiter: Pointer[U8] tag, maxtokens: I32)
+use @g_strsplit[Pointer[Pointer[U8]]](string: Pointer[U8] tag, delimiter: Pointer[U8] tag, maxtokens: I32)
 
 
 
@@ -20628,7 +20628,7 @@ use @g_strsplit[NullablePointer[Pointer[U8]]](string: Pointer[U8] tag, delimiter
     [PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-use @g_strsplit_set[NullablePointer[Pointer[U8]]](string: Pointer[U8] tag, delimiters: Pointer[U8] tag, maxtokens: I32)
+use @g_strsplit_set[Pointer[Pointer[U8]]](string: Pointer[U8] tag, delimiters: Pointer[U8] tag, maxtokens: I32)
 
 
 
@@ -20642,7 +20642,7 @@ use @g_strsplit_set[NullablePointer[Pointer[U8]]](string: Pointer[U8] tag, delim
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_strjoinv[Pointer[U8]](separator: Pointer[U8] tag, strarray: NullablePointer[Pointer[U8]] tag)
+use @g_strjoinv[Pointer[U8]](separator: Pointer[U8] tag, strarray: Pointer[Pointer[U8]] tag)
 
 
 
@@ -20655,7 +20655,7 @@ use @g_strjoinv[Pointer[U8]](separator: Pointer[U8] tag, strarray: NullablePoint
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_strfreev[None](strarray: NullablePointer[Pointer[U8]] tag)
+use @g_strfreev[None](strarray: Pointer[Pointer[U8]] tag)
 
 
 
@@ -20668,7 +20668,7 @@ use @g_strfreev[None](strarray: NullablePointer[Pointer[U8]] tag)
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_strdupv[NullablePointer[Pointer[U8]]](strarray: NullablePointer[Pointer[U8]] tag)
+use @g_strdupv[Pointer[Pointer[U8]]](strarray: Pointer[Pointer[U8]] tag)
 
 
 
@@ -20681,7 +20681,7 @@ use @g_strdupv[NullablePointer[Pointer[U8]]](strarray: NullablePointer[Pointer[U
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_strv_length[U32](strarray: NullablePointer[Pointer[U8]] tag)
+use @g_strv_length[U32](strarray: Pointer[Pointer[U8]] tag)
 
 
 
@@ -20724,7 +20724,7 @@ use @g_str_to_ascii[Pointer[U8]](str: Pointer[U8] tag, fromlocale: Pointer[U8] t
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_str_tokenize_and_fold[NullablePointer[Pointer[U8]]](string: Pointer[U8] tag, translitlocale: Pointer[U8] tag, asciialternates: NullablePointer[NullablePointer[Pointer[U8]]] tag)
+use @g_str_tokenize_and_fold[Pointer[Pointer[U8]]](string: Pointer[U8] tag, translitlocale: Pointer[U8] tag, asciialternates: Pointer[Pointer[Pointer[U8]]])
 
 
 
@@ -20753,7 +20753,7 @@ use @g_str_match_string[I32](searchterm: Pointer[U8] tag, potentialhit: Pointer[
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_strv_contains[I32](strv: NullablePointer[Pointer[U8]] tag, str: Pointer[U8] tag)
+use @g_strv_contains[I32](strv: Pointer[Pointer[U8]] tag, str: Pointer[U8] tag)
 
 
 
@@ -20767,7 +20767,7 @@ use @g_strv_contains[I32](strv: NullablePointer[Pointer[U8]] tag, str: Pointer[U
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_strv_equal[I32](strv1: NullablePointer[Pointer[U8]] tag, strv2: NullablePointer[Pointer[U8]] tag)
+use @g_strv_equal[I32](strv1: Pointer[Pointer[U8]] tag, strv2: Pointer[Pointer[U8]] tag)
 
 
 
@@ -20962,7 +20962,7 @@ use @g_strv_builder_add[None](builder: NullablePointer[GStrvBuilder] tag, value:
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f111]
 */
-use @g_strv_builder_end[NullablePointer[Pointer[U8]]](builder: NullablePointer[GStrvBuilder] tag)
+use @g_strv_builder_end[Pointer[Pointer[U8]]](builder: NullablePointer[GStrvBuilder] tag)
 
 
 
@@ -21018,7 +21018,7 @@ use @g_test_maximized_result[None](maximizedquantity: F64, format: Pointer[U8] t
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_test_init[None](argc: Pointer[I32] tag, argv: NullablePointer[NullablePointer[Pointer[U8]]] tag, ...)
+use @g_test_init[None](argc: Pointer[I32] tag, argv: Pointer[Pointer[Pointer[U8]]], ...)
 
 
 
@@ -21056,7 +21056,7 @@ use @g_test_run[I32]()
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_test_add_func[None](testpath: Pointer[U8] tag, testfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_test_add_func[None](testpath: Pointer[U8] tag, testfunc: Pointer[None] tag)
 
 
 
@@ -21071,7 +21071,7 @@ use @g_test_add_func[None](testpath: Pointer[U8] tag, testfunc: NullablePointer[
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_test_add_data_func[None](testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_test_add_data_func[None](testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: Pointer[None] tag)
 
 
 
@@ -21087,7 +21087,7 @@ use @g_test_add_data_func[None](testpath: Pointer[U8] tag, testdata: Pointer[Non
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_test_add_data_func_full[None](testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: NullablePointer[FUNCTIONTYPE] tag, datafreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_test_add_data_func_full[None](testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: Pointer[None] tag, datafreefunc: Pointer[None] tag)
 
 
 
@@ -21276,7 +21276,7 @@ use @g_test_queue_free[None](gfreepointer: Pointer[None] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_test_queue_destroy[None](destroyfunc: NullablePointer[FUNCTIONTYPE] tag, destroydata: Pointer[None] tag)
+use @g_test_queue_destroy[None](destroyfunc: Pointer[None] tag, destroydata: Pointer[None] tag)
 
 
 
@@ -21399,7 +21399,7 @@ use @g_test_rand_double_range[F64](rangestart: F64, rangeend: F64)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_test_create_case[NullablePointer[GTestCase]](testname: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: NullablePointer[FUNCTIONTYPE] tag, datatest: NullablePointer[FUNCTIONTYPE] tag, datateardown: NullablePointer[FUNCTIONTYPE] tag)
+use @g_test_create_case[NullablePointer[GTestCase]](testname: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: Pointer[None] tag, datatest: Pointer[None] tag, datateardown: Pointer[None] tag)
 
 
 
@@ -21557,7 +21557,7 @@ use @g_assertion_message_cmpstr[None](domain: Pointer[U8] tag, file: Pointer[U8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-use @g_assertion_message_cmpstrv[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, arg1: NullablePointer[Pointer[U8]] tag, arg2: NullablePointer[Pointer[U8]] tag, firstwrongidx: U64)
+use @g_assertion_message_cmpstrv[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, arg1: Pointer[Pointer[U8]] tag, arg2: Pointer[Pointer[U8]] tag, firstwrongidx: U64)
 
 
 
@@ -21616,7 +21616,7 @@ use @g_assertion_message_error[None](domain: Pointer[U8] tag, file: Pointer[U8] 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_test_add_vtable[None](testpath: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: NullablePointer[FUNCTIONTYPE] tag, datatest: NullablePointer[FUNCTIONTYPE] tag, datateardown: NullablePointer[FUNCTIONTYPE] tag)
+use @g_test_add_vtable[None](testpath: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: Pointer[None] tag, datatest: Pointer[None] tag, datateardown: Pointer[None] tag)
 
 
 
@@ -21709,7 +21709,7 @@ use @g_test_log_msg_free[None](tmsg: Pointer[None])
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_test_log_set_fatal_handler[None](logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_test_log_set_fatal_handler[None](logfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -21798,7 +21798,7 @@ use @g_test_get_filename[Pointer[U8]](filetype: I32, firstpath: Pointer[U8] tag,
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_thread_pool_new[NullablePointer[GThreadPool]](func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, maxthreads: I32, exclusive: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_thread_pool_new[NullablePointer[GThreadPool]](func: Pointer[None] tag, userdata: Pointer[None] tag, maxthreads: I32, exclusive: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -21856,7 +21856,7 @@ use @g_thread_pool_unprocessed[U32](pool: NullablePointer[GThreadPool] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_thread_pool_set_sort_function[None](pool: NullablePointer[GThreadPool] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_thread_pool_set_sort_function[None](pool: NullablePointer[GThreadPool] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -22209,7 +22209,7 @@ use @g_trash_stack_height[U32](stackp: NullablePointer[NullablePointer[GTrashSta
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_tree_new[NullablePointer[GTree]](keycomparefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_tree_new[NullablePointer[GTree]](keycomparefunc: Pointer[None] tag)
 
 
 
@@ -22223,7 +22223,7 @@ use @g_tree_new[NullablePointer[GTree]](keycomparefunc: NullablePointer[FUNCTION
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tree_new_with_data[NullablePointer[GTree]](keycomparefunc: NullablePointer[FUNCTIONTYPE] tag, keycomparedata: Pointer[None] tag)
+use @g_tree_new_with_data[NullablePointer[GTree]](keycomparefunc: Pointer[None] tag, keycomparedata: Pointer[None] tag)
 
 
 
@@ -22239,7 +22239,7 @@ use @g_tree_new_with_data[NullablePointer[GTree]](keycomparefunc: NullablePointe
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_tree_new_full[NullablePointer[GTree]](keycomparefunc: NullablePointer[FUNCTIONTYPE] tag, keycomparedata: Pointer[None] tag, keydestroyfunc: NullablePointer[FUNCTIONTYPE] tag, valuedestroyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_tree_new_full[NullablePointer[GTree]](keycomparefunc: Pointer[None] tag, keycomparedata: Pointer[None] tag, keydestroyfunc: Pointer[None] tag, valuedestroyfunc: Pointer[None] tag)
 
 
 
@@ -22503,7 +22503,7 @@ use @g_tree_lookup_extended[I32](tree: NullablePointer[GTree] tag, lookupkey: Po
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tree_foreach[None](tree: NullablePointer[GTree] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tree_foreach[None](tree: NullablePointer[GTree] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -22518,7 +22518,7 @@ use @g_tree_foreach[None](tree: NullablePointer[GTree] tag, func: NullablePointe
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tree_foreach_node[None](tree: NullablePointer[GTree] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tree_foreach_node[None](tree: NullablePointer[GTree] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -22534,7 +22534,7 @@ use @g_tree_foreach_node[None](tree: NullablePointer[GTree] tag, func: NullableP
     [Enumeration size=32,fid: f74]
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tree_traverse[None](tree: NullablePointer[GTree] tag, traversefunc: NullablePointer[FUNCTIONTYPE] tag, traversetype: I32, userdata: Pointer[None] tag)
+use @g_tree_traverse[None](tree: NullablePointer[GTree] tag, traversefunc: Pointer[None] tag, traversetype: I32, userdata: Pointer[None] tag)
 
 
 
@@ -22549,7 +22549,7 @@ use @g_tree_traverse[None](tree: NullablePointer[GTree] tag, traversefunc: Nulla
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tree_search_node[NullablePointer[GTreeNode]](tree: NullablePointer[GTree] tag, searchfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tree_search_node[NullablePointer[GTreeNode]](tree: NullablePointer[GTree] tag, searchfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -22564,7 +22564,7 @@ use @g_tree_search_node[NullablePointer[GTreeNode]](tree: NullablePointer[GTree]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tree_search[Pointer[None]](tree: NullablePointer[GTree] tag, searchfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tree_search[Pointer[None]](tree: NullablePointer[GTree] tag, searchfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -22666,7 +22666,7 @@ use @g_uri_unref[None](uri: NullablePointer[GUri] tag)
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_uri_split[I32](uriref: Pointer[U8] tag, flags: I32, scheme: NullablePointer[Pointer[U8]] tag, userinfo: NullablePointer[Pointer[U8]] tag, host: NullablePointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: NullablePointer[Pointer[U8]] tag, query: NullablePointer[Pointer[U8]] tag, fragment: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_uri_split[I32](uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, userinfo: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -22690,7 +22690,7 @@ use @g_uri_split[I32](uriref: Pointer[U8] tag, flags: I32, scheme: NullablePoint
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_uri_split_with_user[I32](uriref: Pointer[U8] tag, flags: I32, scheme: NullablePointer[Pointer[U8]] tag, user: NullablePointer[Pointer[U8]] tag, password: NullablePointer[Pointer[U8]] tag, authparams: NullablePointer[Pointer[U8]] tag, host: NullablePointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: NullablePointer[Pointer[U8]] tag, query: NullablePointer[Pointer[U8]] tag, fragment: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_uri_split_with_user[I32](uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, user: Pointer[Pointer[U8]] tag, password: Pointer[Pointer[U8]] tag, authparams: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -22708,7 +22708,7 @@ use @g_uri_split_with_user[I32](uriref: Pointer[U8] tag, flags: I32, scheme: Nul
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_uri_split_network[I32](uristring: Pointer[U8] tag, flags: I32, scheme: NullablePointer[Pointer[U8]] tag, host: NullablePointer[Pointer[U8]] tag, port: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_uri_split_network[I32](uristring: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -23074,7 +23074,7 @@ use @g_uri_params_iter_init[None](iter: NullablePointer[GUriParamsIter] tag, par
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_uri_params_iter_next[I32](iter: NullablePointer[GUriParamsIter] tag, attribute: NullablePointer[Pointer[U8]] tag, value: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_uri_params_iter_next[I32](iter: NullablePointer[GUriParamsIter] tag, attribute: Pointer[Pointer[U8]] tag, value: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -26516,7 +26516,7 @@ use @glib_queueautoptr_cleanup_GVariantType[None](q: NullablePointer[NullablePoi
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @glib_auto_cleanup_GStrv[None](ptr: NullablePointer[NullablePointer[Pointer[U8]]] tag)
+use @glib_auto_cleanup_GStrv[None](ptr: Pointer[Pointer[Pointer[U8]]])
 
 
 
@@ -26542,7 +26542,7 @@ use @glib_autoptr_clear_GRefString[None](ptr: Pointer[U8] tag)
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @glib_autoptr_cleanup_GRefString[None](ptr: NullablePointer[Pointer[U8]] tag)
+use @glib_autoptr_cleanup_GRefString[None](ptr: Pointer[Pointer[U8]] tag)
 
 
 
@@ -27014,7 +27014,7 @@ use @g_type_register_static[U64](parenttype: U64, typename: Pointer[U8] tag, inf
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [Enumeration size=32,fid: f133]
 */
-use @g_type_register_static_simple[U64](parenttype: U64, typename: Pointer[U8] tag, classsize: U32, classinit: NullablePointer[FUNCTIONTYPE] tag, instancesize: U32, instanceinit: NullablePointer[FUNCTIONTYPE] tag, flags: I32)
+use @g_type_register_static_simple[U64](parenttype: U64, typename: Pointer[U8] tag, classsize: U32, classinit: Pointer[None] tag, instancesize: U32, instanceinit: Pointer[None] tag, flags: I32)
 
 
 
@@ -27332,7 +27332,7 @@ use @g_type_free_instance[None](instance: NullablePointer[GTypeInstance] tag)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_type_add_class_cache_func[None](cachedata: Pointer[None] tag, cachefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_type_add_class_cache_func[None](cachedata: Pointer[None] tag, cachefunc: Pointer[None] tag)
 
 
 
@@ -27346,7 +27346,7 @@ use @g_type_add_class_cache_func[None](cachedata: Pointer[None] tag, cachefunc: 
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_type_remove_class_cache_func[None](cachedata: Pointer[None] tag, cachefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_type_remove_class_cache_func[None](cachedata: Pointer[None] tag, cachefunc: Pointer[None] tag)
 
 
 
@@ -27373,7 +27373,7 @@ use @g_type_class_unref_uncached[None](gclass: Pointer[None] tag)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_type_add_interface_check[None](checkdata: Pointer[None] tag, checkfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_type_add_interface_check[None](checkdata: Pointer[None] tag, checkfunc: Pointer[None] tag)
 
 
 
@@ -27387,7 +27387,7 @@ use @g_type_add_interface_check[None](checkdata: Pointer[None] tag, checkfunc: N
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_type_remove_interface_check[None](checkdata: Pointer[None] tag, checkfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_type_remove_interface_check[None](checkdata: Pointer[None] tag, checkfunc: Pointer[None] tag)
 
 
 
@@ -27728,7 +27728,7 @@ use @g_value_transform[I32](srcvalue: NullablePointer[GValue] tag, destvalue: Nu
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_value_register_transform_func[None](srctype: U64, desttype: U64, transformfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_value_register_transform_func[None](srctype: U64, desttype: U64, transformfunc: Pointer[None] tag)
 
 
 
@@ -27825,7 +27825,7 @@ use @g_param_spec_set_qdata[None](pspec: NullablePointer[GParamSpec] tag, quark:
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_param_spec_set_qdata_full[None](pspec: NullablePointer[GParamSpec] tag, quark: U32, data: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_param_spec_set_qdata_full[None](pspec: NullablePointer[GParamSpec] tag, quark: U32, data: Pointer[None] tag, destroy: Pointer[None] tag)
 
 
 
@@ -28219,7 +28219,7 @@ use @g_param_spec_pool_list[NullablePointer[NullablePointer[GParamSpec]]](pool: 
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_cclosure_new[NullablePointer[GClosure]](callbackfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroydata: NullablePointer[FUNCTIONTYPE] tag)
+use @g_cclosure_new[NullablePointer[GClosure]](callbackfunc: Pointer[None] tag, userdata: Pointer[None] tag, destroydata: Pointer[None] tag)
 
 
 
@@ -28234,7 +28234,7 @@ use @g_cclosure_new[NullablePointer[GClosure]](callbackfunc: NullablePointer[FUN
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_cclosure_new_swap[NullablePointer[GClosure]](callbackfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroydata: NullablePointer[FUNCTIONTYPE] tag)
+use @g_cclosure_new_swap[NullablePointer[GClosure]](callbackfunc: Pointer[None] tag, userdata: Pointer[None] tag, destroydata: Pointer[None] tag)
 
 
 
@@ -28316,7 +28316,7 @@ use @g_closure_new_simple[NullablePointer[GClosure]](sizeofclosure: U32, data: P
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_closure_add_finalize_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_closure_add_finalize_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag)
 
 
 
@@ -28331,7 +28331,7 @@ use @g_closure_add_finalize_notifier[None](closure: NullablePointer[GClosure] ta
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_closure_remove_finalize_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_closure_remove_finalize_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag)
 
 
 
@@ -28346,7 +28346,7 @@ use @g_closure_remove_finalize_notifier[None](closure: NullablePointer[GClosure]
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_closure_add_invalidate_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_closure_add_invalidate_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag)
 
 
 
@@ -28361,7 +28361,7 @@ use @g_closure_add_invalidate_notifier[None](closure: NullablePointer[GClosure] 
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_closure_remove_invalidate_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_closure_remove_invalidate_notifier[None](closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag)
 
 
 
@@ -28378,7 +28378,7 @@ use @g_closure_remove_invalidate_notifier[None](closure: NullablePointer[GClosur
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_closure_add_marshal_guards[None](closure: NullablePointer[GClosure] tag, premarshaldata: Pointer[None] tag, premarshalnotify: NullablePointer[FUNCTIONTYPE] tag, postmarshaldata: Pointer[None] tag, postmarshalnotify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_closure_add_marshal_guards[None](closure: NullablePointer[GClosure] tag, premarshaldata: Pointer[None] tag, premarshalnotify: Pointer[None] tag, postmarshaldata: Pointer[None] tag, postmarshalnotify: Pointer[None] tag)
 
 
 
@@ -28392,7 +28392,7 @@ use @g_closure_add_marshal_guards[None](closure: NullablePointer[GClosure] tag, 
     [PointerType size=64]->[Struct size=256,fid: f136]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_closure_set_marshal[None](closure: NullablePointer[GClosure] tag, marshal: NullablePointer[FUNCTIONTYPE] tag)
+use @g_closure_set_marshal[None](closure: NullablePointer[GClosure] tag, marshal: Pointer[None] tag)
 
 
 
@@ -28407,7 +28407,7 @@ use @g_closure_set_marshal[None](closure: NullablePointer[GClosure] tag, marshal
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_closure_set_meta_marshal[None](closure: NullablePointer[GClosure] tag, marshaldata: Pointer[None] tag, metamarshal: NullablePointer[FUNCTIONTYPE] tag)
+use @g_closure_set_meta_marshal[None](closure: NullablePointer[GClosure] tag, marshaldata: Pointer[None] tag, metamarshal: Pointer[None] tag)
 
 
 
@@ -29310,7 +29310,7 @@ use @g_cclosure_marshal_generic_va[None](closure: NullablePointer[GClosure] tag,
     [FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-use @g_signal_newv[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, paramtypes: Pointer[U64] tag)
+use @g_signal_newv[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, paramtypes: Pointer[U64] tag)
 
 
 
@@ -29332,7 +29332,7 @@ use @g_signal_newv[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I3
     [FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[Struct size=192,fid: f0]
 */
-use @g_signal_new_valist[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, args: NullablePointer[Valisttag] tag)
+use @g_signal_new_valist[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, args: NullablePointer[Valisttag] tag)
 
 
 
@@ -29353,7 +29353,7 @@ use @g_signal_new_valist[U32](signalname: Pointer[U8] tag, itype: U64, signalfla
     [FundamentalType(long unsigned int) size=64]
     [FundamentalType(unsigned int) size=32]
 */
-use @g_signal_new[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classoffset: U32, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, ...)
+use @g_signal_new[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classoffset: U32, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, ...)
 
 
 
@@ -29374,7 +29374,7 @@ use @g_signal_new[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32
     [FundamentalType(long unsigned int) size=64]
     [FundamentalType(unsigned int) size=32]
 */
-use @g_signal_new_class_handler[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classhandler: NullablePointer[FUNCTIONTYPE] tag, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, ...)
+use @g_signal_new_class_handler[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classhandler: Pointer[None] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, ...)
 
 
 
@@ -29389,7 +29389,7 @@ use @g_signal_new_class_handler[U32](signalname: Pointer[U8] tag, itype: U64, si
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_signal_set_va_marshaller[None](signalid: U32, instancetype: U64, vamarshaller: NullablePointer[FUNCTIONTYPE] tag)
+use @g_signal_set_va_marshaller[None](signalid: U32, instancetype: U64, vamarshaller: Pointer[None] tag)
 
 
 
@@ -29594,7 +29594,7 @@ use @g_signal_stop_emission_by_name[None](instance: Pointer[None] tag, detaileds
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_signal_add_emission_hook[U64](signalid: U32, detail: U32, hookfunc: NullablePointer[FUNCTIONTYPE] tag, hookdata: Pointer[None] tag, datadestroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_signal_add_emission_hook[U64](signalid: U32, detail: U32, hookfunc: Pointer[None] tag, hookdata: Pointer[None] tag, datadestroy: Pointer[None] tag)
 
 
 
@@ -29675,7 +29675,7 @@ use @g_signal_connect_closure[U64](instance: Pointer[None] tag, detailedsignal: 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [Enumeration size=32,fid: f138]
 */
-use @g_signal_connect_data[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, destroydata: NullablePointer[FUNCTIONTYPE] tag, connectflags: I32)
+use @g_signal_connect_data[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32)
 
 
 
@@ -29851,7 +29851,7 @@ use @g_signal_override_class_closure[None](signalid: U32, instancetype: U64, cla
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_signal_override_class_handler[None](signalname: Pointer[U8] tag, instancetype: U64, classhandler: NullablePointer[FUNCTIONTYPE] tag)
+use @g_signal_override_class_handler[None](signalname: Pointer[U8] tag, instancetype: U64, classhandler: Pointer[None] tag)
 
 
 
@@ -30433,7 +30433,7 @@ use @g_value_dup_boxed[Pointer[None]](value: NullablePointer[GValue] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_boxed_type_register_static[U64](name: Pointer[U8] tag, boxedcopy: NullablePointer[FUNCTIONTYPE] tag, boxedfree: NullablePointer[FUNCTIONTYPE] tag)
+use @g_boxed_type_register_static[U64](name: Pointer[U8] tag, boxedcopy: Pointer[None] tag, boxedfree: Pointer[None] tag)
 
 
 
@@ -30626,7 +30626,7 @@ use @g_object_new[Pointer[None]](objecttype: U64, firstpropertyname: Pointer[U8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[Struct size=192,fid: f134]
 */
-use @g_object_new_with_properties[NullablePointer[GObject]](objecttype: U64, nproperties: U32, names: NullablePointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
+use @g_object_new_with_properties[NullablePointer[GObject]](objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
 
 
 
@@ -30728,7 +30728,7 @@ use @g_object_disconnect[None](g_object: Pointer[None] tag, signalspec: Pointer[
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[Struct size=192,fid: f134]
 */
-use @g_object_setv[None](g_object: NullablePointer[GObject] tag, nproperties: U32, names: NullablePointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
+use @g_object_setv[None](g_object: NullablePointer[GObject] tag, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
 
 
 
@@ -30759,7 +30759,7 @@ use @g_object_set_valist[None](g_object: NullablePointer[GObject] tag, firstprop
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[Struct size=192,fid: f134]
 */
-use @g_object_getv[None](g_object: NullablePointer[GObject] tag, nproperties: U32, names: NullablePointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
+use @g_object_getv[None](g_object: NullablePointer[GObject] tag, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
 
 
 
@@ -30925,7 +30925,7 @@ use @g_object_unref[None](g_object: Pointer[None] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_object_weak_ref[None](g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_object_weak_ref[None](g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -30940,7 +30940,7 @@ use @g_object_weak_ref[None](g_object: NullablePointer[GObject] tag, notify: Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_object_weak_unref[None](g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_object_weak_unref[None](g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -30983,7 +30983,7 @@ use @g_object_remove_weak_pointer[None](g_object: NullablePointer[GObject] tag, 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_object_add_toggle_ref[None](g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_object_add_toggle_ref[None](g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -30998,7 +30998,7 @@ use @g_object_add_toggle_ref[None](g_object: NullablePointer[GObject] tag, notif
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_object_remove_toggle_ref[None](g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag)
+use @g_object_remove_toggle_ref[None](g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag)
 
 
 
@@ -31043,7 +31043,7 @@ use @g_object_set_qdata[None](g_object: NullablePointer[GObject] tag, quark: U32
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_object_set_qdata_full[None](g_object: NullablePointer[GObject] tag, quark: U32, data: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_object_set_qdata_full[None](g_object: NullablePointer[GObject] tag, quark: U32, data: Pointer[None] tag, destroy: Pointer[None] tag)
 
 
 
@@ -31073,7 +31073,7 @@ use @g_object_steal_qdata[Pointer[None]](g_object: NullablePointer[GObject] tag,
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_object_dup_qdata[Pointer[None]](g_object: NullablePointer[GObject] tag, quark: U32, dupfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_object_dup_qdata[Pointer[None]](g_object: NullablePointer[GObject] tag, quark: U32, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -31091,7 +31091,7 @@ use @g_object_dup_qdata[Pointer[None]](g_object: NullablePointer[GObject] tag, q
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_object_replace_qdata[I32](g_object: NullablePointer[GObject] tag, quark: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag, olddestroy: NullablePointer[NullablePointer[FUNCTIONTYPE]] tag)
+use @g_object_replace_qdata[I32](g_object: NullablePointer[GObject] tag, quark: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag)
 
 
 
@@ -31136,7 +31136,7 @@ use @g_object_set_data[None](g_object: NullablePointer[GObject] tag, key: Pointe
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_object_set_data_full[None](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_object_set_data_full[None](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: Pointer[None] tag, destroy: Pointer[None] tag)
 
 
 
@@ -31166,7 +31166,7 @@ use @g_object_steal_data[Pointer[None]](g_object: NullablePointer[GObject] tag, 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_object_dup_data[Pointer[None]](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, dupfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_object_dup_data[Pointer[None]](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -31184,7 +31184,7 @@ use @g_object_dup_data[Pointer[None]](g_object: NullablePointer[GObject] tag, ke
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_object_replace_data[I32](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag, olddestroy: NullablePointer[NullablePointer[FUNCTIONTYPE]] tag)
+use @g_object_replace_data[I32](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag)
 
 
 
@@ -31212,7 +31212,7 @@ use @g_object_watch_closure[None](g_object: NullablePointer[GObject] tag, closur
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[Struct size=192,fid: f141]
 */
-use @g_cclosure_new_object[NullablePointer[GClosure]](callbackfunc: NullablePointer[FUNCTIONTYPE] tag, g_object: NullablePointer[GObject] tag)
+use @g_cclosure_new_object[NullablePointer[GClosure]](callbackfunc: Pointer[None] tag, g_object: NullablePointer[GObject] tag)
 
 
 
@@ -31226,7 +31226,7 @@ use @g_cclosure_new_object[NullablePointer[GClosure]](callbackfunc: NullablePoin
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[Struct size=192,fid: f141]
 */
-use @g_cclosure_new_object_swap[NullablePointer[GClosure]](callbackfunc: NullablePointer[FUNCTIONTYPE] tag, g_object: NullablePointer[GObject] tag)
+use @g_cclosure_new_object_swap[NullablePointer[GClosure]](callbackfunc: Pointer[None] tag, g_object: NullablePointer[GObject] tag)
 
 
 
@@ -31297,7 +31297,7 @@ use @g_value_dup_object[Pointer[None]](value: NullablePointer[GValue] tag)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [Enumeration size=32,fid: f138]
 */
-use @g_signal_connect_object[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: NullablePointer[FUNCTIONTYPE] tag, gobject: Pointer[None] tag, connectflags: I32)
+use @g_signal_connect_object[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, gobject: Pointer[None] tag, connectflags: I32)
 
 
 
@@ -31652,7 +31652,7 @@ use @g_object_bind_property[NullablePointer[GBinding]](source: Pointer[None] tag
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_object_bind_property_full[NullablePointer[GBinding]](source: Pointer[None] tag, sourceproperty: Pointer[U8] tag, target: Pointer[None] tag, targetproperty: Pointer[U8] tag, flags: I32, transformto: NullablePointer[FUNCTIONTYPE] tag, transformfrom: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_object_bind_property_full[NullablePointer[GBinding]](source: Pointer[None] tag, sourceproperty: Pointer[U8] tag, target: Pointer[None] tag, targetproperty: Pointer[U8] tag, flags: I32, transformto: Pointer[None] tag, transformfrom: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -32766,7 +32766,7 @@ use @g_value_array_remove[NullablePointer[GValueArray]](valuearray: NullablePoin
     [PointerType size=64]->[Struct size=192,fid: f149]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_value_array_sort[NullablePointer[GValueArray]](valuearray: NullablePointer[GValueArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_value_array_sort[NullablePointer[GValueArray]](valuearray: NullablePointer[GValueArray] tag, comparefunc: Pointer[None] tag)
 
 
 
@@ -32781,7 +32781,7 @@ use @g_value_array_sort[NullablePointer[GValueArray]](valuearray: NullablePointe
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_value_array_sort_with_data[NullablePointer[GValueArray]](valuearray: NullablePointer[GValueArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_value_array_sort_with_data[NullablePointer[GValueArray]](valuearray: NullablePointer[GValueArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -34037,7 +34037,7 @@ use @g_app_info_launch_uris[I32](appinfo: NullablePointer[GAppInfo] tag, uris: N
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_app_info_launch_uris_async[None](appinfo: NullablePointer[GAppInfo] tag, uris: NullablePointer[GList] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_app_info_launch_uris_async[None](appinfo: NullablePointer[GAppInfo] tag, uris: NullablePointer[GList] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -34151,7 +34151,7 @@ use @g_app_info_remove_supports_type[I32](appinfo: NullablePointer[GAppInfo] tag
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-use @g_app_info_get_supported_types[NullablePointer[Pointer[U8]]](appinfo: NullablePointer[GAppInfo] tag)
+use @g_app_info_get_supported_types[Pointer[Pointer[U8]]](appinfo: NullablePointer[GAppInfo] tag)
 
 
 
@@ -34315,7 +34315,7 @@ use @g_app_info_launch_default_for_uri[I32](uri: Pointer[U8] tag, context: Nulla
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_app_info_launch_default_for_uri_async[None](uri: Pointer[U8] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_app_info_launch_default_for_uri_async[None](uri: Pointer[U8] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -34395,7 +34395,7 @@ use @g_app_launch_context_unsetenv[None](context: NullablePointer[GAppLaunchCont
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f156]
 */
-use @g_app_launch_context_get_environment[NullablePointer[Pointer[U8]]](context: NullablePointer[GAppLaunchContext] tag)
+use @g_app_launch_context_get_environment[Pointer[Pointer[U8]]](context: NullablePointer[GAppLaunchContext] tag)
 
 
 
@@ -34606,7 +34606,7 @@ use @g_buffered_input_stream_fill[I64](stream: NullablePointer[GBufferedInputStr
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_buffered_input_stream_fill_async[None](stream: NullablePointer[GBufferedInputStream] tag, count: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_buffered_input_stream_fill_async[None](stream: NullablePointer[GBufferedInputStream] tag, count: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -34900,7 +34900,7 @@ use @g_cancellable_reset[None](cancellable: NullablePointer[GCancellable] tag)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_cancellable_connect[U64](cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, datadestroyfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_cancellable_connect[U64](cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, data: Pointer[None] tag, datadestroyfunc: Pointer[None] tag)
 
 
 
@@ -35238,7 +35238,7 @@ use @g_data_input_stream_read_line_utf8[Pointer[U8]](stream: NullablePointer[GDa
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_data_input_stream_read_line_async[None](stream: NullablePointer[GDataInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_data_input_stream_read_line_async[None](stream: NullablePointer[GDataInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -35305,7 +35305,7 @@ use @g_data_input_stream_read_until[Pointer[U8]](stream: NullablePointer[GDataIn
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_data_input_stream_read_until_async[None](stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_data_input_stream_read_until_async[None](stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -35358,7 +35358,7 @@ use @g_data_input_stream_read_upto[Pointer[U8]](stream: NullablePointer[GDataInp
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_data_input_stream_read_upto_async[None](stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, stopcharslen: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_data_input_stream_read_upto_async[None](stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, stopcharslen: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -35843,7 +35843,7 @@ use @g_application_open[None](application: NullablePointer[GApplication] tag, fi
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_application_run[I32](application: NullablePointer[GApplication] tag, argc: I32, argv: NullablePointer[Pointer[U8]] tag)
+use @g_application_run[I32](application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8]] tag)
 
 
 
@@ -36005,7 +36005,7 @@ use @g_application_command_line_get_type[U64]()
     [PointerType size=64]->[Struct size=256,fid: f166]
     [PointerType size=64]->[FundamentalType(int) size=32]
 */
-use @g_application_command_line_get_arguments[NullablePointer[Pointer[U8]]](cmdline: NullablePointer[GApplicationCommandLine] tag, argc: Pointer[I32] tag)
+use @g_application_command_line_get_arguments[Pointer[Pointer[U8]]](cmdline: NullablePointer[GApplicationCommandLine] tag, argc: Pointer[I32] tag)
 
 
 
@@ -36044,7 +36044,7 @@ use @g_application_command_line_get_stdin[NullablePointer[GInputStream]](cmdline
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f166]
 */
-use @g_application_command_line_get_environ[NullablePointer[Pointer[U8]]](cmdline: NullablePointer[GApplicationCommandLine] tag)
+use @g_application_command_line_get_environ[Pointer[Pointer[U8]]](cmdline: NullablePointer[GApplicationCommandLine] tag)
 
 
 
@@ -36190,7 +36190,7 @@ use @g_settings_get_type[U64]()
 
   Arguments:
 */
-use @g_settings_list_schemas[NullablePointer[Pointer[U8]]]()
+use @g_settings_list_schemas[Pointer[Pointer[U8]]]()
 
 
 
@@ -36202,7 +36202,7 @@ use @g_settings_list_schemas[NullablePointer[Pointer[U8]]]()
 
   Arguments:
 */
-use @g_settings_list_relocatable_schemas[NullablePointer[Pointer[U8]]]()
+use @g_settings_list_relocatable_schemas[Pointer[Pointer[U8]]]()
 
 
 
@@ -36286,7 +36286,7 @@ use @g_settings_new_full[NullablePointer[GSettings]](schema: NullablePointer[GSe
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f167]
 */
-use @g_settings_list_children[NullablePointer[Pointer[U8]]](settings: NullablePointer[GSettings] tag)
+use @g_settings_list_children[Pointer[Pointer[U8]]](settings: NullablePointer[GSettings] tag)
 
 
 
@@ -36299,7 +36299,7 @@ use @g_settings_list_children[NullablePointer[Pointer[U8]]](settings: NullablePo
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f167]
 */
-use @g_settings_list_keys[NullablePointer[Pointer[U8]]](settings: NullablePointer[GSettings] tag)
+use @g_settings_list_keys[Pointer[Pointer[U8]]](settings: NullablePointer[GSettings] tag)
 
 
 
@@ -36646,7 +36646,7 @@ use @g_settings_set_double[I32](settings: NullablePointer[GSettings] tag, key: P
     [PointerType size=64]->[Struct size=256,fid: f167]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_settings_get_strv[NullablePointer[Pointer[U8]]](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag)
+use @g_settings_get_strv[Pointer[Pointer[U8]]](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag)
 
 
 
@@ -36661,7 +36661,7 @@ use @g_settings_get_strv[NullablePointer[Pointer[U8]]](settings: NullablePointer
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_settings_set_strv[I32](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, value: NullablePointer[Pointer[U8]] tag)
+use @g_settings_set_strv[I32](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, value: Pointer[Pointer[U8]] tag)
 
 
 
@@ -36849,7 +36849,7 @@ use @g_settings_bind[None](settings: NullablePointer[GSettings] tag, key: Pointe
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_settings_bind_with_mapping[None](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, g_object: Pointer[None] tag, property: Pointer[U8] tag, flags: I32, getmapping: NullablePointer[FUNCTIONTYPE] tag, setmapping: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_settings_bind_with_mapping[None](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, g_object: Pointer[None] tag, property: Pointer[U8] tag, flags: I32, getmapping: Pointer[None] tag, setmapping: Pointer[None] tag, userdata: Pointer[None] tag, destroy: Pointer[None] tag)
 
 
 
@@ -36910,7 +36910,7 @@ use @g_settings_create_action[NullablePointer[GAction]](settings: NullablePointe
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_settings_get_mapped[Pointer[None]](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, mapping: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_settings_get_mapped[Pointer[None]](settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, mapping: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -36953,7 +36953,7 @@ use @g_permission_acquire[I32](permission: NullablePointer[GPermission] tag, can
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_permission_acquire_async[None](permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_permission_acquire_async[None](permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -36999,7 +36999,7 @@ use @g_permission_release[I32](permission: NullablePointer[GPermission] tag, can
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_permission_release_async[None](permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_permission_release_async[None](permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -37225,7 +37225,7 @@ use @g_menu_attribute_iter_get_type[U64]()
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=,fid: f90]
 */
-use @g_menu_attribute_iter_get_next[I32](iter: NullablePointer[GMenuAttributeIter] tag, outname: NullablePointer[Pointer[U8]] tag, value: NullablePointer[NullablePointer[GVariant]] tag)
+use @g_menu_attribute_iter_get_next[I32](iter: NullablePointer[GMenuAttributeIter] tag, outname: Pointer[Pointer[U8]] tag, value: NullablePointer[NullablePointer[GVariant]] tag)
 
 
 
@@ -37291,7 +37291,7 @@ use @g_menu_link_iter_get_type[U64]()
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=256,fid: f169]
 */
-use @g_menu_link_iter_get_next[I32](iter: NullablePointer[GMenuLinkIter] tag, outlink: NullablePointer[Pointer[U8]] tag, value: NullablePointer[NullablePointer[GMenuModel]] tag)
+use @g_menu_link_iter_get_next[I32](iter: NullablePointer[GMenuLinkIter] tag, outlink: Pointer[Pointer[U8]] tag, value: NullablePointer[NullablePointer[GMenuModel]] tag)
 
 
 
@@ -37390,7 +37390,7 @@ use @g_file_enumerator_close[I32](enumerator: NullablePointer[GFileEnumerator] t
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_enumerator_next_files_async[None](enumerator: NullablePointer[GFileEnumerator] tag, numfiles: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_enumerator_next_files_async[None](enumerator: NullablePointer[GFileEnumerator] tag, numfiles: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -37422,7 +37422,7 @@ use @g_file_enumerator_next_files_finish[NullablePointer[GList]](enumerator: Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_enumerator_close_async[None](enumerator: NullablePointer[GFileEnumerator] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_enumerator_close_async[None](enumerator: NullablePointer[GFileEnumerator] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -37832,7 +37832,7 @@ use @g_file_input_stream_query_info[NullablePointer[GFileInfo]](stream: Nullable
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_input_stream_query_info_async[None](stream: NullablePointer[GFileInputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_input_stream_query_info_async[None](stream: NullablePointer[GFileInputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -37893,7 +37893,7 @@ use @g_file_output_stream_query_info[NullablePointer[GFileInfo]](stream: Nullabl
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_output_stream_query_info_async[None](stream: NullablePointer[GFileOutputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_output_stream_query_info_async[None](stream: NullablePointer[GFileOutputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -37967,7 +37967,7 @@ use @g_file_io_stream_query_info[NullablePointer[GFileInfo]](stream: NullablePoi
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_io_stream_query_info_async[None](stream: NullablePointer[GFileIOStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_io_stream_query_info_async[None](stream: NullablePointer[GFileIOStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -38608,7 +38608,7 @@ use @g_input_stream_close[I32](stream: NullablePointer[GInputStream] tag, cancel
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_input_stream_read_async[None](stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_input_stream_read_async[None](stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -38642,7 +38642,7 @@ use @g_input_stream_read_finish[I64](stream: NullablePointer[GInputStream] tag, 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_input_stream_read_all_async[None](stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_input_stream_read_all_async[None](stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -38676,7 +38676,7 @@ use @g_input_stream_read_all_finish[I32](stream: NullablePointer[GInputStream] t
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_input_stream_read_bytes_async[None](stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_input_stream_read_bytes_async[None](stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -38709,7 +38709,7 @@ use @g_input_stream_read_bytes_finish[NullablePointer[GBytes]](stream: NullableP
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_input_stream_skip_async[None](stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_input_stream_skip_async[None](stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -38741,7 +38741,7 @@ use @g_input_stream_skip_finish[I64](stream: NullablePointer[GInputStream] tag, 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_input_stream_close_async[None](stream: NullablePointer[GInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_input_stream_close_async[None](stream: NullablePointer[GInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -38848,7 +38848,7 @@ use @g_memory_input_stream_new[NullablePointer[GInputStream]]()
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_memory_input_stream_new_from_data[NullablePointer[GInputStream]](data: Pointer[None] tag, len: I64, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_memory_input_stream_new_from_data[NullablePointer[GInputStream]](data: Pointer[None] tag, len: I64, destroy: Pointer[None] tag)
 
 
 
@@ -38877,7 +38877,7 @@ use @g_memory_input_stream_new_from_bytes[NullablePointer[GInputStream]](bytes: 
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_memory_input_stream_add_data[None](stream: NullablePointer[GMemoryInputStream] tag, data: Pointer[None] tag, len: I64, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_memory_input_stream_add_data[None](stream: NullablePointer[GMemoryInputStream] tag, data: Pointer[None] tag, len: I64, destroy: Pointer[None] tag)
 
 
 
@@ -38919,7 +38919,7 @@ use @g_memory_output_stream_get_type[U64]()
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_memory_output_stream_new[NullablePointer[GOutputStream]](data: Pointer[None] tag, size: U64, reallocfunction: NullablePointer[FUNCTIONTYPE] tag, destroyfunction: NullablePointer[FUNCTIONTYPE] tag)
+use @g_memory_output_stream_new[NullablePointer[GOutputStream]](data: Pointer[None] tag, size: U64, reallocfunction: Pointer[None] tag, destroyfunction: Pointer[None] tag)
 
 
 
@@ -39678,7 +39678,7 @@ use @g_output_stream_close[I32](stream: NullablePointer[GOutputStream] tag, canc
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_write_async[None](stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_write_async[None](stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -39712,7 +39712,7 @@ use @g_output_stream_write_finish[I64](stream: NullablePointer[GOutputStream] ta
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_write_all_async[None](stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_write_all_async[None](stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -39747,7 +39747,7 @@ use @g_output_stream_write_all_finish[I32](stream: NullablePointer[GOutputStream
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_writev_async[None](stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_writev_async[None](stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -39782,7 +39782,7 @@ use @g_output_stream_writev_finish[I32](stream: NullablePointer[GOutputStream] t
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_writev_all_async[None](stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_writev_all_async[None](stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -39816,7 +39816,7 @@ use @g_output_stream_writev_all_finish[I32](stream: NullablePointer[GOutputStrea
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_write_bytes_async[None](stream: NullablePointer[GOutputStream] tag, bytes: NullablePointer[GBytes] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_write_bytes_async[None](stream: NullablePointer[GOutputStream] tag, bytes: NullablePointer[GBytes] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -39850,7 +39850,7 @@ use @g_output_stream_write_bytes_finish[I64](stream: NullablePointer[GOutputStre
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_splice_async[None](stream: NullablePointer[GOutputStream] tag, source: NullablePointer[GInputStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_splice_async[None](stream: NullablePointer[GOutputStream] tag, source: NullablePointer[GInputStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -39882,7 +39882,7 @@ use @g_output_stream_splice_finish[I64](stream: NullablePointer[GOutputStream] t
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_flush_async[None](stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_flush_async[None](stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -39914,7 +39914,7 @@ use @g_output_stream_flush_finish[I32](stream: NullablePointer[GOutputStream] ta
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_output_stream_close_async[None](stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_output_stream_close_async[None](stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -40052,7 +40052,7 @@ use @g_io_stream_get_output_stream[NullablePointer[GOutputStream]](stream: Nulla
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_io_stream_splice_async[None](stream1: NullablePointer[GIOStream] tag, stream2: NullablePointer[GIOStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_io_stream_splice_async[None](stream1: NullablePointer[GIOStream] tag, stream2: NullablePointer[GIOStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -40098,7 +40098,7 @@ use @g_io_stream_close[I32](stream: NullablePointer[GIOStream] tag, cancellable:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_io_stream_close_async[None](stream: NullablePointer[GIOStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_io_stream_close_async[None](stream: NullablePointer[GIOStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -40236,7 +40236,7 @@ use @g_resolver_lookup_by_name[NullablePointer[GList]](resolver: NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_resolver_lookup_by_name_async[None](resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_resolver_lookup_by_name_async[None](resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -40269,7 +40269,7 @@ use @g_resolver_lookup_by_name_finish[NullablePointer[GList]](resolver: Nullable
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_resolver_lookup_by_name_with_flags_async[None](resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_resolver_lookup_by_name_with_flags_async[None](resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -40347,7 +40347,7 @@ use @g_resolver_lookup_by_address[Pointer[U8]](resolver: NullablePointer[GResolv
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_resolver_lookup_by_address_async[None](resolver: NullablePointer[GResolver] tag, address: NullablePointer[GInetAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_resolver_lookup_by_address_async[None](resolver: NullablePointer[GResolver] tag, address: NullablePointer[GInetAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -40399,7 +40399,7 @@ use @g_resolver_lookup_service[NullablePointer[GList]](resolver: NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_resolver_lookup_service_async[None](resolver: NullablePointer[GResolver] tag, service: Pointer[U8] tag, protocol: Pointer[U8] tag, domain: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_resolver_lookup_service_async[None](resolver: NullablePointer[GResolver] tag, service: Pointer[U8] tag, protocol: Pointer[U8] tag, domain: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -40449,7 +40449,7 @@ use @g_resolver_lookup_records[NullablePointer[GList]](resolver: NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_resolver_lookup_records_async[None](resolver: NullablePointer[GResolver] tag, rrname: Pointer[U8] tag, recordtype: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_resolver_lookup_records_async[None](resolver: NullablePointer[GResolver] tag, rrname: Pointer[U8] tag, recordtype: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -41801,7 +41801,7 @@ use @g_socket_client_connect_to_uri[NullablePointer[GSocketConnection]](client: 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_client_connect_async[None](client: NullablePointer[GSocketClient] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_client_connect_async[None](client: NullablePointer[GSocketClient] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -41834,7 +41834,7 @@ use @g_socket_client_connect_finish[NullablePointer[GSocketConnection]](client: 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_client_connect_to_host_async[None](client: NullablePointer[GSocketClient] tag, hostandport: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_client_connect_to_host_async[None](client: NullablePointer[GSocketClient] tag, hostandport: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -41867,7 +41867,7 @@ use @g_socket_client_connect_to_host_finish[NullablePointer[GSocketConnection]](
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_client_connect_to_service_async[None](client: NullablePointer[GSocketClient] tag, domain: Pointer[U8] tag, service: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_client_connect_to_service_async[None](client: NullablePointer[GSocketClient] tag, domain: Pointer[U8] tag, service: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -41900,7 +41900,7 @@ use @g_socket_client_connect_to_service_finish[NullablePointer[GSocketConnection
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_client_connect_to_uri_async[None](client: NullablePointer[GSocketClient] tag, uri: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_client_connect_to_uri_async[None](client: NullablePointer[GSocketClient] tag, uri: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -41987,7 +41987,7 @@ use @g_socket_connection_connect[I32](connection: NullablePointer[GSocketConnect
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_connection_connect_async[None](connection: NullablePointer[GSocketConnection] tag, address: NullablePointer[GSocketAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_connection_connect_async[None](connection: NullablePointer[GSocketConnection] tag, address: NullablePointer[GSocketAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -42223,7 +42223,7 @@ use @g_socket_listener_accept_socket[NullablePointer[GSocket]](listener: Nullabl
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_listener_accept_socket_async[None](listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_listener_accept_socket_async[None](listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -42271,7 +42271,7 @@ use @g_socket_listener_accept[NullablePointer[GSocketConnection]](listener: Null
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_listener_accept_async[None](listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_listener_accept_async[None](listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -42474,7 +42474,7 @@ use @g_socket_address_enumerator_next[NullablePointer[GSocketAddress]](enumerato
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_socket_address_enumerator_next_async[None](enumerator: NullablePointer[GSocketAddressEnumerator] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_socket_address_enumerator_next_async[None](enumerator: NullablePointer[GSocketAddressEnumerator] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -42933,7 +42933,7 @@ use @g_tls_connection_get_rehandshake_mode[I32](conn: NullablePointer[GTlsConnec
     [PointerType size=64]->[Struct size=320,fid: f203]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_tls_connection_set_advertised_protocols[None](conn: NullablePointer[GTlsConnection] tag, protocols: NullablePointer[Pointer[U8]] tag)
+use @g_tls_connection_set_advertised_protocols[None](conn: NullablePointer[GTlsConnection] tag, protocols: Pointer[Pointer[U8]] tag)
 
 
 
@@ -42994,7 +42994,7 @@ use @g_tls_connection_handshake[I32](conn: NullablePointer[GTlsConnection] tag, 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tls_connection_handshake_async[None](conn: NullablePointer[GTlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tls_connection_handshake_async[None](conn: NullablePointer[GTlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -43101,7 +43101,7 @@ use @g_tls_database_verify_chain[I32](self: NullablePointer[GTlsDatabase] tag, c
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tls_database_verify_chain_async[None](self: NullablePointer[GTlsDatabase] tag, chain: NullablePointer[GTlsCertificate] tag, purpose: Pointer[U8] tag, identity: NullablePointer[GSocketConnectable] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tls_database_verify_chain_async[None](self: NullablePointer[GTlsDatabase] tag, chain: NullablePointer[GTlsCertificate] tag, purpose: Pointer[U8] tag, identity: NullablePointer[GSocketConnectable] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -43167,7 +43167,7 @@ use @g_tls_database_lookup_certificate_for_handle[NullablePointer[GTlsCertificat
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tls_database_lookup_certificate_for_handle_async[None](self: NullablePointer[GTlsDatabase] tag, handle: Pointer[U8] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tls_database_lookup_certificate_for_handle_async[None](self: NullablePointer[GTlsDatabase] tag, handle: Pointer[U8] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -43219,7 +43219,7 @@ use @g_tls_database_lookup_certificate_issuer[NullablePointer[GTlsCertificate]](
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tls_database_lookup_certificate_issuer_async[None](self: NullablePointer[GTlsDatabase] tag, certificate: NullablePointer[GTlsCertificate] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tls_database_lookup_certificate_issuer_async[None](self: NullablePointer[GTlsDatabase] tag, certificate: NullablePointer[GTlsCertificate] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -43271,7 +43271,7 @@ use @g_tls_database_lookup_certificates_issued_by[NullablePointer[GList]](self: 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tls_database_lookup_certificates_issued_by_async[None](self: NullablePointer[GTlsDatabase] tag, issuerrawdn: NullablePointer[GByteArray] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tls_database_lookup_certificates_issued_by_async[None](self: NullablePointer[GTlsDatabase] tag, issuerrawdn: NullablePointer[GByteArray] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -43347,7 +43347,7 @@ use @g_tls_interaction_ask_password[I32](interaction: NullablePointer[GTlsIntera
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tls_interaction_ask_password_async[None](interaction: NullablePointer[GTlsInteraction] tag, password: NullablePointer[GTlsPassword] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tls_interaction_ask_password_async[None](interaction: NullablePointer[GTlsInteraction] tag, password: NullablePointer[GTlsPassword] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -43414,7 +43414,7 @@ use @g_tls_interaction_request_certificate[I32](interaction: NullablePointer[GTl
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_tls_interaction_request_certificate_async[None](interaction: NullablePointer[GTlsInteraction] tag, connection: NullablePointer[GTlsConnection] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_tls_interaction_request_certificate_async[None](interaction: NullablePointer[GTlsInteraction] tag, connection: NullablePointer[GTlsConnection] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -43500,7 +43500,7 @@ use @g_tls_password_set_value[None](password: NullablePointer[GTlsPassword] tag,
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_tls_password_set_value_full[None](password: NullablePointer[GTlsPassword] tag, value: Pointer[U8] tag, length: I64, destroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_tls_password_set_value_full[None](password: NullablePointer[GTlsPassword] tag, value: Pointer[U8] tag, length: I64, destroy: Pointer[None] tag)
 
 
 
@@ -43647,7 +43647,7 @@ use @g_vfs_get_file_for_uri[NullablePointer[GFile]](vfs: NullablePointer[GVfs] t
   Arguments:
     [PointerType size=64]->[Struct size=192,fid: f207]
 */
-use @g_vfs_get_supported_uri_schemes[NullablePointer[Pointer[U8]]](vfs: NullablePointer[GVfs] tag)
+use @g_vfs_get_supported_uri_schemes[Pointer[Pointer[U8]]](vfs: NullablePointer[GVfs] tag)
 
 
 
@@ -43705,7 +43705,7 @@ use @g_vfs_get_local[NullablePointer[GVfs]]()
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_vfs_register_uri_scheme[I32](vfs: NullablePointer[GVfs] tag, scheme: Pointer[U8] tag, urifunc: NullablePointer[FUNCTIONTYPE] tag, uridata: Pointer[None] tag, uridestroy: NullablePointer[FUNCTIONTYPE] tag, parsenamefunc: NullablePointer[FUNCTIONTYPE] tag, parsenamedata: Pointer[None] tag, parsenamedestroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_vfs_register_uri_scheme[I32](vfs: NullablePointer[GVfs] tag, scheme: Pointer[U8] tag, urifunc: Pointer[None] tag, uridata: Pointer[None] tag, uridestroy: Pointer[None] tag, parsenamefunc: Pointer[None] tag, parsenamedata: Pointer[None] tag, parsenamedestroy: Pointer[None] tag)
 
 
 
@@ -43990,7 +43990,7 @@ use @g_dbus_proxy_get_type[U64]()
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_proxy_new[None](connection: NullablePointer[GDBusConnection] tag, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_proxy_new[None](connection: NullablePointer[GDBusConnection] tag, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44045,7 +44045,7 @@ use @g_dbus_proxy_new_sync[NullablePointer[GDBusProxy]](connection: NullablePoin
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_proxy_new_for_bus[None](bustype: I32, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_proxy_new_for_bus[None](bustype: I32, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44253,7 +44253,7 @@ use @g_dbus_proxy_set_cached_property[None](proxy: NullablePointer[GDBusProxy] t
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f211]
 */
-use @g_dbus_proxy_get_cached_property_names[NullablePointer[Pointer[U8]]](proxy: NullablePointer[GDBusProxy] tag)
+use @g_dbus_proxy_get_cached_property_names[Pointer[Pointer[U8]]](proxy: NullablePointer[GDBusProxy] tag)
 
 
 
@@ -44273,7 +44273,7 @@ use @g_dbus_proxy_get_cached_property_names[NullablePointer[Pointer[U8]]](proxy:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_proxy_call[None](proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_proxy_call[None](proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44328,7 +44328,7 @@ use @g_dbus_proxy_call_sync[NullablePointer[GVariant]](proxy: NullablePointer[GD
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_proxy_call_with_unix_fd_list[None](proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_proxy_call_with_unix_fd_list[None](proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44550,7 +44550,7 @@ use @g_dbus_connection_get_type[U64]()
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_bus_get[None](bustype: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_bus_get[None](bustype: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44598,7 +44598,7 @@ use @g_bus_get_sync[NullablePointer[GDBusConnection]](bustype: I32, cancellable:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_connection_new[None](stream: NullablePointer[GIOStream] tag, guid: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_connection_new[None](stream: NullablePointer[GIOStream] tag, guid: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44648,7 +44648,7 @@ use @g_dbus_connection_new_sync[NullablePointer[GDBusConnection]](stream: Nullab
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_connection_new_for_address[None](address: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_connection_new_for_address[None](address: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44839,7 +44839,7 @@ use @g_dbus_connection_get_flags[I32](connection: NullablePointer[GDBusConnectio
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_connection_close[None](connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_connection_close[None](connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44885,7 +44885,7 @@ use @g_dbus_connection_close_sync[I32](connection: NullablePointer[GDBusConnecti
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_connection_flush[None](connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_connection_flush[None](connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -44952,7 +44952,7 @@ use @g_dbus_connection_send_message[I32](connection: NullablePointer[GDBusConnec
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_connection_send_message_with_reply[None](connection: NullablePointer[GDBusConnection] tag, message: NullablePointer[GDBusMessage] tag, flags: I32, timeoutmsec: I32, outserial: Pointer[U32] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_connection_send_message_with_reply[None](connection: NullablePointer[GDBusConnection] tag, message: NullablePointer[GDBusMessage] tag, flags: I32, timeoutmsec: I32, outserial: Pointer[U32] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -45029,7 +45029,7 @@ use @g_dbus_connection_emit_signal[I32](connection: NullablePointer[GDBusConnect
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_connection_call[None](connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_connection_call[None](connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -45092,7 +45092,7 @@ use @g_dbus_connection_call_sync[NullablePointer[GVariant]](connection: Nullable
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_connection_call_with_unix_fd_list[None](connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_connection_call_with_unix_fd_list[None](connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -45152,7 +45152,7 @@ use @g_dbus_connection_call_with_unix_fd_list_sync[NullablePointer[GVariant]](co
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_dbus_connection_register_object[U32](connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, interfaceinfo: NullablePointer[GDBusInterfaceInfo] tag, vtable: NullablePointer[GDBusInterfaceVTable] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_dbus_connection_register_object[U32](connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, interfaceinfo: NullablePointer[GDBusInterfaceInfo] tag, vtable: NullablePointer[GDBusInterfaceVTable] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -45204,7 +45204,7 @@ use @g_dbus_connection_unregister_object[I32](connection: NullablePointer[GDBusC
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_dbus_connection_register_subtree[U32](connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, vtable: NullablePointer[GDBusSubtreeVTable] tag, flags: I32, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_dbus_connection_register_subtree[U32](connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, vtable: NullablePointer[GDBusSubtreeVTable] tag, flags: I32, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -45240,7 +45240,7 @@ use @g_dbus_connection_unregister_subtree[I32](connection: NullablePointer[GDBus
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_dbus_connection_signal_subscribe[U32](connection: NullablePointer[GDBusConnection] tag, sender: Pointer[U8] tag, interfacename: Pointer[U8] tag, member: Pointer[U8] tag, objectpath: Pointer[U8] tag, arg0: Pointer[U8] tag, flags: I32, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_dbus_connection_signal_subscribe[U32](connection: NullablePointer[GDBusConnection] tag, sender: Pointer[U8] tag, interfacename: Pointer[U8] tag, member: Pointer[U8] tag, objectpath: Pointer[U8] tag, arg0: Pointer[U8] tag, flags: I32, callback: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag)
 
 
 
@@ -45270,7 +45270,7 @@ use @g_dbus_connection_signal_unsubscribe[None](connection: NullablePointer[GDBu
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_dbus_connection_add_filter[U32](connection: NullablePointer[GDBusConnection] tag, filterfunction: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_dbus_connection_add_filter[U32](connection: NullablePointer[GDBusConnection] tag, filterfunction: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag)
 
 
 
@@ -46044,7 +46044,7 @@ use @g_dbus_object_manager_client_get_type[U64]()
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_object_manager_client_new[None](connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_object_manager_client_new[None](connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -46079,7 +46079,7 @@ use @g_dbus_object_manager_client_new_finish[NullablePointer[GDBusObjectManager]
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_dbus_object_manager_client_new_sync[NullablePointer[GDBusObjectManager]](connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_dbus_object_manager_client_new_sync[NullablePointer[GDBusObjectManager]](connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -46101,7 +46101,7 @@ use @g_dbus_object_manager_client_new_sync[NullablePointer[GDBusObjectManager]](
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_object_manager_client_new_for_bus[None](bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_object_manager_client_new_for_bus[None](bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -46136,7 +46136,7 @@ use @g_dbus_object_manager_client_new_for_bus_finish[NullablePointer[GDBusObject
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_dbus_object_manager_client_new_for_bus_sync[NullablePointer[GDBusObjectManager]](bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_dbus_object_manager_client_new_for_bus_sync[NullablePointer[GDBusObjectManager]](bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -46443,7 +46443,7 @@ use @g_action_name_is_valid[I32](actionname: Pointer[U8] tag)
     [PointerType size=64]->[PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_action_parse_detailed_name[I32](detailedname: Pointer[U8] tag, actionname: NullablePointer[Pointer[U8]] tag, targetvalue: NullablePointer[NullablePointer[GVariant]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_action_parse_detailed_name[I32](detailedname: Pointer[U8] tag, actionname: Pointer[Pointer[U8]] tag, targetvalue: NullablePointer[NullablePointer[GVariant]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -46496,7 +46496,7 @@ use @g_action_group_has_action[I32](actiongroup: NullablePointer[GActionGroup] t
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-use @g_action_group_list_actions[NullablePointer[Pointer[U8]]](actiongroup: NullablePointer[GActionGroup] tag)
+use @g_action_group_list_actions[Pointer[Pointer[U8]]](actiongroup: NullablePointer[GActionGroup] tag)
 
 
 
@@ -46879,7 +46879,7 @@ use @g_async_initable_get_type[U64]()
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_async_initable_init_async[None](initable: NullablePointer[GAsyncInitable] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_async_initable_init_async[None](initable: NullablePointer[GAsyncInitable] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -46912,7 +46912,7 @@ use @g_async_initable_init_finish[I32](initable: NullablePointer[GAsyncInitable]
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_async_initable_new_async[None](objecttype: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, firstpropertyname: Pointer[U8] tag, ...)
+use @g_async_initable_new_async[None](objecttype: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, firstpropertyname: Pointer[U8] tag, ...)
 
 
 
@@ -46931,7 +46931,7 @@ use @g_async_initable_new_async[None](objecttype: U64, iopriority: I32, cancella
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_async_initable_newv_async[None](objecttype: U64, nparameters: U32, parameters: NullablePointer[GParameter] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_async_initable_newv_async[None](objecttype: U64, nparameters: U32, parameters: NullablePointer[GParameter] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -46950,7 +46950,7 @@ use @g_async_initable_newv_async[None](objecttype: U64, nparameters: U32, parame
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_async_initable_new_valist_async[None](objecttype: U64, firstpropertyname: Pointer[U8] tag, varargs: NullablePointer[Valisttag] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_async_initable_new_valist_async[None](objecttype: U64, firstpropertyname: Pointer[U8] tag, varargs: NullablePointer[Valisttag] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -47357,7 +47357,7 @@ use @g_content_type_guess[Pointer[U8]](filename: Pointer[U8] tag, data: Pointer[
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-use @g_content_type_guess_for_tree[NullablePointer[Pointer[U8]]](root: NullablePointer[GFile] tag)
+use @g_content_type_guess_for_tree[Pointer[Pointer[U8]]](root: NullablePointer[GFile] tag)
 
 
 
@@ -47381,7 +47381,7 @@ use @g_content_types_get_registered[NullablePointer[GList]]()
 
   Arguments:
 */
-use @g_content_type_get_mime_dirs[NullablePointer[Pointer[U8]]]()
+use @g_content_type_get_mime_dirs[Pointer[Pointer[U8]]]()
 
 
 
@@ -47394,7 +47394,7 @@ use @g_content_type_get_mime_dirs[NullablePointer[Pointer[U8]]]()
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_content_type_set_mime_dirs[None](dirs: NullablePointer[Pointer[U8]] tag)
+use @g_content_type_set_mime_dirs[None](dirs: Pointer[Pointer[U8]] tag)
 
 
 
@@ -47877,7 +47877,7 @@ use @g_dbus_is_supported_address[I32](string: Pointer[U8] tag, g_error: Nullable
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dbus_address_get_stream[None](address: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dbus_address_get_stream[None](address: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -47892,7 +47892,7 @@ use @g_dbus_address_get_stream[None](address: Pointer[U8] tag, cancellable: Null
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_dbus_address_get_stream_finish[NullablePointer[GIOStream]](res: NullablePointer[GAsyncResult] tag, outguid: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_dbus_address_get_stream_finish[NullablePointer[GIOStream]](res: NullablePointer[GAsyncResult] tag, outguid: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -47908,7 +47908,7 @@ use @g_dbus_address_get_stream_finish[NullablePointer[GIOStream]](res: NullableP
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_dbus_address_get_stream_sync[NullablePointer[GIOStream]](address: Pointer[U8] tag, outguid: NullablePointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_dbus_address_get_stream_sync[NullablePointer[GIOStream]](address: Pointer[U8] tag, outguid: Pointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -49040,7 +49040,7 @@ use @g_dbus_method_invocation_return_dbus_error[None](invocation: NullablePointe
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_bus_own_name[U32](bustype: I32, name: Pointer[U8] tag, flags: I32, busacquiredhandler: NullablePointer[FUNCTIONTYPE] tag, nameacquiredhandler: NullablePointer[FUNCTIONTYPE] tag, namelosthandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_bus_own_name[U32](bustype: I32, name: Pointer[U8] tag, flags: I32, busacquiredhandler: Pointer[None] tag, nameacquiredhandler: Pointer[None] tag, namelosthandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag)
 
 
 
@@ -49059,7 +49059,7 @@ use @g_bus_own_name[U32](bustype: I32, name: Pointer[U8] tag, flags: I32, busacq
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_bus_own_name_on_connection[U32](connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameacquiredhandler: NullablePointer[FUNCTIONTYPE] tag, namelosthandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_bus_own_name_on_connection[U32](connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameacquiredhandler: Pointer[None] tag, namelosthandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag)
 
 
 
@@ -49126,7 +49126,7 @@ use @g_bus_unown_name[None](ownerid: U32)
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_bus_watch_name[U32](bustype: I32, name: Pointer[U8] tag, flags: I32, nameappearedhandler: NullablePointer[FUNCTIONTYPE] tag, namevanishedhandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_bus_watch_name[U32](bustype: I32, name: Pointer[U8] tag, flags: I32, nameappearedhandler: Pointer[None] tag, namevanishedhandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag)
 
 
 
@@ -49145,7 +49145,7 @@ use @g_bus_watch_name[U32](bustype: I32, name: Pointer[U8] tag, flags: I32, name
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_bus_watch_name_on_connection[U32](connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameappearedhandler: NullablePointer[FUNCTIONTYPE] tag, namevanishedhandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_bus_watch_name_on_connection[U32](connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameappearedhandler: Pointer[None] tag, namevanishedhandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag)
 
 
 
@@ -49735,7 +49735,7 @@ use @g_drive_can_eject[I32](drive: NullablePointer[GDrive] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_drive_eject[None](drive: NullablePointer[GDrive] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_drive_eject[None](drive: NullablePointer[GDrive] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -49766,7 +49766,7 @@ use @g_drive_eject_finish[I32](drive: NullablePointer[GDrive] tag, result: Nulla
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_drive_poll_for_media[None](drive: NullablePointer[GDrive] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_drive_poll_for_media[None](drive: NullablePointer[GDrive] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -49808,7 +49808,7 @@ use @g_drive_get_identifier[Pointer[U8]](drive: NullablePointer[GDrive] tag, kin
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-use @g_drive_enumerate_identifiers[NullablePointer[Pointer[U8]]](drive: NullablePointer[GDrive] tag)
+use @g_drive_enumerate_identifiers[Pointer[Pointer[U8]]](drive: NullablePointer[GDrive] tag)
 
 
 
@@ -49865,7 +49865,7 @@ use @g_drive_can_start_degraded[I32](drive: NullablePointer[GDrive] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_drive_start[None](drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_drive_start[None](drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -49911,7 +49911,7 @@ use @g_drive_can_stop[I32](drive: NullablePointer[GDrive] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_drive_stop[None](drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_drive_stop[None](drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -49944,7 +49944,7 @@ use @g_drive_stop_finish[I32](drive: NullablePointer[GDrive] tag, result: Nullab
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_drive_eject_with_operation[None](drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_drive_eject_with_operation[None](drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -50177,7 +50177,7 @@ use @g_dtls_connection_handshake[I32](conn: NullablePointer[GDtlsConnection] tag
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dtls_connection_handshake_async[None](conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dtls_connection_handshake_async[None](conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -50228,7 +50228,7 @@ use @g_dtls_connection_shutdown[I32](conn: NullablePointer[GDtlsConnection] tag,
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dtls_connection_shutdown_async[None](conn: NullablePointer[GDtlsConnection] tag, shutdownread: I32, shutdownwrite: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dtls_connection_shutdown_async[None](conn: NullablePointer[GDtlsConnection] tag, shutdownread: I32, shutdownwrite: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -50275,7 +50275,7 @@ use @g_dtls_connection_close[I32](conn: NullablePointer[GDtlsConnection] tag, ca
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_dtls_connection_close_async[None](conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_dtls_connection_close_async[None](conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -50319,7 +50319,7 @@ use @g_dtls_connection_emit_accept_certificate[I32](conn: NullablePointer[GDtlsC
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_dtls_connection_set_advertised_protocols[None](conn: NullablePointer[GDtlsConnection] tag, protocols: NullablePointer[Pointer[U8]] tag)
+use @g_dtls_connection_set_advertised_protocols[None](conn: NullablePointer[GDtlsConnection] tag, protocols: Pointer[Pointer[U8]] tag)
 
 
 
@@ -51086,7 +51086,7 @@ use @g_file_read[NullablePointer[GFileInputStream]](file: NullablePointer[GFile]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_read_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_read_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51169,7 +51169,7 @@ use @g_file_replace[NullablePointer[GFileOutputStream]](file: NullablePointer[GF
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_append_to_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_append_to_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51202,7 +51202,7 @@ use @g_file_append_to_finish[NullablePointer[GFileOutputStream]](file: NullableP
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_create_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_create_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51237,7 +51237,7 @@ use @g_file_create_finish[NullablePointer[GFileOutputStream]](file: NullablePoin
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_replace_async[None](file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_replace_async[None](file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51284,7 +51284,7 @@ use @g_file_open_readwrite[NullablePointer[GFileIOStream]](file: NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_open_readwrite_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_open_readwrite_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51333,7 +51333,7 @@ use @g_file_create_readwrite[NullablePointer[GFileIOStream]](file: NullablePoint
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_create_readwrite_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_create_readwrite_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51386,7 +51386,7 @@ use @g_file_replace_readwrite[NullablePointer[GFileIOStream]](file: NullablePoin
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_replace_readwrite_async[None](file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_replace_readwrite_async[None](file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51466,7 +51466,7 @@ use @g_file_query_info[NullablePointer[GFileInfo]](file: NullablePointer[GFile] 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_query_info_async[None](file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_query_info_async[None](file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51515,7 +51515,7 @@ use @g_file_query_filesystem_info[NullablePointer[GFileInfo]](file: NullablePoin
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_query_filesystem_info_async[None](file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_query_filesystem_info_async[None](file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51562,7 +51562,7 @@ use @g_file_find_enclosing_mount[NullablePointer[GMount]](file: NullablePointer[
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_find_enclosing_mount_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_find_enclosing_mount_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51613,7 +51613,7 @@ use @g_file_enumerate_children[NullablePointer[GFileEnumerator]](file: NullableP
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_enumerate_children_async[None](file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_enumerate_children_async[None](file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51662,7 +51662,7 @@ use @g_file_set_display_name[NullablePointer[GFile]](file: NullablePointer[GFile
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_set_display_name_async[None](file: NullablePointer[GFile] tag, displayname: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_set_display_name_async[None](file: NullablePointer[GFile] tag, displayname: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51709,7 +51709,7 @@ use @g_file_delete[I32](file: NullablePointer[GFile] tag, cancellable: NullableP
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_delete_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_delete_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51756,7 +51756,7 @@ use @g_file_trash[I32](file: NullablePointer[GFile] tag, cancellable: NullablePo
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_trash_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_trash_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51790,7 +51790,7 @@ use @g_file_trash_finish[I32](file: NullablePointer[GFile] tag, result: Nullable
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_copy[I32](source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_copy[I32](source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -51811,7 +51811,7 @@ use @g_file_copy[I32](source: NullablePointer[GFile] tag, destination: NullableP
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_copy_async[None](source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progresscallbackdata: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_copy_async[None](source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progresscallbackdata: Pointer[None] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -51845,7 +51845,7 @@ use @g_file_copy_finish[I32](file: NullablePointer[GFile] tag, res: NullablePoin
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_move[I32](source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_move[I32](source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -51877,7 +51877,7 @@ use @g_file_make_directory[I32](file: NullablePointer[GFile] tag, cancellable: N
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_make_directory_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_make_directory_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52008,7 +52008,7 @@ use @g_file_set_attributes_from_info[I32](file: NullablePointer[GFile] tag, info
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_set_attributes_async[None](file: NullablePointer[GFile] tag, info: NullablePointer[GFileInfo] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_set_attributes_async[None](file: NullablePointer[GFile] tag, info: NullablePointer[GFileInfo] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52150,7 +52150,7 @@ use @g_file_set_attribute_int64[I32](file: NullablePointer[GFile] tag, attribute
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_mount_enclosing_volume[None](location: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_mount_enclosing_volume[None](location: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52183,7 +52183,7 @@ use @g_file_mount_enclosing_volume_finish[I32](location: NullablePointer[GFile] 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_mount_mountable[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_mount_mountable[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52215,7 +52215,7 @@ use @g_file_mount_mountable_finish[NullablePointer[GFile]](file: NullablePointer
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_unmount_mountable[None](file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_unmount_mountable[None](file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52248,7 +52248,7 @@ use @g_file_unmount_mountable_finish[I32](file: NullablePointer[GFile] tag, resu
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_unmount_mountable_with_operation[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_unmount_mountable_with_operation[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52280,7 +52280,7 @@ use @g_file_unmount_mountable_with_operation_finish[I32](file: NullablePointer[G
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_eject_mountable[None](file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_eject_mountable[None](file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52313,7 +52313,7 @@ use @g_file_eject_mountable_finish[I32](file: NullablePointer[GFile] tag, result
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_eject_mountable_with_operation[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_eject_mountable_with_operation[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52430,7 +52430,7 @@ use @g_file_monitor[NullablePointer[GFileMonitor]](file: NullablePointer[GFile] 
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_measure_disk_usage[I32](file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progressdata: Pointer[None] tag, diskusage: Pointer[U64] tag, numdirs: Pointer[U64] tag, numfiles: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_measure_disk_usage[I32](file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progressdata: Pointer[None] tag, diskusage: Pointer[U64] tag, numdirs: Pointer[U64] tag, numfiles: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52450,7 +52450,7 @@ use @g_file_measure_disk_usage[I32](file: NullablePointer[GFile] tag, flags: I32
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_measure_disk_usage_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progressdata: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_measure_disk_usage_async[None](file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progressdata: Pointer[None] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52486,7 +52486,7 @@ use @g_file_measure_disk_usage_finish[I32](file: NullablePointer[GFile] tag, res
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_start_mountable[None](file: NullablePointer[GFile] tag, flags: I32, startoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_start_mountable[None](file: NullablePointer[GFile] tag, flags: I32, startoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52519,7 +52519,7 @@ use @g_file_start_mountable_finish[I32](file: NullablePointer[GFile] tag, result
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_stop_mountable[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_stop_mountable[None](file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52550,7 +52550,7 @@ use @g_file_stop_mountable_finish[I32](file: NullablePointer[GFile] tag, result:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_poll_mountable[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_poll_mountable[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52597,7 +52597,7 @@ use @g_file_query_default_handler[NullablePointer[GAppInfo]](file: NullablePoint
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_query_default_handler_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_query_default_handler_async[None](file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52630,7 +52630,7 @@ use @g_file_query_default_handler_finish[NullablePointer[GAppInfo]](file: Nullab
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_load_contents[I32](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_load_contents[I32](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, contents: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52646,7 +52646,7 @@ use @g_file_load_contents[I32](file: NullablePointer[GFile] tag, cancellable: Nu
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_load_contents_async[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_load_contents_async[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52664,7 +52664,7 @@ use @g_file_load_contents_async[None](file: NullablePointer[GFile] tag, cancella
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_load_contents_finish[I32](file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_load_contents_finish[I32](file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52681,7 +52681,7 @@ use @g_file_load_contents_finish[I32](file: NullablePointer[GFile] tag, res: Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_load_partial_contents_async[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, readmorecallback: NullablePointer[FUNCTIONTYPE] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_load_partial_contents_async[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, readmorecallback: Pointer[None] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52699,7 +52699,7 @@ use @g_file_load_partial_contents_async[None](file: NullablePointer[GFile] tag, 
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_load_partial_contents_finish[I32](file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_load_partial_contents_finish[I32](file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52720,7 +52720,7 @@ use @g_file_load_partial_contents_finish[I32](file: NullablePointer[GFile] tag, 
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_replace_contents[I32](file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, newetag: NullablePointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_replace_contents[I32](file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, newetag: Pointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52741,7 +52741,7 @@ use @g_file_replace_contents[I32](file: NullablePointer[GFile] tag, contents: Po
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_replace_contents_async[None](file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_replace_contents_async[None](file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52761,7 +52761,7 @@ use @g_file_replace_contents_async[None](file: NullablePointer[GFile] tag, conte
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_replace_contents_bytes_async[None](file: NullablePointer[GFile] tag, contents: NullablePointer[GBytes] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_replace_contents_bytes_async[None](file: NullablePointer[GFile] tag, contents: NullablePointer[GBytes] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52777,7 +52777,7 @@ use @g_file_replace_contents_bytes_async[None](file: NullablePointer[GFile] tag,
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_replace_contents_finish[I32](file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, newetag: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_replace_contents_finish[I32](file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, newetag: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52806,7 +52806,7 @@ use @g_file_supports_thread_contexts[I32](file: NullablePointer[GFile] tag)
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_load_bytes[NullablePointer[GBytes]](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_load_bytes[NullablePointer[GBytes]](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, etagout: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52822,7 +52822,7 @@ use @g_file_load_bytes[NullablePointer[GBytes]](file: NullablePointer[GFile] tag
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_file_load_bytes_async[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_file_load_bytes_async[None](file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -52838,7 +52838,7 @@ use @g_file_load_bytes_async[None](file: NullablePointer[GFile] tag, cancellable
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_file_load_bytes_finish[NullablePointer[GBytes]](file: NullablePointer[GFile] tag, result: NullablePointer[GAsyncResult] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_file_load_bytes_finish[NullablePointer[GBytes]](file: NullablePointer[GFile] tag, result: NullablePointer[GAsyncResult] tag, etagout: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -52969,7 +52969,7 @@ use @g_file_info_has_namespace[I32](info: NullablePointer[GFileInfo] tag, namesp
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_file_info_list_attributes[NullablePointer[Pointer[U8]]](info: NullablePointer[GFileInfo] tag, namespace: Pointer[U8] tag)
+use @g_file_info_list_attributes[Pointer[Pointer[U8]]](info: NullablePointer[GFileInfo] tag, namespace: Pointer[U8] tag)
 
 
 
@@ -53183,7 +53183,7 @@ use @g_file_info_get_attribute_object[NullablePointer[GObject]](info: NullablePo
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_file_info_get_attribute_stringv[NullablePointer[Pointer[U8]]](info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag)
+use @g_file_info_get_attribute_stringv[Pointer[Pointer[U8]]](info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag)
 
 
 
@@ -53334,7 +53334,7 @@ use @g_file_info_set_attribute_object[None](info: NullablePointer[GFileInfo] tag
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_file_info_set_attribute_stringv[None](info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag, attrvalue: NullablePointer[Pointer[U8]] tag)
+use @g_file_info_set_attribute_stringv[None](info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag, attrvalue: Pointer[Pointer[U8]] tag)
 
 
 
@@ -54002,7 +54002,7 @@ use @g_filename_completer_get_completion_suffix[Pointer[U8]](completer: Nullable
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_filename_completer_get_completions[NullablePointer[Pointer[U8]]](completer: NullablePointer[GFilenameCompleter] tag, initialtext: Pointer[U8] tag)
+use @g_filename_completer_get_completions[Pointer[Pointer[U8]]](completer: NullablePointer[GFilenameCompleter] tag, initialtext: Pointer[U8] tag)
 
 
 
@@ -55399,7 +55399,7 @@ use @g_io_module_unload[None](module: NullablePointer[GIOModule] tag)
 
   Arguments:
 */
-use @g_io_module_query[NullablePointer[Pointer[U8]]]()
+use @g_io_module_query[Pointer[Pointer[U8]]]()
 
 
 
@@ -55416,7 +55416,7 @@ use @g_io_module_query[NullablePointer[Pointer[U8]]]()
     [FundamentalType(int) size=32]
     [PointerType size=64]->[Struct size=256,fid: f160]
 */
-use @g_io_scheduler_push_job[None](jobfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag)
+use @g_io_scheduler_push_job[None](jobfunc: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag)
 
 
 
@@ -55444,7 +55444,7 @@ use @g_io_scheduler_cancel_all_jobs[None]()
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_io_scheduler_job_send_to_mainloop[I32](job: NullablePointer[GIOSchedulerJob] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_io_scheduler_job_send_to_mainloop[I32](job: NullablePointer[GIOSchedulerJob] tag, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -55460,7 +55460,7 @@ use @g_io_scheduler_job_send_to_mainloop[I32](job: NullablePointer[GIOSchedulerJ
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_io_scheduler_job_send_to_mainloop_async[None](job: NullablePointer[GIOSchedulerJob] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_io_scheduler_job_send_to_mainloop_async[None](job: NullablePointer[GIOSchedulerJob] tag, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag)
 
 
 
@@ -55858,7 +55858,7 @@ use @g_list_store_insert[None](store: NullablePointer[GListStore] tag, position:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_list_store_insert_sorted[U32](store: NullablePointer[GListStore] tag, item: Pointer[None] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_list_store_insert_sorted[U32](store: NullablePointer[GListStore] tag, item: Pointer[None] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -55873,7 +55873,7 @@ use @g_list_store_insert_sorted[U32](store: NullablePointer[GListStore] tag, ite
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_list_store_sort[None](store: NullablePointer[GListStore] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_list_store_sort[None](store: NullablePointer[GListStore] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -55962,7 +55962,7 @@ use @g_list_store_find[I32](store: NullablePointer[GListStore] tag, item: Pointe
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
 */
-use @g_list_store_find_with_equal_func[I32](store: NullablePointer[GListStore] tag, item: Pointer[None] tag, equalfunc: NullablePointer[FUNCTIONTYPE] tag, position: Pointer[U32] tag)
+use @g_list_store_find_with_equal_func[I32](store: NullablePointer[GListStore] tag, item: Pointer[None] tag, equalfunc: Pointer[None] tag, position: Pointer[U32] tag)
 
 
 
@@ -55991,7 +55991,7 @@ use @g_loadable_icon_get_type[U64]()
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_loadable_icon_load[NullablePointer[GInputStream]](icon: NullablePointer[GLoadableIcon] tag, size: I32, g_type: NullablePointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_loadable_icon_load[NullablePointer[GInputStream]](icon: NullablePointer[GLoadableIcon] tag, size: I32, g_type: Pointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -56008,7 +56008,7 @@ use @g_loadable_icon_load[NullablePointer[GInputStream]](icon: NullablePointer[G
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_loadable_icon_load_async[None](icon: NullablePointer[GLoadableIcon] tag, size: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_loadable_icon_load_async[None](icon: NullablePointer[GLoadableIcon] tag, size: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -56024,7 +56024,7 @@ use @g_loadable_icon_load_async[None](icon: NullablePointer[GLoadableIcon] tag, 
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_loadable_icon_load_finish[NullablePointer[GInputStream]](icon: NullablePointer[GLoadableIcon] tag, res: NullablePointer[GAsyncResult] tag, g_type: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_loadable_icon_load_finish[NullablePointer[GInputStream]](icon: NullablePointer[GLoadableIcon] tag, res: NullablePointer[GAsyncResult] tag, g_type: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -56843,7 +56843,7 @@ use @g_mount_can_eject[I32](mount: NullablePointer[GMount] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_mount_unmount[None](mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_mount_unmount[None](mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -56875,7 +56875,7 @@ use @g_mount_unmount_finish[I32](mount: NullablePointer[GMount] tag, result: Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_mount_eject[None](mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_mount_eject[None](mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -56908,7 +56908,7 @@ use @g_mount_eject_finish[I32](mount: NullablePointer[GMount] tag, result: Nulla
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_mount_remount[None](mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_mount_remount[None](mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -56940,7 +56940,7 @@ use @g_mount_remount_finish[I32](mount: NullablePointer[GMount] tag, result: Nul
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_mount_guess_content_type[None](mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_mount_guess_content_type[None](mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -56955,7 +56955,7 @@ use @g_mount_guess_content_type[None](mount: NullablePointer[GMount] tag, forcer
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_mount_guess_content_type_finish[NullablePointer[Pointer[U8]]](mount: NullablePointer[GMount] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_mount_guess_content_type_finish[Pointer[Pointer[U8]]](mount: NullablePointer[GMount] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -56971,7 +56971,7 @@ use @g_mount_guess_content_type_finish[NullablePointer[Pointer[U8]]](mount: Null
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_mount_guess_content_type_sync[NullablePointer[Pointer[U8]]](mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_mount_guess_content_type_sync[Pointer[Pointer[U8]]](mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -57028,7 +57028,7 @@ use @g_mount_unshadow[None](mount: NullablePointer[GMount] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_mount_unmount_with_operation[None](mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_mount_unmount_with_operation[None](mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -57061,7 +57061,7 @@ use @g_mount_unmount_with_operation_finish[I32](mount: NullablePointer[GMount] t
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_mount_eject_with_operation[None](mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_mount_eject_with_operation[None](mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -57197,7 +57197,7 @@ use @g_network_monitor_can_reach[I32](monitor: NullablePointer[GNetworkMonitor] 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_network_monitor_can_reach_async[None](monitor: NullablePointer[GNetworkMonitor] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_network_monitor_can_reach_async[None](monitor: NullablePointer[GNetworkMonitor] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -57724,7 +57724,7 @@ use @g_proxy_connect[NullablePointer[GIOStream]](proxy: NullablePointer[GProxy] 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_proxy_connect_async[None](proxy: NullablePointer[GProxy] tag, connection: NullablePointer[GIOStream] tag, proxyaddress: NullablePointer[GProxyAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_proxy_connect_async[None](proxy: NullablePointer[GProxy] tag, connection: NullablePointer[GIOStream] tag, proxyaddress: NullablePointer[GProxyAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -57805,7 +57805,7 @@ use @g_proxy_resolver_is_supported[I32](resolver: NullablePointer[GProxyResolver
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_proxy_resolver_lookup[NullablePointer[Pointer[U8]]](resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_proxy_resolver_lookup[Pointer[Pointer[U8]]](resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -57822,7 +57822,7 @@ use @g_proxy_resolver_lookup[NullablePointer[Pointer[U8]]](resolver: NullablePoi
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_proxy_resolver_lookup_async[None](resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_proxy_resolver_lookup_async[None](resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -57837,7 +57837,7 @@ use @g_proxy_resolver_lookup_async[None](resolver: NullablePointer[GProxyResolve
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_proxy_resolver_lookup_finish[NullablePointer[Pointer[U8]]](resolver: NullablePointer[GProxyResolver] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_proxy_resolver_lookup_finish[Pointer[Pointer[U8]]](resolver: NullablePointer[GProxyResolver] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -58007,7 +58007,7 @@ use @g_resource_lookup_data[NullablePointer[GBytes]](resource: NullablePointer[G
     [Enumeration size=32,fid: f155]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_resource_enumerate_children[NullablePointer[Pointer[U8]]](resource: NullablePointer[GResource] tag, path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_resource_enumerate_children[Pointer[Pointer[U8]]](resource: NullablePointer[GResource] tag, path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -58096,7 +58096,7 @@ use @g_resources_lookup_data[NullablePointer[GBytes]](path: Pointer[U8] tag, loo
     [Enumeration size=32,fid: f155]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_resources_enumerate_children[NullablePointer[Pointer[U8]]](path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_resources_enumerate_children[Pointer[Pointer[U8]]](path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -58333,7 +58333,7 @@ use @g_settings_schema_source_lookup[NullablePointer[GSettingsSchema]](source: N
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_settings_schema_source_list_schemas[None](source: NullablePointer[GSettingsSchemaSource] tag, recursive: I32, nonrelocatable: NullablePointer[NullablePointer[Pointer[U8]]] tag, relocatable: NullablePointer[NullablePointer[Pointer[U8]]] tag)
+use @g_settings_schema_source_list_schemas[None](source: NullablePointer[GSettingsSchemaSource] tag, recursive: I32, nonrelocatable: Pointer[Pointer[Pointer[U8]]], relocatable: Pointer[Pointer[Pointer[U8]]])
 
 
 
@@ -58438,7 +58438,7 @@ use @g_settings_schema_has_key[I32](schema: NullablePointer[GSettingsSchema] tag
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f285]
 */
-use @g_settings_schema_list_keys[NullablePointer[Pointer[U8]]](schema: NullablePointer[GSettingsSchema] tag)
+use @g_settings_schema_list_keys[Pointer[Pointer[U8]]](schema: NullablePointer[GSettingsSchema] tag)
 
 
 
@@ -58451,7 +58451,7 @@ use @g_settings_schema_list_keys[NullablePointer[Pointer[U8]]](schema: NullableP
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f285]
 */
-use @g_settings_schema_list_children[NullablePointer[Pointer[U8]]](schema: NullablePointer[GSettingsSchema] tag)
+use @g_settings_schema_list_children[Pointer[Pointer[U8]]](schema: NullablePointer[GSettingsSchema] tag)
 
 
 
@@ -58692,7 +58692,7 @@ use @g_simple_async_result_get_type[U64]()
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_simple_async_result_new[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, sourcetag: Pointer[None] tag)
+use @g_simple_async_result_new[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, sourcetag: Pointer[None] tag)
 
 
 
@@ -58710,7 +58710,7 @@ use @g_simple_async_result_new[NullablePointer[GSimpleAsyncResult]](sourceobject
     [FundamentalType(int) size=32]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_simple_async_result_new_error[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...)
+use @g_simple_async_result_new_error[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...)
 
 
 
@@ -58726,7 +58726,7 @@ use @g_simple_async_result_new_error[NullablePointer[GSimpleAsyncResult]](source
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_simple_async_result_new_from_error[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
+use @g_simple_async_result_new_from_error[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
 
 
 
@@ -58742,7 +58742,7 @@ use @g_simple_async_result_new_from_error[NullablePointer[GSimpleAsyncResult]](s
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_simple_async_result_new_take_error[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
+use @g_simple_async_result_new_take_error[NullablePointer[GSimpleAsyncResult]](sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
 
 
 
@@ -58757,7 +58757,7 @@ use @g_simple_async_result_new_take_error[NullablePointer[GSimpleAsyncResult]](s
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_simple_async_result_set_op_res_gpointer[None](simple: NullablePointer[GSimpleAsyncResult] tag, opres: Pointer[None] tag, destroyopres: NullablePointer[FUNCTIONTYPE] tag)
+use @g_simple_async_result_set_op_res_gpointer[None](simple: NullablePointer[GSimpleAsyncResult] tag, opres: Pointer[None] tag, destroyopres: Pointer[None] tag)
 
 
 
@@ -58907,7 +58907,7 @@ use @g_simple_async_result_complete_in_idle[None](simple: NullablePointer[GSimpl
     [FundamentalType(int) size=32]
     [PointerType size=64]->[Struct size=256,fid: f160]
 */
-use @g_simple_async_result_run_in_thread[None](simple: NullablePointer[GSimpleAsyncResult] tag, func: NullablePointer[FUNCTIONTYPE] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag)
+use @g_simple_async_result_run_in_thread[None](simple: NullablePointer[GSimpleAsyncResult] tag, func: Pointer[None] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag)
 
 
 
@@ -59015,7 +59015,7 @@ use @g_simple_async_result_is_valid[I32](result: NullablePointer[GAsyncResult] t
     [FundamentalType(int) size=32]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_simple_async_report_error_in_idle[None](g_object: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...)
+use @g_simple_async_report_error_in_idle[None](g_object: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...)
 
 
 
@@ -59031,7 +59031,7 @@ use @g_simple_async_report_error_in_idle[None](g_object: NullablePointer[GObject
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_simple_async_report_gerror_in_idle[None](g_object: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
+use @g_simple_async_report_gerror_in_idle[None](g_object: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
 
 
 
@@ -59047,7 +59047,7 @@ use @g_simple_async_report_gerror_in_idle[None](g_object: NullablePointer[GObjec
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_simple_async_report_take_gerror_in_idle[None](g_object: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
+use @g_simple_async_report_take_gerror_in_idle[None](g_object: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag)
 
 
 
@@ -59124,7 +59124,7 @@ use @g_simple_proxy_resolver_get_type[U64]()
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_simple_proxy_resolver_new[NullablePointer[GProxyResolver]](defaultproxy: Pointer[U8] tag, ignorehosts: NullablePointer[Pointer[U8]] tag)
+use @g_simple_proxy_resolver_new[NullablePointer[GProxyResolver]](defaultproxy: Pointer[U8] tag, ignorehosts: Pointer[Pointer[U8]] tag)
 
 
 
@@ -59152,7 +59152,7 @@ use @g_simple_proxy_resolver_set_default_proxy[None](resolver: NullablePointer[G
     [PointerType size=64]->[Struct size=256,fid: f290]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_simple_proxy_resolver_set_ignore_hosts[None](resolver: NullablePointer[GSimpleProxyResolver] tag, ignorehosts: NullablePointer[Pointer[U8]] tag)
+use @g_simple_proxy_resolver_set_ignore_hosts[None](resolver: NullablePointer[GSimpleProxyResolver] tag, ignorehosts: Pointer[Pointer[U8]] tag)
 
 
 
@@ -59379,7 +59379,7 @@ use @g_subprocess_new[NullablePointer[GSubprocess]](flags: I32, g_error: Nullabl
     [Enumeration size=32,fid: f155]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_subprocess_newv[NullablePointer[GSubprocess]](argv: NullablePointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_subprocess_newv[NullablePointer[GSubprocess]](argv: Pointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -59489,7 +59489,7 @@ use @g_subprocess_wait[I32](subprocess: NullablePointer[GSubprocess] tag, cancel
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_subprocess_wait_async[None](subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_subprocess_wait_async[None](subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -59535,7 +59535,7 @@ use @g_subprocess_wait_check[I32](subprocess: NullablePointer[GSubprocess] tag, 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_subprocess_wait_check_async[None](subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_subprocess_wait_check_async[None](subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -59663,7 +59663,7 @@ use @g_subprocess_communicate[I32](subprocess: NullablePointer[GSubprocess] tag,
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_subprocess_communicate_async[None](subprocess: NullablePointer[GSubprocess] tag, stdinbuf: NullablePointer[GBytes] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_subprocess_communicate_async[None](subprocess: NullablePointer[GSubprocess] tag, stdinbuf: NullablePointer[GBytes] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -59698,7 +59698,7 @@ use @g_subprocess_communicate_finish[I32](subprocess: NullablePointer[GSubproces
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_subprocess_communicate_utf8[I32](subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, stdoutbuf: NullablePointer[Pointer[U8]] tag, stderrbuf: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_subprocess_communicate_utf8[I32](subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, stdoutbuf: Pointer[Pointer[U8]] tag, stderrbuf: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -59715,7 +59715,7 @@ use @g_subprocess_communicate_utf8[I32](subprocess: NullablePointer[GSubprocess]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_subprocess_communicate_utf8_async[None](subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_subprocess_communicate_utf8_async[None](subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -59732,7 +59732,7 @@ use @g_subprocess_communicate_utf8_async[None](subprocess: NullablePointer[GSubp
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_subprocess_communicate_utf8_finish[I32](subprocess: NullablePointer[GSubprocess] tag, result: NullablePointer[GAsyncResult] tag, stdoutbuf: NullablePointer[Pointer[U8]] tag, stderrbuf: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_subprocess_communicate_utf8_finish[I32](subprocess: NullablePointer[GSubprocess] tag, result: NullablePointer[GAsyncResult] tag, stdoutbuf: Pointer[Pointer[U8]] tag, stderrbuf: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -59787,7 +59787,7 @@ use @g_subprocess_launcher_spawn[NullablePointer[GSubprocess]](self: NullablePoi
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_subprocess_launcher_spawnv[NullablePointer[GSubprocess]](self: NullablePointer[GSubprocessLauncher] tag, argv: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_subprocess_launcher_spawnv[NullablePointer[GSubprocess]](self: NullablePointer[GSubprocessLauncher] tag, argv: Pointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -59801,7 +59801,7 @@ use @g_subprocess_launcher_spawnv[NullablePointer[GSubprocess]](self: NullablePo
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_subprocess_launcher_set_environ[None](self: NullablePointer[GSubprocessLauncher] tag, env: NullablePointer[Pointer[U8]] tag)
+use @g_subprocess_launcher_set_environ[None](self: NullablePointer[GSubprocessLauncher] tag, env: Pointer[Pointer[U8]] tag)
 
 
 
@@ -60001,7 +60001,7 @@ use @g_subprocess_launcher_close[None](self: NullablePointer[GSubprocessLauncher
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_subprocess_launcher_set_child_setup[None](self: NullablePointer[GSubprocessLauncher] tag, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroynotify: NullablePointer[FUNCTIONTYPE] tag)
+use @g_subprocess_launcher_set_child_setup[None](self: NullablePointer[GSubprocessLauncher] tag, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, destroynotify: Pointer[None] tag)
 
 
 
@@ -60029,7 +60029,7 @@ use @g_task_get_type[U64]()
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_task_new[NullablePointer[GTask]](sourceobject: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, callbackdata: Pointer[None] tag)
+use @g_task_new[NullablePointer[GTask]](sourceobject: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, callbackdata: Pointer[None] tag)
 
 
 
@@ -60046,7 +60046,7 @@ use @g_task_new[NullablePointer[GTask]](sourceobject: Pointer[None] tag, cancell
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_task_report_error[None](sourceobject: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, g_error: NullablePointer[GError] tag)
+use @g_task_report_error[None](sourceobject: Pointer[None] tag, callback: Pointer[None] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, g_error: NullablePointer[GError] tag)
 
 
 
@@ -60065,7 +60065,7 @@ use @g_task_report_error[None](sourceobject: Pointer[None] tag, callback: Nullab
     [FundamentalType(int) size=32]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_task_report_new_error[None](sourceobject: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...)
+use @g_task_report_new_error[None](sourceobject: Pointer[None] tag, callback: Pointer[None] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...)
 
 
 
@@ -60080,7 +60080,7 @@ use @g_task_report_new_error[None](sourceobject: Pointer[None] tag, callback: Nu
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_task_set_task_data[None](task: NullablePointer[GTask] tag, taskdata: Pointer[None] tag, taskdatadestroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_task_set_task_data[None](task: NullablePointer[GTask] tag, taskdata: Pointer[None] tag, taskdatadestroy: Pointer[None] tag)
 
 
 
@@ -60268,7 +60268,7 @@ use @g_task_is_valid[I32](result: Pointer[None] tag, sourceobject: Pointer[None]
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_task_run_in_thread[None](task: NullablePointer[GTask] tag, taskfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_task_run_in_thread[None](task: NullablePointer[GTask] tag, taskfunc: Pointer[None] tag)
 
 
 
@@ -60282,7 +60282,7 @@ use @g_task_run_in_thread[None](task: NullablePointer[GTask] tag, taskfunc: Null
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_task_run_in_thread_sync[None](task: NullablePointer[GTask] tag, taskfunc: NullablePointer[FUNCTIONTYPE] tag)
+use @g_task_run_in_thread_sync[None](task: NullablePointer[GTask] tag, taskfunc: Pointer[None] tag)
 
 
 
@@ -60324,7 +60324,7 @@ use @g_task_get_return_on_cancel[I32](task: NullablePointer[GTask] tag)
     [PointerType size=64]->[Struct size=768,fid: f82]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_task_attach_source[None](task: NullablePointer[GTask] tag, source: NullablePointer[GSource] tag, callback: NullablePointer[FUNCTIONTYPE] tag)
+use @g_task_attach_source[None](task: NullablePointer[GTask] tag, source: NullablePointer[GSource] tag, callback: Pointer[None] tag)
 
 
 
@@ -60339,7 +60339,7 @@ use @g_task_attach_source[None](task: NullablePointer[GTask] tag, source: Nullab
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-use @g_task_return_pointer[None](task: NullablePointer[GTask] tag, result: Pointer[None] tag, resultdestroy: NullablePointer[FUNCTIONTYPE] tag)
+use @g_task_return_pointer[None](task: NullablePointer[GTask] tag, result: Pointer[None] tag, resultdestroy: Pointer[None] tag)
 
 
 
@@ -60675,7 +60675,7 @@ use @g_themed_icon_new_with_default_fallbacks[NullablePointer[GIcon]](iconname: 
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-use @g_themed_icon_new_from_names[NullablePointer[GIcon]](iconnames: NullablePointer[Pointer[U8]] tag, len: I32)
+use @g_themed_icon_new_from_names[NullablePointer[GIcon]](iconnames: Pointer[Pointer[U8]] tag, len: I32)
 
 
 
@@ -60716,7 +60716,7 @@ use @g_themed_icon_append_name[None](icon: NullablePointer[GThemedIcon] tag, ico
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-use @g_themed_icon_get_names[NullablePointer[Pointer[U8]]](icon: NullablePointer[GThemedIcon] tag)
+use @g_themed_icon_get_names[Pointer[Pointer[U8]]](icon: NullablePointer[GThemedIcon] tag)
 
 
 
@@ -61206,7 +61206,7 @@ use @g_volume_should_automount[I32](volume: NullablePointer[GVolume] tag)
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_volume_mount[None](volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_volume_mount[None](volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -61238,7 +61238,7 @@ use @g_volume_mount_finish[I32](volume: NullablePointer[GVolume] tag, result: Nu
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_volume_eject[None](volume: NullablePointer[GVolume] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_volume_eject[None](volume: NullablePointer[GVolume] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 
@@ -61280,7 +61280,7 @@ use @g_volume_get_identifier[Pointer[U8]](volume: NullablePointer[GVolume] tag, 
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-use @g_volume_enumerate_identifiers[NullablePointer[Pointer[U8]]](volume: NullablePointer[GVolume] tag)
+use @g_volume_enumerate_identifiers[Pointer[Pointer[U8]]](volume: NullablePointer[GVolume] tag)
 
 
 
@@ -61311,7 +61311,7 @@ use @g_volume_get_activation_root[NullablePointer[GFile]](volume: NullablePointe
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-use @g_volume_eject_with_operation[None](volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag)
+use @g_volume_eject_with_operation[None](volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag)
 
 
 

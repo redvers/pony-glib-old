@@ -163,13 +163,13 @@
     rvtype="NullablePointer[NullablePointer[GDBusObjectManager]]"/>
 
   <typedef name="NullablePointer[FUNCTIONTYPE]"
-    ponytypein="NullablePointer[FUNCTIONTYPE] tag"
+    ponytypein="Pointer[None] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[FUNCTIONTYPE]"
-    structtype="NullablePointer[FUNCTIONTYPE]"
-    structdef="NullablePointer[FUNCTIONTYPE].none()"
-    argtype="NullablePointer[FUNCTIONTYPE] tag"
-    rvtype="NullablePointer[FUNCTIONTYPE]"/>
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
 
   <typedef name="NullablePointer[GCond]"
     ponytypein="NullablePointer[GCond] tag"
@@ -2458,13 +2458,13 @@
     rvtype="NullablePointer[GAction]"/>
 
   <typedef name="NullablePointer[Pointer[U8]]"
-    ponytypein="NullablePointer[Pointer[U8]] tag"
+    ponytypein="Pointer[Pointer[U8] tag] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[Pointer[U8]]"
-    structtype="NullablePointer[Pointer[U8]]"
-    structdef="NullablePointer[Pointer[U8]].none()"
-    argtype="NullablePointer[Pointer[U8]] tag"
-    rvtype="NullablePointer[Pointer[U8]]"/>
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="NullablePointer[GSocket]"
     ponytypein="NullablePointer[GSocket] tag"
@@ -2782,13 +2782,13 @@
     rvtype="NullablePointer[GDBusPropertyInfo]"/>
 
   <typedef name="NullablePointer[NullablePointer[Pointer[U8]]]"
-    ponytypein="NullablePointer[NullablePointer[Pointer[U8]]] tag"
+    ponytypein="Pointer[Pointer[Pointer[U8]]] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[NullablePointer[Pointer[U8]]]"
-    structtype="NullablePointer[NullablePointer[Pointer[U8]]]"
-    structdef="NullablePointer[NullablePointer[Pointer[U8]]].none()"
-    argtype="NullablePointer[NullablePointer[Pointer[U8]]] tag"
-    rvtype="NullablePointer[NullablePointer[Pointer[U8]]]"/>
+    ponytypeout="Pointer[Pointer[Pointer[U8]]]"
+    structtype="Pointer[Pointer[Pointer[U8]]]"
+    structdef="Pointer[Pointer[Pointer[U8]]]"
+    argtype="Pointer[Pointer[Pointer[U8]]]"
+    rvtype="Pointer[Pointer[Pointer[U8]]]"/>
 
   <typedef name="NullablePointer[GDBusConnection]"
     ponytypein="NullablePointer[GDBusConnection] tag"
@@ -4015,13 +4015,13 @@
     rvtype="NullablePointer[GBufferedInputStream]"/>
 
   <typedef name="NullablePointer[NullablePointer[FUNCTIONTYPE]]"
-    ponytypein="NullablePointer[NullablePointer[FUNCTIONTYPE]] tag"
+    ponytypein="Pointer[None] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[NullablePointer[FUNCTIONTYPE]]"
-    structtype="NullablePointer[NullablePointer[FUNCTIONTYPE]]"
-    structdef="NullablePointer[NullablePointer[FUNCTIONTYPE]].none()"
-    argtype="NullablePointer[NullablePointer[FUNCTIONTYPE]] tag"
-    rvtype="NullablePointer[NullablePointer[FUNCTIONTYPE]]"/>
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
 
   <typedef name="NullablePointer[NullablePointer[GParamSpec]]"
     ponytypein="NullablePointer[NullablePointer[GParamSpec]] tag"

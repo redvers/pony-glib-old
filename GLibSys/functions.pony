@@ -1,10 +1,9 @@
+
 use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
-
 primitive GLibSys
-
 
 /*
   Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gtypes.h:458
@@ -264,7 +263,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [FundamentalType(unsigned int) size=32]
 */
-  fun g_array_append_vals[A: Any val](array: NullablePointer[GArray] tag, data: Pointer[A] tag, len: U32): NullablePointer[GArray] =>
+  fun g_array_append_vals(array: NullablePointer[GArray] tag, data: Pointer[None] tag, len: U32): NullablePointer[GArray] =>
     @g_array_append_vals(array, data, len)
 
 
@@ -366,7 +365,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_array_sort(array: NullablePointer[GArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_array_sort(array: NullablePointer[GArray] tag, comparefunc: Pointer[None] tag): None =>
     @g_array_sort(array, comparefunc)
 
 
@@ -381,7 +380,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_array_sort_with_data(array: NullablePointer[GArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_array_sort_with_data(array: NullablePointer[GArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_array_sort_with_data(array, comparefunc, userdata)
 
 
@@ -397,7 +396,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
 */
-  fun g_array_binary_search(array: NullablePointer[GArray] tag, target: Pointer[None] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, outmatchindex: Pointer[U32] tag): I32 =>
+  fun g_array_binary_search(array: NullablePointer[GArray] tag, target: Pointer[None] tag, comparefunc: Pointer[None] tag, outmatchindex: Pointer[U32] tag): I32 =>
     @g_array_binary_search(array, target, comparefunc, outmatchindex)
 
 
@@ -411,7 +410,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_array_set_clear_func(array: NullablePointer[GArray] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_array_set_clear_func(array: NullablePointer[GArray] tag, clearfunc: Pointer[None] tag): None =>
     @g_array_set_clear_func(array, clearfunc)
 
 
@@ -436,7 +435,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_ptr_array_new_with_free_func(elementfreefunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GPtrArray] =>
+  fun g_ptr_array_new_with_free_func(elementfreefunc: Pointer[None] tag): NullablePointer[GPtrArray] =>
     @g_ptr_array_new_with_free_func(elementfreefunc)
 
 
@@ -465,7 +464,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_ptr_array_copy(array: NullablePointer[GPtrArray] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GPtrArray] =>
+  fun g_ptr_array_copy(array: NullablePointer[GPtrArray] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GPtrArray] =>
     @g_ptr_array_copy(array, func, userdata)
 
 
@@ -492,7 +491,7 @@ primitive GLibSys
     [FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_ptr_array_new_full(reservedsize: U32, elementfreefunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GPtrArray] =>
+  fun g_ptr_array_new_full(reservedsize: U32, elementfreefunc: Pointer[None] tag): NullablePointer[GPtrArray] =>
     @g_ptr_array_new_full(reservedsize, elementfreefunc)
 
 
@@ -546,7 +545,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_ptr_array_set_free_func(array: NullablePointer[GPtrArray] tag, elementfreefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_ptr_array_set_free_func(array: NullablePointer[GPtrArray] tag, elementfreefunc: Pointer[None] tag): None =>
     @g_ptr_array_set_free_func(array, elementfreefunc)
 
 
@@ -689,7 +688,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_ptr_array_extend(arraytoextend: NullablePointer[GPtrArray] tag, array: NullablePointer[GPtrArray] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_ptr_array_extend(arraytoextend: NullablePointer[GPtrArray] tag, array: NullablePointer[GPtrArray] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_ptr_array_extend(arraytoextend, array, func, userdata)
 
 
@@ -732,7 +731,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_ptr_array_sort(array: NullablePointer[GPtrArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_ptr_array_sort(array: NullablePointer[GPtrArray] tag, comparefunc: Pointer[None] tag): None =>
     @g_ptr_array_sort(array, comparefunc)
 
 
@@ -747,7 +746,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_ptr_array_sort_with_data(array: NullablePointer[GPtrArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_ptr_array_sort_with_data(array: NullablePointer[GPtrArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_ptr_array_sort_with_data(array, comparefunc, userdata)
 
 
@@ -762,7 +761,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_ptr_array_foreach(array: NullablePointer[GPtrArray] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_ptr_array_foreach(array: NullablePointer[GPtrArray] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_ptr_array_foreach(array, func, userdata)
 
 
@@ -793,7 +792,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
 */
-  fun g_ptr_array_find_with_equal_func(haystack: NullablePointer[GPtrArray] tag, needle: Pointer[None] tag, equalfunc: NullablePointer[FUNCTIONTYPE] tag, index: Pointer[U32] tag): I32 =>
+  fun g_ptr_array_find_with_equal_func(haystack: NullablePointer[GPtrArray] tag, needle: Pointer[None] tag, equalfunc: Pointer[None] tag, index: Pointer[U32] tag): I32 =>
     @g_ptr_array_find_with_equal_func(haystack, needle, equalfunc, index)
 
 
@@ -1000,7 +999,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=128,fid: f17]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_byte_array_sort(array: NullablePointer[GByteArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_byte_array_sort(array: NullablePointer[GByteArray] tag, comparefunc: Pointer[None] tag): None =>
     @g_byte_array_sort(array, comparefunc)
 
 
@@ -1015,7 +1014,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_byte_array_sort_with_data(array: NullablePointer[GByteArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_byte_array_sort_with_data(array: NullablePointer[GByteArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_byte_array_sort_with_data(array, comparefunc, userdata)
 
 
@@ -1346,7 +1345,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_error_domain_register_static(errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: NullablePointer[FUNCTIONTYPE] tag, errortypecopy: NullablePointer[FUNCTIONTYPE] tag, errortypeclear: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_error_domain_register_static(errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: Pointer[None] tag, errortypecopy: Pointer[None] tag, errortypeclear: Pointer[None] tag): U32 =>
     @g_error_domain_register_static(errortypename, errortypeprivatesize, errortypeinit, errortypecopy, errortypeclear)
 
 
@@ -1363,7 +1362,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_error_domain_register(errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: NullablePointer[FUNCTIONTYPE] tag, errortypecopy: NullablePointer[FUNCTIONTYPE] tag, errortypeclear: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_error_domain_register(errortypename: Pointer[U8] tag, errortypeprivatesize: U64, errortypeinit: Pointer[None] tag, errortypecopy: Pointer[None] tag, errortypeclear: Pointer[None] tag): U32 =>
     @g_error_domain_register(errortypename, errortypeprivatesize, errortypeinit, errortypecopy, errortypeclear)
 
 
@@ -1721,7 +1720,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_get_system_data_dirs(): NullablePointer[Pointer[U8]] =>
+  fun g_get_system_data_dirs(): Pointer[Pointer[U8]] =>
     @g_get_system_data_dirs()
 
 
@@ -1733,7 +1732,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_get_system_config_dirs(): NullablePointer[Pointer[U8]] =>
+  fun g_get_system_config_dirs(): Pointer[Pointer[U8]] =>
     @g_get_system_config_dirs()
 
 
@@ -1870,7 +1869,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_atexit(func: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_atexit(func: Pointer[None] tag): None =>
     @g_atexit(func)
 
 
@@ -2018,7 +2017,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_thread_new(name: Pointer[U8] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): NullablePointer[GThread] =>
+  fun g_thread_new(name: Pointer[U8] tag, func: Pointer[None] tag, data: Pointer[None] tag): NullablePointer[GThread] =>
     @g_thread_new(name, func, data)
 
 
@@ -2034,7 +2033,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_thread_try_new(name: Pointer[U8] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GThread] =>
+  fun g_thread_try_new(name: Pointer[U8] tag, func: Pointer[None] tag, data: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GThread] =>
     @g_thread_try_new(name, func, data, g_error)
 
 
@@ -2455,7 +2454,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_once_impl(once: NullablePointer[GOnce] tag, func: NullablePointer[FUNCTIONTYPE] tag, arg: Pointer[None] tag): Pointer[None] =>
+  fun g_once_impl(once: NullablePointer[GOnce] tag, func: Pointer[None] tag, arg: Pointer[None] tag): Pointer[None] =>
     @g_once_impl(once, func, arg)
 
 
@@ -2623,7 +2622,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_async_queue_new_full(itemfreefunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GAsyncQueue] =>
+  fun g_async_queue_new_full(itemfreefunc: Pointer[None] tag): NullablePointer[GAsyncQueue] =>
     @g_async_queue_new_full(itemfreefunc)
 
 
@@ -2745,7 +2744,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_async_queue_push_sorted(queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_async_queue_push_sorted(queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_async_queue_push_sorted(queue, data, func, userdata)
 
 
@@ -2761,7 +2760,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_async_queue_push_sorted_unlocked(queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_async_queue_push_sorted_unlocked(queue: NullablePointer[GAsyncQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_async_queue_push_sorted_unlocked(queue, data, func, userdata)
 
 
@@ -2882,7 +2881,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_async_queue_sort(queue: NullablePointer[GAsyncQueue] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_async_queue_sort(queue: NullablePointer[GAsyncQueue] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_async_queue_sort(queue, func, userdata)
 
 
@@ -2897,7 +2896,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_async_queue_sort_unlocked(queue: NullablePointer[GAsyncQueue] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_async_queue_sort_unlocked(queue: NullablePointer[GAsyncQueue] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_async_queue_sort_unlocked(queue, func, userdata)
 
 
@@ -4130,7 +4129,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_bookmark_file_load_from_data_dirs(bookmark: NullablePointer[GBookmarkFile] tag, file: Pointer[U8] tag, fullpath: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_bookmark_file_load_from_data_dirs(bookmark: NullablePointer[GBookmarkFile] tag, file: Pointer[U8] tag, fullpath: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_bookmark_file_load_from_data_dirs(bookmark, file, fullpath, g_error)
 
 
@@ -4266,7 +4265,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-  fun g_bookmark_file_set_groups(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, groups: NullablePointer[Pointer[U8]] tag, length: U64): None =>
+  fun g_bookmark_file_set_groups(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, groups: Pointer[Pointer[U8] tag] tag, length: U64): None =>
     @g_bookmark_file_set_groups(bookmark, uri, groups, length)
 
 
@@ -4313,7 +4312,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_bookmark_file_get_groups(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_bookmark_file_get_groups(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_bookmark_file_get_groups(bookmark, uri, length, g_error)
 
 
@@ -4361,7 +4360,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_bookmark_file_get_applications(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_bookmark_file_get_applications(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_bookmark_file_get_applications(bookmark, uri, length, g_error)
 
 
@@ -4418,7 +4417,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_bookmark_file_get_app_info(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: NullablePointer[Pointer[U8]] tag, count: Pointer[U32] tag, stamp: Pointer[I64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_bookmark_file_get_app_info(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: Pointer[Pointer[U8] tag] tag, count: Pointer[U32] tag, stamp: Pointer[I64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_bookmark_file_get_app_info(bookmark, uri, name, exec, count, stamp, g_error)
 
 
@@ -4437,7 +4436,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[Struct size=,fid: f59]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_bookmark_file_get_application_info(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: NullablePointer[Pointer[U8]] tag, count: Pointer[U32] tag, stamp: NullablePointer[NullablePointer[GDateTime]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_bookmark_file_get_application_info(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, name: Pointer[U8] tag, exec: Pointer[Pointer[U8] tag] tag, count: Pointer[U32] tag, stamp: NullablePointer[NullablePointer[GDateTime]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_bookmark_file_get_application_info(bookmark, uri, name, exec, count, stamp, g_error)
 
 
@@ -4500,7 +4499,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_bookmark_file_get_icon(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, href: NullablePointer[Pointer[U8]] tag, mimetype: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_bookmark_file_get_icon(bookmark: NullablePointer[GBookmarkFile] tag, uri: Pointer[U8] tag, href: Pointer[Pointer[U8] tag] tag, mimetype: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_bookmark_file_get_icon(bookmark, uri, href, mimetype, g_error)
 
 
@@ -4721,7 +4720,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f60]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_bookmark_file_get_uris(bookmark: NullablePointer[GBookmarkFile] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_bookmark_file_get_uris(bookmark: NullablePointer[GBookmarkFile] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_bookmark_file_get_uris(bookmark, length)
 
 
@@ -4842,7 +4841,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_bytes_new_with_free_func(data: Pointer[None] tag, size: U64, freefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GBytes] =>
+  fun g_bytes_new_with_free_func(data: Pointer[None] tag, size: U64, freefunc: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GBytes] =>
     @g_bytes_new_with_free_func(data, size, freefunc, userdata)
 
 
@@ -4991,7 +4990,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_get_charset(charset: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_get_charset(charset: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_get_charset(charset)
 
 
@@ -5016,7 +5015,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_get_console_charset(charset: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_get_console_charset(charset: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_get_console_charset(charset)
 
 
@@ -5028,7 +5027,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_get_language_names(): NullablePointer[Pointer[U8]] =>
+  fun g_get_language_names(): Pointer[Pointer[U8]] =>
     @g_get_language_names()
 
 
@@ -5041,7 +5040,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_get_language_names_with_category(categoryname: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_get_language_names_with_category(categoryname: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_get_language_names_with_category(categoryname)
 
 
@@ -5054,7 +5053,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_get_locale_variants(locale: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_get_locale_variants(locale: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_get_locale_variants(locale)
 
 
@@ -5249,7 +5248,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_iconv(converter: NullablePointer[GIConv] tag, inbuf: NullablePointer[Pointer[U8]] tag, inbytesleft: Pointer[U64] tag, outbuf: NullablePointer[Pointer[U8]] tag, outbytesleft: Pointer[U64] tag): U64 =>
+  fun g_iconv(converter: NullablePointer[GIConv] tag, inbuf: Pointer[Pointer[U8] tag] tag, inbytesleft: Pointer[U64] tag, outbuf: Pointer[Pointer[U8] tag] tag, outbytesleft: Pointer[U64] tag): U64 =>
     @g_iconv(converter, inbuf, inbytesleft, outbuf, outbytesleft)
 
 
@@ -5402,7 +5401,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_filename_from_uri(uri: Pointer[U8] tag, hostname: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[U8] =>
+  fun g_filename_from_uri(uri: Pointer[U8] tag, hostname: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[U8] =>
     @g_filename_from_uri(uri, hostname, g_error)
 
 
@@ -5443,7 +5442,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_get_filename_charsets(filenamecharsets: NullablePointer[NullablePointer[Pointer[U8]]] tag): I32 =>
+  fun g_get_filename_charsets(filenamecharsets: Pointer[Pointer[Pointer[U8]]] tag): I32 =>
     @g_get_filename_charsets(filenamecharsets)
 
 
@@ -5469,7 +5468,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_uri_list_extract_uris(urilist: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_uri_list_extract_uris(urilist: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_uri_list_extract_uris(urilist)
 
 
@@ -5525,7 +5524,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_datalist_id_set_data_full(datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_datalist_id_set_data_full(datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: Pointer[None] tag): None =>
     @g_datalist_id_set_data_full(datalist, keyid, data, destroyfunc)
 
 
@@ -5541,7 +5540,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_datalist_id_dup_data(datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, dupfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): Pointer[None] =>
+  fun g_datalist_id_dup_data(datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
     @g_datalist_id_dup_data(datalist, keyid, dupfunc, userdata)
 
 
@@ -5559,7 +5558,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_datalist_id_replace_data(datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag, olddestroy: NullablePointer[NullablePointer[FUNCTIONTYPE]] tag): I32 =>
+  fun g_datalist_id_replace_data(datalist: NullablePointer[NullablePointer[GData]] tag, keyid: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag): I32 =>
     @g_datalist_id_replace_data(datalist, keyid, oldval, newval, destroy, olddestroy)
 
 
@@ -5588,7 +5587,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_datalist_foreach(datalist: NullablePointer[NullablePointer[GData]] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_datalist_foreach(datalist: NullablePointer[NullablePointer[GData]] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_datalist_foreach(datalist, func, userdata)
 
 
@@ -5686,7 +5685,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_dataset_id_set_data_full(datasetlocation: Pointer[None] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_dataset_id_set_data_full(datasetlocation: Pointer[None] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: Pointer[None] tag): None =>
     @g_dataset_id_set_data_full(datasetlocation, keyid, data, destroyfunc)
 
 
@@ -5715,7 +5714,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dataset_foreach(datasetlocation: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dataset_foreach(datasetlocation: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dataset_foreach(datasetlocation, func, userdata)
 
 
@@ -6490,7 +6489,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_listenv(): NullablePointer[Pointer[U8]] =>
+  fun g_listenv(): Pointer[Pointer[U8]] =>
     @g_listenv()
 
 
@@ -6502,7 +6501,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_get_environ(): NullablePointer[Pointer[U8]] =>
+  fun g_get_environ(): Pointer[Pointer[U8]] =>
     @g_get_environ()
 
 
@@ -6516,7 +6515,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_environ_getenv(envp: NullablePointer[Pointer[U8]] tag, variable: Pointer[U8] tag): Pointer[U8] =>
+  fun g_environ_getenv(envp: Pointer[Pointer[U8] tag] tag, variable: Pointer[U8] tag): Pointer[U8] =>
     @g_environ_getenv(envp, variable)
 
 
@@ -6532,7 +6531,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-  fun g_environ_setenv(envp: NullablePointer[Pointer[U8]] tag, variable: Pointer[U8] tag, value: Pointer[U8] tag, overwrite: I32): NullablePointer[Pointer[U8]] =>
+  fun g_environ_setenv(envp: Pointer[Pointer[U8] tag] tag, variable: Pointer[U8] tag, value: Pointer[U8] tag, overwrite: I32): Pointer[Pointer[U8]] =>
     @g_environ_setenv(envp, variable, value, overwrite)
 
 
@@ -6546,7 +6545,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_environ_unsetenv(envp: NullablePointer[Pointer[U8]] tag, variable: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_environ_unsetenv(envp: Pointer[Pointer[U8] tag] tag, variable: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_environ_unsetenv(envp, variable)
 
 
@@ -6601,7 +6600,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_get_contents(filename: Pointer[U8] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_get_contents(filename: Pointer[U8] tag, contents: Pointer[Pointer[U8] tag] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_get_contents(filename, contents, length, g_error)
 
 
@@ -6719,7 +6718,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_open_tmp(tmpl: Pointer[U8] tag, nameused: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_open_tmp(tmpl: Pointer[U8] tag, nameused: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_open_tmp(tmpl, nameused, g_error)
 
 
@@ -6761,7 +6760,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_build_pathv(separator: Pointer[U8] tag, args: NullablePointer[Pointer[U8]] tag): Pointer[U8] =>
+  fun g_build_pathv(separator: Pointer[U8] tag, args: Pointer[Pointer[U8] tag] tag): Pointer[U8] =>
     @g_build_pathv(separator, args)
 
 
@@ -6787,7 +6786,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_build_filenamev(args: NullablePointer[Pointer[U8]] tag): Pointer[U8] =>
+  fun g_build_filenamev(args: Pointer[Pointer[U8] tag] tag): Pointer[U8] =>
     @g_build_filenamev(args)
 
 
@@ -7022,7 +7021,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_clear_pointer(pp: NullablePointer[Pointer[None]] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_clear_pointer(pp: NullablePointer[Pointer[None]] tag, destroy: Pointer[None] tag): None =>
     @g_clear_pointer(pp, destroy)
 
 
@@ -7292,7 +7291,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_node_copy_deep(node: NullablePointer[GNode] tag, copyfunc: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): NullablePointer[GNode] =>
+  fun g_node_copy_deep(node: NullablePointer[GNode] tag, copyfunc: Pointer[None] tag, data: Pointer[None] tag): NullablePointer[GNode] =>
     @g_node_copy_deep(node, copyfunc, data)
 
 
@@ -7452,7 +7451,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_node_traverse(root: NullablePointer[GNode] tag, order: I32, flags: I32, maxdepth: I32, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): None =>
+  fun g_node_traverse(root: NullablePointer[GNode] tag, order: I32, flags: I32, maxdepth: I32, func: Pointer[None] tag, data: Pointer[None] tag): None =>
     @g_node_traverse(root, order, flags, maxdepth, func, data)
 
 
@@ -7481,7 +7480,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_node_children_foreach(node: NullablePointer[GNode] tag, flags: I32, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): None =>
+  fun g_node_children_foreach(node: NullablePointer[GNode] tag, flags: I32, func: Pointer[None] tag, data: Pointer[None] tag): None =>
     @g_node_children_foreach(node, flags, func, data)
 
 
@@ -7655,7 +7654,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=192,fid: f75]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_list_free_full(list: NullablePointer[GList] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_list_free_full(list: NullablePointer[GList] tag, freefunc: Pointer[None] tag): None =>
     @g_list_free_full(list, freefunc)
 
 
@@ -7713,7 +7712,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_list_insert_sorted(list: NullablePointer[GList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GList] =>
+  fun g_list_insert_sorted(list: NullablePointer[GList] tag, data: Pointer[None] tag, func: Pointer[None] tag): NullablePointer[GList] =>
     @g_list_insert_sorted(list, data, func)
 
 
@@ -7729,7 +7728,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_list_insert_sorted_with_data(list: NullablePointer[GList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GList] =>
+  fun g_list_insert_sorted_with_data(list: NullablePointer[GList] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GList] =>
     @g_list_insert_sorted_with_data(list, data, func, userdata)
 
 
@@ -7870,7 +7869,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_list_copy_deep(list: NullablePointer[GList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GList] =>
+  fun g_list_copy_deep(list: NullablePointer[GList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GList] =>
     @g_list_copy_deep(list, func, userdata)
 
 
@@ -7927,7 +7926,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_list_find_custom(list: NullablePointer[GList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GList] =>
+  fun g_list_find_custom(list: NullablePointer[GList] tag, data: Pointer[None] tag, func: Pointer[None] tag): NullablePointer[GList] =>
     @g_list_find_custom(list, data, func)
 
 
@@ -8009,7 +8008,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_list_foreach(list: NullablePointer[GList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_list_foreach(list: NullablePointer[GList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_list_foreach(list, func, userdata)
 
 
@@ -8023,7 +8022,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=192,fid: f75]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_list_sort(list: NullablePointer[GList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GList] =>
+  fun g_list_sort(list: NullablePointer[GList] tag, comparefunc: Pointer[None] tag): NullablePointer[GList] =>
     @g_list_sort(list, comparefunc)
 
 
@@ -8038,7 +8037,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_list_sort_with_data(list: NullablePointer[GList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GList] =>
+  fun g_list_sort_with_data(list: NullablePointer[GList] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GList] =>
     @g_list_sort_with_data(list, comparefunc, userdata)
 
 
@@ -8066,7 +8065,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[Struct size=192,fid: f75]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_clear_list(listptr: NullablePointer[NullablePointer[GList]] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_clear_list(listptr: NullablePointer[NullablePointer[GList]] tag, destroy: Pointer[None] tag): None =>
     @g_clear_list(listptr, destroy)
 
 
@@ -8080,7 +8079,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_hash_table_new(hashfunc: NullablePointer[FUNCTIONTYPE] tag, keyequalfunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GHashTable] =>
+  fun g_hash_table_new(hashfunc: Pointer[None] tag, keyequalfunc: Pointer[None] tag): NullablePointer[GHashTable] =>
     @g_hash_table_new(hashfunc, keyequalfunc)
 
 
@@ -8096,7 +8095,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_hash_table_new_full(hashfunc: NullablePointer[FUNCTIONTYPE] tag, keyequalfunc: NullablePointer[FUNCTIONTYPE] tag, keydestroyfunc: NullablePointer[FUNCTIONTYPE] tag, valuedestroyfunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GHashTable] =>
+  fun g_hash_table_new_full(hashfunc: Pointer[None] tag, keyequalfunc: Pointer[None] tag, keydestroyfunc: Pointer[None] tag, valuedestroyfunc: Pointer[None] tag): NullablePointer[GHashTable] =>
     @g_hash_table_new_full(hashfunc, keyequalfunc, keydestroyfunc, valuedestroyfunc)
 
 
@@ -8282,7 +8281,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_hash_table_foreach(hashtable: NullablePointer[GHashTable] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_hash_table_foreach(hashtable: NullablePointer[GHashTable] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_hash_table_foreach(hashtable, func, userdata)
 
 
@@ -8297,7 +8296,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_hash_table_find(hashtable: NullablePointer[GHashTable] tag, predicate: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): Pointer[None] =>
+  fun g_hash_table_find(hashtable: NullablePointer[GHashTable] tag, predicate: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
     @g_hash_table_find(hashtable, predicate, userdata)
 
 
@@ -8312,7 +8311,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_hash_table_foreach_remove(hashtable: NullablePointer[GHashTable] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): U32 =>
+  fun g_hash_table_foreach_remove(hashtable: NullablePointer[GHashTable] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): U32 =>
     @g_hash_table_foreach_remove(hashtable, func, userdata)
 
 
@@ -8327,7 +8326,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_hash_table_foreach_steal(hashtable: NullablePointer[GHashTable] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): U32 =>
+  fun g_hash_table_foreach_steal(hashtable: NullablePointer[GHashTable] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): U32 =>
     @g_hash_table_foreach_steal(hashtable, func, userdata)
 
 
@@ -8923,7 +8922,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=512,fid: f78]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_hook_insert_sorted(hooklist: NullablePointer[GHookList] tag, hook: NullablePointer[GHook] tag, func: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_hook_insert_sorted(hooklist: NullablePointer[GHookList] tag, hook: NullablePointer[GHook] tag, func: Pointer[None] tag): None =>
     @g_hook_insert_sorted(hooklist, hook, func)
 
 
@@ -8953,7 +8952,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_hook_find(hooklist: NullablePointer[GHookList] tag, needvalids: I32, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): NullablePointer[GHook] =>
+  fun g_hook_find(hooklist: NullablePointer[GHookList] tag, needvalids: I32, func: Pointer[None] tag, data: Pointer[None] tag): NullablePointer[GHook] =>
     @g_hook_find(hooklist, needvalids, func, data)
 
 
@@ -9086,7 +9085,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_hook_list_marshal(hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: NullablePointer[FUNCTIONTYPE] tag, marshaldata: Pointer[None] tag): None =>
+  fun g_hook_list_marshal(hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: Pointer[None] tag, marshaldata: Pointer[None] tag): None =>
     @g_hook_list_marshal(hooklist, mayrecurse, marshaller, marshaldata)
 
 
@@ -9102,7 +9101,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_hook_list_marshal_check(hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: NullablePointer[FUNCTIONTYPE] tag, marshaldata: Pointer[None] tag): None =>
+  fun g_hook_list_marshal_check(hooklist: NullablePointer[GHookList] tag, mayrecurse: I32, marshaller: Pointer[None] tag, marshaldata: Pointer[None] tag): None =>
     @g_hook_list_marshal_check(hooklist, mayrecurse, marshaller, marshaldata)
 
 
@@ -9234,7 +9233,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=128,fid: f81]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_slist_free_full(list: NullablePointer[GSList] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_slist_free_full(list: NullablePointer[GSList] tag, freefunc: Pointer[None] tag): None =>
     @g_slist_free_full(list, freefunc)
 
 
@@ -9292,7 +9291,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_slist_insert_sorted(list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GSList] =>
+  fun g_slist_insert_sorted(list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: Pointer[None] tag): NullablePointer[GSList] =>
     @g_slist_insert_sorted(list, data, func)
 
 
@@ -9308,7 +9307,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_slist_insert_sorted_with_data(list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GSList] =>
+  fun g_slist_insert_sorted_with_data(list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GSList] =>
     @g_slist_insert_sorted_with_data(list, data, func, userdata)
 
 
@@ -9434,7 +9433,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_slist_copy_deep(list: NullablePointer[GSList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GSList] =>
+  fun g_slist_copy_deep(list: NullablePointer[GSList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GSList] =>
     @g_slist_copy_deep(list, func, userdata)
 
 
@@ -9477,7 +9476,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_slist_find_custom(list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GSList] =>
+  fun g_slist_find_custom(list: NullablePointer[GSList] tag, data: Pointer[None] tag, func: Pointer[None] tag): NullablePointer[GSList] =>
     @g_slist_find_custom(list, data, func)
 
 
@@ -9546,7 +9545,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_slist_foreach(list: NullablePointer[GSList] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_slist_foreach(list: NullablePointer[GSList] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_slist_foreach(list, func, userdata)
 
 
@@ -9560,7 +9559,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=128,fid: f81]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_slist_sort(list: NullablePointer[GSList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GSList] =>
+  fun g_slist_sort(list: NullablePointer[GSList] tag, comparefunc: Pointer[None] tag): NullablePointer[GSList] =>
     @g_slist_sort(list, comparefunc)
 
 
@@ -9575,7 +9574,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_slist_sort_with_data(list: NullablePointer[GSList] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GSList] =>
+  fun g_slist_sort_with_data(list: NullablePointer[GSList] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GSList] =>
     @g_slist_sort_with_data(list, comparefunc, userdata)
 
 
@@ -9603,7 +9602,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f81]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_clear_slist(slistptr: NullablePointer[NullablePointer[GSList]] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_clear_slist(slistptr: NullablePointer[NullablePointer[GSList]] tag, destroy: Pointer[None] tag): None =>
     @g_clear_slist(slistptr, destroy)
 
 
@@ -9864,7 +9863,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f82]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_main_context_set_poll_func(context: NullablePointer[GMainContext] tag, func: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_main_context_set_poll_func(context: NullablePointer[GMainContext] tag, func: Pointer[None] tag): None =>
     @g_main_context_set_poll_func(context, func)
 
 
@@ -9877,7 +9876,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f82]
 */
-  fun g_main_context_get_poll_func(context: NullablePointer[GMainContext] tag): NullablePointer[FUNCTIONTYPE] =>
+  fun g_main_context_get_poll_func(context: NullablePointer[GMainContext] tag): Pointer[None] =>
     @g_main_context_get_poll_func(context)
 
 
@@ -10126,7 +10125,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=768,fid: f82]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_source_set_dispose_function(source: NullablePointer[GSource] tag, dispose: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_source_set_dispose_function(source: NullablePointer[GSource] tag, dispose: Pointer[None] tag): None =>
     @g_source_set_dispose_function(source, dispose)
 
 
@@ -10275,7 +10274,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_source_set_callback(source: NullablePointer[GSource] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_source_set_callback(source: NullablePointer[GSource] tag, func: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag): None =>
     @g_source_set_callback(source, func, data, notify)
 
 
@@ -10668,7 +10667,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_clear_handle_id(tagptr: Pointer[U32] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_clear_handle_id(tagptr: Pointer[U32] tag, clearfunc: Pointer[None] tag): None =>
     @g_clear_handle_id(tagptr, clearfunc)
 
 
@@ -10685,7 +10684,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_timeout_add_full(priority: I32, interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_timeout_add_full(priority: I32, interval: U32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
     @g_timeout_add_full(priority, interval, function, data, notify)
 
 
@@ -10700,7 +10699,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_timeout_add(interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): U32 =>
+  fun g_timeout_add(interval: U32, function: Pointer[None] tag, data: Pointer[None] tag): U32 =>
     @g_timeout_add(interval, function, data)
 
 
@@ -10717,7 +10716,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_timeout_add_seconds_full(priority: I32, interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_timeout_add_seconds_full(priority: I32, interval: U32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
     @g_timeout_add_seconds_full(priority, interval, function, data, notify)
 
 
@@ -10732,7 +10731,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_timeout_add_seconds(interval: U32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): U32 =>
+  fun g_timeout_add_seconds(interval: U32, function: Pointer[None] tag, data: Pointer[None] tag): U32 =>
     @g_timeout_add_seconds(interval, function, data)
 
 
@@ -10749,7 +10748,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_child_watch_add_full(priority: I32, pid: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_child_watch_add_full(priority: I32, pid: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
     @g_child_watch_add_full(priority, pid, function, data, notify)
 
 
@@ -10764,7 +10763,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_child_watch_add(pid: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): U32 =>
+  fun g_child_watch_add(pid: I32, function: Pointer[None] tag, data: Pointer[None] tag): U32 =>
     @g_child_watch_add(pid, function, data)
 
 
@@ -10778,7 +10777,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_idle_add(function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): U32 =>
+  fun g_idle_add(function: Pointer[None] tag, data: Pointer[None] tag): U32 =>
     @g_idle_add(function, data)
 
 
@@ -10794,7 +10793,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_idle_add_full(priority: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_idle_add_full(priority: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
     @g_idle_add_full(priority, function, data, notify)
 
 
@@ -10824,7 +10823,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_main_context_invoke_full(context: NullablePointer[GMainContext] tag, priority: I32, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_main_context_invoke_full(context: NullablePointer[GMainContext] tag, priority: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag): None =>
     @g_main_context_invoke_full(context, priority, function, data, notify)
 
 
@@ -10839,7 +10838,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_main_context_invoke(context: NullablePointer[GMainContext] tag, function: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): None =>
+  fun g_main_context_invoke(context: NullablePointer[GMainContext] tag, function: Pointer[None] tag, data: Pointer[None] tag): None =>
     @g_main_context_invoke(context, function, data)
 
 
@@ -11634,7 +11633,7 @@ primitive GLibSys
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_utf8_validate(str: Pointer[U8] tag, maxlen: I64, g_end: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_utf8_validate(str: Pointer[U8] tag, maxlen: I64, g_end: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_utf8_validate(str, maxlen, g_end)
 
 
@@ -11649,7 +11648,7 @@ primitive GLibSys
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_utf8_validate_len(str: Pointer[U8] tag, maxlen: U64, g_end: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_utf8_validate_len(str: Pointer[U8] tag, maxlen: U64, g_end: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_utf8_validate_len(str, maxlen, g_end)
 
 
@@ -12407,7 +12406,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_io_add_watch_full(channel: NullablePointer[GIOChannel] tag, priority: I32, condition: I32, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_io_add_watch_full(channel: NullablePointer[GIOChannel] tag, priority: I32, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
     @g_io_add_watch_full(channel, priority, condition, func, userdata, notify)
 
 
@@ -12437,7 +12436,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_io_add_watch(channel: NullablePointer[GIOChannel] tag, condition: I32, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): U32 =>
+  fun g_io_add_watch(channel: NullablePointer[GIOChannel] tag, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag): U32 =>
     @g_io_add_watch(channel, condition, func, userdata)
 
 
@@ -12647,7 +12646,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_io_channel_read_line(channel: NullablePointer[GIOChannel] tag, strreturn: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, terminatorpos: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_io_channel_read_line(channel: NullablePointer[GIOChannel] tag, strreturn: Pointer[Pointer[U8] tag] tag, length: Pointer[U64] tag, terminatorpos: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_io_channel_read_line(channel, strreturn, length, terminatorpos, g_error)
 
 
@@ -12679,7 +12678,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_io_channel_read_to_end(channel: NullablePointer[GIOChannel] tag, strreturn: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_io_channel_read_to_end(channel: NullablePointer[GIOChannel] tag, strreturn: Pointer[Pointer[U8] tag] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_io_channel_read_to_end(channel, strreturn, length, g_error)
 
 
@@ -12969,7 +12968,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f86]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_key_file_load_from_dirs(keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, searchdirs: NullablePointer[Pointer[U8]] tag, fullpath: NullablePointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_key_file_load_from_dirs(keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, searchdirs: Pointer[Pointer[U8] tag] tag, fullpath: Pointer[Pointer[U8] tag] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_key_file_load_from_dirs(keyfile, file, searchdirs, fullpath, flags, g_error)
 
 
@@ -12986,7 +12985,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f86]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_key_file_load_from_data_dirs(keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, fullpath: NullablePointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_key_file_load_from_data_dirs(keyfile: NullablePointer[GKeyFile] tag, file: Pointer[U8] tag, fullpath: Pointer[Pointer[U8] tag] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_key_file_load_from_data_dirs(keyfile, file, fullpath, flags, g_error)
 
 
@@ -13043,7 +13042,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f86]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_key_file_get_groups(keyfile: NullablePointer[GKeyFile] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_key_file_get_groups(keyfile: NullablePointer[GKeyFile] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_key_file_get_groups(keyfile, length)
 
 
@@ -13059,7 +13058,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_key_file_get_keys(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_key_file_get_keys(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_key_file_get_keys(keyfile, groupname, length, g_error)
 
 
@@ -13380,7 +13379,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_key_file_get_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_key_file_get_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_key_file_get_string_list(keyfile, groupname, key, length, g_error)
 
 
@@ -13397,7 +13396,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-  fun g_key_file_set_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, list: NullablePointer[Pointer[U8]] tag, length: U64): None =>
+  fun g_key_file_set_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, list: Pointer[Pointer[U8] tag] tag, length: U64): None =>
     @g_key_file_set_string_list(keyfile, groupname, key, list, length)
 
 
@@ -13415,7 +13414,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_key_file_get_locale_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_key_file_get_locale_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, length: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_key_file_get_locale_string_list(keyfile, groupname, key, locale, length, g_error)
 
 
@@ -13433,7 +13432,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-  fun g_key_file_set_locale_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, list: NullablePointer[Pointer[U8]] tag, length: U64): None =>
+  fun g_key_file_set_locale_string_list(keyfile: NullablePointer[GKeyFile] tag, groupname: Pointer[U8] tag, key: Pointer[U8] tag, locale: Pointer[U8] tag, list: Pointer[Pointer[U8] tag] tag, length: U64): None =>
     @g_key_file_set_locale_string_list(keyfile, groupname, key, locale, list, length)
 
 
@@ -13751,7 +13750,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_markup_parse_context_new(parser: NullablePointer[GMarkupParser] tag, flags: I32, userdata: Pointer[None] tag, userdatadnotify: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GMarkupParseContext] =>
+  fun g_markup_parse_context_new(parser: NullablePointer[GMarkupParser] tag, flags: I32, userdata: Pointer[None] tag, userdatadnotify: Pointer[None] tag): NullablePointer[GMarkupParseContext] =>
     @g_markup_parse_context_new(parser, flags, userdata, userdatadnotify)
 
 
@@ -13961,7 +13960,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f88]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-/*  fun g_markup_collect_attributes(elementname: Pointer[U8] tag, attributenames: NullablePointer[Pointer[U8]] tag, attributevalues: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag, firsttype: I32, firstattr: Pointer[U8] tag, ...): I32 =>
+/*  fun g_markup_collect_attributes(elementname: Pointer[U8] tag, attributenames: Pointer[Pointer[U8] tag] tag, attributevalues: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag, firsttype: I32, firstattr: Pointer[U8] tag, ...): I32 =>
     @g_markup_collect_attributes(elementname, attributenames, attributevalues, g_error, firsttype, firstattr, ...)
 */
 
@@ -13989,7 +13988,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_variant_type_string_scan(string: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_variant_type_string_scan(string: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_variant_type_string_scan(string, limit, endptr)
 
 
@@ -14753,7 +14752,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long int) size=64]
 */
-  fun g_variant_new_strv(strv: NullablePointer[Pointer[U8]] tag, length: I64): NullablePointer[GVariant] =>
+  fun g_variant_new_strv(strv: Pointer[Pointer[U8] tag] tag, length: I64): NullablePointer[GVariant] =>
     @g_variant_new_strv(strv, length)
 
 
@@ -14767,7 +14766,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long int) size=64]
 */
-  fun g_variant_new_objv(strv: NullablePointer[Pointer[U8]] tag, length: I64): NullablePointer[GVariant] =>
+  fun g_variant_new_objv(strv: Pointer[Pointer[U8] tag] tag, length: I64): NullablePointer[GVariant] =>
     @g_variant_new_objv(strv, length)
 
 
@@ -14794,7 +14793,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long int) size=64]
 */
-  fun g_variant_new_bytestring_array(strv: NullablePointer[Pointer[U8]] tag, length: I64): NullablePointer[GVariant] =>
+  fun g_variant_new_bytestring_array(strv: Pointer[Pointer[U8] tag] tag, length: I64): NullablePointer[GVariant] =>
     @g_variant_new_bytestring_array(strv, length)
 
 
@@ -14995,7 +14994,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_variant_get_strv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_variant_get_strv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_variant_get_strv(value, length)
 
 
@@ -15009,7 +15008,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_variant_dup_strv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_variant_dup_strv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_variant_dup_strv(value, length)
 
 
@@ -15023,7 +15022,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_variant_get_objv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_variant_get_objv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_variant_get_objv(value, length)
 
 
@@ -15037,7 +15036,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_variant_dup_objv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_variant_dup_objv(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_variant_dup_objv(value, length)
 
 
@@ -15078,7 +15077,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_variant_get_bytestring_array(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_variant_get_bytestring_array(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_variant_get_bytestring_array(value, length)
 
 
@@ -15092,7 +15091,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_variant_dup_bytestring_array(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): NullablePointer[Pointer[U8]] =>
+  fun g_variant_dup_bytestring_array(value: NullablePointer[GVariant] tag, length: Pointer[U64] tag): Pointer[Pointer[U8]] =>
     @g_variant_dup_bytestring_array(value, length)
 
 
@@ -15430,7 +15429,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_variant_new_from_data(g_type: NullablePointer[GVariantType] tag, data: Pointer[None] tag, size: U64, trusted: I32, notify: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GVariant] =>
+  fun g_variant_new_from_data(g_type: NullablePointer[GVariantType] tag, data: Pointer[None] tag, size: U64, trusted: I32, notify: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GVariant] =>
     @g_variant_new_from_data(g_type, data, size, trusted, notify, userdata)
 
 
@@ -15751,7 +15750,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[ArrayType size=(0-0)]->[Struct size=192,fid: f0]  UNSUPPORTED - FIXME
 */
-  fun g_variant_new_va(formatstring: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, app: NullablePointer[Pointer[Valisttag]] tag): NullablePointer[GVariant] =>
+  fun g_variant_new_va(formatstring: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag, app: NullablePointer[Pointer[Valisttag]] tag): NullablePointer[GVariant] =>
     @g_variant_new_va(formatstring, endptr, app)
 
 
@@ -15767,7 +15766,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[ArrayType size=(0-0)]->[Struct size=192,fid: f0]  UNSUPPORTED - FIXME
 */
-  fun g_variant_get_va(value: NullablePointer[GVariant] tag, formatstring: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, app: NullablePointer[Pointer[Valisttag]] tag): None =>
+  fun g_variant_get_va(value: NullablePointer[GVariant] tag, formatstring: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag, app: NullablePointer[Pointer[Valisttag]] tag): None =>
     @g_variant_get_va(value, formatstring, endptr, app)
 
 
@@ -15799,7 +15798,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_variant_parse(g_type: NullablePointer[GVariantType] tag, text: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GVariant] =>
+  fun g_variant_parse(g_type: NullablePointer[GVariantType] tag, text: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GVariant] =>
     @g_variant_parse(g_type, text, limit, endptr, g_error)
 
 
@@ -16051,7 +16050,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_log_set_handler(logdomain: Pointer[U8] tag, loglevels: I32, logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): U32 =>
+  fun g_log_set_handler(logdomain: Pointer[U8] tag, loglevels: I32, logfunc: Pointer[None] tag, userdata: Pointer[None] tag): U32 =>
     @g_log_set_handler(logdomain, loglevels, logfunc, userdata)
 
 
@@ -16068,7 +16067,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_log_set_handler_full(logdomain: Pointer[U8] tag, loglevels: I32, logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_log_set_handler_full(logdomain: Pointer[U8] tag, loglevels: I32, logfunc: Pointer[None] tag, userdata: Pointer[None] tag, destroy: Pointer[None] tag): U32 =>
     @g_log_set_handler_full(logdomain, loglevels, logfunc, userdata, destroy)
 
 
@@ -16112,7 +16111,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_log_set_default_handler(logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[FUNCTIONTYPE] =>
+  fun g_log_set_default_handler(logfunc: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
     @g_log_set_default_handler(logfunc, userdata)
 
 
@@ -16229,7 +16228,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_log_set_writer_func(func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafree: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_log_set_writer_func(func: Pointer[None] tag, userdata: Pointer[None] tag, userdatafree: Pointer[None] tag): None =>
     @g_log_set_writer_func(func, userdata, userdatafree)
 
 
@@ -16455,7 +16454,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_set_print_handler(func: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[FUNCTIONTYPE] =>
+  fun g_set_print_handler(func: Pointer[None] tag): Pointer[None] =>
     @g_set_print_handler(func)
 
 
@@ -16481,7 +16480,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_set_printerr_handler(func: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[FUNCTIONTYPE] =>
+  fun g_set_printerr_handler(func: Pointer[None] tag): Pointer[None] =>
     @g_set_printerr_handler(func)
 
 
@@ -16685,7 +16684,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_option_context_parse(context: NullablePointer[GOptionContext] tag, argc: Pointer[I32] tag, argv: NullablePointer[NullablePointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_option_context_parse(context: NullablePointer[GOptionContext] tag, argc: Pointer[I32] tag, argv: Pointer[Pointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_option_context_parse(context, argc, argv, g_error)
 
 
@@ -16700,7 +16699,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_option_context_parse_strv(context: NullablePointer[GOptionContext] tag, arguments: NullablePointer[NullablePointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_option_context_parse_strv(context: NullablePointer[GOptionContext] tag, arguments: Pointer[Pointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_option_context_parse_strv(context, arguments, g_error)
 
 
@@ -16716,7 +16715,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_option_context_set_translate_func(context: NullablePointer[GOptionContext] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, destroynotify: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_option_context_set_translate_func(context: NullablePointer[GOptionContext] tag, func: Pointer[None] tag, data: Pointer[None] tag, destroynotify: Pointer[None] tag): None =>
     @g_option_context_set_translate_func(context, func, data, destroynotify)
 
 
@@ -16803,7 +16802,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_option_group_new(name: Pointer[U8] tag, description: Pointer[U8] tag, helpdescription: Pointer[U8] tag, userdata: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GOptionGroup] =>
+  fun g_option_group_new(name: Pointer[U8] tag, description: Pointer[U8] tag, helpdescription: Pointer[U8] tag, userdata: Pointer[None] tag, destroy: Pointer[None] tag): NullablePointer[GOptionGroup] =>
     @g_option_group_new(name, description, helpdescription, userdata, destroy)
 
 
@@ -16818,7 +16817,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_option_group_set_parse_hooks(group: NullablePointer[GOptionGroup] tag, preparsefunc: NullablePointer[FUNCTIONTYPE] tag, postparsefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_option_group_set_parse_hooks(group: NullablePointer[GOptionGroup] tag, preparsefunc: Pointer[None] tag, postparsefunc: Pointer[None] tag): None =>
     @g_option_group_set_parse_hooks(group, preparsefunc, postparsefunc)
 
 
@@ -16832,7 +16831,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f92]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_option_group_set_error_hook(group: NullablePointer[GOptionGroup] tag, errorfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_option_group_set_error_hook(group: NullablePointer[GOptionGroup] tag, errorfunc: Pointer[None] tag): None =>
     @g_option_group_set_error_hook(group, errorfunc)
 
 
@@ -16901,7 +16900,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_option_group_set_translate_func(group: NullablePointer[GOptionGroup] tag, func: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, destroynotify: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_option_group_set_translate_func(group: NullablePointer[GOptionGroup] tag, func: Pointer[None] tag, data: Pointer[None] tag, destroynotify: Pointer[None] tag): None =>
     @g_option_group_set_translate_func(group, func, data, destroynotify)
 
 
@@ -17029,7 +17028,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_qsort_with_data(pbase: Pointer[None] tag, totalelems: I32, size: U64, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_qsort_with_data(pbase: Pointer[None] tag, totalelems: I32, size: U64, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_qsort_with_data(pbase, totalelems, size, comparefunc, userdata)
 
 
@@ -17068,7 +17067,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=192,fid: f96]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_queue_free_full(queue: NullablePointer[GQueue] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_queue_free_full(queue: NullablePointer[GQueue] tag, freefunc: Pointer[None] tag): None =>
     @g_queue_free_full(queue, freefunc)
 
 
@@ -17121,7 +17120,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=192,fid: f96]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_queue_clear_full(queue: NullablePointer[GQueue] tag, freefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_queue_clear_full(queue: NullablePointer[GQueue] tag, freefunc: Pointer[None] tag): None =>
     @g_queue_clear_full(queue, freefunc)
 
 
@@ -17175,7 +17174,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_queue_foreach(queue: NullablePointer[GQueue] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_queue_foreach(queue: NullablePointer[GQueue] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_queue_foreach(queue, func, userdata)
 
 
@@ -17204,7 +17203,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_queue_find_custom(queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GList] =>
+  fun g_queue_find_custom(queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag): NullablePointer[GList] =>
     @g_queue_find_custom(queue, data, func)
 
 
@@ -17219,7 +17218,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_queue_sort(queue: NullablePointer[GQueue] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_queue_sort(queue: NullablePointer[GQueue] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_queue_sort(queue, comparefunc, userdata)
 
 
@@ -17460,7 +17459,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_queue_insert_sorted(queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_queue_insert_sorted(queue: NullablePointer[GQueue] tag, data: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_queue_insert_sorted(queue, data, func, userdata)
 
 
@@ -17920,7 +17919,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_rc_box_release_full(memblock: Pointer[None] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_rc_box_release_full(memblock: Pointer[None] tag, clearfunc: Pointer[None] tag): None =>
     @g_rc_box_release_full(memblock, clearfunc)
 
 
@@ -18013,7 +18012,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_atomic_rc_box_release_full(memblock: Pointer[None] tag, clearfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_atomic_rc_box_release_full(memblock: Pointer[None] tag, clearfunc: Pointer[None] tag): None =>
     @g_atomic_rc_box_release_full(memblock, clearfunc)
 
 
@@ -18500,7 +18499,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f101]
     [Enumeration size=32,fid: f101]
 */
-  fun g_regex_split_simple(pattern: Pointer[U8] tag, string: Pointer[U8] tag, compileoptions: I32, matchoptions: I32): NullablePointer[Pointer[U8]] =>
+  fun g_regex_split_simple(pattern: Pointer[U8] tag, string: Pointer[U8] tag, compileoptions: I32, matchoptions: I32): Pointer[Pointer[U8]] =>
     @g_regex_split_simple(pattern, string, compileoptions, matchoptions)
 
 
@@ -18515,7 +18514,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [Enumeration size=32,fid: f101]
 */
-  fun g_regex_split(regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, matchoptions: I32): NullablePointer[Pointer[U8]] =>
+  fun g_regex_split(regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, matchoptions: I32): Pointer[Pointer[U8]] =>
     @g_regex_split(regex, string, matchoptions)
 
 
@@ -18534,7 +18533,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_regex_split_full(regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, maxtokens: I32, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_regex_split_full(regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, maxtokens: I32, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_regex_split_full(regex, string, stringlen, startposition, matchoptions, maxtokens, g_error)
 
 
@@ -18592,7 +18591,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_regex_replace_eval(regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, eval: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[U8] =>
+  fun g_regex_replace_eval(regex: NullablePointer[GRegex] tag, string: Pointer[U8] tag, stringlen: I64, startposition: I32, matchoptions: I32, eval: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[U8] =>
     @g_regex_replace_eval(regex, string, stringlen, startposition, matchoptions, eval, userdata, g_error)
 
 
@@ -18813,7 +18812,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f101]
 */
-  fun g_match_info_fetch_all(matchinfo: NullablePointer[GMatchInfo] tag): NullablePointer[Pointer[U8]] =>
+  fun g_match_info_fetch_all(matchinfo: NullablePointer[GMatchInfo] tag): Pointer[Pointer[U8]] =>
     @g_match_info_fetch_all(matchinfo)
 
 
@@ -19048,7 +19047,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_scanner_scope_foreach_symbol(scanner: NullablePointer[GScanner] tag, scopeid: U32, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_scanner_scope_foreach_symbol(scanner: NullablePointer[GScanner] tag, scopeid: U32, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_scanner_scope_foreach_symbol(scanner, scopeid, func, userdata)
 
 
@@ -19122,7 +19121,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_sequence_new(datadestroy: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GSequence] =>
+  fun g_sequence_new(datadestroy: Pointer[None] tag): NullablePointer[GSequence] =>
     @g_sequence_new(datadestroy)
 
 
@@ -19163,7 +19162,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_foreach(seq: NullablePointer[GSequence] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_sequence_foreach(seq: NullablePointer[GSequence] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_sequence_foreach(seq, func, userdata)
 
 
@@ -19179,7 +19178,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_foreach_range(begin: NullablePointer[GSequenceNode] tag, g_end: NullablePointer[GSequenceNode] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_sequence_foreach_range(begin: NullablePointer[GSequenceNode] tag, g_end: NullablePointer[GSequenceNode] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_sequence_foreach_range(begin, g_end, func, userdata)
 
 
@@ -19194,7 +19193,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_sort(seq: NullablePointer[GSequence] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): None =>
+  fun g_sequence_sort(seq: NullablePointer[GSequence] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag): None =>
     @g_sequence_sort(seq, cmpfunc, cmpdata)
 
 
@@ -19209,7 +19208,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_sort_iter(seq: NullablePointer[GSequence] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): None =>
+  fun g_sequence_sort_iter(seq: NullablePointer[GSequence] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag): None =>
     @g_sequence_sort_iter(seq, cmpfunc, cmpdata)
 
 
@@ -19348,7 +19347,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_insert_sorted(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
+  fun g_sequence_insert_sorted(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
     @g_sequence_insert_sorted(seq, data, cmpfunc, cmpdata)
 
 
@@ -19364,7 +19363,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_insert_sorted_iter(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
+  fun g_sequence_insert_sorted_iter(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
     @g_sequence_insert_sorted_iter(seq, data, itercmp, cmpdata)
 
 
@@ -19379,7 +19378,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_sort_changed(iter: NullablePointer[GSequenceNode] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): None =>
+  fun g_sequence_sort_changed(iter: NullablePointer[GSequenceNode] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag): None =>
     @g_sequence_sort_changed(iter, cmpfunc, cmpdata)
 
 
@@ -19394,7 +19393,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_sort_changed_iter(iter: NullablePointer[GSequenceNode] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): None =>
+  fun g_sequence_sort_changed_iter(iter: NullablePointer[GSequenceNode] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag): None =>
     @g_sequence_sort_changed_iter(iter, itercmp, cmpdata)
 
 
@@ -19452,7 +19451,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_search(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
+  fun g_sequence_search(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
     @g_sequence_search(seq, data, cmpfunc, cmpdata)
 
 
@@ -19468,7 +19467,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_search_iter(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
+  fun g_sequence_search_iter(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
     @g_sequence_search_iter(seq, data, itercmp, cmpdata)
 
 
@@ -19484,7 +19483,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_lookup(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
+  fun g_sequence_lookup(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, cmpfunc: Pointer[None] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
     @g_sequence_lookup(seq, data, cmpfunc, cmpdata)
 
 
@@ -19500,7 +19499,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_sequence_lookup_iter(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: NullablePointer[FUNCTIONTYPE] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
+  fun g_sequence_lookup_iter(seq: NullablePointer[GSequence] tag, data: Pointer[None] tag, itercmp: Pointer[None] tag, cmpdata: Pointer[None] tag): NullablePointer[GSequenceNode] =>
     @g_sequence_lookup_iter(seq, data, itercmp, cmpdata)
 
 
@@ -19702,7 +19701,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_shell_parse_argv(commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: NullablePointer[NullablePointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_shell_parse_argv(commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: Pointer[Pointer[Pointer[U8]]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_shell_parse_argv(commandline, argcp, argvp, g_error)
 
 
@@ -19857,7 +19856,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_spawn_async(workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_spawn_async(workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8] tag] tag, envp: Pointer[Pointer[U8] tag] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_spawn_async(workingdirectory, argv, envp, flags, childsetup, userdata, childpid, g_error)
 
 
@@ -19880,7 +19879,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_spawn_async_with_pipes(workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, standardinput: Pointer[I32] tag, standardoutput: Pointer[I32] tag, standarderror: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_spawn_async_with_pipes(workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8] tag] tag, envp: Pointer[Pointer[U8] tag] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, standardinput: Pointer[I32] tag, standardoutput: Pointer[I32] tag, standarderror: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_spawn_async_with_pipes(workingdirectory, argv, envp, flags, childsetup, userdata, childpid, standardinput, standardoutput, standarderror, g_error)
 
 
@@ -19909,7 +19908,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_spawn_async_with_pipes_and_fds(workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, sourcefds: Pointer[I32] tag, targetfds: Pointer[I32] tag, nfds: U64, childpidout: Pointer[I32] tag, stdinpipeout: Pointer[I32] tag, stdoutpipeout: Pointer[I32] tag, stderrpipeout: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_spawn_async_with_pipes_and_fds(workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8] tag] tag, envp: Pointer[Pointer[U8] tag] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, sourcefds: Pointer[I32] tag, targetfds: Pointer[I32] tag, nfds: U64, childpidout: Pointer[I32] tag, stdinpipeout: Pointer[I32] tag, stdoutpipeout: Pointer[I32] tag, stderrpipeout: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_spawn_async_with_pipes_and_fds(workingdirectory, argv, envp, flags, childsetup, userdata, stdinfd, stdoutfd, stderrfd, sourcefds, targetfds, nfds, childpidout, stdinpipeout, stdoutpipeout, stderrpipeout, g_error)
 
 
@@ -19932,7 +19931,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_spawn_async_with_fds(workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_spawn_async_with_fds(workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8] tag] tag, envp: Pointer[Pointer[U8] tag] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_spawn_async_with_fds(workingdirectory, argv, envp, flags, childsetup, userdata, childpid, stdinfd, stdoutfd, stderrfd, g_error)
 
 
@@ -19954,7 +19953,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_spawn_sync(workingdirectory: Pointer[U8] tag, argv: NullablePointer[Pointer[U8]] tag, envp: NullablePointer[Pointer[U8]] tag, flags: I32, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, standardoutput: NullablePointer[Pointer[U8]] tag, standarderror: NullablePointer[Pointer[U8]] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_spawn_sync(workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8] tag] tag, envp: Pointer[Pointer[U8] tag] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, standardoutput: Pointer[Pointer[U8] tag] tag, standarderror: Pointer[Pointer[U8] tag] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_spawn_sync(workingdirectory, argv, envp, flags, childsetup, userdata, standardoutput, standarderror, exitstatus, g_error)
 
 
@@ -19971,7 +19970,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_spawn_command_line_sync(commandline: Pointer[U8] tag, standardoutput: NullablePointer[Pointer[U8]] tag, standarderror: NullablePointer[Pointer[U8]] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_spawn_command_line_sync(commandline: Pointer[U8] tag, standardoutput: Pointer[Pointer[U8] tag] tag, standarderror: Pointer[Pointer[U8] tag] tag, exitstatus: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_spawn_command_line_sync(commandline, standardoutput, standarderror, exitstatus, g_error)
 
 
@@ -20249,7 +20248,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_strtod(nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag): F64 =>
+  fun g_strtod(nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag): F64 =>
     @g_strtod(nptr, endptr)
 
 
@@ -20263,7 +20262,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_ascii_strtod(nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag): F64 =>
+  fun g_ascii_strtod(nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag): F64 =>
     @g_ascii_strtod(nptr, endptr)
 
 
@@ -20278,7 +20277,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(unsigned int) size=32]
 */
-  fun g_ascii_strtoull(nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, base: U32): U64 =>
+  fun g_ascii_strtoull(nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag, base: U32): U64 =>
     @g_ascii_strtoull(nptr, endptr, base)
 
 
@@ -20293,7 +20292,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(unsigned int) size=32]
 */
-  fun g_ascii_strtoll(nptr: Pointer[U8] tag, endptr: NullablePointer[Pointer[U8]] tag, base: U32): I64 =>
+  fun g_ascii_strtoll(nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8] tag] tag, base: U32): I64 =>
     @g_ascii_strtoll(nptr, endptr, base)
 
 
@@ -20639,7 +20638,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-  fun g_strsplit(string: Pointer[U8] tag, delimiter: Pointer[U8] tag, maxtokens: I32): NullablePointer[Pointer[U8]] =>
+  fun g_strsplit(string: Pointer[U8] tag, delimiter: Pointer[U8] tag, maxtokens: I32): Pointer[Pointer[U8]] =>
     @g_strsplit(string, delimiter, maxtokens)
 
 
@@ -20654,7 +20653,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-  fun g_strsplit_set(string: Pointer[U8] tag, delimiters: Pointer[U8] tag, maxtokens: I32): NullablePointer[Pointer[U8]] =>
+  fun g_strsplit_set(string: Pointer[U8] tag, delimiters: Pointer[U8] tag, maxtokens: I32): Pointer[Pointer[U8]] =>
     @g_strsplit_set(string, delimiters, maxtokens)
 
 
@@ -20668,7 +20667,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_strjoinv(separator: Pointer[U8] tag, strarray: NullablePointer[Pointer[U8]] tag): Pointer[U8] =>
+  fun g_strjoinv(separator: Pointer[U8] tag, strarray: Pointer[Pointer[U8] tag] tag): Pointer[U8] =>
     @g_strjoinv(separator, strarray)
 
 
@@ -20681,7 +20680,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_strfreev(strarray: NullablePointer[Pointer[U8]] tag): None =>
+  fun g_strfreev(strarray: Pointer[Pointer[U8] tag] tag): None =>
     @g_strfreev(strarray)
 
 
@@ -20694,7 +20693,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_strdupv(strarray: NullablePointer[Pointer[U8]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_strdupv(strarray: Pointer[Pointer[U8] tag] tag): Pointer[Pointer[U8]] =>
     @g_strdupv(strarray)
 
 
@@ -20707,7 +20706,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_strv_length(strarray: NullablePointer[Pointer[U8]] tag): U32 =>
+  fun g_strv_length(strarray: Pointer[Pointer[U8] tag] tag): U32 =>
     @g_strv_length(strarray)
 
 
@@ -20750,7 +20749,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_str_tokenize_and_fold(string: Pointer[U8] tag, translitlocale: Pointer[U8] tag, asciialternates: NullablePointer[NullablePointer[Pointer[U8]]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_str_tokenize_and_fold(string: Pointer[U8] tag, translitlocale: Pointer[U8] tag, asciialternates: Pointer[Pointer[Pointer[U8]]] tag): Pointer[Pointer[U8]] =>
     @g_str_tokenize_and_fold(string, translitlocale, asciialternates)
 
 
@@ -20779,7 +20778,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_strv_contains(strv: NullablePointer[Pointer[U8]] tag, str: Pointer[U8] tag): I32 =>
+  fun g_strv_contains(strv: Pointer[Pointer[U8] tag] tag, str: Pointer[U8] tag): I32 =>
     @g_strv_contains(strv, str)
 
 
@@ -20793,7 +20792,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_strv_equal(strv1: NullablePointer[Pointer[U8]] tag, strv2: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_strv_equal(strv1: Pointer[Pointer[U8] tag] tag, strv2: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_strv_equal(strv1, strv2)
 
 
@@ -20988,7 +20987,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f111]
 */
-  fun g_strv_builder_end(builder: NullablePointer[GStrvBuilder] tag): NullablePointer[Pointer[U8]] =>
+  fun g_strv_builder_end(builder: NullablePointer[GStrvBuilder] tag): Pointer[Pointer[U8]] =>
     @g_strv_builder_end(builder)
 
 
@@ -21044,7 +21043,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-/*  fun g_test_init(argc: Pointer[I32] tag, argv: NullablePointer[NullablePointer[Pointer[U8]]] tag, ...): None =>
+/*  fun g_test_init(argc: Pointer[I32] tag, argv: Pointer[Pointer[Pointer[U8]]] tag, ...): None =>
     @g_test_init(argc, argv, ...)
 */
 
@@ -21082,7 +21081,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_test_add_func(testpath: Pointer[U8] tag, testfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_test_add_func(testpath: Pointer[U8] tag, testfunc: Pointer[None] tag): None =>
     @g_test_add_func(testpath, testfunc)
 
 
@@ -21097,7 +21096,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_test_add_data_func(testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_test_add_data_func(testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: Pointer[None] tag): None =>
     @g_test_add_data_func(testpath, testdata, testfunc)
 
 
@@ -21113,7 +21112,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_test_add_data_func_full(testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: NullablePointer[FUNCTIONTYPE] tag, datafreefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_test_add_data_func_full(testpath: Pointer[U8] tag, testdata: Pointer[None] tag, testfunc: Pointer[None] tag, datafreefunc: Pointer[None] tag): None =>
     @g_test_add_data_func_full(testpath, testdata, testfunc, datafreefunc)
 
 
@@ -21302,7 +21301,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_test_queue_destroy(destroyfunc: NullablePointer[FUNCTIONTYPE] tag, destroydata: Pointer[None] tag): None =>
+  fun g_test_queue_destroy(destroyfunc: Pointer[None] tag, destroydata: Pointer[None] tag): None =>
     @g_test_queue_destroy(destroyfunc, destroydata)
 
 
@@ -21425,7 +21424,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_test_create_case(testname: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: NullablePointer[FUNCTIONTYPE] tag, datatest: NullablePointer[FUNCTIONTYPE] tag, datateardown: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GTestCase] =>
+  fun g_test_create_case(testname: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: Pointer[None] tag, datatest: Pointer[None] tag, datateardown: Pointer[None] tag): NullablePointer[GTestCase] =>
     @g_test_create_case(testname, datasize, testdata, datasetup, datatest, datateardown)
 
 
@@ -21583,7 +21582,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-  fun g_assertion_message_cmpstrv(domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, arg1: NullablePointer[Pointer[U8]] tag, arg2: NullablePointer[Pointer[U8]] tag, firstwrongidx: U64): None =>
+  fun g_assertion_message_cmpstrv(domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, arg1: Pointer[Pointer[U8] tag] tag, arg2: Pointer[Pointer[U8] tag] tag, firstwrongidx: U64): None =>
     @g_assertion_message_cmpstrv(domain, file, line, func, expr, arg1, arg2, firstwrongidx)
 
 
@@ -21644,7 +21643,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_test_add_vtable(testpath: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: NullablePointer[FUNCTIONTYPE] tag, datatest: NullablePointer[FUNCTIONTYPE] tag, datateardown: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_test_add_vtable(testpath: Pointer[U8] tag, datasize: U64, testdata: Pointer[None] tag, datasetup: Pointer[None] tag, datatest: Pointer[None] tag, datateardown: Pointer[None] tag): None =>
     @g_test_add_vtable(testpath, datasize, testdata, datasetup, datatest, datateardown)
 
 
@@ -21737,7 +21736,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_test_log_set_fatal_handler(logfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_test_log_set_fatal_handler(logfunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_test_log_set_fatal_handler(logfunc, userdata)
 
 
@@ -21826,7 +21825,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_thread_pool_new(func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, maxthreads: I32, exclusive: I32, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GThreadPool] =>
+  fun g_thread_pool_new(func: Pointer[None] tag, userdata: Pointer[None] tag, maxthreads: I32, exclusive: I32, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GThreadPool] =>
     @g_thread_pool_new(func, userdata, maxthreads, exclusive, g_error)
 
 
@@ -21884,7 +21883,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_thread_pool_set_sort_function(pool: NullablePointer[GThreadPool] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_thread_pool_set_sort_function(pool: NullablePointer[GThreadPool] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_thread_pool_set_sort_function(pool, func, userdata)
 
 
@@ -22237,7 +22236,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_tree_new(keycomparefunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GTree] =>
+  fun g_tree_new(keycomparefunc: Pointer[None] tag): NullablePointer[GTree] =>
     @g_tree_new(keycomparefunc)
 
 
@@ -22251,7 +22250,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tree_new_with_data(keycomparefunc: NullablePointer[FUNCTIONTYPE] tag, keycomparedata: Pointer[None] tag): NullablePointer[GTree] =>
+  fun g_tree_new_with_data(keycomparefunc: Pointer[None] tag, keycomparedata: Pointer[None] tag): NullablePointer[GTree] =>
     @g_tree_new_with_data(keycomparefunc, keycomparedata)
 
 
@@ -22267,7 +22266,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_tree_new_full(keycomparefunc: NullablePointer[FUNCTIONTYPE] tag, keycomparedata: Pointer[None] tag, keydestroyfunc: NullablePointer[FUNCTIONTYPE] tag, valuedestroyfunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GTree] =>
+  fun g_tree_new_full(keycomparefunc: Pointer[None] tag, keycomparedata: Pointer[None] tag, keydestroyfunc: Pointer[None] tag, valuedestroyfunc: Pointer[None] tag): NullablePointer[GTree] =>
     @g_tree_new_full(keycomparefunc, keycomparedata, keydestroyfunc, valuedestroyfunc)
 
 
@@ -22531,7 +22530,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tree_foreach(tree: NullablePointer[GTree] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tree_foreach(tree: NullablePointer[GTree] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tree_foreach(tree, func, userdata)
 
 
@@ -22546,7 +22545,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tree_foreach_node(tree: NullablePointer[GTree] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tree_foreach_node(tree: NullablePointer[GTree] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tree_foreach_node(tree, func, userdata)
 
 
@@ -22562,7 +22561,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f74]
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tree_traverse(tree: NullablePointer[GTree] tag, traversefunc: NullablePointer[FUNCTIONTYPE] tag, traversetype: I32, userdata: Pointer[None] tag): None =>
+  fun g_tree_traverse(tree: NullablePointer[GTree] tag, traversefunc: Pointer[None] tag, traversetype: I32, userdata: Pointer[None] tag): None =>
     @g_tree_traverse(tree, traversefunc, traversetype, userdata)
 
 
@@ -22577,7 +22576,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tree_search_node(tree: NullablePointer[GTree] tag, searchfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GTreeNode] =>
+  fun g_tree_search_node(tree: NullablePointer[GTree] tag, searchfunc: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GTreeNode] =>
     @g_tree_search_node(tree, searchfunc, userdata)
 
 
@@ -22592,7 +22591,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tree_search(tree: NullablePointer[GTree] tag, searchfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): Pointer[None] =>
+  fun g_tree_search(tree: NullablePointer[GTree] tag, searchfunc: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
     @g_tree_search(tree, searchfunc, userdata)
 
 
@@ -22694,7 +22693,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_uri_split(uriref: Pointer[U8] tag, flags: I32, scheme: NullablePointer[Pointer[U8]] tag, userinfo: NullablePointer[Pointer[U8]] tag, host: NullablePointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: NullablePointer[Pointer[U8]] tag, query: NullablePointer[Pointer[U8]] tag, fragment: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_uri_split(uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8] tag] tag, userinfo: Pointer[Pointer[U8] tag] tag, host: Pointer[Pointer[U8] tag] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8] tag] tag, query: Pointer[Pointer[U8] tag] tag, fragment: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_uri_split(uriref, flags, scheme, userinfo, host, port, path, query, fragment, g_error)
 
 
@@ -22718,7 +22717,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_uri_split_with_user(uriref: Pointer[U8] tag, flags: I32, scheme: NullablePointer[Pointer[U8]] tag, user: NullablePointer[Pointer[U8]] tag, password: NullablePointer[Pointer[U8]] tag, authparams: NullablePointer[Pointer[U8]] tag, host: NullablePointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: NullablePointer[Pointer[U8]] tag, query: NullablePointer[Pointer[U8]] tag, fragment: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_uri_split_with_user(uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8] tag] tag, user: Pointer[Pointer[U8] tag] tag, password: Pointer[Pointer[U8] tag] tag, authparams: Pointer[Pointer[U8] tag] tag, host: Pointer[Pointer[U8] tag] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8] tag] tag, query: Pointer[Pointer[U8] tag] tag, fragment: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_uri_split_with_user(uriref, flags, scheme, user, password, authparams, host, port, path, query, fragment, g_error)
 
 
@@ -22736,7 +22735,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_uri_split_network(uristring: Pointer[U8] tag, flags: I32, scheme: NullablePointer[Pointer[U8]] tag, host: NullablePointer[Pointer[U8]] tag, port: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_uri_split_network(uristring: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8] tag] tag, host: Pointer[Pointer[U8] tag] tag, port: Pointer[I32] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_uri_split_network(uristring, flags, scheme, host, port, g_error)
 
 
@@ -23102,7 +23101,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_uri_params_iter_next(iter: NullablePointer[GUriParamsIter] tag, attribute: NullablePointer[Pointer[U8]] tag, value: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_uri_params_iter_next(iter: NullablePointer[GUriParamsIter] tag, attribute: Pointer[Pointer[U8] tag] tag, value: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_uri_params_iter_next(iter, attribute, value, g_error)
 
 
@@ -26544,7 +26543,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun glib_auto_cleanup_GStrv(ptr: NullablePointer[NullablePointer[Pointer[U8]]] tag): None =>
+  fun glib_auto_cleanup_GStrv(ptr: Pointer[Pointer[Pointer[U8]]] tag): None =>
     @glib_auto_cleanup_GStrv(ptr)
 
 
@@ -26570,7 +26569,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun glib_autoptr_cleanup_GRefString(ptr: NullablePointer[Pointer[U8]] tag): None =>
+  fun glib_autoptr_cleanup_GRefString(ptr: Pointer[Pointer[U8] tag] tag): None =>
     @glib_autoptr_cleanup_GRefString(ptr)
 
 
@@ -27042,7 +27041,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [Enumeration size=32,fid: f133]
 */
-  fun g_type_register_static_simple(parenttype: U64, typename: Pointer[U8] tag, classsize: U32, classinit: NullablePointer[FUNCTIONTYPE] tag, instancesize: U32, instanceinit: NullablePointer[FUNCTIONTYPE] tag, flags: I32): U64 =>
+  fun g_type_register_static_simple(parenttype: U64, typename: Pointer[U8] tag, classsize: U32, classinit: Pointer[None] tag, instancesize: U32, instanceinit: Pointer[None] tag, flags: I32): U64 =>
     @g_type_register_static_simple(parenttype, typename, classsize, classinit, instancesize, instanceinit, flags)
 
 
@@ -27360,7 +27359,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_type_add_class_cache_func(cachedata: Pointer[None] tag, cachefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_type_add_class_cache_func(cachedata: Pointer[None] tag, cachefunc: Pointer[None] tag): None =>
     @g_type_add_class_cache_func(cachedata, cachefunc)
 
 
@@ -27374,7 +27373,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_type_remove_class_cache_func(cachedata: Pointer[None] tag, cachefunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_type_remove_class_cache_func(cachedata: Pointer[None] tag, cachefunc: Pointer[None] tag): None =>
     @g_type_remove_class_cache_func(cachedata, cachefunc)
 
 
@@ -27401,7 +27400,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_type_add_interface_check(checkdata: Pointer[None] tag, checkfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_type_add_interface_check(checkdata: Pointer[None] tag, checkfunc: Pointer[None] tag): None =>
     @g_type_add_interface_check(checkdata, checkfunc)
 
 
@@ -27415,7 +27414,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_type_remove_interface_check(checkdata: Pointer[None] tag, checkfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_type_remove_interface_check(checkdata: Pointer[None] tag, checkfunc: Pointer[None] tag): None =>
     @g_type_remove_interface_check(checkdata, checkfunc)
 
 
@@ -27756,7 +27755,7 @@ primitive GLibSys
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_value_register_transform_func(srctype: U64, desttype: U64, transformfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_value_register_transform_func(srctype: U64, desttype: U64, transformfunc: Pointer[None] tag): None =>
     @g_value_register_transform_func(srctype, desttype, transformfunc)
 
 
@@ -27853,7 +27852,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_param_spec_set_qdata_full(pspec: NullablePointer[GParamSpec] tag, quark: U32, data: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_param_spec_set_qdata_full(pspec: NullablePointer[GParamSpec] tag, quark: U32, data: Pointer[None] tag, destroy: Pointer[None] tag): None =>
     @g_param_spec_set_qdata_full(pspec, quark, data, destroy)
 
 
@@ -28247,7 +28246,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_cclosure_new(callbackfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroydata: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GClosure] =>
+  fun g_cclosure_new(callbackfunc: Pointer[None] tag, userdata: Pointer[None] tag, destroydata: Pointer[None] tag): NullablePointer[GClosure] =>
     @g_cclosure_new(callbackfunc, userdata, destroydata)
 
 
@@ -28262,7 +28261,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_cclosure_new_swap(callbackfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroydata: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GClosure] =>
+  fun g_cclosure_new_swap(callbackfunc: Pointer[None] tag, userdata: Pointer[None] tag, destroydata: Pointer[None] tag): NullablePointer[GClosure] =>
     @g_cclosure_new_swap(callbackfunc, userdata, destroydata)
 
 
@@ -28344,7 +28343,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_closure_add_finalize_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_closure_add_finalize_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag): None =>
     @g_closure_add_finalize_notifier(closure, notifydata, notifyfunc)
 
 
@@ -28359,7 +28358,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_closure_remove_finalize_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_closure_remove_finalize_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag): None =>
     @g_closure_remove_finalize_notifier(closure, notifydata, notifyfunc)
 
 
@@ -28374,7 +28373,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_closure_add_invalidate_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_closure_add_invalidate_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag): None =>
     @g_closure_add_invalidate_notifier(closure, notifydata, notifyfunc)
 
 
@@ -28389,7 +28388,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_closure_remove_invalidate_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_closure_remove_invalidate_notifier(closure: NullablePointer[GClosure] tag, notifydata: Pointer[None] tag, notifyfunc: Pointer[None] tag): None =>
     @g_closure_remove_invalidate_notifier(closure, notifydata, notifyfunc)
 
 
@@ -28406,7 +28405,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_closure_add_marshal_guards(closure: NullablePointer[GClosure] tag, premarshaldata: Pointer[None] tag, premarshalnotify: NullablePointer[FUNCTIONTYPE] tag, postmarshaldata: Pointer[None] tag, postmarshalnotify: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_closure_add_marshal_guards(closure: NullablePointer[GClosure] tag, premarshaldata: Pointer[None] tag, premarshalnotify: Pointer[None] tag, postmarshaldata: Pointer[None] tag, postmarshalnotify: Pointer[None] tag): None =>
     @g_closure_add_marshal_guards(closure, premarshaldata, premarshalnotify, postmarshaldata, postmarshalnotify)
 
 
@@ -28420,7 +28419,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f136]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_closure_set_marshal(closure: NullablePointer[GClosure] tag, marshal: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_closure_set_marshal(closure: NullablePointer[GClosure] tag, marshal: Pointer[None] tag): None =>
     @g_closure_set_marshal(closure, marshal)
 
 
@@ -28435,7 +28434,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_closure_set_meta_marshal(closure: NullablePointer[GClosure] tag, marshaldata: Pointer[None] tag, metamarshal: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_closure_set_meta_marshal(closure: NullablePointer[GClosure] tag, marshaldata: Pointer[None] tag, metamarshal: Pointer[None] tag): None =>
     @g_closure_set_meta_marshal(closure, marshaldata, metamarshal)
 
 
@@ -29426,7 +29425,7 @@ primitive GLibSys
     [FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
 */
-  fun g_signal_newv(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, paramtypes: Pointer[U64] tag): U32 =>
+  fun g_signal_newv(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, paramtypes: Pointer[U64] tag): U32 =>
     @g_signal_newv(signalname, itype, signalflags, classclosure, accumulator, accudata, cmarshaller, returntype, nparams, paramtypes)
 
 
@@ -29448,7 +29447,7 @@ primitive GLibSys
     [FundamentalType(unsigned int) size=32]
     [PointerType size=64]->[Struct size=192,fid: f0]
 */
-  fun g_signal_new_valist(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, args: NullablePointer[Valisttag] tag): U32 =>
+  fun g_signal_new_valist(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classclosure: NullablePointer[GClosure] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, args: NullablePointer[Valisttag] tag): U32 =>
     @g_signal_new_valist(signalname, itype, signalflags, classclosure, accumulator, accudata, cmarshaller, returntype, nparams, args)
 
 
@@ -29469,7 +29468,7 @@ primitive GLibSys
     [FundamentalType(long unsigned int) size=64]
     [FundamentalType(unsigned int) size=32]
 */
-/*  fun g_signal_new(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classoffset: U32, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, ...): U32 =>
+/*  fun g_signal_new(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classoffset: U32, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, ...): U32 =>
     @g_signal_new(signalname, itype, signalflags, classoffset, accumulator, accudata, cmarshaller, returntype, nparams, ...)
 */
 
@@ -29490,7 +29489,7 @@ primitive GLibSys
     [FundamentalType(long unsigned int) size=64]
     [FundamentalType(unsigned int) size=32]
 */
-/*  fun g_signal_new_class_handler(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classhandler: NullablePointer[FUNCTIONTYPE] tag, accumulator: NullablePointer[FUNCTIONTYPE] tag, accudata: Pointer[None] tag, cmarshaller: NullablePointer[FUNCTIONTYPE] tag, returntype: U64, nparams: U32, ...): U32 =>
+/*  fun g_signal_new_class_handler(signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classhandler: Pointer[None] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, ...): U32 =>
     @g_signal_new_class_handler(signalname, itype, signalflags, classhandler, accumulator, accudata, cmarshaller, returntype, nparams, ...)
 */
 
@@ -29505,7 +29504,7 @@ primitive GLibSys
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_signal_set_va_marshaller(signalid: U32, instancetype: U64, vamarshaller: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_signal_set_va_marshaller(signalid: U32, instancetype: U64, vamarshaller: Pointer[None] tag): None =>
     @g_signal_set_va_marshaller(signalid, instancetype, vamarshaller)
 
 
@@ -29710,7 +29709,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_signal_add_emission_hook(signalid: U32, detail: U32, hookfunc: NullablePointer[FUNCTIONTYPE] tag, hookdata: Pointer[None] tag, datadestroy: NullablePointer[FUNCTIONTYPE] tag): U64 =>
+  fun g_signal_add_emission_hook(signalid: U32, detail: U32, hookfunc: Pointer[None] tag, hookdata: Pointer[None] tag, datadestroy: Pointer[None] tag): U64 =>
     @g_signal_add_emission_hook(signalid, detail, hookfunc, hookdata, datadestroy)
 
 
@@ -29791,7 +29790,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [Enumeration size=32,fid: f138]
 */
-  fun g_signal_connect_data(instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, destroydata: NullablePointer[FUNCTIONTYPE] tag, connectflags: I32): U64 =>
+  fun g_signal_connect_data(instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
     @g_signal_connect_data(instance, detailedsignal, chandler, data, destroydata, connectflags)
 
 
@@ -29967,7 +29966,7 @@ primitive GLibSys
     [FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_signal_override_class_handler(signalname: Pointer[U8] tag, instancetype: U64, classhandler: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_signal_override_class_handler(signalname: Pointer[U8] tag, instancetype: U64, classhandler: Pointer[None] tag): None =>
     @g_signal_override_class_handler(signalname, instancetype, classhandler)
 
 
@@ -30549,7 +30548,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_boxed_type_register_static(name: Pointer[U8] tag, boxedcopy: NullablePointer[FUNCTIONTYPE] tag, boxedfree: NullablePointer[FUNCTIONTYPE] tag): U64 =>
+  fun g_boxed_type_register_static(name: Pointer[U8] tag, boxedcopy: Pointer[None] tag, boxedfree: Pointer[None] tag): U64 =>
     @g_boxed_type_register_static(name, boxedcopy, boxedfree)
 
 
@@ -30742,7 +30741,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[Struct size=192,fid: f134]
 */
-  fun g_object_new_with_properties(objecttype: U64, nproperties: U32, names: NullablePointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag): NullablePointer[GObject] =>
+  fun g_object_new_with_properties(objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8] tag] tag, values: NullablePointer[GValue] tag): NullablePointer[GObject] =>
     @g_object_new_with_properties(objecttype, nproperties, names, values)
 
 
@@ -30844,7 +30843,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[Struct size=192,fid: f134]
 */
-  fun g_object_setv(g_object: NullablePointer[GObject] tag, nproperties: U32, names: NullablePointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag): None =>
+  fun g_object_setv(g_object: NullablePointer[GObject] tag, nproperties: U32, names: Pointer[Pointer[U8] tag] tag, values: NullablePointer[GValue] tag): None =>
     @g_object_setv(g_object, nproperties, names, values)
 
 
@@ -30875,7 +30874,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[Struct size=192,fid: f134]
 */
-  fun g_object_getv(g_object: NullablePointer[GObject] tag, nproperties: U32, names: NullablePointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag): None =>
+  fun g_object_getv(g_object: NullablePointer[GObject] tag, nproperties: U32, names: Pointer[Pointer[U8] tag] tag, values: NullablePointer[GValue] tag): None =>
     @g_object_getv(g_object, nproperties, names, values)
 
 
@@ -31041,7 +31040,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_object_weak_ref(g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): None =>
+  fun g_object_weak_ref(g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag): None =>
     @g_object_weak_ref(g_object, notify, data)
 
 
@@ -31056,7 +31055,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_object_weak_unref(g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): None =>
+  fun g_object_weak_unref(g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag): None =>
     @g_object_weak_unref(g_object, notify, data)
 
 
@@ -31099,7 +31098,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_object_add_toggle_ref(g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): None =>
+  fun g_object_add_toggle_ref(g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag): None =>
     @g_object_add_toggle_ref(g_object, notify, data)
 
 
@@ -31114,7 +31113,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_object_remove_toggle_ref(g_object: NullablePointer[GObject] tag, notify: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag): None =>
+  fun g_object_remove_toggle_ref(g_object: NullablePointer[GObject] tag, notify: Pointer[None] tag, data: Pointer[None] tag): None =>
     @g_object_remove_toggle_ref(g_object, notify, data)
 
 
@@ -31159,7 +31158,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_object_set_qdata_full(g_object: NullablePointer[GObject] tag, quark: U32, data: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_object_set_qdata_full(g_object: NullablePointer[GObject] tag, quark: U32, data: Pointer[None] tag, destroy: Pointer[None] tag): None =>
     @g_object_set_qdata_full(g_object, quark, data, destroy)
 
 
@@ -31189,7 +31188,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_object_dup_qdata(g_object: NullablePointer[GObject] tag, quark: U32, dupfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): Pointer[None] =>
+  fun g_object_dup_qdata(g_object: NullablePointer[GObject] tag, quark: U32, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
     @g_object_dup_qdata(g_object, quark, dupfunc, userdata)
 
 
@@ -31207,7 +31206,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_object_replace_qdata(g_object: NullablePointer[GObject] tag, quark: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag, olddestroy: NullablePointer[NullablePointer[FUNCTIONTYPE]] tag): I32 =>
+  fun g_object_replace_qdata(g_object: NullablePointer[GObject] tag, quark: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag): I32 =>
     @g_object_replace_qdata(g_object, quark, oldval, newval, destroy, olddestroy)
 
 
@@ -31252,7 +31251,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_object_set_data_full(g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_object_set_data_full(g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: Pointer[None] tag, destroy: Pointer[None] tag): None =>
     @g_object_set_data_full(g_object, key, data, destroy)
 
 
@@ -31282,7 +31281,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_object_dup_data(g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, dupfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): Pointer[None] =>
+  fun g_object_dup_data(g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
     @g_object_dup_data(g_object, key, dupfunc, userdata)
 
 
@@ -31300,7 +31299,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_object_replace_data(g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag, olddestroy: NullablePointer[NullablePointer[FUNCTIONTYPE]] tag): I32 =>
+  fun g_object_replace_data(g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag): I32 =>
     @g_object_replace_data(g_object, key, oldval, newval, destroy, olddestroy)
 
 
@@ -31328,7 +31327,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[Struct size=192,fid: f141]
 */
-  fun g_cclosure_new_object(callbackfunc: NullablePointer[FUNCTIONTYPE] tag, g_object: NullablePointer[GObject] tag): NullablePointer[GClosure] =>
+  fun g_cclosure_new_object(callbackfunc: Pointer[None] tag, g_object: NullablePointer[GObject] tag): NullablePointer[GClosure] =>
     @g_cclosure_new_object(callbackfunc, g_object)
 
 
@@ -31342,7 +31341,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[Struct size=192,fid: f141]
 */
-  fun g_cclosure_new_object_swap(callbackfunc: NullablePointer[FUNCTIONTYPE] tag, g_object: NullablePointer[GObject] tag): NullablePointer[GClosure] =>
+  fun g_cclosure_new_object_swap(callbackfunc: Pointer[None] tag, g_object: NullablePointer[GObject] tag): NullablePointer[GClosure] =>
     @g_cclosure_new_object_swap(callbackfunc, g_object)
 
 
@@ -31413,7 +31412,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [Enumeration size=32,fid: f138]
 */
-  fun g_signal_connect_object(instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: NullablePointer[FUNCTIONTYPE] tag, gobject: Pointer[None] tag, connectflags: I32): U64 =>
+  fun g_signal_connect_object(instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, gobject: Pointer[None] tag, connectflags: I32): U64 =>
     @g_signal_connect_object(instance, detailedsignal, chandler, gobject, connectflags)
 
 
@@ -31768,7 +31767,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_object_bind_property_full(source: Pointer[None] tag, sourceproperty: Pointer[U8] tag, target: Pointer[None] tag, targetproperty: Pointer[U8] tag, flags: I32, transformto: NullablePointer[FUNCTIONTYPE] tag, transformfrom: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GBinding] =>
+  fun g_object_bind_property_full(source: Pointer[None] tag, sourceproperty: Pointer[U8] tag, target: Pointer[None] tag, targetproperty: Pointer[U8] tag, flags: I32, transformto: Pointer[None] tag, transformfrom: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag): NullablePointer[GBinding] =>
     @g_object_bind_property_full(source, sourceproperty, target, targetproperty, flags, transformto, transformfrom, userdata, notify)
 
 
@@ -32882,7 +32881,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=192,fid: f149]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_value_array_sort(valuearray: NullablePointer[GValueArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GValueArray] =>
+  fun g_value_array_sort(valuearray: NullablePointer[GValueArray] tag, comparefunc: Pointer[None] tag): NullablePointer[GValueArray] =>
     @g_value_array_sort(valuearray, comparefunc)
 
 
@@ -32897,7 +32896,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_value_array_sort_with_data(valuearray: NullablePointer[GValueArray] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): NullablePointer[GValueArray] =>
+  fun g_value_array_sort_with_data(valuearray: NullablePointer[GValueArray] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): NullablePointer[GValueArray] =>
     @g_value_array_sort_with_data(valuearray, comparefunc, userdata)
 
 
@@ -34153,7 +34152,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_app_info_launch_uris_async(appinfo: NullablePointer[GAppInfo] tag, uris: NullablePointer[GList] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_app_info_launch_uris_async(appinfo: NullablePointer[GAppInfo] tag, uris: NullablePointer[GList] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_app_info_launch_uris_async(appinfo, uris, context, cancellable, callback, userdata)
 
 
@@ -34267,7 +34266,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-  fun g_app_info_get_supported_types(appinfo: NullablePointer[GAppInfo] tag): NullablePointer[Pointer[U8]] =>
+  fun g_app_info_get_supported_types(appinfo: NullablePointer[GAppInfo] tag): Pointer[Pointer[U8]] =>
     @g_app_info_get_supported_types(appinfo)
 
 
@@ -34431,7 +34430,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_app_info_launch_default_for_uri_async(uri: Pointer[U8] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_app_info_launch_default_for_uri_async(uri: Pointer[U8] tag, context: NullablePointer[GAppLaunchContext] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_app_info_launch_default_for_uri_async(uri, context, cancellable, callback, userdata)
 
 
@@ -34511,7 +34510,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f156]
 */
-  fun g_app_launch_context_get_environment(context: NullablePointer[GAppLaunchContext] tag): NullablePointer[Pointer[U8]] =>
+  fun g_app_launch_context_get_environment(context: NullablePointer[GAppLaunchContext] tag): Pointer[Pointer[U8]] =>
     @g_app_launch_context_get_environment(context)
 
 
@@ -34722,7 +34721,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_buffered_input_stream_fill_async(stream: NullablePointer[GBufferedInputStream] tag, count: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_buffered_input_stream_fill_async(stream: NullablePointer[GBufferedInputStream] tag, count: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_buffered_input_stream_fill_async(stream, count, iopriority, cancellable, callback, userdata)
 
 
@@ -35016,7 +35015,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_cancellable_connect(cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, data: Pointer[None] tag, datadestroyfunc: NullablePointer[FUNCTIONTYPE] tag): U64 =>
+  fun g_cancellable_connect(cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, data: Pointer[None] tag, datadestroyfunc: Pointer[None] tag): U64 =>
     @g_cancellable_connect(cancellable, callback, data, datadestroyfunc)
 
 
@@ -35354,7 +35353,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_data_input_stream_read_line_async(stream: NullablePointer[GDataInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_data_input_stream_read_line_async(stream: NullablePointer[GDataInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_data_input_stream_read_line_async(stream, iopriority, cancellable, callback, userdata)
 
 
@@ -35421,7 +35420,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_data_input_stream_read_until_async(stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_data_input_stream_read_until_async(stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_data_input_stream_read_until_async(stream, stopchars, iopriority, cancellable, callback, userdata)
 
 
@@ -35474,7 +35473,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_data_input_stream_read_upto_async(stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, stopcharslen: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_data_input_stream_read_upto_async(stream: NullablePointer[GDataInputStream] tag, stopchars: Pointer[U8] tag, stopcharslen: I64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_data_input_stream_read_upto_async(stream, stopchars, stopcharslen, iopriority, cancellable, callback, userdata)
 
 
@@ -35959,7 +35958,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_application_run(application: NullablePointer[GApplication] tag, argc: I32, argv: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_application_run(application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_application_run(application, argc, argv)
 
 
@@ -36121,7 +36120,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f166]
     [PointerType size=64]->[FundamentalType(int) size=32]
 */
-  fun g_application_command_line_get_arguments(cmdline: NullablePointer[GApplicationCommandLine] tag, argc: Pointer[I32] tag): NullablePointer[Pointer[U8]] =>
+  fun g_application_command_line_get_arguments(cmdline: NullablePointer[GApplicationCommandLine] tag, argc: Pointer[I32] tag): Pointer[Pointer[U8]] =>
     @g_application_command_line_get_arguments(cmdline, argc)
 
 
@@ -36160,7 +36159,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f166]
 */
-  fun g_application_command_line_get_environ(cmdline: NullablePointer[GApplicationCommandLine] tag): NullablePointer[Pointer[U8]] =>
+  fun g_application_command_line_get_environ(cmdline: NullablePointer[GApplicationCommandLine] tag): Pointer[Pointer[U8]] =>
     @g_application_command_line_get_environ(cmdline)
 
 
@@ -36306,7 +36305,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_settings_list_schemas(): NullablePointer[Pointer[U8]] =>
+  fun g_settings_list_schemas(): Pointer[Pointer[U8]] =>
     @g_settings_list_schemas()
 
 
@@ -36318,7 +36317,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_settings_list_relocatable_schemas(): NullablePointer[Pointer[U8]] =>
+  fun g_settings_list_relocatable_schemas(): Pointer[Pointer[U8]] =>
     @g_settings_list_relocatable_schemas()
 
 
@@ -36402,7 +36401,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f167]
 */
-  fun g_settings_list_children(settings: NullablePointer[GSettings] tag): NullablePointer[Pointer[U8]] =>
+  fun g_settings_list_children(settings: NullablePointer[GSettings] tag): Pointer[Pointer[U8]] =>
     @g_settings_list_children(settings)
 
 
@@ -36415,7 +36414,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f167]
 */
-  fun g_settings_list_keys(settings: NullablePointer[GSettings] tag): NullablePointer[Pointer[U8]] =>
+  fun g_settings_list_keys(settings: NullablePointer[GSettings] tag): Pointer[Pointer[U8]] =>
     @g_settings_list_keys(settings)
 
 
@@ -36762,7 +36761,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f167]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_settings_get_strv(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_settings_get_strv(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_settings_get_strv(settings, key)
 
 
@@ -36777,7 +36776,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_settings_set_strv(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, value: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_settings_set_strv(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, value: Pointer[Pointer[U8] tag] tag): I32 =>
     @g_settings_set_strv(settings, key, value)
 
 
@@ -36965,7 +36964,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_settings_bind_with_mapping(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, g_object: Pointer[None] tag, property: Pointer[U8] tag, flags: I32, getmapping: NullablePointer[FUNCTIONTYPE] tag, setmapping: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_settings_bind_with_mapping(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, g_object: Pointer[None] tag, property: Pointer[U8] tag, flags: I32, getmapping: Pointer[None] tag, setmapping: Pointer[None] tag, userdata: Pointer[None] tag, destroy: Pointer[None] tag): None =>
     @g_settings_bind_with_mapping(settings, key, g_object, property, flags, getmapping, setmapping, userdata, destroy)
 
 
@@ -37026,7 +37025,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_settings_get_mapped(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, mapping: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): Pointer[None] =>
+  fun g_settings_get_mapped(settings: NullablePointer[GSettings] tag, key: Pointer[U8] tag, mapping: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
     @g_settings_get_mapped(settings, key, mapping, userdata)
 
 
@@ -37069,7 +37068,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_permission_acquire_async(permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_permission_acquire_async(permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_permission_acquire_async(permission, cancellable, callback, userdata)
 
 
@@ -37115,7 +37114,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_permission_release_async(permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_permission_release_async(permission: NullablePointer[GPermission] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_permission_release_async(permission, cancellable, callback, userdata)
 
 
@@ -37341,7 +37340,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=,fid: f90]
 */
-  fun g_menu_attribute_iter_get_next(iter: NullablePointer[GMenuAttributeIter] tag, outname: NullablePointer[Pointer[U8]] tag, value: NullablePointer[NullablePointer[GVariant]] tag): I32 =>
+  fun g_menu_attribute_iter_get_next(iter: NullablePointer[GMenuAttributeIter] tag, outname: Pointer[Pointer[U8] tag] tag, value: NullablePointer[NullablePointer[GVariant]] tag): I32 =>
     @g_menu_attribute_iter_get_next(iter, outname, value)
 
 
@@ -37407,7 +37406,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=256,fid: f169]
 */
-  fun g_menu_link_iter_get_next(iter: NullablePointer[GMenuLinkIter] tag, outlink: NullablePointer[Pointer[U8]] tag, value: NullablePointer[NullablePointer[GMenuModel]] tag): I32 =>
+  fun g_menu_link_iter_get_next(iter: NullablePointer[GMenuLinkIter] tag, outlink: Pointer[Pointer[U8] tag] tag, value: NullablePointer[NullablePointer[GMenuModel]] tag): I32 =>
     @g_menu_link_iter_get_next(iter, outlink, value)
 
 
@@ -37506,7 +37505,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_enumerator_next_files_async(enumerator: NullablePointer[GFileEnumerator] tag, numfiles: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_enumerator_next_files_async(enumerator: NullablePointer[GFileEnumerator] tag, numfiles: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_enumerator_next_files_async(enumerator, numfiles, iopriority, cancellable, callback, userdata)
 
 
@@ -37538,7 +37537,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_enumerator_close_async(enumerator: NullablePointer[GFileEnumerator] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_enumerator_close_async(enumerator: NullablePointer[GFileEnumerator] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_enumerator_close_async(enumerator, iopriority, cancellable, callback, userdata)
 
 
@@ -37948,7 +37947,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_input_stream_query_info_async(stream: NullablePointer[GFileInputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_input_stream_query_info_async(stream: NullablePointer[GFileInputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_input_stream_query_info_async(stream, attributes, iopriority, cancellable, callback, userdata)
 
 
@@ -38009,7 +38008,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_output_stream_query_info_async(stream: NullablePointer[GFileOutputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_output_stream_query_info_async(stream: NullablePointer[GFileOutputStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_output_stream_query_info_async(stream, attributes, iopriority, cancellable, callback, userdata)
 
 
@@ -38083,7 +38082,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_io_stream_query_info_async(stream: NullablePointer[GFileIOStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_io_stream_query_info_async(stream: NullablePointer[GFileIOStream] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_io_stream_query_info_async(stream, attributes, iopriority, cancellable, callback, userdata)
 
 
@@ -38724,7 +38723,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_input_stream_read_async(stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_input_stream_read_async(stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_input_stream_read_async(stream, buffer, count, iopriority, cancellable, callback, userdata)
 
 
@@ -38758,7 +38757,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_input_stream_read_all_async(stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_input_stream_read_all_async(stream: NullablePointer[GInputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_input_stream_read_all_async(stream, buffer, count, iopriority, cancellable, callback, userdata)
 
 
@@ -38792,7 +38791,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_input_stream_read_bytes_async(stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_input_stream_read_bytes_async(stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_input_stream_read_bytes_async(stream, count, iopriority, cancellable, callback, userdata)
 
 
@@ -38825,7 +38824,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_input_stream_skip_async(stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_input_stream_skip_async(stream: NullablePointer[GInputStream] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_input_stream_skip_async(stream, count, iopriority, cancellable, callback, userdata)
 
 
@@ -38857,7 +38856,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_input_stream_close_async(stream: NullablePointer[GInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_input_stream_close_async(stream: NullablePointer[GInputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_input_stream_close_async(stream, iopriority, cancellable, callback, userdata)
 
 
@@ -38964,7 +38963,7 @@ primitive GLibSys
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_memory_input_stream_new_from_data(data: Pointer[None] tag, len: I64, destroy: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GInputStream] =>
+  fun g_memory_input_stream_new_from_data(data: Pointer[None] tag, len: I64, destroy: Pointer[None] tag): NullablePointer[GInputStream] =>
     @g_memory_input_stream_new_from_data(data, len, destroy)
 
 
@@ -38993,7 +38992,7 @@ primitive GLibSys
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_memory_input_stream_add_data(stream: NullablePointer[GMemoryInputStream] tag, data: Pointer[None] tag, len: I64, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_memory_input_stream_add_data(stream: NullablePointer[GMemoryInputStream] tag, data: Pointer[None] tag, len: I64, destroy: Pointer[None] tag): None =>
     @g_memory_input_stream_add_data(stream, data, len, destroy)
 
 
@@ -39035,7 +39034,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_memory_output_stream_new(data: Pointer[None] tag, size: U64, reallocfunction: NullablePointer[FUNCTIONTYPE] tag, destroyfunction: NullablePointer[FUNCTIONTYPE] tag): NullablePointer[GOutputStream] =>
+  fun g_memory_output_stream_new(data: Pointer[None] tag, size: U64, reallocfunction: Pointer[None] tag, destroyfunction: Pointer[None] tag): NullablePointer[GOutputStream] =>
     @g_memory_output_stream_new(data, size, reallocfunction, destroyfunction)
 
 
@@ -39794,7 +39793,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_write_async(stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_write_async(stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_write_async(stream, buffer, count, iopriority, cancellable, callback, userdata)
 
 
@@ -39828,7 +39827,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_write_all_async(stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_write_all_async(stream: NullablePointer[GOutputStream] tag, buffer: Pointer[None] tag, count: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_write_all_async(stream, buffer, count, iopriority, cancellable, callback, userdata)
 
 
@@ -39863,7 +39862,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_writev_async(stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_writev_async(stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_writev_async(stream, vectors, nvectors, iopriority, cancellable, callback, userdata)
 
 
@@ -39898,7 +39897,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_writev_all_async(stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_writev_all_async(stream: NullablePointer[GOutputStream] tag, vectors: NullablePointer[GOutputVector] tag, nvectors: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_writev_all_async(stream, vectors, nvectors, iopriority, cancellable, callback, userdata)
 
 
@@ -39932,7 +39931,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_write_bytes_async(stream: NullablePointer[GOutputStream] tag, bytes: NullablePointer[GBytes] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_write_bytes_async(stream: NullablePointer[GOutputStream] tag, bytes: NullablePointer[GBytes] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_write_bytes_async(stream, bytes, iopriority, cancellable, callback, userdata)
 
 
@@ -39966,7 +39965,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_splice_async(stream: NullablePointer[GOutputStream] tag, source: NullablePointer[GInputStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_splice_async(stream: NullablePointer[GOutputStream] tag, source: NullablePointer[GInputStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_splice_async(stream, source, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -39998,7 +39997,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_flush_async(stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_flush_async(stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_flush_async(stream, iopriority, cancellable, callback, userdata)
 
 
@@ -40030,7 +40029,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_output_stream_close_async(stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_output_stream_close_async(stream: NullablePointer[GOutputStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_output_stream_close_async(stream, iopriority, cancellable, callback, userdata)
 
 
@@ -40168,7 +40167,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_io_stream_splice_async(stream1: NullablePointer[GIOStream] tag, stream2: NullablePointer[GIOStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_io_stream_splice_async(stream1: NullablePointer[GIOStream] tag, stream2: NullablePointer[GIOStream] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_io_stream_splice_async(stream1, stream2, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -40214,7 +40213,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_io_stream_close_async(stream: NullablePointer[GIOStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_io_stream_close_async(stream: NullablePointer[GIOStream] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_io_stream_close_async(stream, iopriority, cancellable, callback, userdata)
 
 
@@ -40352,7 +40351,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_resolver_lookup_by_name_async(resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_resolver_lookup_by_name_async(resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_resolver_lookup_by_name_async(resolver, hostname, cancellable, callback, userdata)
 
 
@@ -40385,7 +40384,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_resolver_lookup_by_name_with_flags_async(resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_resolver_lookup_by_name_with_flags_async(resolver: NullablePointer[GResolver] tag, hostname: Pointer[U8] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_resolver_lookup_by_name_with_flags_async(resolver, hostname, flags, cancellable, callback, userdata)
 
 
@@ -40463,7 +40462,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_resolver_lookup_by_address_async(resolver: NullablePointer[GResolver] tag, address: NullablePointer[GInetAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_resolver_lookup_by_address_async(resolver: NullablePointer[GResolver] tag, address: NullablePointer[GInetAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_resolver_lookup_by_address_async(resolver, address, cancellable, callback, userdata)
 
 
@@ -40515,7 +40514,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_resolver_lookup_service_async(resolver: NullablePointer[GResolver] tag, service: Pointer[U8] tag, protocol: Pointer[U8] tag, domain: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_resolver_lookup_service_async(resolver: NullablePointer[GResolver] tag, service: Pointer[U8] tag, protocol: Pointer[U8] tag, domain: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_resolver_lookup_service_async(resolver, service, protocol, domain, cancellable, callback, userdata)
 
 
@@ -40565,7 +40564,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_resolver_lookup_records_async(resolver: NullablePointer[GResolver] tag, rrname: Pointer[U8] tag, recordtype: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_resolver_lookup_records_async(resolver: NullablePointer[GResolver] tag, rrname: Pointer[U8] tag, recordtype: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_resolver_lookup_records_async(resolver, rrname, recordtype, cancellable, callback, userdata)
 
 
@@ -41917,7 +41916,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_client_connect_async(client: NullablePointer[GSocketClient] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_client_connect_async(client: NullablePointer[GSocketClient] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_client_connect_async(client, connectable, cancellable, callback, userdata)
 
 
@@ -41950,7 +41949,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_client_connect_to_host_async(client: NullablePointer[GSocketClient] tag, hostandport: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_client_connect_to_host_async(client: NullablePointer[GSocketClient] tag, hostandport: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_client_connect_to_host_async(client, hostandport, defaultport, cancellable, callback, userdata)
 
 
@@ -41983,7 +41982,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_client_connect_to_service_async(client: NullablePointer[GSocketClient] tag, domain: Pointer[U8] tag, service: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_client_connect_to_service_async(client: NullablePointer[GSocketClient] tag, domain: Pointer[U8] tag, service: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_client_connect_to_service_async(client, domain, service, cancellable, callback, userdata)
 
 
@@ -42016,7 +42015,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_client_connect_to_uri_async(client: NullablePointer[GSocketClient] tag, uri: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_client_connect_to_uri_async(client: NullablePointer[GSocketClient] tag, uri: Pointer[U8] tag, defaultport: U16, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_client_connect_to_uri_async(client, uri, defaultport, cancellable, callback, userdata)
 
 
@@ -42103,7 +42102,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_connection_connect_async(connection: NullablePointer[GSocketConnection] tag, address: NullablePointer[GSocketAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_connection_connect_async(connection: NullablePointer[GSocketConnection] tag, address: NullablePointer[GSocketAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_connection_connect_async(connection, address, cancellable, callback, userdata)
 
 
@@ -42339,7 +42338,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_listener_accept_socket_async(listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_listener_accept_socket_async(listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_listener_accept_socket_async(listener, cancellable, callback, userdata)
 
 
@@ -42387,7 +42386,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_listener_accept_async(listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_listener_accept_async(listener: NullablePointer[GSocketListener] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_listener_accept_async(listener, cancellable, callback, userdata)
 
 
@@ -42590,7 +42589,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_socket_address_enumerator_next_async(enumerator: NullablePointer[GSocketAddressEnumerator] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_socket_address_enumerator_next_async(enumerator: NullablePointer[GSocketAddressEnumerator] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_socket_address_enumerator_next_async(enumerator, cancellable, callback, userdata)
 
 
@@ -43049,7 +43048,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=320,fid: f203]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_tls_connection_set_advertised_protocols(conn: NullablePointer[GTlsConnection] tag, protocols: NullablePointer[Pointer[U8]] tag): None =>
+  fun g_tls_connection_set_advertised_protocols(conn: NullablePointer[GTlsConnection] tag, protocols: Pointer[Pointer[U8] tag] tag): None =>
     @g_tls_connection_set_advertised_protocols(conn, protocols)
 
 
@@ -43110,7 +43109,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tls_connection_handshake_async(conn: NullablePointer[GTlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tls_connection_handshake_async(conn: NullablePointer[GTlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tls_connection_handshake_async(conn, iopriority, cancellable, callback, userdata)
 
 
@@ -43217,7 +43216,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tls_database_verify_chain_async(self: NullablePointer[GTlsDatabase] tag, chain: NullablePointer[GTlsCertificate] tag, purpose: Pointer[U8] tag, identity: NullablePointer[GSocketConnectable] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tls_database_verify_chain_async(self: NullablePointer[GTlsDatabase] tag, chain: NullablePointer[GTlsCertificate] tag, purpose: Pointer[U8] tag, identity: NullablePointer[GSocketConnectable] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tls_database_verify_chain_async(self, chain, purpose, identity, interaction, flags, cancellable, callback, userdata)
 
 
@@ -43283,7 +43282,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tls_database_lookup_certificate_for_handle_async(self: NullablePointer[GTlsDatabase] tag, handle: Pointer[U8] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tls_database_lookup_certificate_for_handle_async(self: NullablePointer[GTlsDatabase] tag, handle: Pointer[U8] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tls_database_lookup_certificate_for_handle_async(self, handle, interaction, flags, cancellable, callback, userdata)
 
 
@@ -43335,7 +43334,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tls_database_lookup_certificate_issuer_async(self: NullablePointer[GTlsDatabase] tag, certificate: NullablePointer[GTlsCertificate] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tls_database_lookup_certificate_issuer_async(self: NullablePointer[GTlsDatabase] tag, certificate: NullablePointer[GTlsCertificate] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tls_database_lookup_certificate_issuer_async(self, certificate, interaction, flags, cancellable, callback, userdata)
 
 
@@ -43387,7 +43386,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tls_database_lookup_certificates_issued_by_async(self: NullablePointer[GTlsDatabase] tag, issuerrawdn: NullablePointer[GByteArray] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tls_database_lookup_certificates_issued_by_async(self: NullablePointer[GTlsDatabase] tag, issuerrawdn: NullablePointer[GByteArray] tag, interaction: NullablePointer[GTlsInteraction] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tls_database_lookup_certificates_issued_by_async(self, issuerrawdn, interaction, flags, cancellable, callback, userdata)
 
 
@@ -43463,7 +43462,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tls_interaction_ask_password_async(interaction: NullablePointer[GTlsInteraction] tag, password: NullablePointer[GTlsPassword] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tls_interaction_ask_password_async(interaction: NullablePointer[GTlsInteraction] tag, password: NullablePointer[GTlsPassword] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tls_interaction_ask_password_async(interaction, password, cancellable, callback, userdata)
 
 
@@ -43530,7 +43529,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_tls_interaction_request_certificate_async(interaction: NullablePointer[GTlsInteraction] tag, connection: NullablePointer[GTlsConnection] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_tls_interaction_request_certificate_async(interaction: NullablePointer[GTlsInteraction] tag, connection: NullablePointer[GTlsConnection] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_tls_interaction_request_certificate_async(interaction, connection, flags, cancellable, callback, userdata)
 
 
@@ -43616,7 +43615,7 @@ primitive GLibSys
     [FundamentalType(long int) size=64]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_tls_password_set_value_full(password: NullablePointer[GTlsPassword] tag, value: Pointer[U8] tag, length: I64, destroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_tls_password_set_value_full(password: NullablePointer[GTlsPassword] tag, value: Pointer[U8] tag, length: I64, destroy: Pointer[None] tag): None =>
     @g_tls_password_set_value_full(password, value, length, destroy)
 
 
@@ -43763,7 +43762,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=192,fid: f207]
 */
-  fun g_vfs_get_supported_uri_schemes(vfs: NullablePointer[GVfs] tag): NullablePointer[Pointer[U8]] =>
+  fun g_vfs_get_supported_uri_schemes(vfs: NullablePointer[GVfs] tag): Pointer[Pointer[U8]] =>
     @g_vfs_get_supported_uri_schemes(vfs)
 
 
@@ -43821,7 +43820,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_vfs_register_uri_scheme(vfs: NullablePointer[GVfs] tag, scheme: Pointer[U8] tag, urifunc: NullablePointer[FUNCTIONTYPE] tag, uridata: Pointer[None] tag, uridestroy: NullablePointer[FUNCTIONTYPE] tag, parsenamefunc: NullablePointer[FUNCTIONTYPE] tag, parsenamedata: Pointer[None] tag, parsenamedestroy: NullablePointer[FUNCTIONTYPE] tag): I32 =>
+  fun g_vfs_register_uri_scheme(vfs: NullablePointer[GVfs] tag, scheme: Pointer[U8] tag, urifunc: Pointer[None] tag, uridata: Pointer[None] tag, uridestroy: Pointer[None] tag, parsenamefunc: Pointer[None] tag, parsenamedata: Pointer[None] tag, parsenamedestroy: Pointer[None] tag): I32 =>
     @g_vfs_register_uri_scheme(vfs, scheme, urifunc, uridata, uridestroy, parsenamefunc, parsenamedata, parsenamedestroy)
 
 
@@ -44106,7 +44105,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_proxy_new(connection: NullablePointer[GDBusConnection] tag, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_proxy_new(connection: NullablePointer[GDBusConnection] tag, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_proxy_new(connection, flags, info, name, objectpath, interfacename, cancellable, callback, userdata)
 
 
@@ -44161,7 +44160,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_proxy_new_for_bus(bustype: I32, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_proxy_new_for_bus(bustype: I32, flags: I32, info: NullablePointer[GDBusInterfaceInfo] tag, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_proxy_new_for_bus(bustype, flags, info, name, objectpath, interfacename, cancellable, callback, userdata)
 
 
@@ -44369,7 +44368,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=256,fid: f211]
 */
-  fun g_dbus_proxy_get_cached_property_names(proxy: NullablePointer[GDBusProxy] tag): NullablePointer[Pointer[U8]] =>
+  fun g_dbus_proxy_get_cached_property_names(proxy: NullablePointer[GDBusProxy] tag): Pointer[Pointer[U8]] =>
     @g_dbus_proxy_get_cached_property_names(proxy)
 
 
@@ -44389,7 +44388,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_proxy_call(proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_proxy_call(proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_proxy_call(proxy, methodname, parameters, flags, timeoutmsec, cancellable, callback, userdata)
 
 
@@ -44444,7 +44443,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_proxy_call_with_unix_fd_list(proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_proxy_call_with_unix_fd_list(proxy: NullablePointer[GDBusProxy] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_proxy_call_with_unix_fd_list(proxy, methodname, parameters, flags, timeoutmsec, fdlist, cancellable, callback, userdata)
 
 
@@ -44666,7 +44665,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_bus_get(bustype: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_bus_get(bustype: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_bus_get(bustype, cancellable, callback, userdata)
 
 
@@ -44714,7 +44713,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_connection_new(stream: NullablePointer[GIOStream] tag, guid: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_connection_new(stream: NullablePointer[GIOStream] tag, guid: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_connection_new(stream, guid, flags, observer, cancellable, callback, userdata)
 
 
@@ -44764,7 +44763,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_connection_new_for_address(address: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_connection_new_for_address(address: Pointer[U8] tag, flags: I32, observer: NullablePointer[GDBusAuthObserver] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_connection_new_for_address(address, flags, observer, cancellable, callback, userdata)
 
 
@@ -44955,7 +44954,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_connection_close(connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_connection_close(connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_connection_close(connection, cancellable, callback, userdata)
 
 
@@ -45001,7 +45000,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_connection_flush(connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_connection_flush(connection: NullablePointer[GDBusConnection] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_connection_flush(connection, cancellable, callback, userdata)
 
 
@@ -45068,7 +45067,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_connection_send_message_with_reply(connection: NullablePointer[GDBusConnection] tag, message: NullablePointer[GDBusMessage] tag, flags: I32, timeoutmsec: I32, outserial: Pointer[U32] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_connection_send_message_with_reply(connection: NullablePointer[GDBusConnection] tag, message: NullablePointer[GDBusMessage] tag, flags: I32, timeoutmsec: I32, outserial: Pointer[U32] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_connection_send_message_with_reply(connection, message, flags, timeoutmsec, outserial, cancellable, callback, userdata)
 
 
@@ -45145,7 +45144,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_connection_call(connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_connection_call(connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_connection_call(connection, busname, objectpath, interfacename, methodname, parameters, replytype, flags, timeoutmsec, cancellable, callback, userdata)
 
 
@@ -45208,7 +45207,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_connection_call_with_unix_fd_list(connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_connection_call_with_unix_fd_list(connection: NullablePointer[GDBusConnection] tag, busname: Pointer[U8] tag, objectpath: Pointer[U8] tag, interfacename: Pointer[U8] tag, methodname: Pointer[U8] tag, parameters: NullablePointer[GVariant] tag, replytype: NullablePointer[GVariantType] tag, flags: I32, timeoutmsec: I32, fdlist: NullablePointer[GUnixFDList] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_connection_call_with_unix_fd_list(connection, busname, objectpath, interfacename, methodname, parameters, replytype, flags, timeoutmsec, fdlist, cancellable, callback, userdata)
 
 
@@ -45268,7 +45267,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_dbus_connection_register_object(connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, interfaceinfo: NullablePointer[GDBusInterfaceInfo] tag, vtable: NullablePointer[GDBusInterfaceVTable] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag, g_error: NullablePointer[NullablePointer[GError]] tag): U32 =>
+  fun g_dbus_connection_register_object(connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, interfaceinfo: NullablePointer[GDBusInterfaceInfo] tag, vtable: NullablePointer[GDBusInterfaceVTable] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): U32 =>
     @g_dbus_connection_register_object(connection, objectpath, interfaceinfo, vtable, userdata, userdatafreefunc, g_error)
 
 
@@ -45320,7 +45319,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_dbus_connection_register_subtree(connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, vtable: NullablePointer[GDBusSubtreeVTable] tag, flags: I32, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag, g_error: NullablePointer[NullablePointer[GError]] tag): U32 =>
+  fun g_dbus_connection_register_subtree(connection: NullablePointer[GDBusConnection] tag, objectpath: Pointer[U8] tag, vtable: NullablePointer[GDBusSubtreeVTable] tag, flags: I32, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): U32 =>
     @g_dbus_connection_register_subtree(connection, objectpath, vtable, flags, userdata, userdatafreefunc, g_error)
 
 
@@ -45356,7 +45355,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_dbus_connection_signal_subscribe(connection: NullablePointer[GDBusConnection] tag, sender: Pointer[U8] tag, interfacename: Pointer[U8] tag, member: Pointer[U8] tag, objectpath: Pointer[U8] tag, arg0: Pointer[U8] tag, flags: I32, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_dbus_connection_signal_subscribe(connection: NullablePointer[GDBusConnection] tag, sender: Pointer[U8] tag, interfacename: Pointer[U8] tag, member: Pointer[U8] tag, objectpath: Pointer[U8] tag, arg0: Pointer[U8] tag, flags: I32, callback: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag): U32 =>
     @g_dbus_connection_signal_subscribe(connection, sender, interfacename, member, objectpath, arg0, flags, callback, userdata, userdatafreefunc)
 
 
@@ -45386,7 +45385,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_dbus_connection_add_filter(connection: NullablePointer[GDBusConnection] tag, filterfunction: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_dbus_connection_add_filter(connection: NullablePointer[GDBusConnection] tag, filterfunction: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag): U32 =>
     @g_dbus_connection_add_filter(connection, filterfunction, userdata, userdatafreefunc)
 
 
@@ -46160,7 +46159,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_object_manager_client_new(connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_object_manager_client_new(connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_object_manager_client_new(connection, flags, name, objectpath, getproxytypefunc, getproxytypeuserdata, getproxytypedestroynotify, cancellable, callback, userdata)
 
 
@@ -46195,7 +46194,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_dbus_object_manager_client_new_sync(connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GDBusObjectManager] =>
+  fun g_dbus_object_manager_client_new_sync(connection: NullablePointer[GDBusConnection] tag, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GDBusObjectManager] =>
     @g_dbus_object_manager_client_new_sync(connection, flags, name, objectpath, getproxytypefunc, getproxytypeuserdata, getproxytypedestroynotify, cancellable, g_error)
 
 
@@ -46217,7 +46216,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_object_manager_client_new_for_bus(bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_object_manager_client_new_for_bus(bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_object_manager_client_new_for_bus(bustype, flags, name, objectpath, getproxytypefunc, getproxytypeuserdata, getproxytypedestroynotify, cancellable, callback, userdata)
 
 
@@ -46252,7 +46251,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_dbus_object_manager_client_new_for_bus_sync(bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: NullablePointer[FUNCTIONTYPE] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: NullablePointer[FUNCTIONTYPE] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GDBusObjectManager] =>
+  fun g_dbus_object_manager_client_new_for_bus_sync(bustype: I32, flags: I32, name: Pointer[U8] tag, objectpath: Pointer[U8] tag, getproxytypefunc: Pointer[None] tag, getproxytypeuserdata: Pointer[None] tag, getproxytypedestroynotify: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GDBusObjectManager] =>
     @g_dbus_object_manager_client_new_for_bus_sync(bustype, flags, name, objectpath, getproxytypefunc, getproxytypeuserdata, getproxytypedestroynotify, cancellable, g_error)
 
 
@@ -46559,7 +46558,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[Struct size=,fid: f90]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_action_parse_detailed_name(detailedname: Pointer[U8] tag, actionname: NullablePointer[Pointer[U8]] tag, targetvalue: NullablePointer[NullablePointer[GVariant]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_action_parse_detailed_name(detailedname: Pointer[U8] tag, actionname: Pointer[Pointer[U8] tag] tag, targetvalue: NullablePointer[NullablePointer[GVariant]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_action_parse_detailed_name(detailedname, actionname, targetvalue, g_error)
 
 
@@ -46612,7 +46611,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-  fun g_action_group_list_actions(actiongroup: NullablePointer[GActionGroup] tag): NullablePointer[Pointer[U8]] =>
+  fun g_action_group_list_actions(actiongroup: NullablePointer[GActionGroup] tag): Pointer[Pointer[U8]] =>
     @g_action_group_list_actions(actiongroup)
 
 
@@ -46995,7 +46994,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_async_initable_init_async(initable: NullablePointer[GAsyncInitable] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_async_initable_init_async(initable: NullablePointer[GAsyncInitable] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_async_initable_init_async(initable, iopriority, cancellable, callback, userdata)
 
 
@@ -47028,7 +47027,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-/*  fun g_async_initable_new_async(objecttype: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, firstpropertyname: Pointer[U8] tag, ...): None =>
+/*  fun g_async_initable_new_async(objecttype: U64, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, firstpropertyname: Pointer[U8] tag, ...): None =>
     @g_async_initable_new_async(objecttype, iopriority, cancellable, callback, userdata, firstpropertyname, ...)
 */
 
@@ -47047,7 +47046,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_async_initable_newv_async(objecttype: U64, nparameters: U32, parameters: NullablePointer[GParameter] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_async_initable_newv_async(objecttype: U64, nparameters: U32, parameters: NullablePointer[GParameter] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_async_initable_newv_async(objecttype, nparameters, parameters, iopriority, cancellable, callback, userdata)
 
 
@@ -47066,7 +47065,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_async_initable_new_valist_async(objecttype: U64, firstpropertyname: Pointer[U8] tag, varargs: NullablePointer[Valisttag] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_async_initable_new_valist_async(objecttype: U64, firstpropertyname: Pointer[U8] tag, varargs: NullablePointer[Valisttag] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_async_initable_new_valist_async(objecttype, firstpropertyname, varargs, iopriority, cancellable, callback, userdata)
 
 
@@ -47473,7 +47472,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-  fun g_content_type_guess_for_tree(root: NullablePointer[GFile] tag): NullablePointer[Pointer[U8]] =>
+  fun g_content_type_guess_for_tree(root: NullablePointer[GFile] tag): Pointer[Pointer[U8]] =>
     @g_content_type_guess_for_tree(root)
 
 
@@ -47497,7 +47496,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_content_type_get_mime_dirs(): NullablePointer[Pointer[U8]] =>
+  fun g_content_type_get_mime_dirs(): Pointer[Pointer[U8]] =>
     @g_content_type_get_mime_dirs()
 
 
@@ -47510,7 +47509,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_content_type_set_mime_dirs(dirs: NullablePointer[Pointer[U8]] tag): None =>
+  fun g_content_type_set_mime_dirs(dirs: Pointer[Pointer[U8] tag] tag): None =>
     @g_content_type_set_mime_dirs(dirs)
 
 
@@ -47993,7 +47992,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dbus_address_get_stream(address: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dbus_address_get_stream(address: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dbus_address_get_stream(address, cancellable, callback, userdata)
 
 
@@ -48008,7 +48007,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_dbus_address_get_stream_finish(res: NullablePointer[GAsyncResult] tag, outguid: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GIOStream] =>
+  fun g_dbus_address_get_stream_finish(res: NullablePointer[GAsyncResult] tag, outguid: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GIOStream] =>
     @g_dbus_address_get_stream_finish(res, outguid, g_error)
 
 
@@ -48024,7 +48023,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_dbus_address_get_stream_sync(address: Pointer[U8] tag, outguid: NullablePointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GIOStream] =>
+  fun g_dbus_address_get_stream_sync(address: Pointer[U8] tag, outguid: Pointer[Pointer[U8] tag] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GIOStream] =>
     @g_dbus_address_get_stream_sync(address, outguid, cancellable, g_error)
 
 
@@ -49156,7 +49155,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_bus_own_name(bustype: I32, name: Pointer[U8] tag, flags: I32, busacquiredhandler: NullablePointer[FUNCTIONTYPE] tag, nameacquiredhandler: NullablePointer[FUNCTIONTYPE] tag, namelosthandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_bus_own_name(bustype: I32, name: Pointer[U8] tag, flags: I32, busacquiredhandler: Pointer[None] tag, nameacquiredhandler: Pointer[None] tag, namelosthandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag): U32 =>
     @g_bus_own_name(bustype, name, flags, busacquiredhandler, nameacquiredhandler, namelosthandler, userdata, userdatafreefunc)
 
 
@@ -49175,7 +49174,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_bus_own_name_on_connection(connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameacquiredhandler: NullablePointer[FUNCTIONTYPE] tag, namelosthandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_bus_own_name_on_connection(connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameacquiredhandler: Pointer[None] tag, namelosthandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag): U32 =>
     @g_bus_own_name_on_connection(connection, name, flags, nameacquiredhandler, namelosthandler, userdata, userdatafreefunc)
 
 
@@ -49242,7 +49241,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_bus_watch_name(bustype: I32, name: Pointer[U8] tag, flags: I32, nameappearedhandler: NullablePointer[FUNCTIONTYPE] tag, namevanishedhandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_bus_watch_name(bustype: I32, name: Pointer[U8] tag, flags: I32, nameappearedhandler: Pointer[None] tag, namevanishedhandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag): U32 =>
     @g_bus_watch_name(bustype, name, flags, nameappearedhandler, namevanishedhandler, userdata, userdatafreefunc)
 
 
@@ -49261,7 +49260,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_bus_watch_name_on_connection(connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameappearedhandler: NullablePointer[FUNCTIONTYPE] tag, namevanishedhandler: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, userdatafreefunc: NullablePointer[FUNCTIONTYPE] tag): U32 =>
+  fun g_bus_watch_name_on_connection(connection: NullablePointer[GDBusConnection] tag, name: Pointer[U8] tag, flags: I32, nameappearedhandler: Pointer[None] tag, namevanishedhandler: Pointer[None] tag, userdata: Pointer[None] tag, userdatafreefunc: Pointer[None] tag): U32 =>
     @g_bus_watch_name_on_connection(connection, name, flags, nameappearedhandler, namevanishedhandler, userdata, userdatafreefunc)
 
 
@@ -49851,7 +49850,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_drive_eject(drive: NullablePointer[GDrive] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_drive_eject(drive: NullablePointer[GDrive] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_drive_eject(drive, flags, cancellable, callback, userdata)
 
 
@@ -49882,7 +49881,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_drive_poll_for_media(drive: NullablePointer[GDrive] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_drive_poll_for_media(drive: NullablePointer[GDrive] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_drive_poll_for_media(drive, cancellable, callback, userdata)
 
 
@@ -49924,7 +49923,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-  fun g_drive_enumerate_identifiers(drive: NullablePointer[GDrive] tag): NullablePointer[Pointer[U8]] =>
+  fun g_drive_enumerate_identifiers(drive: NullablePointer[GDrive] tag): Pointer[Pointer[U8]] =>
     @g_drive_enumerate_identifiers(drive)
 
 
@@ -49981,7 +49980,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_drive_start(drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_drive_start(drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_drive_start(drive, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -50027,7 +50026,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_drive_stop(drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_drive_stop(drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_drive_stop(drive, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -50060,7 +50059,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_drive_eject_with_operation(drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_drive_eject_with_operation(drive: NullablePointer[GDrive] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_drive_eject_with_operation(drive, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -50293,7 +50292,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dtls_connection_handshake_async(conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dtls_connection_handshake_async(conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dtls_connection_handshake_async(conn, iopriority, cancellable, callback, userdata)
 
 
@@ -50344,7 +50343,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dtls_connection_shutdown_async(conn: NullablePointer[GDtlsConnection] tag, shutdownread: I32, shutdownwrite: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dtls_connection_shutdown_async(conn: NullablePointer[GDtlsConnection] tag, shutdownread: I32, shutdownwrite: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dtls_connection_shutdown_async(conn, shutdownread, shutdownwrite, iopriority, cancellable, callback, userdata)
 
 
@@ -50391,7 +50390,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_dtls_connection_close_async(conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_dtls_connection_close_async(conn: NullablePointer[GDtlsConnection] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_dtls_connection_close_async(conn, iopriority, cancellable, callback, userdata)
 
 
@@ -50435,7 +50434,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_dtls_connection_set_advertised_protocols(conn: NullablePointer[GDtlsConnection] tag, protocols: NullablePointer[Pointer[U8]] tag): None =>
+  fun g_dtls_connection_set_advertised_protocols(conn: NullablePointer[GDtlsConnection] tag, protocols: Pointer[Pointer[U8] tag] tag): None =>
     @g_dtls_connection_set_advertised_protocols(conn, protocols)
 
 
@@ -51202,7 +51201,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_read_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_read_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_read_async(file, iopriority, cancellable, callback, userdata)
 
 
@@ -51285,7 +51284,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_append_to_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_append_to_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_append_to_async(file, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -51318,7 +51317,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_create_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_create_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_create_async(file, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -51353,7 +51352,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_replace_async(file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_replace_async(file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_replace_async(file, etag, makebackup, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -51400,7 +51399,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_open_readwrite_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_open_readwrite_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_open_readwrite_async(file, iopriority, cancellable, callback, userdata)
 
 
@@ -51449,7 +51448,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_create_readwrite_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_create_readwrite_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_create_readwrite_async(file, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -51502,7 +51501,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_replace_readwrite_async(file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_replace_readwrite_async(file: NullablePointer[GFile] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_replace_readwrite_async(file, etag, makebackup, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -51582,7 +51581,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_query_info_async(file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_query_info_async(file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_query_info_async(file, attributes, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -51631,7 +51630,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_query_filesystem_info_async(file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_query_filesystem_info_async(file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_query_filesystem_info_async(file, attributes, iopriority, cancellable, callback, userdata)
 
 
@@ -51678,7 +51677,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_find_enclosing_mount_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_find_enclosing_mount_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_find_enclosing_mount_async(file, iopriority, cancellable, callback, userdata)
 
 
@@ -51729,7 +51728,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_enumerate_children_async(file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_enumerate_children_async(file: NullablePointer[GFile] tag, attributes: Pointer[U8] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_enumerate_children_async(file, attributes, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -51778,7 +51777,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_set_display_name_async(file: NullablePointer[GFile] tag, displayname: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_set_display_name_async(file: NullablePointer[GFile] tag, displayname: Pointer[U8] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_set_display_name_async(file, displayname, iopriority, cancellable, callback, userdata)
 
 
@@ -51825,7 +51824,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_delete_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_delete_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_delete_async(file, iopriority, cancellable, callback, userdata)
 
 
@@ -51872,7 +51871,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_trash_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_trash_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_trash_async(file, iopriority, cancellable, callback, userdata)
 
 
@@ -51906,7 +51905,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_copy(source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_copy(source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_copy(source, destination, flags, cancellable, progresscallback, progresscallbackdata, g_error)
 
 
@@ -51927,7 +51926,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_copy_async(source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progresscallbackdata: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_copy_async(source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progresscallbackdata: Pointer[None] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_copy_async(source, destination, flags, iopriority, cancellable, progresscallback, progresscallbackdata, callback, userdata)
 
 
@@ -51961,7 +51960,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_move(source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_move(source: NullablePointer[GFile] tag, destination: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progresscallbackdata: Pointer[None] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_move(source, destination, flags, cancellable, progresscallback, progresscallbackdata, g_error)
 
 
@@ -51993,7 +51992,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_make_directory_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_make_directory_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_make_directory_async(file, iopriority, cancellable, callback, userdata)
 
 
@@ -52124,7 +52123,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_set_attributes_async(file: NullablePointer[GFile] tag, info: NullablePointer[GFileInfo] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_set_attributes_async(file: NullablePointer[GFile] tag, info: NullablePointer[GFileInfo] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_set_attributes_async(file, info, flags, iopriority, cancellable, callback, userdata)
 
 
@@ -52266,7 +52265,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_mount_enclosing_volume(location: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_mount_enclosing_volume(location: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_mount_enclosing_volume(location, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -52299,7 +52298,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_mount_mountable(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_mount_mountable(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_mount_mountable(file, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -52331,7 +52330,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_unmount_mountable(file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_unmount_mountable(file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_unmount_mountable(file, flags, cancellable, callback, userdata)
 
 
@@ -52364,7 +52363,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_unmount_mountable_with_operation(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_unmount_mountable_with_operation(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_unmount_mountable_with_operation(file, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -52396,7 +52395,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_eject_mountable(file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_eject_mountable(file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_eject_mountable(file, flags, cancellable, callback, userdata)
 
 
@@ -52429,7 +52428,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_eject_mountable_with_operation(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_eject_mountable_with_operation(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_eject_mountable_with_operation(file, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -52546,7 +52545,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(long unsigned int) size=64]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_measure_disk_usage(file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progressdata: Pointer[None] tag, diskusage: Pointer[U64] tag, numdirs: Pointer[U64] tag, numfiles: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_measure_disk_usage(file: NullablePointer[GFile] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progressdata: Pointer[None] tag, diskusage: Pointer[U64] tag, numdirs: Pointer[U64] tag, numfiles: Pointer[U64] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_measure_disk_usage(file, flags, cancellable, progresscallback, progressdata, diskusage, numdirs, numfiles, g_error)
 
 
@@ -52566,7 +52565,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_measure_disk_usage_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: NullablePointer[FUNCTIONTYPE] tag, progressdata: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_measure_disk_usage_async(file: NullablePointer[GFile] tag, flags: I32, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, progresscallback: Pointer[None] tag, progressdata: Pointer[None] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_measure_disk_usage_async(file, flags, iopriority, cancellable, progresscallback, progressdata, callback, userdata)
 
 
@@ -52602,7 +52601,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_start_mountable(file: NullablePointer[GFile] tag, flags: I32, startoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_start_mountable(file: NullablePointer[GFile] tag, flags: I32, startoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_start_mountable(file, flags, startoperation, cancellable, callback, userdata)
 
 
@@ -52635,7 +52634,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_stop_mountable(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_stop_mountable(file: NullablePointer[GFile] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_stop_mountable(file, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -52666,7 +52665,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_poll_mountable(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_poll_mountable(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_poll_mountable(file, cancellable, callback, userdata)
 
 
@@ -52713,7 +52712,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_query_default_handler_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_query_default_handler_async(file: NullablePointer[GFile] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_query_default_handler_async(file, iopriority, cancellable, callback, userdata)
 
 
@@ -52746,7 +52745,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_load_contents(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_load_contents(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, contents: Pointer[Pointer[U8] tag] tag, length: Pointer[U64] tag, etagout: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_load_contents(file, cancellable, contents, length, etagout, g_error)
 
 
@@ -52762,7 +52761,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_load_contents_async(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_load_contents_async(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_load_contents_async(file, cancellable, callback, userdata)
 
 
@@ -52780,7 +52779,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_load_contents_finish(file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_load_contents_finish(file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: Pointer[Pointer[U8] tag] tag, length: Pointer[U64] tag, etagout: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_load_contents_finish(file, res, contents, length, etagout, g_error)
 
 
@@ -52797,7 +52796,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_load_partial_contents_async(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, readmorecallback: NullablePointer[FUNCTIONTYPE] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_load_partial_contents_async(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, readmorecallback: Pointer[None] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_load_partial_contents_async(file, cancellable, readmorecallback, callback, userdata)
 
 
@@ -52815,7 +52814,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_load_partial_contents_finish(file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: NullablePointer[Pointer[U8]] tag, length: Pointer[U64] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_load_partial_contents_finish(file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, contents: Pointer[Pointer[U8] tag] tag, length: Pointer[U64] tag, etagout: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_load_partial_contents_finish(file, res, contents, length, etagout, g_error)
 
 
@@ -52836,7 +52835,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_replace_contents(file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, newetag: NullablePointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_replace_contents(file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, newetag: Pointer[Pointer[U8] tag] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_replace_contents(file, contents, length, etag, makebackup, flags, newetag, cancellable, g_error)
 
 
@@ -52857,7 +52856,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_replace_contents_async(file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_replace_contents_async(file: NullablePointer[GFile] tag, contents: Pointer[U8] tag, length: U64, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_replace_contents_async(file, contents, length, etag, makebackup, flags, cancellable, callback, userdata)
 
 
@@ -52877,7 +52876,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_replace_contents_bytes_async(file: NullablePointer[GFile] tag, contents: NullablePointer[GBytes] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_replace_contents_bytes_async(file: NullablePointer[GFile] tag, contents: NullablePointer[GBytes] tag, etag: Pointer[U8] tag, makebackup: I32, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_replace_contents_bytes_async(file, contents, etag, makebackup, flags, cancellable, callback, userdata)
 
 
@@ -52893,7 +52892,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_replace_contents_finish(file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, newetag: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_file_replace_contents_finish(file: NullablePointer[GFile] tag, res: NullablePointer[GAsyncResult] tag, newetag: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_file_replace_contents_finish(file, res, newetag, g_error)
 
 
@@ -52922,7 +52921,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_load_bytes(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GBytes] =>
+  fun g_file_load_bytes(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, etagout: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GBytes] =>
     @g_file_load_bytes(file, cancellable, etagout, g_error)
 
 
@@ -52938,7 +52937,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_file_load_bytes_async(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_file_load_bytes_async(file: NullablePointer[GFile] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_file_load_bytes_async(file, cancellable, callback, userdata)
 
 
@@ -52954,7 +52953,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_file_load_bytes_finish(file: NullablePointer[GFile] tag, result: NullablePointer[GAsyncResult] tag, etagout: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GBytes] =>
+  fun g_file_load_bytes_finish(file: NullablePointer[GFile] tag, result: NullablePointer[GAsyncResult] tag, etagout: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GBytes] =>
     @g_file_load_bytes_finish(file, result, etagout, g_error)
 
 
@@ -53085,7 +53084,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_file_info_list_attributes(info: NullablePointer[GFileInfo] tag, namespace: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_file_info_list_attributes(info: NullablePointer[GFileInfo] tag, namespace: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_file_info_list_attributes(info, namespace)
 
 
@@ -53299,7 +53298,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_file_info_get_attribute_stringv(info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_file_info_get_attribute_stringv(info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_file_info_get_attribute_stringv(info, attribute)
 
 
@@ -53450,7 +53449,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_file_info_set_attribute_stringv(info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag, attrvalue: NullablePointer[Pointer[U8]] tag): None =>
+  fun g_file_info_set_attribute_stringv(info: NullablePointer[GFileInfo] tag, attribute: Pointer[U8] tag, attrvalue: Pointer[Pointer[U8] tag] tag): None =>
     @g_file_info_set_attribute_stringv(info, attribute, attrvalue)
 
 
@@ -54118,7 +54117,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_filename_completer_get_completions(completer: NullablePointer[GFilenameCompleter] tag, initialtext: Pointer[U8] tag): NullablePointer[Pointer[U8]] =>
+  fun g_filename_completer_get_completions(completer: NullablePointer[GFilenameCompleter] tag, initialtext: Pointer[U8] tag): Pointer[Pointer[U8]] =>
     @g_filename_completer_get_completions(completer, initialtext)
 
 
@@ -55515,7 +55514,7 @@ primitive GLibSys
 
   Arguments:
 */
-  fun g_io_module_query(): NullablePointer[Pointer[U8]] =>
+  fun g_io_module_query(): Pointer[Pointer[U8]] =>
     @g_io_module_query()
 
 
@@ -55532,7 +55531,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[Struct size=256,fid: f160]
 */
-  fun g_io_scheduler_push_job(jobfunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag): None =>
+  fun g_io_scheduler_push_job(jobfunc: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag): None =>
     @g_io_scheduler_push_job(jobfunc, userdata, notify, iopriority, cancellable)
 
 
@@ -55560,7 +55559,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_io_scheduler_job_send_to_mainloop(job: NullablePointer[GIOSchedulerJob] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): I32 =>
+  fun g_io_scheduler_job_send_to_mainloop(job: NullablePointer[GIOSchedulerJob] tag, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag): I32 =>
     @g_io_scheduler_job_send_to_mainloop(job, func, userdata, notify)
 
 
@@ -55576,7 +55575,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_io_scheduler_job_send_to_mainloop_async(job: NullablePointer[GIOSchedulerJob] tag, func: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, notify: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_io_scheduler_job_send_to_mainloop_async(job: NullablePointer[GIOSchedulerJob] tag, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag): None =>
     @g_io_scheduler_job_send_to_mainloop_async(job, func, userdata, notify)
 
 
@@ -55984,7 +55983,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_list_store_insert_sorted(store: NullablePointer[GListStore] tag, item: Pointer[None] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): U32 =>
+  fun g_list_store_insert_sorted(store: NullablePointer[GListStore] tag, item: Pointer[None] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): U32 =>
     @g_list_store_insert_sorted(store, item, comparefunc, userdata)
 
 
@@ -55999,7 +55998,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_list_store_sort(store: NullablePointer[GListStore] tag, comparefunc: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_list_store_sort(store: NullablePointer[GListStore] tag, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_list_store_sort(store, comparefunc, userdata)
 
 
@@ -56088,7 +56087,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(unsigned int) size=32]
 */
-  fun g_list_store_find_with_equal_func(store: NullablePointer[GListStore] tag, item: Pointer[None] tag, equalfunc: NullablePointer[FUNCTIONTYPE] tag, position: Pointer[U32] tag): I32 =>
+  fun g_list_store_find_with_equal_func(store: NullablePointer[GListStore] tag, item: Pointer[None] tag, equalfunc: Pointer[None] tag, position: Pointer[U32] tag): I32 =>
     @g_list_store_find_with_equal_func(store, item, equalfunc, position)
 
 
@@ -56117,7 +56116,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_loadable_icon_load(icon: NullablePointer[GLoadableIcon] tag, size: I32, g_type: NullablePointer[Pointer[U8]] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GInputStream] =>
+  fun g_loadable_icon_load(icon: NullablePointer[GLoadableIcon] tag, size: I32, g_type: Pointer[Pointer[U8] tag] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GInputStream] =>
     @g_loadable_icon_load(icon, size, g_type, cancellable, g_error)
 
 
@@ -56134,7 +56133,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_loadable_icon_load_async(icon: NullablePointer[GLoadableIcon] tag, size: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_loadable_icon_load_async(icon: NullablePointer[GLoadableIcon] tag, size: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_loadable_icon_load_async(icon, size, cancellable, callback, userdata)
 
 
@@ -56150,7 +56149,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_loadable_icon_load_finish(icon: NullablePointer[GLoadableIcon] tag, res: NullablePointer[GAsyncResult] tag, g_type: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GInputStream] =>
+  fun g_loadable_icon_load_finish(icon: NullablePointer[GLoadableIcon] tag, res: NullablePointer[GAsyncResult] tag, g_type: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GInputStream] =>
     @g_loadable_icon_load_finish(icon, res, g_type, g_error)
 
 
@@ -56969,7 +56968,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_mount_unmount(mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_mount_unmount(mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_mount_unmount(mount, flags, cancellable, callback, userdata)
 
 
@@ -57001,7 +57000,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_mount_eject(mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_mount_eject(mount: NullablePointer[GMount] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_mount_eject(mount, flags, cancellable, callback, userdata)
 
 
@@ -57034,7 +57033,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_mount_remount(mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_mount_remount(mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_mount_remount(mount, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -57066,7 +57065,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_mount_guess_content_type(mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_mount_guess_content_type(mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_mount_guess_content_type(mount, forcerescan, cancellable, callback, userdata)
 
 
@@ -57081,7 +57080,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_mount_guess_content_type_finish(mount: NullablePointer[GMount] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_mount_guess_content_type_finish(mount: NullablePointer[GMount] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_mount_guess_content_type_finish(mount, result, g_error)
 
 
@@ -57097,7 +57096,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_mount_guess_content_type_sync(mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_mount_guess_content_type_sync(mount: NullablePointer[GMount] tag, forcerescan: I32, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_mount_guess_content_type_sync(mount, forcerescan, cancellable, g_error)
 
 
@@ -57154,7 +57153,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_mount_unmount_with_operation(mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_mount_unmount_with_operation(mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_mount_unmount_with_operation(mount, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -57187,7 +57186,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_mount_eject_with_operation(mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_mount_eject_with_operation(mount: NullablePointer[GMount] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_mount_eject_with_operation(mount, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -57323,7 +57322,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_network_monitor_can_reach_async(monitor: NullablePointer[GNetworkMonitor] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_network_monitor_can_reach_async(monitor: NullablePointer[GNetworkMonitor] tag, connectable: NullablePointer[GSocketConnectable] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_network_monitor_can_reach_async(monitor, connectable, cancellable, callback, userdata)
 
 
@@ -57850,7 +57849,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_proxy_connect_async(proxy: NullablePointer[GProxy] tag, connection: NullablePointer[GIOStream] tag, proxyaddress: NullablePointer[GProxyAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_proxy_connect_async(proxy: NullablePointer[GProxy] tag, connection: NullablePointer[GIOStream] tag, proxyaddress: NullablePointer[GProxyAddress] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_proxy_connect_async(proxy, connection, proxyaddress, cancellable, callback, userdata)
 
 
@@ -57931,7 +57930,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f160]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_proxy_resolver_lookup(resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_proxy_resolver_lookup(resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_proxy_resolver_lookup(resolver, uri, cancellable, g_error)
 
 
@@ -57948,7 +57947,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_proxy_resolver_lookup_async(resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_proxy_resolver_lookup_async(resolver: NullablePointer[GProxyResolver] tag, uri: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_proxy_resolver_lookup_async(resolver, uri, cancellable, callback, userdata)
 
 
@@ -57963,7 +57962,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_proxy_resolver_lookup_finish(resolver: NullablePointer[GProxyResolver] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_proxy_resolver_lookup_finish(resolver: NullablePointer[GProxyResolver] tag, result: NullablePointer[GAsyncResult] tag, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_proxy_resolver_lookup_finish(resolver, result, g_error)
 
 
@@ -58133,7 +58132,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f155]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_resource_enumerate_children(resource: NullablePointer[GResource] tag, path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_resource_enumerate_children(resource: NullablePointer[GResource] tag, path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_resource_enumerate_children(resource, path, lookupflags, g_error)
 
 
@@ -58222,7 +58221,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f155]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_resources_enumerate_children(path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[Pointer[U8]] =>
+  fun g_resources_enumerate_children(path: Pointer[U8] tag, lookupflags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): Pointer[Pointer[U8]] =>
     @g_resources_enumerate_children(path, lookupflags, g_error)
 
 
@@ -58459,7 +58458,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_settings_schema_source_list_schemas(source: NullablePointer[GSettingsSchemaSource] tag, recursive: I32, nonrelocatable: NullablePointer[NullablePointer[Pointer[U8]]] tag, relocatable: NullablePointer[NullablePointer[Pointer[U8]]] tag): None =>
+  fun g_settings_schema_source_list_schemas(source: NullablePointer[GSettingsSchemaSource] tag, recursive: I32, nonrelocatable: Pointer[Pointer[Pointer[U8]]] tag, relocatable: Pointer[Pointer[Pointer[U8]]] tag): None =>
     @g_settings_schema_source_list_schemas(source, recursive, nonrelocatable, relocatable)
 
 
@@ -58564,7 +58563,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f285]
 */
-  fun g_settings_schema_list_keys(schema: NullablePointer[GSettingsSchema] tag): NullablePointer[Pointer[U8]] =>
+  fun g_settings_schema_list_keys(schema: NullablePointer[GSettingsSchema] tag): Pointer[Pointer[U8]] =>
     @g_settings_schema_list_keys(schema)
 
 
@@ -58577,7 +58576,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f285]
 */
-  fun g_settings_schema_list_children(schema: NullablePointer[GSettingsSchema] tag): NullablePointer[Pointer[U8]] =>
+  fun g_settings_schema_list_children(schema: NullablePointer[GSettingsSchema] tag): Pointer[Pointer[U8]] =>
     @g_settings_schema_list_children(schema)
 
 
@@ -58818,7 +58817,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_simple_async_result_new(sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, sourcetag: Pointer[None] tag): NullablePointer[GSimpleAsyncResult] =>
+  fun g_simple_async_result_new(sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, sourcetag: Pointer[None] tag): NullablePointer[GSimpleAsyncResult] =>
     @g_simple_async_result_new(sourceobject, callback, userdata, sourcetag)
 
 
@@ -58836,7 +58835,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-/*  fun g_simple_async_result_new_error(sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...): NullablePointer[GSimpleAsyncResult] =>
+/*  fun g_simple_async_result_new_error(sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...): NullablePointer[GSimpleAsyncResult] =>
     @g_simple_async_result_new_error(sourceobject, callback, userdata, domain, code, format, ...)
 */
 
@@ -58852,7 +58851,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_simple_async_result_new_from_error(sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): NullablePointer[GSimpleAsyncResult] =>
+  fun g_simple_async_result_new_from_error(sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): NullablePointer[GSimpleAsyncResult] =>
     @g_simple_async_result_new_from_error(sourceobject, callback, userdata, g_error)
 
 
@@ -58868,7 +58867,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_simple_async_result_new_take_error(sourceobject: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): NullablePointer[GSimpleAsyncResult] =>
+  fun g_simple_async_result_new_take_error(sourceobject: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): NullablePointer[GSimpleAsyncResult] =>
     @g_simple_async_result_new_take_error(sourceobject, callback, userdata, g_error)
 
 
@@ -58883,7 +58882,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_simple_async_result_set_op_res_gpointer(simple: NullablePointer[GSimpleAsyncResult] tag, opres: Pointer[None] tag, destroyopres: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_simple_async_result_set_op_res_gpointer(simple: NullablePointer[GSimpleAsyncResult] tag, opres: Pointer[None] tag, destroyopres: Pointer[None] tag): None =>
     @g_simple_async_result_set_op_res_gpointer(simple, opres, destroyopres)
 
 
@@ -59033,7 +59032,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[Struct size=256,fid: f160]
 */
-  fun g_simple_async_result_run_in_thread(simple: NullablePointer[GSimpleAsyncResult] tag, func: NullablePointer[FUNCTIONTYPE] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag): None =>
+  fun g_simple_async_result_run_in_thread(simple: NullablePointer[GSimpleAsyncResult] tag, func: Pointer[None] tag, iopriority: I32, cancellable: NullablePointer[GCancellable] tag): None =>
     @g_simple_async_result_run_in_thread(simple, func, iopriority, cancellable)
 
 
@@ -59141,7 +59140,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-/*  fun g_simple_async_report_error_in_idle(g_object: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...): None =>
+/*  fun g_simple_async_report_error_in_idle(g_object: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...): None =>
     @g_simple_async_report_error_in_idle(g_object, callback, userdata, domain, code, format, ...)
 */
 
@@ -59157,7 +59156,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_simple_async_report_gerror_in_idle(g_object: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): None =>
+  fun g_simple_async_report_gerror_in_idle(g_object: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): None =>
     @g_simple_async_report_gerror_in_idle(g_object, callback, userdata, g_error)
 
 
@@ -59173,7 +59172,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_simple_async_report_take_gerror_in_idle(g_object: NullablePointer[GObject] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): None =>
+  fun g_simple_async_report_take_gerror_in_idle(g_object: NullablePointer[GObject] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag, g_error: NullablePointer[GError] tag): None =>
     @g_simple_async_report_take_gerror_in_idle(g_object, callback, userdata, g_error)
 
 
@@ -59250,7 +59249,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_simple_proxy_resolver_new(defaultproxy: Pointer[U8] tag, ignorehosts: NullablePointer[Pointer[U8]] tag): NullablePointer[GProxyResolver] =>
+  fun g_simple_proxy_resolver_new(defaultproxy: Pointer[U8] tag, ignorehosts: Pointer[Pointer[U8] tag] tag): NullablePointer[GProxyResolver] =>
     @g_simple_proxy_resolver_new(defaultproxy, ignorehosts)
 
 
@@ -59278,7 +59277,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=256,fid: f290]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_simple_proxy_resolver_set_ignore_hosts(resolver: NullablePointer[GSimpleProxyResolver] tag, ignorehosts: NullablePointer[Pointer[U8]] tag): None =>
+  fun g_simple_proxy_resolver_set_ignore_hosts(resolver: NullablePointer[GSimpleProxyResolver] tag, ignorehosts: Pointer[Pointer[U8] tag] tag): None =>
     @g_simple_proxy_resolver_set_ignore_hosts(resolver, ignorehosts)
 
 
@@ -59505,7 +59504,7 @@ primitive GLibSys
     [Enumeration size=32,fid: f155]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_subprocess_newv(argv: NullablePointer[Pointer[U8]] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GSubprocess] =>
+  fun g_subprocess_newv(argv: Pointer[Pointer[U8] tag] tag, flags: I32, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GSubprocess] =>
     @g_subprocess_newv(argv, flags, g_error)
 
 
@@ -59615,7 +59614,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_subprocess_wait_async(subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_subprocess_wait_async(subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_subprocess_wait_async(subprocess, cancellable, callback, userdata)
 
 
@@ -59661,7 +59660,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_subprocess_wait_check_async(subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_subprocess_wait_check_async(subprocess: NullablePointer[GSubprocess] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_subprocess_wait_check_async(subprocess, cancellable, callback, userdata)
 
 
@@ -59789,7 +59788,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_subprocess_communicate_async(subprocess: NullablePointer[GSubprocess] tag, stdinbuf: NullablePointer[GBytes] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_subprocess_communicate_async(subprocess: NullablePointer[GSubprocess] tag, stdinbuf: NullablePointer[GBytes] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_subprocess_communicate_async(subprocess, stdinbuf, cancellable, callback, userdata)
 
 
@@ -59824,7 +59823,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_subprocess_communicate_utf8(subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, stdoutbuf: NullablePointer[Pointer[U8]] tag, stderrbuf: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_subprocess_communicate_utf8(subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, stdoutbuf: Pointer[Pointer[U8] tag] tag, stderrbuf: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_subprocess_communicate_utf8(subprocess, stdinbuf, cancellable, stdoutbuf, stderrbuf, g_error)
 
 
@@ -59841,7 +59840,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_subprocess_communicate_utf8_async(subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_subprocess_communicate_utf8_async(subprocess: NullablePointer[GSubprocess] tag, stdinbuf: Pointer[U8] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_subprocess_communicate_utf8_async(subprocess, stdinbuf, cancellable, callback, userdata)
 
 
@@ -59858,7 +59857,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_subprocess_communicate_utf8_finish(subprocess: NullablePointer[GSubprocess] tag, result: NullablePointer[GAsyncResult] tag, stdoutbuf: NullablePointer[Pointer[U8]] tag, stderrbuf: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
+  fun g_subprocess_communicate_utf8_finish(subprocess: NullablePointer[GSubprocess] tag, result: NullablePointer[GAsyncResult] tag, stdoutbuf: Pointer[Pointer[U8] tag] tag, stderrbuf: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): I32 =>
     @g_subprocess_communicate_utf8_finish(subprocess, result, stdoutbuf, stderrbuf, g_error)
 
 
@@ -59913,7 +59912,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_subprocess_launcher_spawnv(self: NullablePointer[GSubprocessLauncher] tag, argv: NullablePointer[Pointer[U8]] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GSubprocess] =>
+  fun g_subprocess_launcher_spawnv(self: NullablePointer[GSubprocessLauncher] tag, argv: Pointer[Pointer[U8] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag): NullablePointer[GSubprocess] =>
     @g_subprocess_launcher_spawnv(self, argv, g_error)
 
 
@@ -59927,7 +59926,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_subprocess_launcher_set_environ(self: NullablePointer[GSubprocessLauncher] tag, env: NullablePointer[Pointer[U8]] tag): None =>
+  fun g_subprocess_launcher_set_environ(self: NullablePointer[GSubprocessLauncher] tag, env: Pointer[Pointer[U8] tag] tag): None =>
     @g_subprocess_launcher_set_environ(self, env)
 
 
@@ -60127,7 +60126,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_subprocess_launcher_set_child_setup(self: NullablePointer[GSubprocessLauncher] tag, childsetup: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag, destroynotify: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_subprocess_launcher_set_child_setup(self: NullablePointer[GSubprocessLauncher] tag, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, destroynotify: Pointer[None] tag): None =>
     @g_subprocess_launcher_set_child_setup(self, childsetup, userdata, destroynotify)
 
 
@@ -60155,7 +60154,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_task_new(sourceobject: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, callbackdata: Pointer[None] tag): NullablePointer[GTask] =>
+  fun g_task_new(sourceobject: Pointer[None] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, callbackdata: Pointer[None] tag): NullablePointer[GTask] =>
     @g_task_new(sourceobject, cancellable, callback, callbackdata)
 
 
@@ -60172,7 +60171,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[Struct size=128,fid: f21]
 */
-  fun g_task_report_error(sourceobject: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, g_error: NullablePointer[GError] tag): None =>
+  fun g_task_report_error(sourceobject: Pointer[None] tag, callback: Pointer[None] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, g_error: NullablePointer[GError] tag): None =>
     @g_task_report_error(sourceobject, callback, callbackdata, sourcetag, g_error)
 
 
@@ -60191,7 +60190,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
-/*  fun g_task_report_new_error(sourceobject: Pointer[None] tag, callback: NullablePointer[FUNCTIONTYPE] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...): None =>
+/*  fun g_task_report_new_error(sourceobject: Pointer[None] tag, callback: Pointer[None] tag, callbackdata: Pointer[None] tag, sourcetag: Pointer[None] tag, domain: U32, code: I32, format: Pointer[U8] tag, ...): None =>
     @g_task_report_new_error(sourceobject, callback, callbackdata, sourcetag, domain, code, format, ...)
 */
 
@@ -60206,7 +60205,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_task_set_task_data(task: NullablePointer[GTask] tag, taskdata: Pointer[None] tag, taskdatadestroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_task_set_task_data(task: NullablePointer[GTask] tag, taskdata: Pointer[None] tag, taskdatadestroy: Pointer[None] tag): None =>
     @g_task_set_task_data(task, taskdata, taskdatadestroy)
 
 
@@ -60394,7 +60393,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_task_run_in_thread(task: NullablePointer[GTask] tag, taskfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_task_run_in_thread(task: NullablePointer[GTask] tag, taskfunc: Pointer[None] tag): None =>
     @g_task_run_in_thread(task, taskfunc)
 
 
@@ -60408,7 +60407,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=,fid: f157]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_task_run_in_thread_sync(task: NullablePointer[GTask] tag, taskfunc: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_task_run_in_thread_sync(task: NullablePointer[GTask] tag, taskfunc: Pointer[None] tag): None =>
     @g_task_run_in_thread_sync(task, taskfunc)
 
 
@@ -60450,7 +60449,7 @@ primitive GLibSys
     [PointerType size=64]->[Struct size=768,fid: f82]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_task_attach_source(task: NullablePointer[GTask] tag, source: NullablePointer[GSource] tag, callback: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_task_attach_source(task: NullablePointer[GTask] tag, source: NullablePointer[GSource] tag, callback: Pointer[None] tag): None =>
     @g_task_attach_source(task, source, callback)
 
 
@@ -60465,7 +60464,7 @@ primitive GLibSys
     [PointerType size=64]->[FundamentalType(void) size=0]
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
 */
-  fun g_task_return_pointer(task: NullablePointer[GTask] tag, result: Pointer[None] tag, resultdestroy: NullablePointer[FUNCTIONTYPE] tag): None =>
+  fun g_task_return_pointer(task: NullablePointer[GTask] tag, result: Pointer[None] tag, resultdestroy: Pointer[None] tag): None =>
     @g_task_return_pointer(task, result, resultdestroy)
 
 
@@ -60801,7 +60800,7 @@ primitive GLibSys
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [FundamentalType(int) size=32]
 */
-  fun g_themed_icon_new_from_names(iconnames: NullablePointer[Pointer[U8]] tag, len: I32): NullablePointer[GIcon] =>
+  fun g_themed_icon_new_from_names(iconnames: Pointer[Pointer[U8] tag] tag, len: I32): NullablePointer[GIcon] =>
     @g_themed_icon_new_from_names(iconnames, len)
 
 
@@ -60842,7 +60841,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-  fun g_themed_icon_get_names(icon: NullablePointer[GThemedIcon] tag): NullablePointer[Pointer[U8]] =>
+  fun g_themed_icon_get_names(icon: NullablePointer[GThemedIcon] tag): Pointer[Pointer[U8]] =>
     @g_themed_icon_get_names(icon)
 
 
@@ -61332,7 +61331,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_volume_mount(volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_volume_mount(volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_volume_mount(volume, flags, mountoperation, cancellable, callback, userdata)
 
 
@@ -61364,7 +61363,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_volume_eject(volume: NullablePointer[GVolume] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_volume_eject(volume: NullablePointer[GVolume] tag, flags: I32, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_volume_eject(volume, flags, cancellable, callback, userdata)
 
 
@@ -61406,7 +61405,7 @@ primitive GLibSys
   Arguments:
     [PointerType size=64]->[Struct size=,fid: f157]
 */
-  fun g_volume_enumerate_identifiers(volume: NullablePointer[GVolume] tag): NullablePointer[Pointer[U8]] =>
+  fun g_volume_enumerate_identifiers(volume: NullablePointer[GVolume] tag): Pointer[Pointer[U8]] =>
     @g_volume_enumerate_identifiers(volume)
 
 
@@ -61437,7 +61436,7 @@ primitive GLibSys
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [PointerType size=64]->[FundamentalType(void) size=0]
 */
-  fun g_volume_eject_with_operation(volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: NullablePointer[FUNCTIONTYPE] tag, userdata: Pointer[None] tag): None =>
+  fun g_volume_eject_with_operation(volume: NullablePointer[GVolume] tag, flags: I32, mountoperation: NullablePointer[GMountOperation] tag, cancellable: NullablePointer[GCancellable] tag, callback: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_volume_eject_with_operation(volume, flags, mountoperation, cancellable, callback, userdata)
 
 
