@@ -2644,9 +2644,10 @@ struct GAction
      000000: [Struct size=192,fid: f141]: parent_instance
      000192: [PointerType size=64]->[Struct size=,fid: f165]: priv
 */
-struct GApplication
-  var parent_instance: GObject = GObject
-  var priv: NullablePointer[GApplicationPrivate] = NullablePointer[GApplicationPrivate].none()
+type GApplication is GObject
+//struct GApplication
+//  var parent_instance: GObject = GObject
+//  var priv: NullablePointer[GApplicationPrivate] = NullablePointer[GApplicationPrivate].none()
 
 
 /*

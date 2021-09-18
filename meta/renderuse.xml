@@ -22,7 +22,7 @@
   <renderuse id="_3494" render="0"/><!-- g_signal_has_handler_pending -->
   <renderuse id="_3495" render="0"/><!-- g_signal_connect_closure_by_id -->
   <renderuse id="_3496" render="0"/><!-- g_signal_connect_closure -->
-  <renderuse id="_3497" render="0"/><!-- g_signal_connect_data -->
+  <renderuse id="_3497" render="1"/><!-- g_signal_connect_data -->
   <renderuse id="_3498" render="0"/><!-- g_signal_handler_block -->
   <renderuse id="_3499" render="0"/><!-- g_signal_handler_unblock -->
   <renderuse id="_3500" render="0"/><!-- g_signal_handler_disconnect -->
@@ -40,4 +40,42 @@
   <renderuse id="_3512" render="0"/><!-- g_signal_accumulator_first_wins -->
   <renderuse id="_3513" render="0"/><!-- g_signal_handlers_destroy -->
   <renderuse id="_3514" render="0"/><!-- _g_signals_destroy -->
+  <renderuse id="_4480" render="0"/><!-- g_application_get_type -->
+  <renderuse id="_4481" render="0"/><!-- g_application_id_is_valid -->
+  <renderuse id="_4482" render="0"/><!-- g_application_new -->
+  <renderuse id="_4483" render="0"/><!-- g_application_get_application_id -->
+  <renderuse id="_4484" render="0"/><!-- g_application_set_application_id -->
+  <renderuse id="_4485" render="0"/><!-- g_application_get_dbus_connection -->
+  <renderuse id="_4486" render="0"/><!-- g_application_get_dbus_object_path -->
+  <renderuse id="_4487" render="0"/><!-- g_application_get_inactivity_timeout -->
+  <renderuse id="_4488" render="0"/><!-- g_application_set_inactivity_timeout -->
+  <renderuse id="_4489" render="0"/><!-- g_application_get_flags -->
+  <renderuse id="_4490" render="0"/><!-- g_application_set_flags -->
+  <renderuse id="_4491" render="0"/><!-- g_application_get_resource_base_path -->
+  <renderuse id="_4492" render="0"/><!-- g_application_set_resource_base_path -->
+  <renderuse id="_4493" render="0"/><!-- g_application_set_action_group -->
+  <renderuse id="_4494" render="0"/><!-- g_application_add_main_option_entries -->
+  <renderuse id="_4495" render="0"/><!-- g_application_add_main_option -->
+  <renderuse id="_4496" render="0"/><!-- g_application_add_option_group -->
+  <renderuse id="_4497" render="0"/><!-- g_application_set_option_context_parameter_string -->
+  <renderuse id="_4498" render="0"/><!-- g_application_set_option_context_summary -->
+  <renderuse id="_4499" render="0"/><!-- g_application_set_option_context_description -->
+  <renderuse id="_4500" render="0"/><!-- g_application_get_is_registered -->
+  <renderuse id="_4501" render="0"/><!-- g_application_get_is_remote -->
+  <renderuse id="_4502" render="0"/><!-- g_application_register -->
+  <renderuse id="_4503" render="0"/><!-- g_application_hold -->
+  <renderuse id="_4504" render="0"/><!-- g_application_release -->
+  <renderuse id="_4505" render="0"/><!-- g_application_activate -->
+  <renderuse id="_4506" render="0"/><!-- g_application_open -->
+  <renderuse id="_4507" render="1"/><!-- g_application_run -->
+  <renderuse id="_4508" render="0"/><!-- g_application_quit -->
+  <renderuse id="_4509" render="0"/><!-- g_application_get_default -->
+  <renderuse id="_4510" render="0"/><!-- g_application_set_default -->
+  <renderuse id="_4511" render="0"/><!-- g_application_mark_busy -->
+  <renderuse id="_4512" render="0"/><!-- g_application_unmark_busy -->
+  <renderuse id="_4513" render="0"/><!-- g_application_get_is_busy -->
+  <renderuse id="_4514" render="0"/><!-- g_application_send_notification -->
+  <renderuse id="_4515" render="0"/><!-- g_application_withdraw_notification -->
+  <renderuse id="_4516" render="0"/><!-- g_application_bind_busy_property -->
+  <renderuse id="_4517" render="0"/><!-- g_application_unbind_busy_property -->
 </renderuses>
