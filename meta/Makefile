@@ -15,4 +15,5 @@ codegenfunctions:
 functions:
 	../../../castxml2pony/castxml2pony -x gtk4.xml ${GLIB} -u
 	sh -x post-prod-usexml.sh
+	sh -x sanitize.sh
 

@@ -2202,7 +2202,7 @@
   <renderuse id="_3599" render="0"/><!-- g_object_is_floating -->
   <renderuse id="_3600" render="0"/><!-- g_object_ref_sink -->
   <renderuse id="_3601" render="0"/><!-- g_object_ref -->
-  <renderuse id="_3602" render="0"/><!-- g_object_unref -->
+  <renderuse id="_3602" render="1"/><!-- g_object_unref -->
   <renderuse id="_3603" render="0"/><!-- g_object_weak_ref -->
   <renderuse id="_3604" render="0"/><!-- g_object_weak_unref -->
   <renderuse id="_3605" render="0"/><!-- g_object_add_weak_pointer -->
