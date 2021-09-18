@@ -2458,7 +2458,7 @@
     rvtype="NullablePointer[GAction]"/>
 
   <typedef name="NullablePointer[Pointer[U8]]"
-    ponytypein="Pointer[Pointer[U8] tag] tag"
+    ponytypein="Pointer[Pointer[U8]] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
     structtype="Pointer[Pointer[U8]]"
@@ -2782,13 +2782,13 @@
     rvtype="NullablePointer[GDBusPropertyInfo]"/>
 
   <typedef name="NullablePointer[NullablePointer[Pointer[U8]]]"
-    ponytypein="Pointer[Pointer[Pointer[U8]]] tag"
+    ponytypein="Pointer[Pointer[U8 val] tag] tag"
     ponytypeinconv=""
-    ponytypeout="Pointer[Pointer[Pointer[U8]]]"
-    structtype="Pointer[Pointer[Pointer[U8]]]"
-    structdef="Pointer[Pointer[Pointer[U8]]]"
-    argtype="Pointer[Pointer[Pointer[U8]]]"
-    rvtype="Pointer[Pointer[Pointer[U8]]]"/>
+    ponytypeout="Pointer[Pointer[U8 val] ref] ref"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8 val] tag] tag"
+    rvtype="Pointer[Pointer[U8 val] ref] ref"/>
 
   <typedef name="NullablePointer[GDBusConnection]"
     ponytypein="NullablePointer[GDBusConnection] tag"

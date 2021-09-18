@@ -5421,7 +5421,7 @@ use @g_filename_display_name[Pointer[U8]](filename: Pointer[U8] tag)
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_get_filename_charsets[I32](filenamecharsets: Pointer[Pointer[Pointer[U8]]])
+use @g_get_filename_charsets[I32](filenamecharsets: Pointer[Pointer[U8 val] tag] tag)
 
 
 
@@ -16659,7 +16659,7 @@ use @g_option_context_add_main_entries[None](context: NullablePointer[GOptionCon
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_option_context_parse[I32](context: NullablePointer[GOptionContext] tag, argc: Pointer[I32] tag, argv: Pointer[Pointer[Pointer[U8]]], g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_option_context_parse[I32](context: NullablePointer[GOptionContext] tag, argc: Pointer[I32] tag, argv: Pointer[Pointer[U8 val] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -16674,7 +16674,7 @@ use @g_option_context_parse[I32](context: NullablePointer[GOptionContext] tag, a
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_option_context_parse_strv[I32](context: NullablePointer[GOptionContext] tag, arguments: Pointer[Pointer[Pointer[U8]]], g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_option_context_parse_strv[I32](context: NullablePointer[GOptionContext] tag, arguments: Pointer[Pointer[U8 val] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -19676,7 +19676,7 @@ use @g_shell_unquote[Pointer[U8]](quotedstring: Pointer[U8] tag, g_error: Nullab
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
 */
-use @g_shell_parse_argv[I32](commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: Pointer[Pointer[Pointer[U8]]], g_error: NullablePointer[NullablePointer[GError]] tag)
+use @g_shell_parse_argv[I32](commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: Pointer[Pointer[U8 val] tag] tag, g_error: NullablePointer[NullablePointer[GError]] tag)
 
 
 
@@ -20724,7 +20724,7 @@ use @g_str_to_ascii[Pointer[U8]](str: Pointer[U8] tag, fromlocale: Pointer[U8] t
     [PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_str_tokenize_and_fold[Pointer[Pointer[U8]]](string: Pointer[U8] tag, translitlocale: Pointer[U8] tag, asciialternates: Pointer[Pointer[Pointer[U8]]])
+use @g_str_tokenize_and_fold[Pointer[Pointer[U8]]](string: Pointer[U8] tag, translitlocale: Pointer[U8] tag, asciialternates: Pointer[Pointer[U8 val] tag] tag)
 
 
 
@@ -21018,7 +21018,7 @@ use @g_test_maximized_result[None](maximizedquantity: F64, format: Pointer[U8] t
     [PointerType size=64]->[FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_test_init[None](argc: Pointer[I32] tag, argv: Pointer[Pointer[Pointer[U8]]], ...)
+use @g_test_init[None](argc: Pointer[I32] tag, argv: Pointer[Pointer[U8 val] tag] tag, ...)
 
 
 
@@ -26516,7 +26516,7 @@ use @glib_queueautoptr_cleanup_GVariantType[None](q: NullablePointer[NullablePoi
   Arguments:
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @glib_auto_cleanup_GStrv[None](ptr: Pointer[Pointer[Pointer[U8]]])
+use @glib_auto_cleanup_GStrv[None](ptr: Pointer[Pointer[U8 val] tag] tag)
 
 
 
@@ -29675,7 +29675,7 @@ use @g_signal_connect_closure[U64](instance: Pointer[None] tag, detailedsignal: 
     [PointerType size=64]->[FunctionType]  WRITE MANUALLY
     [Enumeration size=32,fid: f138]
 */
-use @g_signal_connect_data[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32)
+use @g_signal_connect_data[U64](instance: GObject, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32)
 
 
 
@@ -58333,7 +58333,7 @@ use @g_settings_schema_source_lookup[NullablePointer[GSettingsSchema]](source: N
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
     [PointerType size=64]->[PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_settings_schema_source_list_schemas[None](source: NullablePointer[GSettingsSchemaSource] tag, recursive: I32, nonrelocatable: Pointer[Pointer[Pointer[U8]]], relocatable: Pointer[Pointer[Pointer[U8]]])
+use @g_settings_schema_source_list_schemas[None](source: NullablePointer[GSettingsSchemaSource] tag, recursive: I32, nonrelocatable: Pointer[Pointer[U8 val] tag] tag, relocatable: Pointer[Pointer[U8 val] tag] tag)
 
 
 
