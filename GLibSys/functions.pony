@@ -36,3 +36,16 @@ primitive GLibSys
 */
   fun g_application_run(application: NullablePointer[GApplication] tag, argc: I32, argv: NullablePointer[Pointer[U8]] tag): I32 =>
     @g_application_run(application, argc, argv)
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gio/gapplication.h:218
+  Original Name: g_application_quit/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gio/gapplication.h:218
+
+  Return Value: [FundamentalType(void) size=0]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=256,fid: f165]
+*/
+  fun g_application_quit(application: NullablePointer[GApplication] tag): None =>
+    @g_application_quit(application)
