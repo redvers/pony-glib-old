@@ -3,7 +3,7 @@
 <xsl:output method="text" omit-xml-declaration="yes" indent="no"/>
 <xsl:strip-space elements="*"/>
 
-<xsl:template match="/castxml2pony/renderuses/renderuse">
+<xsl:template match="/castxml2pony/renderuses/renderuse[@render='1']">
 	<xsl:variable name="iid" select="@id"/>
 	<xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@id=$iid]"/><xsl:with-param name="render" select="@render"/></xsl:call-template>
 </xsl:template>
