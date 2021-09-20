@@ -8,6 +8,13 @@ primitive GLibSys
     @g_signal_connect_data(instance, detailedsignal, chandler, data, destroydata, connectflags)
 
 
+  fun set_data[A: Any](instance: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: A): None =>
+    @g_object_set_data(instance, key, data)
+
+  fun get_data[A: Any ref](instance: NullablePointer[GObject] tag, key: Pointer[U8] tag): Any ref =>
+    @g_object_get_data(instance, key)
+
+
 /*
   Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gobject.h:505
   Original Name: g_object_unref/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gobject.h:505
