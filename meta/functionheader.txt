@@ -1,0 +1,8 @@
+use "lib:glib-2.0"
+use "lib:gio-2.0"
+use "lib:gobject-2.0"
+
+primitive GLibSys
+
+  fun g_signal_connect_data[A: Any](instance: NullablePointer[GObject] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
+    @g_signal_connect_data(instance, detailedsignal, chandler, data, destroydata, connectflags)

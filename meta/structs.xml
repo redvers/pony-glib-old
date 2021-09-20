@@ -3487,14 +3487,14 @@
   </struct>
 
   <struct name="Hbfeaturet" id="_8531" size="128" align="32" fid="f310" lineno="781">
-    <field name="tag" id="_26967" type="U32" fieldid="_8510" offset="0" fid="f310" line="782"/>
+    <field name="g_tag" id="_26967" type="U32" fieldid="_8510" offset="0" fid="f310" line="782"/>
     <field name="value" id="_26968" type="U32" fieldid="_8483" offset="32" fid="f310" line="783"/>
     <field name="start" id="_26969" type="U32" fieldid="_23623" offset="64" fid="f310" line="784"/>
-    <field name="end" id="_26970" type="U32" fieldid="_23623" offset="96" fid="f310" line="785"/>
+    <field name="g_end" id="_26970" type="U32" fieldid="_23623" offset="96" fid="f310" line="785"/>
   </struct>
 
   <struct name="Hbvariationt" id="_8535" size="64" align="32" fid="f310" lineno="807">
-    <field name="tag" id="_26973" type="U32" fieldid="_8510" offset="0" fid="f310" line="808"/>
+    <field name="g_tag" id="_26973" type="U32" fieldid="_8510" offset="0" fid="f310" line="808"/>
     <field name="value" id="_26974" type="F32" fieldid="_23669" offset="32" fid="f310" line="809"/>
   </struct>
 
@@ -3953,7 +3953,7 @@
     <field name="draw_glyph" id="_27401" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35388" offset="1408" fid="f343" line="168"/>
     <field name="part_changed" id="_27402" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35389" offset="1472" fid="f343" line="174"/>
     <field name="begin" id="_27403" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35390" offset="1536" fid="f343" line="177"/>
-    <field name="end" id="_27404" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35390" offset="1600" fid="f343" line="178"/>
+    <field name="g_end" id="_27404" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35390" offset="1600" fid="f343" line="178"/>
     <field name="prepare_run" id="_27405" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35391" offset="1664" fid="f343" line="180"/>
     <field name="draw_glyph_item" id="_27406" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35392" offset="1728" fid="f343" line="183"/>
     <field name="_pango_reserved2" id="_27407" type="NullablePointer[FUNCTIONTYPE]" fieldid="_23740" offset="1792" fid="f343" line="192"/>
@@ -7314,7 +7314,7 @@
     <field name="sType" id="_30496" type="I32" fieldid="_10685" offset="0" fid="f405" line="8447"/>
     <field name="pNext" id="_30497" type="Pointer[None]" fieldid="_23670" offset="64" fid="f405" line="8448"/>
     <field name="objectType" id="_30498" type="I32" fieldid="_12432" offset="128" fid="f405" line="8449"/>
-    <field name="object" id="_30499" type="U64" fieldid="_8484" offset="192" fid="f405" line="8450"/>
+    <field name="g_object" id="_30499" type="U64" fieldid="_8484" offset="192" fid="f405" line="8450"/>
     <field name="pObjectName" id="_30500" type="String" fieldid="_23656" offset="256" fid="f405" line="8451"/>
   </struct>
 
@@ -7322,7 +7322,7 @@
     <field name="sType" id="_30502" type="I32" fieldid="_10685" offset="0" fid="f405" line="8455"/>
     <field name="pNext" id="_30503" type="Pointer[None]" fieldid="_23670" offset="64" fid="f405" line="8456"/>
     <field name="objectType" id="_30504" type="I32" fieldid="_12432" offset="128" fid="f405" line="8457"/>
-    <field name="object" id="_30505" type="U64" fieldid="_8484" offset="192" fid="f405" line="8458"/>
+    <field name="g_object" id="_30505" type="U64" fieldid="_8484" offset="192" fid="f405" line="8458"/>
     <field name="tagName" id="_30506" type="U64" fieldid="_8484" offset="256" fid="f405" line="8459"/>
     <field name="tagSize" id="_30507" type="U64" fieldid="_8" offset="320" fid="f405" line="8460"/>
     <field name="pTag" id="_30508" type="Pointer[None]" fieldid="_23670" offset="384" fid="f405" line="8461"/>
@@ -10059,7 +10059,7 @@
 
   <struct name="GtkFilterClass" id="_16929" size="1728" align="64" fid="f478" lineno="81">
     <field name="parent_class" id="_32927" type="GObjectClass" fieldid="_3562" offset="0" fid="f478" line="83"/>
-    <field name="match" id="_32928" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35994" offset="1088" fid="f478" line="85"/>
+    <field name="g_match" id="_32928" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35994" offset="1088" fid="f478" line="85"/>
     <field name="get_strictness" id="_32929" type="NullablePointer[FUNCTIONTYPE]" fieldid="_35995" offset="1152" fid="f478" line="89"/>
     <field name="_gtk_reserved1" id="_32930" type="NullablePointer[FUNCTIONTYPE]" fieldid="_23740" offset="1216" fid="f478" line="92"/>
     <field name="_gtk_reserved2" id="_32931" type="NullablePointer[FUNCTIONTYPE]" fieldid="_23740" offset="1280" fid="f478" line="93"/>
@@ -11063,7 +11063,7 @@
   </struct>
 
   <struct name="GtkIMContextSimple" id="_19544" size="256" align="64" fid="f593" lineno="48">
-    <field name="object" id="_33717" type="GtkIMContext" fieldid="_17820" offset="0" fid="f593" line="50"/>
+    <field name="g_object" id="_33717" type="GtkIMContext" fieldid="_17820" offset="0" fid="f593" line="50"/>
     <field name="priv" id="_33718" type="NullablePointer[GtkIMContextSimplePrivate]" fieldid="_36163" offset="192" fid="f593" line="53"/>
   </struct>
 
@@ -11076,7 +11076,7 @@
   </struct>
 
   <struct name="GtkIMMulticontext" id="_19554" size="256" align="64" fid="f594" lineno="41">
-    <field name="object" id="_33724" type="GtkIMContext" fieldid="_17820" offset="0" fid="f594" line="43"/>
+    <field name="g_object" id="_33724" type="GtkIMContext" fieldid="_17820" offset="0" fid="f594" line="43"/>
     <field name="priv" id="_33725" type="NullablePointer[GtkIMMulticontextPrivate]" fieldid="_36164" offset="192" fid="f594" line="46"/>
   </struct>
 
@@ -11352,7 +11352,7 @@
 
   <struct name="GtkPageRange" id="_20557" size="64" align="32" fid="f631" lineno="51">
     <field name="start" id="_33955" type="I32" fieldid="_23615" offset="0" fid="f631" line="53"/>
-    <field name="end" id="_33956" type="I32" fieldid="_23615" offset="32" fid="f631" line="54"/>
+    <field name="g_end" id="_33956" type="I32" fieldid="_23615" offset="32" fid="f631" line="54"/>
   </struct>
 
   <struct name="GtkPrintOperationPreview" id="_20636" size="" align="" fid="f632" lineno="36">

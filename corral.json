@@ -1,5 +1,5 @@
 {
-  "packages": ["GLibSys"],
+  "packages": ["GLibSys", "GLib"],
   "deps": [],
   "info": {
     "description": "Pony wrapper for GLib",

@@ -2111,7 +2111,7 @@
   <renderuse id="_3494" render="0"/><!-- g_signal_has_handler_pending -->
   <renderuse id="_3495" render="0"/><!-- g_signal_connect_closure_by_id -->
   <renderuse id="_3496" render="0"/><!-- g_signal_connect_closure -->
-  <renderuse id="_3497" render="1"/><!-- g_signal_connect_data -->
+  <renderuse id="_3497" render="X"/><!-- g_signal_connect_data - OVERWRITTEN -->
   <renderuse id="_3498" render="0"/><!-- g_signal_handler_block -->
   <renderuse id="_3499" render="0"/><!-- g_signal_handler_unblock -->
   <renderuse id="_3500" render="0"/><!-- g_signal_handler_disconnect -->
