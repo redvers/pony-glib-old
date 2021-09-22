@@ -31,7 +31,7 @@ use @g_object_unref[None](g_object: NullablePointer[GObject] tag)
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_application_run[I32](application: NullablePointer[GApplication] tag, argc: I32, argv: NullablePointer[Pointer[U8]] tag)
+use @g_application_run[I32](application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8]] tag)
 
 
 

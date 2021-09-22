@@ -39,7 +39,7 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_application_run(application: NullablePointer[GApplication] tag, argc: I32, argv: NullablePointer[Pointer[U8]] tag): I32 =>
+  fun g_application_run(application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8]] tag): I32 =>
     @g_application_run(application, argc, argv)
 
 

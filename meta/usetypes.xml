@@ -2377,13 +2377,13 @@
     rvtype="NullablePointer[GAction]"/>
 
   <typedef name="NullablePointer[Pointer[U8]]"
-    ponytypein="NullablePointer[Pointer[U8]] tag"
+    ponytypein="Pointer[Pointer[U8]] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[Pointer[U8]]"
-    structtype="NullablePointer[Pointer[U8]]"
-    structdef="NullablePointer[Pointer[U8]].none()"
-    argtype="NullablePointer[Pointer[U8]] tag"
-    rvtype="NullablePointer[Pointer[U8]]"/>
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="Pointer[NullablePointer[GTypeModule]]"
     ponytypein="Pointer[NullablePointer[GTypeModule]] tag"
