@@ -3303,7 +3303,7 @@ struct GResolver
 
   Fields (Offset in bits):
 */
-struct GResource
+struct GResourceT
 
 
 /*
@@ -7115,7 +7115,7 @@ struct GResolverClass
 struct GStaticResource
   var data: Pointer[U8] = Pointer[U8]
   var data_len: U64 = U64(0)
-  var resource: NullablePointer[GResource] = NullablePointer[GResource].none()
+  var resource: NullablePointer[GResourceT] = NullablePointer[GResourceT].none()
   var next: NullablePointer[GStaticResource] = NullablePointer[GStaticResource].none()
   var padding: Pointer[None] = Pointer[None]
 
