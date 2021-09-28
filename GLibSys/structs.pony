@@ -1,4 +1,11 @@
+type GType is U64
 
+struct GPonyAction
+  var name: Pointer[U8] tag = Pointer[U8]
+  var func: @{(NullablePointer[GSimpleAction], NullablePointer[GVariant], Any): None} = @{(action: NullablePointer[GSimpleAction], parameter: NullablePointer[GVariant], data: Any): None => None}
+  var x: U64 = U64(0)
+  var y: U64 = U64(0)
+  var z: U64 = U64(0)
 
 /*
   Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gtypes.h:547
@@ -1419,14 +1426,14 @@ struct GTypeInstance
 */
 struct GTypeInfo
   var class_size: U16 = U16(0)
-  var base_init: NullablePointer[FUNCTIONTYPE] = NullablePointer[FUNCTIONTYPE].none()
-  var base_finalize: NullablePointer[FUNCTIONTYPE] = NullablePointer[FUNCTIONTYPE].none()
-  var class_init: NullablePointer[FUNCTIONTYPE] = NullablePointer[FUNCTIONTYPE].none()
-  var class_finalize: NullablePointer[FUNCTIONTYPE] = NullablePointer[FUNCTIONTYPE].none()
+  var base_init: Pointer[None] = Pointer[None]
+  var base_finalize: Pointer[None] = Pointer[None]
+  var class_init: Pointer[None] = Pointer[None]
+  var class_finalize: Pointer[None] = Pointer[None]
   var class_data: Pointer[None] = Pointer[None]
   var instance_size: U16 = U16(0)
   var n_preallocs: U16 = U16(0)
-  var instance_init: NullablePointer[FUNCTIONTYPE] = NullablePointer[FUNCTIONTYPE].none()
+  var instance_init: Pointer[None] = Pointer[None]
   var value_table: NullablePointer[GTypeValueTable] = NullablePointer[GTypeValueTable].none()
 
 
@@ -1755,6 +1762,23 @@ struct GObject
      000704: [ArrayType size=(0-5)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: pdummy
 */
 struct GObjectClass
+  embed g_type_class: GTypeClass = GTypeClass
+  var construct_properties: NullablePointer[GSList] = NullablePointer[GSList].none()
+  var constructor: Pointer[None] = Pointer[None]
+  var set_property: Pointer[None] = Pointer[None]
+  var get_property: Pointer[None] = Pointer[None]
+  var dispose: Pointer[None] = Pointer[None]
+  var finalize: Pointer[None] = Pointer[None]
+  var dispatch_properties_changed: Pointer[None] = Pointer[None]
+  var notify: Pointer[None] = Pointer[None]
+  var constructed: Pointer[None] = Pointer[None]
+  var flags: U64 = U64(0)
+  var pdummy0: Pointer[None] = Pointer[None]
+  var pdummy1: Pointer[None] = Pointer[None]
+  var pdummy2: Pointer[None] = Pointer[None]
+  var pdummy3: Pointer[None] = Pointer[None]
+  var pdummy4: Pointer[None] = Pointer[None]
+  var pdummy5: Pointer[None] = Pointer[None]
 
 
 /*
@@ -2587,7 +2611,7 @@ struct GDBusActionGroup
 
   Fields (Offset in bits):
 */
-struct GActionMap
+type GActionMap is GObject
 
 
 /*
@@ -2620,7 +2644,7 @@ struct GPropertyAction
 
   Fields (Offset in bits):
 */
-struct GSimpleAction
+type GSimpleAction is GObject
 
 
 /*
@@ -2631,7 +2655,7 @@ struct GSimpleAction
 
   Fields (Offset in bits):
 */
-struct GAction
+type GAction is GSimpleAction
 
 
 /*
@@ -4379,6 +4403,15 @@ struct GActionMapInterface
      000320: [ArrayType size=(0-2)]->[FundamentalType(long unsigned int) size=64] -- UNSUPPORTED - FIXME: padding
 */
 struct GActionEntry
+  var name: Pointer[U8] tag = Pointer[U8]
+  var activate:     @{(NullablePointer[GSimpleAction], NullablePointer[GVariant], Any): None} = @{(action: NullablePointer[GSimpleAction], parameter: NullablePointer[GVariant], data: Any): None => None}
+  var parameter_type: Pointer[U8] tag = Pointer[U8]
+  var state: Pointer[U8] tag = Pointer[U8]
+  var change_state: @{(NullablePointer[GSimpleAction], NullablePointer[GVariant], Any): None} = @{(action: NullablePointer[GSimpleAction], parameter: NullablePointer[GVariant], data: Any): None => None}
+  var pad0: U64 = U64(0)
+  var pad1: U64 = U64(0)
+  var pad2: U64 = U64(0)
+
 
 
 /*
