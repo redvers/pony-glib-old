@@ -6297,7 +6297,7 @@ struct GListModelInterface
 
   Fields (Offset in bits):
 */
-struct GListStore
+type GListStore is GListModel
 
 
 /*
