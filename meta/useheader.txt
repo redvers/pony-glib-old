@@ -4,4 +4,6 @@ use @g_signal_connect_data[U64](instance: NullablePointer[GObject] tag, detailed
 use @g_object_get_data[Any ref](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag)
 use @g_object_set_data[None](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: Any tag)
 
+use @g_object_new[NullablePointer[GObject]](g_type: GType, first_property: Pointer[U8] tag, ...)
+
 

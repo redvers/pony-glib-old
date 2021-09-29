@@ -1938,8 +1938,8 @@
   <renderuse id="_3271" render="0"/><!-- g_type_get_qdata -->
   <renderuse id="_3272" render="0"/><!-- g_type_query -->
   <renderuse id="_3273" render="0"/><!-- g_type_get_instance_count -->
-  <renderuse id="_3287" render="0"/><!-- g_type_register_static -->
-  <renderuse id="_3288" render="0"/><!-- g_type_register_static_simple -->
+  <renderuse id="_3287" render="1"/><!-- g_type_register_static -->
+  <renderuse id="_3288" render="1"/><!-- g_type_register_static_simple -->
   <renderuse id="_3289" render="0"/><!-- g_type_register_dynamic -->
   <renderuse id="_3290" render="0"/><!-- g_type_register_fundamental -->
   <renderuse id="_3291" render="0"/><!-- g_type_add_interface_static -->
@@ -1980,7 +1980,7 @@
   <renderuse id="_3326" render="0"/><!-- g_type_test_flags -->
   <renderuse id="_3327" render="0"/><!-- g_type_name_from_instance -->
   <renderuse id="_3328" render="0"/><!-- g_type_name_from_class -->
-  <renderuse id="_3330" render="0"/><!-- g_value_init -->
+  <renderuse id="_3330" render="1"/><!-- g_value_init -->
   <renderuse id="_3331" render="0"/><!-- g_value_copy -->
   <renderuse id="_3332" render="0"/><!-- g_value_reset -->
   <renderuse id="_3333" render="0"/><!-- g_value_unset -->
@@ -2131,7 +2131,7 @@
   <renderuse id="_3514" render="0"/><!-- _g_signals_destroy -->
   <renderuse id="_3515" render="0"/><!-- g_date_get_type -->
   <renderuse id="_3516" render="0"/><!-- g_strv_get_type -->
-  <renderuse id="_3517" render="0"/><!-- g_gstring_get_type -->
+  <renderuse id="_3517" render="1"/><!-- g_gstring_get_type -->
   <renderuse id="_3518" render="0"/><!-- g_hash_table_get_type -->
   <renderuse id="_3519" render="0"/><!-- g_array_get_type -->
   <renderuse id="_3520" render="0"/><!-- g_byte_array_get_type -->
@@ -2172,21 +2172,21 @@
   <renderuse id="_3557" render="0"/><!-- g_closure_get_type -->
   <renderuse id="_3558" render="0"/><!-- g_value_get_type -->
   <renderuse id="_3571" render="0"/><!-- g_initially_unowned_get_type -->
-  <renderuse id="_3572" render="0"/><!-- g_object_class_install_property -->
-  <renderuse id="_3573" render="0"/><!-- g_object_class_find_property -->
-  <renderuse id="_3574" render="0"/><!-- g_object_class_list_properties -->
+  <renderuse id="_3572" render="1"/><!-- g_object_class_install_property -->
+  <renderuse id="_3573" render="1"/><!-- g_object_class_find_property -->
+  <renderuse id="_3574" render="1"/><!-- g_object_class_list_properties -->
   <renderuse id="_3575" render="0"/><!-- g_object_class_override_property -->
-  <renderuse id="_3576" render="0"/><!-- g_object_class_install_properties -->
+  <renderuse id="_3576" render="1"/><!-- g_object_class_install_properties -->
   <renderuse id="_3577" render="0"/><!-- g_object_interface_install_property -->
   <renderuse id="_3578" render="0"/><!-- g_object_interface_find_property -->
   <renderuse id="_3579" render="0"/><!-- g_object_interface_list_properties -->
-  <renderuse id="_3580" render="0"/><!-- g_object_get_type -->
+  <renderuse id="_3580" render="1"/><!-- g_object_get_type -->
   <renderuse id="_3581" render="0"/><!-- g_object_new -->
   <renderuse id="_3582" render="0"/><!-- g_object_new_with_properties -->
   <renderuse id="_3583" render="0"/><!-- g_object_newv -->
   <renderuse id="_3584" render="0"/><!-- g_object_new_valist -->
-  <renderuse id="_3585" render="0"/><!-- g_object_set -->
-  <renderuse id="_3586" render="0"/><!-- g_object_get -->
+  <renderuse id="_3585" render="1"/><!-- g_object_set -->
+  <renderuse id="_3586" render="1"/><!-- g_object_get -->
   <renderuse id="_3587" render="0"/><!-- g_object_connect -->
   <renderuse id="_3588" render="0"/><!-- g_object_disconnect -->
   <renderuse id="_3589" render="0"/><!-- g_object_setv -->
@@ -2276,29 +2276,29 @@
   <renderuse id="_3689" render="0"/><!-- g_unicode_break_type_get_type -->
   <renderuse id="_3690" render="0"/><!-- g_unicode_script_get_type -->
   <renderuse id="_3691" render="0"/><!-- g_normalize_mode_get_type -->
-  <renderuse id="_3738" render="0"/><!-- g_param_spec_char -->
-  <renderuse id="_3739" render="0"/><!-- g_param_spec_uchar -->
-  <renderuse id="_3740" render="0"/><!-- g_param_spec_boolean -->
-  <renderuse id="_3741" render="0"/><!-- g_param_spec_int -->
-  <renderuse id="_3742" render="0"/><!-- g_param_spec_uint -->
-  <renderuse id="_3743" render="0"/><!-- g_param_spec_long -->
-  <renderuse id="_3744" render="0"/><!-- g_param_spec_ulong -->
-  <renderuse id="_3745" render="0"/><!-- g_param_spec_int64 -->
-  <renderuse id="_3746" render="0"/><!-- g_param_spec_uint64 -->
-  <renderuse id="_3747" render="0"/><!-- g_param_spec_unichar -->
-  <renderuse id="_3748" render="0"/><!-- g_param_spec_enum -->
-  <renderuse id="_3749" render="0"/><!-- g_param_spec_flags -->
-  <renderuse id="_3750" render="0"/><!-- g_param_spec_float -->
-  <renderuse id="_3751" render="0"/><!-- g_param_spec_double -->
-  <renderuse id="_3752" render="0"/><!-- g_param_spec_string -->
-  <renderuse id="_3753" render="0"/><!-- g_param_spec_param -->
-  <renderuse id="_3754" render="0"/><!-- g_param_spec_boxed -->
-  <renderuse id="_3755" render="0"/><!-- g_param_spec_pointer -->
-  <renderuse id="_3756" render="0"/><!-- g_param_spec_value_array -->
-  <renderuse id="_3757" render="0"/><!-- g_param_spec_object -->
-  <renderuse id="_3758" render="0"/><!-- g_param_spec_override -->
-  <renderuse id="_3759" render="0"/><!-- g_param_spec_gtype -->
-  <renderuse id="_3760" render="0"/><!-- g_param_spec_variant -->
+  <renderuse id="_3738" render="1"/><!-- g_param_spec_char -->
+  <renderuse id="_3739" render="1"/><!-- g_param_spec_uchar -->
+  <renderuse id="_3740" render="1"/><!-- g_param_spec_boolean -->
+  <renderuse id="_3741" render="1"/><!-- g_param_spec_int -->
+  <renderuse id="_3742" render="1"/><!-- g_param_spec_uint -->
+  <renderuse id="_3743" render="1"/><!-- g_param_spec_long -->
+  <renderuse id="_3744" render="1"/><!-- g_param_spec_ulong -->
+  <renderuse id="_3745" render="1"/><!-- g_param_spec_int64 -->
+  <renderuse id="_3746" render="1"/><!-- g_param_spec_uint64 -->
+  <renderuse id="_3747" render="1"/><!-- g_param_spec_unichar -->
+  <renderuse id="_3748" render="1"/><!-- g_param_spec_enum -->
+  <renderuse id="_3749" render="1"/><!-- g_param_spec_flags -->
+  <renderuse id="_3750" render="1"/><!-- g_param_spec_float -->
+  <renderuse id="_3751" render="1"/><!-- g_param_spec_double -->
+  <renderuse id="_3752" render="1"/><!-- g_param_spec_string -->
+  <renderuse id="_3753" render="1"/><!-- g_param_spec_param -->
+  <renderuse id="_3754" render="1"/><!-- g_param_spec_boxed -->
+  <renderuse id="_3755" render="1"/><!-- g_param_spec_pointer -->
+  <renderuse id="_3756" render="1"/><!-- g_param_spec_value_array -->
+  <renderuse id="_3757" render="1"/><!-- g_param_spec_object -->
+  <renderuse id="_3758" render="1"/><!-- g_param_spec_override -->
+  <renderuse id="_3759" render="1"/><!-- g_param_spec_gtype -->
+  <renderuse id="_3760" render="1"/><!-- g_param_spec_variant -->
   <renderuse id="_3762" render="0"/><!-- g_source_set_closure -->
   <renderuse id="_3763" render="0"/><!-- g_source_set_dummy_callback -->
   <renderuse id="_3772" render="0"/><!-- glib_autoptr_clear_GTypeModule -->
@@ -2354,7 +2354,7 @@
   <renderuse id="_3830" render="0"/><!-- g_value_get_float -->
   <renderuse id="_3831" render="0"/><!-- g_value_set_double -->
   <renderuse id="_3832" render="0"/><!-- g_value_get_double -->
-  <renderuse id="_3833" render="0"/><!-- g_value_set_string -->
+  <renderuse id="_3833" render="1"/><!-- g_value_set_string -->
   <renderuse id="_3834" render="0"/><!-- g_value_set_static_string -->
   <renderuse id="_3835" render="0"/><!-- g_value_set_interned_string -->
   <renderuse id="_3836" render="0"/><!-- g_value_get_string -->
@@ -3306,10 +3306,10 @@
   <renderuse id="_4410" render="0"/><!-- g_dbus_connection_export_action_group -->
   <renderuse id="_4411" render="0"/><!-- g_dbus_connection_unexport_action_group -->
   <renderuse id="_4416" render="0"/><!-- g_action_map_get_type -->
-  <renderuse id="_4417" render="0"/><!-- g_action_map_lookup_action -->
-  <renderuse id="_4418" render="0"/><!-- g_action_map_add_action -->
-  <renderuse id="_4419" render="0"/><!-- g_action_map_remove_action -->
-  <renderuse id="_4420" render="0"/><!-- g_action_map_add_action_entries -->
+  <renderuse id="_4417" render="1"/><!-- g_action_map_lookup_action -->
+  <renderuse id="_4418" render="1"/><!-- g_action_map_add_action -->
+  <renderuse id="_4419" render="1"/><!-- g_action_map_remove_action -->
+  <renderuse id="_4420" render="1"/><!-- g_action_map_add_action_entries -->
   <renderuse id="_4538" render="0"/><!-- g_initable_get_type -->
   <renderuse id="_4539" render="0"/><!-- g_initable_init -->
   <renderuse id="_4540" render="0"/><!-- g_initable_new -->
@@ -3952,15 +3952,15 @@
   <renderuse id="_5864" render="0"/><!-- glib_queueautoptr_cleanup_GListStoreClass -->
   <renderuse id="_5865" render="0"/><!-- G_LIST_STORE -->
   <renderuse id="_5866" render="0"/><!-- G_IS_LIST_STORE -->
-  <renderuse id="_5867" render="0"/><!-- g_list_store_new -->
-  <renderuse id="_5868" render="0"/><!-- g_list_store_insert -->
-  <renderuse id="_5869" render="0"/><!-- g_list_store_insert_sorted -->
-  <renderuse id="_5870" render="0"/><!-- g_list_store_sort -->
-  <renderuse id="_5871" render="0"/><!-- g_list_store_append -->
-  <renderuse id="_5872" render="0"/><!-- g_list_store_remove -->
-  <renderuse id="_5873" render="0"/><!-- g_list_store_remove_all -->
-  <renderuse id="_5874" render="0"/><!-- g_list_store_splice -->
-  <renderuse id="_5875" render="0"/><!-- g_list_store_find -->
+  <renderuse id="_5867" render="1"/><!-- g_list_store_new -->
+  <renderuse id="_5868" render="1"/><!-- g_list_store_insert -->
+  <renderuse id="_5869" render="1"/><!-- g_list_store_insert_sorted -->
+  <renderuse id="_5870" render="1"/><!-- g_list_store_sort -->
+  <renderuse id="_5871" render="1"/><!-- g_list_store_append -->
+  <renderuse id="_5872" render="1"/><!-- g_list_store_remove -->
+  <renderuse id="_5873" render="1"/><!-- g_list_store_remove_all -->
+  <renderuse id="_5874" render="1"/><!-- g_list_store_splice -->
+  <renderuse id="_5875" render="1"/><!-- g_list_store_find -->
   <renderuse id="_5876" render="0"/><!-- g_list_store_find_with_equal_func -->
   <renderuse id="_5879" render="0"/><!-- g_loadable_icon_get_type -->
   <renderuse id="_5880" render="0"/><!-- g_loadable_icon_load -->
@@ -4148,11 +4148,11 @@
   <renderuse id="_6290" render="0"/><!-- g_settings_schema_key_get_summary -->
   <renderuse id="_6291" render="0"/><!-- g_settings_schema_key_get_description -->
   <renderuse id="_6353" render="0"/><!-- g_simple_action_get_type -->
-  <renderuse id="_6354" render="0"/><!-- g_simple_action_new -->
-  <renderuse id="_6355" render="0"/><!-- g_simple_action_new_stateful -->
-  <renderuse id="_6356" render="0"/><!-- g_simple_action_set_enabled -->
-  <renderuse id="_6357" render="0"/><!-- g_simple_action_set_state -->
-  <renderuse id="_6358" render="0"/><!-- g_simple_action_set_state_hint -->
+  <renderuse id="_6354" render="1"/><!-- g_simple_action_new -->
+  <renderuse id="_6355" render="1"/><!-- g_simple_action_new_stateful -->
+  <renderuse id="_6356" render="1"/><!-- g_simple_action_set_enabled -->
+  <renderuse id="_6357" render="1"/><!-- g_simple_action_set_state -->
+  <renderuse id="_6358" render="1"/><!-- g_simple_action_set_state_hint -->
   <renderuse id="_6371" render="0"/><!-- g_simple_async_result_get_type -->
   <renderuse id="_6372" render="0"/><!-- g_simple_async_result_new -->
   <renderuse id="_6373" render="0"/><!-- g_simple_async_result_new_error -->

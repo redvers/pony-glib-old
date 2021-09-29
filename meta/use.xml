@@ -39759,7 +39759,7 @@
      rv="None">
      <useargs>
        <usearg name="store" type="NullablePointer[GListStore]"/>
-       <usearg name="item" type="Pointer[None]"/>
+       <usearg name="item" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_5872" name="g_list_store_remove"

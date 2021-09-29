@@ -13,3 +13,6 @@ primitive GLibSys
 
   fun get_data[A: Any ref](instance: NullablePointer[GObject] tag, key: Pointer[U8] tag): Any ref =>
     @g_object_get_data(instance, key)
+
+  fun g_object_new(g_type: GType): NullablePointer[GObject] =>
+    @g_object_new(g_type, Pointer[U8])
