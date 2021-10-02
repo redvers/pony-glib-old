@@ -10,6 +10,19 @@ use @g_object_new[NullablePointer[GObject]](g_type: GType, first_property: Point
 
 
 /*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:701
+  Original Name: g_type_from_name/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:701
+
+  Return Value: [FundamentalType(long unsigned int) size=64]
+
+  Arguments:
+    [PointerType size=64]->[FundamentalType(char) size=8]
+*/
+use @g_type_from_name[U64](name: Pointer[U8] tag)
+
+
+
+/*
   Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:1265
   Original Name: g_type_register_static/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:1265
 

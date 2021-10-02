@@ -1917,7 +1917,7 @@
   <renderuse id="_3250" render="0"/><!-- g_type_init_with_debug_flags -->
   <renderuse id="_3251" render="0"/><!-- g_type_name -->
   <renderuse id="_3252" render="0"/><!-- g_type_qname -->
-  <renderuse id="_3253" render="0"/><!-- g_type_from_name -->
+  <renderuse id="_3253" render="1"/><!-- g_type_from_name -->
   <renderuse id="_3254" render="0"/><!-- g_type_parent -->
   <renderuse id="_3255" render="0"/><!-- g_type_depth -->
   <renderuse id="_3256" render="0"/><!-- g_type_next_base -->
