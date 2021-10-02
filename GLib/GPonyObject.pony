@@ -13,6 +13,7 @@ class GPonyObject[A: GPonyType ref]
   var dummyclass: GPonyType
   var classname: String
   var glibtype: GType = GType(0)
+  var instance: NullablePointer[GObject]
   new create(a: A) =>
     dummyclass = a
     classname = a.apply()
@@ -50,11 +51,11 @@ class GPonyObject[A: GPonyType ref]
 
       }
 
-      glibtype = GLibSys.g_type_register_static(GLibSys.g_object_get_type(), "GPony".cstring(), NullablePointer[GTypeInfo](gtypeinfo), I32(0))
+      glibtype = GLibSys.g_type_register_static(GLibSys.g_object_get_type(), classname.cstring(), NullablePointer[GTypeInfo](gtypeinfo), I32(0))
     else
       Debug.out("GLib Class for: " + classname + "already registered: " + glibtype.string())
     end
-
+    instance = GLibSys.g_object_new(glibtype)
 
 
 
