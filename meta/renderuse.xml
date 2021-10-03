@@ -1981,7 +1981,7 @@
   <renderuse id="_3327" render="0"/><!-- g_type_name_from_instance -->
   <renderuse id="_3328" render="0"/><!-- g_type_name_from_class -->
   <renderuse id="_3330" render="1"/><!-- g_value_init -->
-  <renderuse id="_3331" render="0"/><!-- g_value_copy -->
+  <renderuse id="_3331" render="1"/><!-- g_value_copy -->
   <renderuse id="_3332" render="0"/><!-- g_value_reset -->
   <renderuse id="_3333" render="0"/><!-- g_value_unset -->
   <renderuse id="_3334" render="0"/><!-- g_value_set_instance -->
@@ -2193,8 +2193,8 @@
   <renderuse id="_3590" render="0"/><!-- g_object_set_valist -->
   <renderuse id="_3591" render="0"/><!-- g_object_getv -->
   <renderuse id="_3592" render="0"/><!-- g_object_get_valist -->
-  <renderuse id="_3593" render="0"/><!-- g_object_set_property -->
-  <renderuse id="_3594" render="0"/><!-- g_object_get_property -->
+  <renderuse id="_3593" render="1"/><!-- g_object_set_property -->
+  <renderuse id="_3594" render="1"/><!-- g_object_get_property -->
   <renderuse id="_3595" render="0"/><!-- g_object_freeze_notify -->
   <renderuse id="_3596" render="0"/><!-- g_object_notify -->
   <renderuse id="_3597" render="0"/><!-- g_object_notify_by_pspec -->
@@ -2357,7 +2357,7 @@
   <renderuse id="_3833" render="1"/><!-- g_value_set_string -->
   <renderuse id="_3834" render="0"/><!-- g_value_set_static_string -->
   <renderuse id="_3835" render="0"/><!-- g_value_set_interned_string -->
-  <renderuse id="_3836" render="0"/><!-- g_value_get_string -->
+  <renderuse id="_3836" render="1"/><!-- g_value_get_string -->
   <renderuse id="_3837" render="0"/><!-- g_value_dup_string -->
   <renderuse id="_3838" render="0"/><!-- g_value_set_pointer -->
   <renderuse id="_3839" render="0"/><!-- g_value_get_pointer -->

@@ -27,12 +27,19 @@ class GPonyObject[A: GPonyType ref]
         @printf("class_init()\n".cstring())
                 try
                   var gpc: GPonyClass = g_class.apply()?
-                  gpc.set_property = @{(g_object: GObject, property_id: U32, value: GValue, pspec: GParamSpec): None => @printf("In set_property()\n".cstring())}
+                  gpc.set_property = @{(g_object: NullablePointer[GPony], property_id: U32, value: NullablePointer[GValue], pspec: NullablePointer[GParamSpec]): None =>
+                    try
+                      var gpo: GPony = g_object.apply()?
+                      @printf("In set_property()\n".cstring())
+                      gpo.ponyref.set_property(property_id, value, pspec)
+                    end
+                  }
                   gpc.get_property = @{(g_object: NullablePointer[GPony], property_id: U32, value: NullablePointer[GValue], pspec: NullablePointer[GParamSpec]): None =>
+                    try
+                      var gpo: GPony = g_object.apply()?
                       @printf("In get_property()\n".cstring())
-                      try
-                        g_object.apply()?.ponyref.geta(value)
-                      end
+                      gpo.ponyref.get_property(property_id, value, pspec)?
+                    end
                   }
                 end
                 let pspec: NullablePointer[GParamSpec] = GLibSys.g_param_spec_string("name".cstring(), "nick".cstring(), "blurb".cstring(), "default_value".cstring(), I32(3))
@@ -59,15 +66,25 @@ class GPonyObject[A: GPonyType ref]
 
 
 
+  fun ref getobj(): NullablePointer[GObject] => instance
+
+
+
 type GPonyClass is GObjectClass
 class PonyProperties
-  var a: String = "Hello World PonyProperty"
+  var properties: Map[U32, String ref] = Map[U32, String ref]
 
   new create() =>
     @printf("PonyProperties.create()\n".cstring())
 
-  fun ref geta(value: NullablePointer[GValue]) =>
-    GLibSys.g_value_set_string(value, a.cstring())
+  fun ref set_property(property_id: U32, value: NullablePointer[GValue], pspec: NullablePointer[GParamSpec]): None =>
+    @printf("In PonyProperties.set_property()\n".cstring())
+    properties.insert(property_id, String.from_cstring(GLibSys.g_value_get_string(value)).clone())
+
+  fun ref get_property(property_id: U32, value: NullablePointer[GValue], pspec: NullablePointer[GParamSpec]): None ? =>
+    @printf("In PonyProperties.get_property()\n".cstring())
+    let str: String ref = properties.apply(property_id)?
+    GLibSys.g_value_set_string(value, str.cstring())
 
 interface GPonyType
   fun apply(): String

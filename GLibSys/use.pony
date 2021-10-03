@@ -72,6 +72,20 @@ use @g_value_init[NullablePointer[GValue]](value: NullablePointer[GValue] tag, g
 
 
 /*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gvalue.h:133
+  Original Name: g_value_copy/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gvalue.h:133
+
+  Return Value: [FundamentalType(void) size=0]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=192,fid: f134]
+    [PointerType size=64]->[Struct size=192,fid: f134]
+*/
+use @g_value_copy[None](srcvalue: NullablePointer[GValue] tag, destvalue: NullablePointer[GValue] tag)
+
+
+
+/*
   Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/glib-types.h:323
   Original Name: g_gstring_get_type/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/glib-types.h:323
 
@@ -178,6 +192,36 @@ use @g_object_set[None](g_object: NullablePointer[GObject] tag, firstpropertynam
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
 use @g_object_get[None](g_object: NullablePointer[GObject] tag, firstpropertyname: Pointer[U8] tag, ...)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gobject.h:481
+  Original Name: g_object_set_property/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gobject.h:481
+
+  Return Value: [FundamentalType(void) size=0]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=192,fid: f141]
+    [PointerType size=64]->[FundamentalType(char) size=8]
+    [PointerType size=64]->[Struct size=192,fid: f134]
+*/
+use @g_object_set_property[None](g_object: NullablePointer[GObject] tag, propertyname: Pointer[U8] tag, value: NullablePointer[GValue] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gobject.h:485
+  Original Name: g_object_get_property/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gobject.h:485
+
+  Return Value: [FundamentalType(void) size=0]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=192,fid: f141]
+    [PointerType size=64]->[FundamentalType(char) size=8]
+    [PointerType size=64]->[Struct size=192,fid: f134]
+*/
+use @g_object_get_property[None](g_object: NullablePointer[GObject] tag, propertyname: Pointer[U8] tag, value: NullablePointer[GValue] tag)
 
 
 
@@ -615,6 +659,19 @@ use @g_param_spec_variant[NullablePointer[GParamSpec]](name: Pointer[U8] tag, ni
     [PointerType size=64]->[FundamentalType(char) size=8]
 */
 use @g_value_set_string[None](value: NullablePointer[GValue] tag, vstring: Pointer[U8] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gvaluetypes.h:261
+  Original Name: g_value_get_string/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gvaluetypes.h:261
+
+  Return Value: [PointerType size=64]->[FundamentalType(char) size=8]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=192,fid: f134]
+*/
+use @g_value_get_string[Pointer[U8]](value: NullablePointer[GValue] tag)
 
 
 
