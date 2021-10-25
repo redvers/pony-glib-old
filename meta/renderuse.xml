@@ -1053,16 +1053,16 @@
   <renderuse id="_1714" render="0"/><!-- g_variant_new_bytestring -->
   <renderuse id="_1715" render="0"/><!-- g_variant_new_bytestring_array -->
   <renderuse id="_1716" render="0"/><!-- g_variant_new_fixed_array -->
-  <renderuse id="_1717" render="0"/><!-- g_variant_get_boolean -->
-  <renderuse id="_1718" render="0"/><!-- g_variant_get_byte -->
-  <renderuse id="_1719" render="0"/><!-- g_variant_get_int16 -->
-  <renderuse id="_1720" render="0"/><!-- g_variant_get_uint16 -->
-  <renderuse id="_1721" render="0"/><!-- g_variant_get_int32 -->
-  <renderuse id="_1722" render="0"/><!-- g_variant_get_uint32 -->
-  <renderuse id="_1723" render="0"/><!-- g_variant_get_int64 -->
-  <renderuse id="_1724" render="0"/><!-- g_variant_get_uint64 -->
-  <renderuse id="_1725" render="0"/><!-- g_variant_get_handle -->
-  <renderuse id="_1726" render="0"/><!-- g_variant_get_double -->
+  <renderuse id="_1717" render="1"/><!-- g_variant_get_boolean -->
+  <renderuse id="_1718" render="1"/><!-- g_variant_get_byte -->
+  <renderuse id="_1719" render="1"/><!-- g_variant_get_int16 -->
+  <renderuse id="_1720" render="1"/><!-- g_variant_get_uint16 -->
+  <renderuse id="_1721" render="1"/><!-- g_variant_get_int32 -->
+  <renderuse id="_1722" render="1"/><!-- g_variant_get_uint32 -->
+  <renderuse id="_1723" render="1"/><!-- g_variant_get_int64 -->
+  <renderuse id="_1724" render="1"/><!-- g_variant_get_uint64 -->
+  <renderuse id="_1725" render="1"/><!-- g_variant_get_handle -->
+  <renderuse id="_1726" render="1"/><!-- g_variant_get_double -->
   <renderuse id="_1727" render="0"/><!-- g_variant_get_variant -->
   <renderuse id="_1728" render="0"/><!-- g_variant_get_string -->
   <renderuse id="_1729" render="0"/><!-- g_variant_dup_string -->
@@ -1978,7 +1978,7 @@
   <renderuse id="_3324" render="0"/><!-- g_type_check_value -->
   <renderuse id="_3325" render="0"/><!-- g_type_check_value_holds -->
   <renderuse id="_3326" render="0"/><!-- g_type_test_flags -->
-  <renderuse id="_3327" render="0"/><!-- g_type_name_from_instance -->
+  <renderuse id="_3327" render="1"/><!-- g_type_name_from_instance -->
   <renderuse id="_3328" render="0"/><!-- g_type_name_from_class -->
   <renderuse id="_3330" render="1"/><!-- g_value_init -->
   <renderuse id="_3331" render="1"/><!-- g_value_copy -->

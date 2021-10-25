@@ -86,5 +86,8 @@ class PonyProperties
     let str: String ref = properties.apply(property_id)?
     GLibSys.g_value_set_string(value, str.cstring())
 
+
+
+
 interface GPonyType
   fun apply(): String

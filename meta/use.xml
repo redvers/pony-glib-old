@@ -19584,7 +19584,7 @@
      lineno="2292"
      rv="Pointer[U8]">
      <useargs>
-       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+       <usearg name="instance" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_3328" name="g_type_name_from_class"

@@ -10,6 +10,136 @@ use @g_object_new[NullablePointer[GObject]](g_type: GType, first_property: Point
 
 
 /*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:134
+  Original Name: g_variant_get_boolean/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:134
+
+  Return Value: [FundamentalType(int) size=32]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_boolean[I32](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:136
+  Original Name: g_variant_get_byte/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:136
+
+  Return Value: [FundamentalType(unsigned char) size=8]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_byte[U8](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:138
+  Original Name: g_variant_get_int16/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:138
+
+  Return Value: [FundamentalType(short int) size=16]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_int16[I16](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:140
+  Original Name: g_variant_get_uint16/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:140
+
+  Return Value: [FundamentalType(short unsigned int) size=16]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_uint16[U16](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:142
+  Original Name: g_variant_get_int32/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:142
+
+  Return Value: [FundamentalType(int) size=32]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_int32[I32](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:144
+  Original Name: g_variant_get_uint32/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:144
+
+  Return Value: [FundamentalType(unsigned int) size=32]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_uint32[U32](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:146
+  Original Name: g_variant_get_int64/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:146
+
+  Return Value: [FundamentalType(long int) size=64]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_int64[I64](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:148
+  Original Name: g_variant_get_uint64/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:148
+
+  Return Value: [FundamentalType(long unsigned int) size=64]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_uint64[U64](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:150
+  Original Name: g_variant_get_handle/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:150
+
+  Return Value: [FundamentalType(int) size=32]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_handle[I32](value: NullablePointer[GVariant] tag)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:152
+  Original Name: g_variant_get_double/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/glib/gvariant.h:152
+
+  Return Value: [FundamentalType(double) size=64]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=,fid: f90]
+*/
+use @g_variant_get_double[F64](value: NullablePointer[GVariant] tag)
+
+
+
+/*
   Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:701
   Original Name: g_type_from_name/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:701
 
@@ -54,6 +184,19 @@ use @g_type_register_static[U64](parenttype: U64, typename: Pointer[U8] tag, inf
     [Enumeration size=32,fid: f133]
 */
 use @g_type_register_static_simple[U64](parenttype: U64, typename: Pointer[U8] tag, classsize: U32, classinit: Pointer[None] tag, instancesize: U32, instanceinit: Pointer[None] tag, flags: I32)
+
+
+
+/*
+  Source: /nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:2292
+  Original Name: g_type_name_from_instance/nix/store/b2fbjmfynng5an3nsb2f1286zpxs5vyh-glib-2.68.3-dev/include/glib-2.0/gobject/gtype.h:2292
+
+  Return Value: [PointerType size=64]->[FundamentalType(char) size=8]
+
+  Arguments:
+    [PointerType size=64]->[Struct size=64,fid: f133]
+*/
+use @g_type_name_from_instance[Pointer[U8]](instance: NullablePointer[GObject] tag)
 
 
 

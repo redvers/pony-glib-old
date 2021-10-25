@@ -9,8 +9,8 @@ codegenfunctions:
 	time xsltproc --xinclude makefunctions.xsl use.xml >> ../GLibSys/functions.pony
 
 
-functions:
-	../../../castxml2pony/castxml2pony -x gtk4.xml ${GLIB} -u
-	sh -x post-prod-usexml.sh
-	sh -x sanitize.sh
+#functions:
+#	../../../castxml2pony/castxml2pony -x gtk4.xml ${GLIB} -u
+#	sh -x post-prod-usexml.sh
+#	sh -x sanitize.sh
 
