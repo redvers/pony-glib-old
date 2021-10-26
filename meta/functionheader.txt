@@ -7,6 +7,8 @@ primitive GLibSys
   fun g_signal_connect_data[A: Any](instance: NullablePointer[GObject] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
     @g_signal_connect_data(instance, detailedsignal, chandler, data, destroydata, connectflags)
 
+  fun g_timeout_add[A: Any](interval: U32, chandler: Pointer[None], data: A): U32 =>
+    @g_timeout_add(interval, chandler, data)
 
   fun set_data[A: Any](instance: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: A): None =>
     @g_object_set_data(instance, key, data)

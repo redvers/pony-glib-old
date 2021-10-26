@@ -1,5 +1,6 @@
 // Allow Generics in data:
 use @g_signal_connect_data[U64](instance: NullablePointer[GObject] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any tag, destroydata: Pointer[None] tag, connectflags: I32)
+use @g_timeout_add[U32](interval: U32, function: Pointer[None] tag, data: Any tag)
 
 use @g_object_get_data[Any ref](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag)
 use @g_object_set_data[None](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag, data: Any tag)
