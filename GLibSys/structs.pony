@@ -2576,9 +2576,7 @@ struct GZlibDecompressor
      000000: [Struct size=192,fid: f141]: parent_instance
      000192: [PointerType size=64]->[Struct size=,fid: f164]: priv
 */
-struct GSimpleActionGroup
-  var parent_instance: GObject = GObject
-  var priv: NullablePointer[GSimpleActionGroupPrivate] = NullablePointer[GSimpleActionGroupPrivate].none()
+type GSimpleActionGroup is GActionGroup
 
 
 /*
@@ -2622,7 +2620,7 @@ type GActionMap is GObject
 
   Fields (Offset in bits):
 */
-struct GActionGroup
+type GActionGroup is GObject
 
 
 /*
