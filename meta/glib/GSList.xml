@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GSList" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <function name="g_slist_alloc" render="0"/>
+  <function name="g_slist_append" render="0"/>
+  <function name="g_slist_concat" render="0"/>
+  <function name="g_slist_copy" render="0"/>
+  <function name="g_slist_copy_deep" render="0"/>
+  <function name="g_slist_delete_link" render="0"/>
+  <function name="g_slist_find" render="0"/>
+  <function name="g_slist_find_custom" render="0"/>
+  <function name="g_slist_foreach" render="0"/>
+  <function name="g_slist_free" render="0"/>
+  <function name="g_slist_free_1" render="0"/>
+  <function name="g_slist_free_full" render="0"/>
+  <function name="g_slist_index" render="0"/>
+  <function name="g_slist_insert" render="0"/>
+  <function name="g_slist_insert_before" render="0"/>
+  <function name="g_slist_insert_sorted" render="0"/>
+  <function name="g_slist_insert_sorted_with_data" render="0"/>
+  <function name="g_slist_last" render="0"/>
+  <function name="g_slist_length" render="0"/>
+  <function name="g_slist_nth" render="0"/>
+  <function name="g_slist_nth_data" render="0"/>
+  <function name="g_slist_position" render="0"/>
+  <function name="g_slist_prepend" render="0"/>
+  <function name="g_slist_remove" render="0"/>
+  <function name="g_slist_remove_all" render="0"/>
+  <function name="g_slist_remove_link" render="0"/>
+  <function name="g_slist_reverse" render="0"/>
+  <function name="g_slist_sort" render="0"/>
+  <function name="g_slist_sort_with_data" render="0"/>
+</record>
+</bp>

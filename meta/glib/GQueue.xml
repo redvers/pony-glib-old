@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GQueue" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <method name="g_queue_clear" render="0"/>
+  <method name="g_queue_clear_full" render="0"/>
+  <method name="g_queue_copy" render="0"/>
+  <method name="g_queue_delete_link" render="0"/>
+  <method name="g_queue_find" render="0"/>
+  <method name="g_queue_find_custom" render="0"/>
+  <method name="g_queue_foreach" render="0"/>
+  <method name="g_queue_free" render="0"/>
+  <method name="g_queue_free_full" render="0"/>
+  <method name="g_queue_get_length" render="0"/>
+  <method name="g_queue_index" render="0"/>
+  <method name="g_queue_init" render="0"/>
+  <method name="g_queue_insert_after" render="0"/>
+  <method name="g_queue_insert_after_link" render="0"/>
+  <method name="g_queue_insert_before" render="0"/>
+  <method name="g_queue_insert_before_link" render="0"/>
+  <method name="g_queue_insert_sorted" render="0"/>
+  <method name="g_queue_is_empty" render="0"/>
+  <method name="g_queue_link_index" render="0"/>
+  <method name="g_queue_peek_head" render="0"/>
+  <method name="g_queue_peek_head_link" render="0"/>
+  <method name="g_queue_peek_nth" render="0"/>
+  <method name="g_queue_peek_nth_link" render="0"/>
+  <method name="g_queue_peek_tail" render="0"/>
+  <method name="g_queue_peek_tail_link" render="0"/>
+  <method name="g_queue_pop_head" render="0"/>
+  <method name="g_queue_pop_head_link" render="0"/>
+  <method name="g_queue_pop_nth" render="0"/>
+  <method name="g_queue_pop_nth_link" render="0"/>
+  <method name="g_queue_pop_tail" render="0"/>
+  <method name="g_queue_pop_tail_link" render="0"/>
+  <method name="g_queue_push_head" render="0"/>
+  <method name="g_queue_push_head_link" render="0"/>
+  <method name="g_queue_push_nth" render="0"/>
+  <method name="g_queue_push_nth_link" render="0"/>
+  <method name="g_queue_push_tail" render="0"/>
+  <method name="g_queue_push_tail_link" render="0"/>
+  <method name="g_queue_remove" render="0"/>
+  <method name="g_queue_remove_all" render="0"/>
+  <method name="g_queue_reverse" render="0"/>
+  <method name="g_queue_sort" render="0"/>
+  <method name="g_queue_unlink" render="0"/>
+  <function name="g_queue_new" render="0"/>
+</record>
+</bp>

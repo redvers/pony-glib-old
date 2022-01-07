@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GVariantType" render="0">
+  <doc name="" render="0"/>
+  <constructor name="g_variant_type_new" render="0"/>
+  <constructor name="g_variant_type_new_array" render="0"/>
+  <constructor name="g_variant_type_new_dict_entry" render="0"/>
+  <constructor name="g_variant_type_new_maybe" render="0"/>
+  <constructor name="g_variant_type_new_tuple" render="0"/>
+  <method name="g_variant_type_copy" render="0"/>
+  <method name="g_variant_type_dup_string" render="0"/>
+  <method name="g_variant_type_element" render="0"/>
+  <method name="g_variant_type_equal" render="0"/>
+  <method name="g_variant_type_first" render="0"/>
+  <method name="g_variant_type_free" render="0"/>
+  <method name="g_variant_type_get_string_length" render="0"/>
+  <method name="g_variant_type_hash" render="0"/>
+  <method name="g_variant_type_is_array" render="0"/>
+  <method name="g_variant_type_is_basic" render="0"/>
+  <method name="g_variant_type_is_container" render="0"/>
+  <method name="g_variant_type_is_definite" render="0"/>
+  <method name="g_variant_type_is_dict_entry" render="0"/>
+  <method name="g_variant_type_is_maybe" render="0"/>
+  <method name="g_variant_type_is_subtype_of" render="0"/>
+  <method name="g_variant_type_is_tuple" render="0"/>
+  <method name="g_variant_type_is_variant" render="0"/>
+  <method name="g_variant_type_key" render="0"/>
+  <method name="g_variant_type_n_items" render="0"/>
+  <method name="g_variant_type_next" render="0"/>
+  <method name="g_variant_type_peek_string" render="0"/>
+  <method name="g_variant_type_value" render="0"/>
+  <function name="g_variant_type_checked_" render="0"/>
+  <function name="g_variant_type_string_get_depth_" render="0"/>
+  <function name="g_variant_type_string_is_valid" render="0"/>
+  <function name="g_variant_type_string_scan" render="0"/>
+</record>
+</bp>

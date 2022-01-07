@@ -1,5 +1,5 @@
 // Allow Generics in data:
-use @g_signal_connect_data[U64](instance: NullablePointer[GObject] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any tag, destroydata: Pointer[None] tag, connectflags: I32)
+//use @g_signal_connect_data[U64](instance: NullablePointer[GObject] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any tag, destroydata: Pointer[None] tag, connectflags: I32)
 use @g_timeout_add[U32](interval: U32, function: Pointer[None] tag, data: Any tag)
 
 use @g_object_get_data[Any ref](g_object: NullablePointer[GObject] tag, key: Pointer[U8] tag)
@@ -830,7 +830,7 @@ use @g_value_get_string[Pointer[U8]](value: NullablePointer[GValue] tag)
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-use @g_application_run[I32](application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8]] tag)
+//use @g_application_run[I32](application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8]] tag)
 
 
 

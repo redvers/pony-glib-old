@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GOptionGroup" render="0">
+  <doc name="" render="0"/>
+  <constructor name="g_option_group_new" render="0"/>
+  <method name="g_option_group_add_entries" render="0"/>
+  <method name="g_option_group_free" render="0"/>
+  <method name="g_option_group_ref" render="0"/>
+  <method name="g_option_group_set_error_hook" render="0"/>
+  <method name="g_option_group_set_parse_hooks" render="0"/>
+  <method name="g_option_group_set_translate_func" render="0"/>
+  <method name="g_option_group_set_translation_domain" render="0"/>
+  <method name="g_option_group_unref" render="0"/>
+</record>
+</bp>

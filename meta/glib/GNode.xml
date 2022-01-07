@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GNode" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <method name="g_node_child_index" render="0"/>
+  <method name="g_node_child_position" render="0"/>
+  <method name="g_node_children_foreach" render="0"/>
+  <method name="g_node_copy" render="0"/>
+  <method name="g_node_copy_deep" render="0"/>
+  <method name="g_node_depth" render="0"/>
+  <method name="g_node_destroy" render="0"/>
+  <method name="g_node_find" render="0"/>
+  <method name="g_node_find_child" render="0"/>
+  <method name="g_node_first_sibling" render="0"/>
+  <method name="g_node_get_root" render="0"/>
+  <method name="g_node_insert" render="0"/>
+  <method name="g_node_insert_after" render="0"/>
+  <method name="g_node_insert_before" render="0"/>
+  <method name="g_node_is_ancestor" render="0"/>
+  <method name="g_node_last_child" render="0"/>
+  <method name="g_node_last_sibling" render="0"/>
+  <method name="g_node_max_height" render="0"/>
+  <method name="g_node_n_children" render="0"/>
+  <method name="g_node_n_nodes" render="0"/>
+  <method name="g_node_nth_child" render="0"/>
+  <method name="g_node_prepend" render="0"/>
+  <method name="g_node_reverse_children" render="0"/>
+  <method name="g_node_traverse" render="0"/>
+  <method name="g_node_unlink" render="0"/>
+  <function name="g_node_new" render="0"/>
+</record>
+</bp>

@@ -2,10 +2,12 @@ use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
+type GType is U64
+type FUNCTIONTYPE is GObject // this is a lie
 primitive GLibSys
 
-  fun g_signal_connect_data[A: Any](instance: NullablePointer[GObject] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
-    @g_signal_connect_data(instance, detailedsignal, chandler, data, destroydata, connectflags)
+//  fun g_signal_connect_data[A: Any](instance: NullablePointer[GObject] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
+//    @g_signal_connect_data(instance, detailedsignal, chandler, data, destroydata, connectflags)
 
   fun g_timeout_add[A: Any](interval: U32, chandler: Pointer[None], data: A): U32 =>
     @g_timeout_add(interval, chandler, data)
@@ -840,8 +842,8 @@ primitive GLibSys
     [FundamentalType(int) size=32]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(char) size=8]
 */
-  fun g_application_run(application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8]] tag): I32 =>
-    @g_application_run(application, argc, argv)
+//  fun g_application_run(application: NullablePointer[GApplication] tag, argc: I32, argv: Pointer[Pointer[U8]] tag): I32 =>
+//    @g_application_run(application, argc, argv)
 
 
 /*

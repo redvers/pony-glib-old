@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GUri" render="0">
+  <doc name="" render="0"/>
+  <method name="g_uri_get_auth_params" render="0"/>
+  <method name="g_uri_get_flags" render="0"/>
+  <method name="g_uri_get_fragment" render="0"/>
+  <method name="g_uri_get_host" render="0"/>
+  <method name="g_uri_get_password" render="0"/>
+  <method name="g_uri_get_path" render="0"/>
+  <method name="g_uri_get_port" render="0"/>
+  <method name="g_uri_get_query" render="0"/>
+  <method name="g_uri_get_scheme" render="0"/>
+  <method name="g_uri_get_user" render="0"/>
+  <method name="g_uri_get_userinfo" render="0"/>
+  <method name="g_uri_parse_relative" render="0"/>
+  <method name="g_uri_ref" render="0"/>
+  <method name="g_uri_to_string" render="0"/>
+  <method name="g_uri_to_string_partial" render="0"/>
+  <method name="g_uri_unref" render="0"/>
+  <function name="g_uri_build" render="0"/>
+  <function name="g_uri_build_with_user" render="0"/>
+  <function name="g_uri_error_quark" render="0"/>
+  <function name="g_uri_escape_bytes" render="0"/>
+  <function name="g_uri_escape_string" render="0"/>
+  <function name="g_uri_is_valid" render="0"/>
+  <function name="g_uri_join" render="0"/>
+  <function name="g_uri_join_with_user" render="0"/>
+  <function name="g_uri_list_extract_uris" render="0"/>
+  <function name="g_uri_parse" render="0"/>
+  <function name="g_uri_parse_params" render="0"/>
+  <function name="g_uri_parse_scheme" render="0"/>
+  <function name="g_uri_peek_scheme" render="0"/>
+  <function name="g_uri_resolve_relative" render="0"/>
+  <function name="g_uri_split" render="0"/>
+  <function name="g_uri_split_network" render="0"/>
+  <function name="g_uri_split_with_user" render="0"/>
+  <function name="g_uri_unescape_bytes" render="0"/>
+  <function name="g_uri_unescape_segment" render="0"/>
+  <function name="g_uri_unescape_string" render="0"/>
+</record>
+</bp>

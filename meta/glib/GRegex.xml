@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GRegex" render="0">
+  <doc name="" render="0"/>
+  <constructor name="g_regex_new" render="0"/>
+  <method name="g_regex_get_capture_count" render="0"/>
+  <method name="g_regex_get_compile_flags" render="0"/>
+  <method name="g_regex_get_has_cr_or_lf" render="0"/>
+  <method name="g_regex_get_match_flags" render="0"/>
+  <method name="g_regex_get_max_backref" render="0"/>
+  <method name="g_regex_get_max_lookbehind" render="0"/>
+  <method name="g_regex_get_pattern" render="0"/>
+  <method name="g_regex_get_string_number" render="0"/>
+  <method name="g_regex_match" render="0"/>
+  <method name="g_regex_match_all" render="0"/>
+  <method name="g_regex_match_all_full" render="0"/>
+  <method name="g_regex_match_full" render="0"/>
+  <method name="g_regex_ref" render="0"/>
+  <method name="g_regex_replace" render="0"/>
+  <method name="g_regex_replace_eval" render="0"/>
+  <method name="g_regex_replace_literal" render="0"/>
+  <method name="g_regex_split" render="0"/>
+  <method name="g_regex_split_full" render="0"/>
+  <method name="g_regex_unref" render="0"/>
+  <function name="g_regex_check_replacement" render="0"/>
+  <function name="g_regex_error_quark" render="0"/>
+  <function name="g_regex_escape_nul" render="0"/>
+  <function name="g_regex_escape_string" render="0"/>
+  <function name="g_regex_match_simple" render="0"/>
+  <function name="g_regex_split_simple" render="0"/>
+</record>
+</bp>

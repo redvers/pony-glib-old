@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GIOChannel" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <constructor name="g_io_channel_new_file" render="0"/>
+  <constructor name="g_io_channel_unix_new" render="0"/>
+  <method name="g_io_channel_close" render="0"/>
+  <method name="g_io_channel_flush" render="0"/>
+  <method name="g_io_channel_get_buffer_condition" render="0"/>
+  <method name="g_io_channel_get_buffer_size" render="0"/>
+  <method name="g_io_channel_get_buffered" render="0"/>
+  <method name="g_io_channel_get_close_on_unref" render="0"/>
+  <method name="g_io_channel_get_encoding" render="0"/>
+  <method name="g_io_channel_get_flags" render="0"/>
+  <method name="g_io_channel_get_line_term" render="0"/>
+  <method name="g_io_channel_init" render="0"/>
+  <method name="g_io_channel_read" render="0"/>
+  <method name="g_io_channel_read_chars" render="0"/>
+  <method name="g_io_channel_read_line" render="0"/>
+  <method name="g_io_channel_read_line_string" render="0"/>
+  <method name="g_io_channel_read_to_end" render="0"/>
+  <method name="g_io_channel_read_unichar" render="0"/>
+  <method name="g_io_channel_ref" render="0"/>
+  <method name="g_io_channel_seek" render="0"/>
+  <method name="g_io_channel_seek_position" render="0"/>
+  <method name="g_io_channel_set_buffer_size" render="0"/>
+  <method name="g_io_channel_set_buffered" render="0"/>
+  <method name="g_io_channel_set_close_on_unref" render="0"/>
+  <method name="g_io_channel_set_encoding" render="0"/>
+  <method name="g_io_channel_set_flags" render="0"/>
+  <method name="g_io_channel_set_line_term" render="0"/>
+  <method name="g_io_channel_shutdown" render="0"/>
+  <method name="g_io_channel_unix_get_fd" render="0"/>
+  <method name="g_io_channel_unref" render="0"/>
+  <method name="g_io_channel_write" render="0"/>
+  <method name="g_io_channel_write_chars" render="0"/>
+  <method name="g_io_channel_write_unichar" render="0"/>
+  <function name="g_io_channel_error_from_errno" render="0"/>
+  <function name="g_io_channel_error_quark" render="0"/>
+</record>
+</bp>

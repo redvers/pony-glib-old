@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GTree" render="0">
+  <doc name="" render="0"/>
+  <method name="g_tree_destroy" render="0"/>
+  <method name="g_tree_foreach" render="0"/>
+  <method name="g_tree_height" render="0"/>
+  <method name="g_tree_insert" render="0"/>
+  <method name="g_tree_lookup" render="0"/>
+  <method name="g_tree_lookup_extended" render="0"/>
+  <method name="g_tree_nnodes" render="0"/>
+  <method name="g_tree_ref" render="0"/>
+  <method name="g_tree_remove" render="0"/>
+  <method name="g_tree_replace" render="0"/>
+  <method name="g_tree_search" render="0"/>
+  <method name="g_tree_steal" render="0"/>
+  <method name="g_tree_traverse" render="0"/>
+  <method name="g_tree_unref" render="0"/>
+  <function name="g_tree_new" render="0"/>
+  <function name="g_tree_new_full" render="0"/>
+  <function name="g_tree_new_with_data" render="0"/>
+</record>
+</bp>

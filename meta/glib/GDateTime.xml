@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GDateTime" render="0">
+  <doc name="" render="0"/>
+  <constructor name="g_date_time_new" render="0"/>
+  <constructor name="g_date_time_new_from_iso8601" render="0"/>
+  <constructor name="g_date_time_new_from_timeval_local" render="0"/>
+  <constructor name="g_date_time_new_from_timeval_utc" render="0"/>
+  <constructor name="g_date_time_new_from_unix_local" render="0"/>
+  <constructor name="g_date_time_new_from_unix_utc" render="0"/>
+  <constructor name="g_date_time_new_local" render="0"/>
+  <constructor name="g_date_time_new_now" render="0"/>
+  <constructor name="g_date_time_new_now_local" render="0"/>
+  <constructor name="g_date_time_new_now_utc" render="0"/>
+  <constructor name="g_date_time_new_utc" render="0"/>
+  <method name="g_date_time_add" render="0"/>
+  <method name="g_date_time_add_days" render="0"/>
+  <method name="g_date_time_add_full" render="0"/>
+  <method name="g_date_time_add_hours" render="0"/>
+  <method name="g_date_time_add_minutes" render="0"/>
+  <method name="g_date_time_add_months" render="0"/>
+  <method name="g_date_time_add_seconds" render="0"/>
+  <method name="g_date_time_add_weeks" render="0"/>
+  <method name="g_date_time_add_years" render="0"/>
+  <method name="g_date_time_compare" render="0"/>
+  <method name="g_date_time_difference" render="0"/>
+  <method name="g_date_time_equal" render="0"/>
+  <method name="g_date_time_format" render="0"/>
+  <method name="g_date_time_format_iso8601" render="0"/>
+  <method name="g_date_time_get_day_of_month" render="0"/>
+  <method name="g_date_time_get_day_of_week" render="0"/>
+  <method name="g_date_time_get_day_of_year" render="0"/>
+  <method name="g_date_time_get_hour" render="0"/>
+  <method name="g_date_time_get_microsecond" render="0"/>
+  <method name="g_date_time_get_minute" render="0"/>
+  <method name="g_date_time_get_month" render="0"/>
+  <method name="g_date_time_get_second" render="0"/>
+  <method name="g_date_time_get_seconds" render="0"/>
+  <method name="g_date_time_get_timezone" render="0"/>
+  <method name="g_date_time_get_timezone_abbreviation" render="0"/>
+  <method name="g_date_time_get_utc_offset" render="0"/>
+  <method name="g_date_time_get_week_numbering_year" render="0"/>
+  <method name="g_date_time_get_week_of_year" render="0"/>
+  <method name="g_date_time_get_year" render="0"/>
+  <method name="g_date_time_get_ymd" render="0"/>
+  <method name="g_date_time_hash" render="0"/>
+  <method name="g_date_time_is_daylight_savings" render="0"/>
+  <method name="g_date_time_ref" render="0"/>
+  <method name="g_date_time_to_local" render="0"/>
+  <method name="g_date_time_to_timeval" render="0"/>
+  <method name="g_date_time_to_timezone" render="0"/>
+  <method name="g_date_time_to_unix" render="0"/>
+  <method name="g_date_time_to_utc" render="0"/>
+  <method name="g_date_time_unref" render="0"/>
+</record>
+</bp>

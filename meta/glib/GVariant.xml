@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GVariant" render="0">
+  <doc name="" render="0"/>
+  <constructor name="g_variant_new" render="0"/>
+  <constructor name="g_variant_new_array" render="0"/>
+  <constructor name="g_variant_new_boolean" render="0"/>
+  <constructor name="g_variant_new_byte" render="0"/>
+  <constructor name="g_variant_new_bytestring" render="0"/>
+  <constructor name="g_variant_new_bytestring_array" render="0"/>
+  <constructor name="g_variant_new_dict_entry" render="0"/>
+  <constructor name="g_variant_new_double" render="0"/>
+  <constructor name="g_variant_new_fixed_array" render="0"/>
+  <constructor name="g_variant_new_from_bytes" render="0"/>
+  <constructor name="g_variant_new_from_data" render="0"/>
+  <constructor name="g_variant_new_handle" render="0"/>
+  <constructor name="g_variant_new_int16" render="0"/>
+  <constructor name="g_variant_new_int32" render="0"/>
+  <constructor name="g_variant_new_int64" render="0"/>
+  <constructor name="g_variant_new_maybe" render="0"/>
+  <constructor name="g_variant_new_object_path" render="0"/>
+  <constructor name="g_variant_new_objv" render="0"/>
+  <constructor name="g_variant_new_parsed" render="0"/>
+  <constructor name="g_variant_new_parsed_va" render="0"/>
+  <constructor name="g_variant_new_printf" render="0"/>
+  <constructor name="g_variant_new_signature" render="0"/>
+  <constructor name="g_variant_new_string" render="0"/>
+  <constructor name="g_variant_new_strv" render="0"/>
+  <constructor name="g_variant_new_take_string" render="0"/>
+  <constructor name="g_variant_new_tuple" render="0"/>
+  <constructor name="g_variant_new_uint16" render="0"/>
+  <constructor name="g_variant_new_uint32" render="0"/>
+  <constructor name="g_variant_new_uint64" render="0"/>
+  <constructor name="g_variant_new_va" render="0"/>
+  <constructor name="g_variant_new_variant" render="0"/>
+  <method name="g_variant_byteswap" render="0"/>
+  <method name="g_variant_check_format_string" render="0"/>
+  <method name="g_variant_classify" render="0"/>
+  <method name="g_variant_compare" render="0"/>
+  <method name="g_variant_dup_bytestring" render="0"/>
+  <method name="g_variant_dup_bytestring_array" render="0"/>
+  <method name="g_variant_dup_objv" render="0"/>
+  <method name="g_variant_dup_string" render="0"/>
+  <method name="g_variant_dup_strv" render="0"/>
+  <method name="g_variant_equal" render="0"/>
+  <method name="g_variant_get" render="0"/>
+  <method name="g_variant_get_boolean" render="0"/>
+  <method name="g_variant_get_byte" render="0"/>
+  <method name="g_variant_get_bytestring" render="0"/>
+  <method name="g_variant_get_bytestring_array" render="0"/>
+  <method name="g_variant_get_child" render="0"/>
+  <method name="g_variant_get_child_value" render="0"/>
+  <method name="g_variant_get_data" render="0"/>
+  <method name="g_variant_get_data_as_bytes" render="0"/>
+  <method name="g_variant_get_double" render="0"/>
+  <method name="g_variant_get_fixed_array" render="0"/>
+  <method name="g_variant_get_handle" render="0"/>
+  <method name="g_variant_get_int16" render="0"/>
+  <method name="g_variant_get_int32" render="0"/>
+  <method name="g_variant_get_int64" render="0"/>
+  <method name="g_variant_get_maybe" render="0"/>
+  <method name="g_variant_get_normal_form" render="0"/>
+  <method name="g_variant_get_objv" render="0"/>
+  <method name="g_variant_get_size" render="0"/>
+  <method name="g_variant_get_string" render="0"/>
+  <method name="g_variant_get_strv" render="0"/>
+  <method name="g_variant_get_type" render="0"/>
+  <method name="g_variant_get_type_string" render="0"/>
+  <method name="g_variant_get_uint16" render="0"/>
+  <method name="g_variant_get_uint32" render="0"/>
+  <method name="g_variant_get_uint64" render="0"/>
+  <method name="g_variant_get_va" render="0"/>
+  <method name="g_variant_get_variant" render="0"/>
+  <method name="g_variant_hash" render="0"/>
+  <method name="g_variant_is_container" render="0"/>
+  <method name="g_variant_is_floating" render="0"/>
+  <method name="g_variant_is_normal_form" render="0"/>
+  <method name="g_variant_is_of_type" render="0"/>
+  <method name="g_variant_iter_new" render="0"/>
+  <method name="g_variant_lookup" render="0"/>
+  <method name="g_variant_lookup_value" render="0"/>
+  <method name="g_variant_n_children" render="0"/>
+  <method name="g_variant_print" render="0"/>
+  <method name="g_variant_print_string" render="0"/>
+  <method name="g_variant_ref" render="0"/>
+  <method name="g_variant_ref_sink" render="0"/>
+  <method name="g_variant_store" render="0"/>
+  <method name="g_variant_take_ref" render="0"/>
+  <method name="g_variant_unref" render="0"/>
+  <function name="g_variant_is_object_path" render="0"/>
+  <function name="g_variant_is_signature" render="0"/>
+  <function name="g_variant_parse" render="0"/>
+  <function name="g_variant_parse_error_print_context" render="0"/>
+  <function name="g_variant_parse_error_quark" render="0"/>
+  <function name="g_variant_parser_get_error_quark" render="0"/>
+</record>
+</bp>

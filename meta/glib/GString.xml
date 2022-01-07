@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GString" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <method name="g_string_append" render="0"/>
+  <method name="g_string_append_c" render="0"/>
+  <method name="g_string_append_len" render="0"/>
+  <method name="g_string_append_printf" render="0"/>
+  <method name="g_string_append_unichar" render="0"/>
+  <method name="g_string_append_uri_escaped" render="0"/>
+  <method name="g_string_append_vprintf" render="0"/>
+  <method name="g_string_ascii_down" render="0"/>
+  <method name="g_string_ascii_up" render="0"/>
+  <method name="g_string_assign" render="0"/>
+  <method name="g_string_down" render="0"/>
+  <method name="g_string_equal" render="0"/>
+  <method name="g_string_erase" render="0"/>
+  <method name="g_string_free" render="0"/>
+  <method name="g_string_free_to_bytes" render="0"/>
+  <method name="g_string_hash" render="0"/>
+  <method name="g_string_insert" render="0"/>
+  <method name="g_string_insert_c" render="0"/>
+  <method name="g_string_insert_len" render="0"/>
+  <method name="g_string_insert_unichar" render="0"/>
+  <method name="g_string_overwrite" render="0"/>
+  <method name="g_string_overwrite_len" render="0"/>
+  <method name="g_string_prepend" render="0"/>
+  <method name="g_string_prepend_c" render="0"/>
+  <method name="g_string_prepend_len" render="0"/>
+  <method name="g_string_prepend_unichar" render="0"/>
+  <method name="g_string_printf" render="0"/>
+  <method name="g_string_set_size" render="0"/>
+  <method name="g_string_truncate" render="0"/>
+  <method name="g_string_up" render="0"/>
+  <method name="g_string_vprintf" render="0"/>
+</record>
+</bp>

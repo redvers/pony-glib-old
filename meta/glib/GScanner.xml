@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GScanner" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <method name="g_scanner_cur_line" render="0"/>
+  <method name="g_scanner_cur_position" render="0"/>
+  <method name="g_scanner_cur_token" render="0"/>
+  <method name="g_scanner_cur_value" render="0"/>
+  <method name="g_scanner_destroy" render="0"/>
+  <method name="g_scanner_eof" render="0"/>
+  <method name="g_scanner_error" render="0"/>
+  <method name="g_scanner_get_next_token" render="0"/>
+  <method name="g_scanner_input_file" render="0"/>
+  <method name="g_scanner_input_text" render="0"/>
+  <method name="g_scanner_lookup_symbol" render="0"/>
+  <method name="g_scanner_peek_next_token" render="0"/>
+  <method name="g_scanner_scope_add_symbol" render="0"/>
+  <method name="g_scanner_scope_foreach_symbol" render="0"/>
+  <method name="g_scanner_scope_lookup_symbol" render="0"/>
+  <method name="g_scanner_scope_remove_symbol" render="0"/>
+  <method name="g_scanner_set_scope" render="0"/>
+  <method name="g_scanner_sync_file_offset" render="0"/>
+  <method name="g_scanner_unexp_token" render="0"/>
+  <method name="g_scanner_warn" render="0"/>
+  <function name="g_scanner_new" render="0"/>
+</record>
+</bp>

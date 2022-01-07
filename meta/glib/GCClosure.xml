@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GCClosure" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <function name="g_cclosure_marshal_BOOLEAN__BOXED_BOXED" render="0"/>
+  <function name="g_cclosure_marshal_BOOLEAN__BOXED_BOXEDv" render="0"/>
+  <function name="g_cclosure_marshal_BOOLEAN__FLAGS" render="0"/>
+  <function name="g_cclosure_marshal_BOOLEAN__FLAGSv" render="0"/>
+  <function name="g_cclosure_marshal_STRING__OBJECT_POINTER" render="0"/>
+  <function name="g_cclosure_marshal_STRING__OBJECT_POINTERv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__BOOLEAN" render="0"/>
+  <function name="g_cclosure_marshal_VOID__BOOLEANv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__BOXED" render="0"/>
+  <function name="g_cclosure_marshal_VOID__BOXEDv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__CHAR" render="0"/>
+  <function name="g_cclosure_marshal_VOID__CHARv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__DOUBLE" render="0"/>
+  <function name="g_cclosure_marshal_VOID__DOUBLEv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__ENUM" render="0"/>
+  <function name="g_cclosure_marshal_VOID__ENUMv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__FLAGS" render="0"/>
+  <function name="g_cclosure_marshal_VOID__FLAGSv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__FLOAT" render="0"/>
+  <function name="g_cclosure_marshal_VOID__FLOATv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__INT" render="0"/>
+  <function name="g_cclosure_marshal_VOID__INTv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__LONG" render="0"/>
+  <function name="g_cclosure_marshal_VOID__LONGv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__OBJECT" render="0"/>
+  <function name="g_cclosure_marshal_VOID__OBJECTv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__PARAM" render="0"/>
+  <function name="g_cclosure_marshal_VOID__PARAMv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__POINTER" render="0"/>
+  <function name="g_cclosure_marshal_VOID__POINTERv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__STRING" render="0"/>
+  <function name="g_cclosure_marshal_VOID__STRINGv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__UCHAR" render="0"/>
+  <function name="g_cclosure_marshal_VOID__UCHARv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__UINT" render="0"/>
+  <function name="g_cclosure_marshal_VOID__UINT_POINTER" render="0"/>
+  <function name="g_cclosure_marshal_VOID__UINT_POINTERv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__UINTv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__ULONG" render="0"/>
+  <function name="g_cclosure_marshal_VOID__ULONGv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__VARIANT" render="0"/>
+  <function name="g_cclosure_marshal_VOID__VARIANTv" render="0"/>
+  <function name="g_cclosure_marshal_VOID__VOID" render="0"/>
+  <function name="g_cclosure_marshal_VOID__VOIDv" render="0"/>
+  <function name="g_cclosure_marshal_generic" render="0"/>
+  <function name="g_cclosure_marshal_generic_va" render="0"/>
+  <function name="g_cclosure_new" render="0"/>
+  <function name="g_cclosure_new_object" render="0"/>
+  <function name="g_cclosure_new_object_swap" render="0"/>
+  <function name="g_cclosure_new_swap" render="0"/>
+</record>
+</bp>

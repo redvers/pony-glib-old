@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GAsyncQueue" render="0">
+  <doc name="" render="0"/>
+  <method name="g_async_queue_length" render="0"/>
+  <method name="g_async_queue_length_unlocked" render="0"/>
+  <method name="g_async_queue_lock" render="0"/>
+  <method name="g_async_queue_pop" render="0"/>
+  <method name="g_async_queue_pop_unlocked" render="0"/>
+  <method name="g_async_queue_push" render="0"/>
+  <method name="g_async_queue_push_front" render="0"/>
+  <method name="g_async_queue_push_front_unlocked" render="0"/>
+  <method name="g_async_queue_push_sorted" render="0"/>
+  <method name="g_async_queue_push_sorted_unlocked" render="0"/>
+  <method name="g_async_queue_push_unlocked" render="0"/>
+  <method name="g_async_queue_ref" render="0"/>
+  <method name="g_async_queue_ref_unlocked" render="0"/>
+  <method name="g_async_queue_remove" render="0"/>
+  <method name="g_async_queue_remove_unlocked" render="0"/>
+  <method name="g_async_queue_sort" render="0"/>
+  <method name="g_async_queue_sort_unlocked" render="0"/>
+  <method name="g_async_queue_timed_pop" render="0"/>
+  <method name="g_async_queue_timed_pop_unlocked" render="0"/>
+  <method name="g_async_queue_timeout_pop" render="0"/>
+  <method name="g_async_queue_timeout_pop_unlocked" render="0"/>
+  <method name="g_async_queue_try_pop" render="0"/>
+  <method name="g_async_queue_try_pop_unlocked" render="0"/>
+  <method name="g_async_queue_unlock" render="0"/>
+  <method name="g_async_queue_unref" render="0"/>
+  <method name="g_async_queue_unref_and_unlock" render="0"/>
+  <function name="g_async_queue_new" render="0"/>
+  <function name="g_async_queue_new_full" render="0"/>
+</record>
+</bp>

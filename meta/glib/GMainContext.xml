@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GMainContext" render="0">
+  <doc name="" render="0"/>
+  <constructor name="g_main_context_new" render="0"/>
+  <method name="g_main_context_acquire" render="0"/>
+  <method name="g_main_context_add_poll" render="0"/>
+  <method name="g_main_context_check" render="0"/>
+  <method name="g_main_context_dispatch" render="0"/>
+  <method name="g_main_context_find_source_by_funcs_user_data" render="0"/>
+  <method name="g_main_context_find_source_by_id" render="0"/>
+  <method name="g_main_context_find_source_by_user_data" render="0"/>
+  <method name="g_main_context_get_poll_func" render="0"/>
+  <method name="g_main_context_invoke" render="0"/>
+  <method name="g_main_context_invoke_full" render="0"/>
+  <method name="g_main_context_is_owner" render="0"/>
+  <method name="g_main_context_iteration" render="0"/>
+  <method name="g_main_context_pending" render="0"/>
+  <method name="g_main_context_pop_thread_default" render="0"/>
+  <method name="g_main_context_prepare" render="0"/>
+  <method name="g_main_context_push_thread_default" render="0"/>
+  <method name="g_main_context_query" render="0"/>
+  <method name="g_main_context_ref" render="0"/>
+  <method name="g_main_context_release" render="0"/>
+  <method name="g_main_context_remove_poll" render="0"/>
+  <method name="g_main_context_set_poll_func" render="0"/>
+  <method name="g_main_context_unref" render="0"/>
+  <method name="g_main_context_wait" render="0"/>
+  <method name="g_main_context_wakeup" render="0"/>
+  <function name="g_main_context_default" render="0"/>
+  <function name="g_main_context_get_thread_default" render="0"/>
+  <function name="g_main_context_ref_thread_default" render="0"/>
+</record>
+</bp>

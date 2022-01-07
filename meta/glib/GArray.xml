@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GArray" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <function name="g_array_append_vals" render="0"/>
+  <function name="g_array_binary_search" render="0"/>
+  <function name="g_array_copy" render="0"/>
+  <function name="g_array_free" render="0"/>
+  <function name="g_array_get_element_size" render="0"/>
+  <function name="g_array_insert_vals" render="0"/>
+  <function name="g_array_new" render="0"/>
+  <function name="g_array_prepend_vals" render="0"/>
+  <function name="g_array_ref" render="0"/>
+  <function name="g_array_remove_index" render="0"/>
+  <function name="g_array_remove_index_fast" render="0"/>
+  <function name="g_array_remove_range" render="0"/>
+  <function name="g_array_set_clear_func" render="0"/>
+  <function name="g_array_set_size" render="0"/>
+  <function name="g_array_sized_new" render="0"/>
+  <function name="g_array_sort" render="0"/>
+  <function name="g_array_sort_with_data" render="0"/>
+  <function name="g_array_steal" render="0"/>
+  <function name="g_array_unref" render="0"/>
+</record>
+</bp>

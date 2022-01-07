@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GMatchInfo" render="0">
+  <doc name="" render="0"/>
+  <method name="g_match_info_expand_references" render="0"/>
+  <method name="g_match_info_fetch" render="0"/>
+  <method name="g_match_info_fetch_all" render="0"/>
+  <method name="g_match_info_fetch_named" render="0"/>
+  <method name="g_match_info_fetch_named_pos" render="0"/>
+  <method name="g_match_info_fetch_pos" render="0"/>
+  <method name="g_match_info_free" render="0"/>
+  <method name="g_match_info_get_match_count" render="0"/>
+  <method name="g_match_info_get_regex" render="0"/>
+  <method name="g_match_info_get_string" render="0"/>
+  <method name="g_match_info_is_partial_match" render="0"/>
+  <method name="g_match_info_matches" render="0"/>
+  <method name="g_match_info_next" render="0"/>
+  <method name="g_match_info_ref" render="0"/>
+  <method name="g_match_info_unref" render="0"/>
+</record>
+</bp>

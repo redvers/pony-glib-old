@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GVariantDict" render="0">
+  <doc name="" render="0"/>
+  <union name="" render="0"/>
+  <constructor name="g_variant_dict_new" render="0"/>
+  <method name="g_variant_dict_clear" render="0"/>
+  <method name="g_variant_dict_contains" render="0"/>
+  <method name="g_variant_dict_end" render="0"/>
+  <method name="g_variant_dict_init" render="0"/>
+  <method name="g_variant_dict_insert" render="0"/>
+  <method name="g_variant_dict_insert_value" render="0"/>
+  <method name="g_variant_dict_lookup" render="0"/>
+  <method name="g_variant_dict_lookup_value" render="0"/>
+  <method name="g_variant_dict_ref" render="0"/>
+  <method name="g_variant_dict_remove" render="0"/>
+  <method name="g_variant_dict_unref" render="0"/>
+</record>
+</bp>

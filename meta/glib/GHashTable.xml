@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GHashTable" render="0">
+  <doc name="" render="0"/>
+  <function name="g_hash_table_add" render="0"/>
+  <function name="g_hash_table_contains" render="0"/>
+  <function name="g_hash_table_destroy" render="0"/>
+  <function name="g_hash_table_find" render="0"/>
+  <function name="g_hash_table_foreach" render="0"/>
+  <function name="g_hash_table_foreach_remove" render="0"/>
+  <function name="g_hash_table_foreach_steal" render="0"/>
+  <function name="g_hash_table_get_keys" render="0"/>
+  <function name="g_hash_table_get_keys_as_array" render="0"/>
+  <function name="g_hash_table_get_values" render="0"/>
+  <function name="g_hash_table_insert" render="0"/>
+  <function name="g_hash_table_lookup" render="0"/>
+  <function name="g_hash_table_lookup_extended" render="0"/>
+  <function name="g_hash_table_new" render="0"/>
+  <function name="g_hash_table_new_full" render="0"/>
+  <function name="g_hash_table_ref" render="0"/>
+  <function name="g_hash_table_remove" render="0"/>
+  <function name="g_hash_table_remove_all" render="0"/>
+  <function name="g_hash_table_replace" render="0"/>
+  <function name="g_hash_table_size" render="0"/>
+  <function name="g_hash_table_steal" render="0"/>
+  <function name="g_hash_table_steal_all" render="0"/>
+  <function name="g_hash_table_steal_extended" render="0"/>
+  <function name="g_hash_table_unref" render="0"/>
+</record>
+</bp>

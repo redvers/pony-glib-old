@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GBookmarkFile" render="0">
+  <doc name="" render="0"/>
+  <method name="g_bookmark_file_add_application" render="0"/>
+  <method name="g_bookmark_file_add_group" render="0"/>
+  <method name="g_bookmark_file_free" render="0"/>
+  <method name="g_bookmark_file_get_added" render="0"/>
+  <method name="g_bookmark_file_get_added_date_time" render="0"/>
+  <method name="g_bookmark_file_get_app_info" render="0"/>
+  <method name="g_bookmark_file_get_application_info" render="0"/>
+  <method name="g_bookmark_file_get_applications" render="0"/>
+  <method name="g_bookmark_file_get_description" render="0"/>
+  <method name="g_bookmark_file_get_groups" render="0"/>
+  <method name="g_bookmark_file_get_icon" render="0"/>
+  <method name="g_bookmark_file_get_is_private" render="0"/>
+  <method name="g_bookmark_file_get_mime_type" render="0"/>
+  <method name="g_bookmark_file_get_modified" render="0"/>
+  <method name="g_bookmark_file_get_modified_date_time" render="0"/>
+  <method name="g_bookmark_file_get_size" render="0"/>
+  <method name="g_bookmark_file_get_title" render="0"/>
+  <method name="g_bookmark_file_get_uris" render="0"/>
+  <method name="g_bookmark_file_get_visited" render="0"/>
+  <method name="g_bookmark_file_get_visited_date_time" render="0"/>
+  <method name="g_bookmark_file_has_application" render="0"/>
+  <method name="g_bookmark_file_has_group" render="0"/>
+  <method name="g_bookmark_file_has_item" render="0"/>
+  <method name="g_bookmark_file_load_from_data" render="0"/>
+  <method name="g_bookmark_file_load_from_data_dirs" render="0"/>
+  <method name="g_bookmark_file_load_from_file" render="0"/>
+  <method name="g_bookmark_file_move_item" render="0"/>
+  <method name="g_bookmark_file_remove_application" render="0"/>
+  <method name="g_bookmark_file_remove_group" render="0"/>
+  <method name="g_bookmark_file_remove_item" render="0"/>
+  <method name="g_bookmark_file_set_added" render="0"/>
+  <method name="g_bookmark_file_set_added_date_time" render="0"/>
+  <method name="g_bookmark_file_set_app_info" render="0"/>
+  <method name="g_bookmark_file_set_application_info" render="0"/>
+  <method name="g_bookmark_file_set_description" render="0"/>
+  <method name="g_bookmark_file_set_groups" render="0"/>
+  <method name="g_bookmark_file_set_icon" render="0"/>
+  <method name="g_bookmark_file_set_is_private" render="0"/>
+  <method name="g_bookmark_file_set_mime_type" render="0"/>
+  <method name="g_bookmark_file_set_modified" render="0"/>
+  <method name="g_bookmark_file_set_modified_date_time" render="0"/>
+  <method name="g_bookmark_file_set_title" render="0"/>
+  <method name="g_bookmark_file_set_visited" render="0"/>
+  <method name="g_bookmark_file_set_visited_date_time" render="0"/>
+  <method name="g_bookmark_file_to_data" render="0"/>
+  <method name="g_bookmark_file_to_file" render="0"/>
+  <function name="g_bookmark_file_error_quark" render="0"/>
+  <function name="g_bookmark_file_new" render="0"/>
+</record>
+</bp>

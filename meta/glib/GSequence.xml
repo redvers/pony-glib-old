@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GSequence" render="0">
+  <doc name="" render="0"/>
+  <method name="g_sequence_append" render="0"/>
+  <method name="g_sequence_foreach" render="0"/>
+  <method name="g_sequence_free" render="0"/>
+  <method name="g_sequence_get_begin_iter" render="0"/>
+  <method name="g_sequence_get_end_iter" render="0"/>
+  <method name="g_sequence_get_iter_at_pos" render="0"/>
+  <method name="g_sequence_get_length" render="0"/>
+  <method name="g_sequence_insert_sorted" render="0"/>
+  <method name="g_sequence_insert_sorted_iter" render="0"/>
+  <method name="g_sequence_is_empty" render="0"/>
+  <method name="g_sequence_lookup" render="0"/>
+  <method name="g_sequence_lookup_iter" render="0"/>
+  <method name="g_sequence_prepend" render="0"/>
+  <method name="g_sequence_search" render="0"/>
+  <method name="g_sequence_search_iter" render="0"/>
+  <method name="g_sequence_sort" render="0"/>
+  <method name="g_sequence_sort_iter" render="0"/>
+  <function name="g_sequence_foreach_range" render="0"/>
+  <function name="g_sequence_get" render="0"/>
+  <function name="g_sequence_insert_before" render="0"/>
+  <function name="g_sequence_move" render="0"/>
+  <function name="g_sequence_move_range" render="0"/>
+  <function name="g_sequence_new" render="0"/>
+  <function name="g_sequence_range_get_midpoint" render="0"/>
+  <function name="g_sequence_remove" render="0"/>
+  <function name="g_sequence_remove_range" render="0"/>
+  <function name="g_sequence_set" render="0"/>
+  <function name="g_sequence_sort_changed" render="0"/>
+  <function name="g_sequence_sort_changed_iter" render="0"/>
+  <function name="g_sequence_swap" render="0"/>
+</record>
+</bp>

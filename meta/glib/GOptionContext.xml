@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GOptionContext" render="0">
+  <doc name="" render="0"/>
+  <method name="g_option_context_add_group" render="0"/>
+  <method name="g_option_context_add_main_entries" render="0"/>
+  <method name="g_option_context_free" render="0"/>
+  <method name="g_option_context_get_description" render="0"/>
+  <method name="g_option_context_get_help" render="0"/>
+  <method name="g_option_context_get_help_enabled" render="0"/>
+  <method name="g_option_context_get_ignore_unknown_options" render="0"/>
+  <method name="g_option_context_get_main_group" render="0"/>
+  <method name="g_option_context_get_strict_posix" render="0"/>
+  <method name="g_option_context_get_summary" render="0"/>
+  <method name="g_option_context_parse" render="0"/>
+  <method name="g_option_context_parse_strv" render="0"/>
+  <method name="g_option_context_set_description" render="0"/>
+  <method name="g_option_context_set_help_enabled" render="0"/>
+  <method name="g_option_context_set_ignore_unknown_options" render="0"/>
+  <method name="g_option_context_set_main_group" render="0"/>
+  <method name="g_option_context_set_strict_posix" render="0"/>
+  <method name="g_option_context_set_summary" render="0"/>
+  <method name="g_option_context_set_translate_func" render="0"/>
+  <method name="g_option_context_set_translation_domain" render="0"/>
+  <function name="g_option_context_new" render="0"/>
+</record>
+</bp>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GMarkupParseContext" render="0">
+  <doc name="" render="0"/>
+  <constructor name="g_markup_parse_context_new" render="0"/>
+  <method name="g_markup_parse_context_end_parse" render="0"/>
+  <method name="g_markup_parse_context_free" render="0"/>
+  <method name="g_markup_parse_context_get_element" render="0"/>
+  <method name="g_markup_parse_context_get_element_stack" render="0"/>
+  <method name="g_markup_parse_context_get_position" render="0"/>
+  <method name="g_markup_parse_context_get_user_data" render="0"/>
+  <method name="g_markup_parse_context_parse" render="0"/>
+  <method name="g_markup_parse_context_pop" render="0"/>
+  <method name="g_markup_parse_context_push" render="0"/>
+  <method name="g_markup_parse_context_ref" render="0"/>
+  <method name="g_markup_parse_context_unref" render="0"/>
+</record>
+</bp>

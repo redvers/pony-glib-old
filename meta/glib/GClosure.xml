@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="gir/Gtk-4.0.gir"/>
+<xi:include href="gir/cairo-1.0.gir"/>
+<xi:include href="gir/Gdk-4.0.gir"/>
+<xi:include href="gir/GdkPixbuf-2.0.gir"/>
+<xi:include href="gir/Gio-2.0.gir"/>
+<xi:include href="gir/GLib-2.0.gir"/>
+<xi:include href="gir/GModule-2.0.gir"/>
+<xi:include href="gir/GObject-2.0.gir"/>
+<xi:include href="gir/Graphene-1.0.gir"/>
+<xi:include href="gir/Gsk-4.0.gir"/>
+<xi:include href="gir/HarfBuzz-0.0.gir"/>
+<xi:include href="gir/Pango-1.0.gir"/>
+<xi:include href="gir/PangoCairo-1.0.gir"/>
+<xi:include href="c_types.xml"/>
+<record name="GClosure" render="0">
+  <doc name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <field name="" render="0"/>
+  <constructor name="g_closure_new_object" render="0"/>
+  <constructor name="g_closure_new_simple" render="0"/>
+  <method name="g_closure_add_finalize_notifier" render="0"/>
+  <method name="g_closure_add_invalidate_notifier" render="0"/>
+  <method name="g_closure_add_marshal_guards" render="0"/>
+  <method name="g_closure_invalidate" render="0"/>
+  <method name="g_closure_invoke" render="0"/>
+  <method name="g_closure_ref" render="0"/>
+  <method name="g_closure_remove_finalize_notifier" render="0"/>
+  <method name="g_closure_remove_invalidate_notifier" render="0"/>
+  <method name="g_closure_set_marshal" render="0"/>
+  <method name="g_closure_set_meta_marshal" render="0"/>
+  <method name="g_closure_sink" render="0"/>
+  <method name="g_closure_unref" render="0"/>
+</record>
+</bp>
