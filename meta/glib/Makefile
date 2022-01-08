@@ -1,4 +1,5 @@
-all: GActionEntry GActionGroupInterface GActionGroup GActionInterface GActionMapInterface GActionMap GAction GAllocator GAppInfoIface GAppInfoMonitor GAppInfo GAppLaunchContextClass GAppLaunchContextPrivate GAppLaunchContext GApplicationClass GApplicationCommandLineClass GApplicationCommandLinePrivate GApplicationCommandLine GApplicationPrivate GApplication GArray GAsyncInitableIface GAsyncInitable GAsyncQueue GAsyncResultIface GAsyncResult GBinding GBookmarkFile GBufferedInputStreamClass GBufferedInputStreamPrivate GBufferedInputStream GBufferedOutputStreamClass GBufferedOutputStreamPrivate GBufferedOutputStream GByteArray GBytesIcon GBytes GCache GCancellableClass GCancellablePrivate GCancellable GCClosure GCharsetConverterClass GCharsetConverter GChecksum GClosureNotifyData GClosure GCompletion GCond GConverterIface GConverterInputStreamClass GConverterInputStreamPrivate GConverterInputStream GConverterOutputStreamClass GConverterOutputStreamPrivate GConverterOutputStream GConverter GCredentialsClass GCredentials GDatagramBasedInterface GDatagramBased GDataInputStreamClass GDataInputStreamPrivate GDataInputStream GDataOutputStreamClass GDataOutputStreamPrivate GDataOutputStream GData GDateTime GDate GDBusActionGroup GDBusAnnotationInfo GDBusArgInfo GDBusAuthObserver GDBusConnection GDBusErrorEntry GDBusInterfaceIface GDBusInterfaceInfo GDBusInterfaceSkeletonClass GDBusInterfaceSkeletonPrivate GDBusInterfaceSkeleton GDBusInterface GDBusInterfaceVTable GDBusMenuModel GDBusMessage GDBusMethodInfo GDBusMethodInvocation GDBusNodeInfo GDBusObjectIface GDBusObjectManagerClientClass GDBusObjectManagerClientPrivate GDBusObjectManagerClient GDBusObjectManagerIface GDBusObjectManagerServerClass GDBusObjectManagerServerPrivate GDBusObjectManagerServer GDBusObjectManager GDBusObjectProxyClass GDBusObjectProxyPrivate GDBusObjectProxy GDBusObjectSkeletonClass GDBusObjectSkeletonPrivate GDBusObjectSkeleton GDBusObject GDBusPropertyInfo GDBusProxyClass GDBusProxyPrivate GDBusProxy GDBusServer GDBusSignalInfo GDBusSubtreeVTable GDebugKey GDir GDriveIface GDrive GDtlsClientConnectionInterface GDtlsClientConnection GDtlsConnectionInterface GDtlsConnection GDtlsServerConnectionInterface GDtlsServerConnection GEmblemClass GEmblemedIconClass GEmblemedIconPrivate GEmblemedIcon GEmblem GEnumClass GEnumValue GError GFileAttributeInfoList GFileAttributeInfo GFileAttributeMatcher GFileDescriptorBased GFileEnumeratorClass GFileEnumeratorPrivate GFileEnumerator GFileIconClass GFileIcon GFileIface GFileInfoClass GFileInfo GFileInputStreamClass GFileInputStreamPrivate GFileInputStream GFileIOStreamClass GFileIOStreamPrivate GFileIOStream GFileMonitorClass GFileMonitorPrivate GFileMonitor GFilenameCompleterClass GFilenameCompleter GFileOutputStreamClass GFileOutputStreamPrivate GFileOutputStream GFile GFilterInputStreamClass GFilterInputStream GFilterOutputStreamClass GFilterOutputStream GFlagsClass GFlagsValue GHashTableIter GHashTable GHmac GHookList GHook GIconIface GIcon GIConv GInetAddressClass GInetAddressMaskClass GInetAddressMaskPrivate GInetAddressMask GInetAddressPrivate GInetAddress GInetSocketAddressClass GInetSocketAddressPrivate GInetSocketAddress GInitableIface GInitable GInputMessage GInputStreamClass GInputStreamPrivate GInputStream GInputVector GInterfaceInfo GIOChannel GIOExtensionPoint GIOExtension GIOFuncs GIOModuleClass GIOModuleScope GIOModule GIOSchedulerJob GIOStreamAdapter GIOStreamClass GIOStreamPrivate GIOStream GKeyFile GListModelInterface GListModel GListStore GList GLoadableIconIface GLoadableIcon GLogField GMainContext GMainLoop GMappedFile GMarkupParseContext GMarkupParser GMatchInfo GMemChunk GMemoryInputStreamClass GMemoryInputStreamPrivate GMemoryInputStream GMemoryMonitorInterface GMemoryMonitor GMemoryOutputStreamClass GMemoryOutputStreamPrivate GMemoryOutputStream GMemVTable GMenuAttributeIterClass GMenuAttributeIterPrivate GMenuAttributeIter GMenuItem GMenuLinkIterClass GMenuLinkIterPrivate GMenuLinkIter GMenuModelClass GMenuModelPrivate GMenuModel GMenu GModule GMountIface GMountOperationClass GMountOperationPrivate GMountOperation GMount GNativeSocketAddressClass GNativeSocketAddressPrivate GNativeSocketAddress GNativeVolumeMonitorClass GNativeVolumeMonitor GNetworkAddressClass GNetworkAddressPrivate GNetworkAddress GNetworkMonitorInterface GNetworkMonitor GNetworkServiceClass GNetworkServicePrivate GNetworkService GNode GNotification GObjectClass GObjectConstructParam GObject GOnce GOptionContext GOptionEntry GOptionGroup GOutputMessage GOutputStreamClass GOutputStreamPrivate GOutputStream GOutputVector GParameter GParamSpecBoolean GParamSpecBoxed GParamSpecChar GParamSpecClass GParamSpecDouble GParamSpecEnum GParamSpecFlags GParamSpecFloat GParamSpecGType GParamSpecInt64 GParamSpecInt GParamSpecLong GParamSpecObject GParamSpecOverride GParamSpecParam GParamSpecPointer GParamSpecPool GParamSpecString GParamSpec GParamSpecTypeInfo GParamSpecUChar GParamSpecUInt64 GParamSpecUInt GParamSpecULong GParamSpecUnichar GParamSpecValueArray GParamSpecVariant GPatternSpec GPermissionClass GPermissionPrivate GPermission GPollableInputStreamInterface GPollableInputStream GPollableOutputStreamInterface GPollableOutputStream GPollFD GPrivate GPropertyAction GProxyAddressClass GProxyAddressEnumeratorClass GProxyAddressEnumeratorPrivate GProxyAddressEnumerator GProxyAddressPrivate GProxyAddress GProxyInterface GProxyResolverInterface GProxyResolver GProxy GPtrArray GQueue GRand GRecMutex GRegex GRelation GRemoteActionGroupInterface GRemoteActionGroup GResolverClass GResolverPrivate GResolver GResource GRWLock GScannerConfig GScanner GSeekableIface GSeekable GSequenceNode GSequence GSettingsBackend GSettingsClass GSettingsPrivate GSettingsSchemaKey GSettingsSchemaSource GSettingsSchema GSettings GSignalInvocationHint GSignalQuery GSimpleActionGroupClass GSimpleActionGroupPrivate GSimpleActionGroup GSimpleAction GSimpleAsyncResultClass GSimpleAsyncResult GSimpleIOStream GSimplePermission GSimpleProxyResolverClass GSimpleProxyResolverPrivate GSimpleProxyResolver GSList GSocketAddressClass GSocketAddressEnumeratorClass GSocketAddressEnumerator GSocketAddress GSocketClass GSocketClientClass GSocketClientPrivate GSocketClient GSocketConnectableIface GSocketConnectable GSocketConnectionClass GSocketConnectionPrivate GSocketConnection GSocketControlMessageClass GSocketControlMessagePrivate GSocketControlMessage GSocketListenerClass GSocketListenerPrivate GSocketListener GSocketPrivate GSocketServiceClass GSocketServicePrivate GSocketService GSocket GSourceCallbackFuncs GSourceFuncs GSourcePrivate GSource GSrvTarget GStaticPrivate GStaticRecMutex GStaticResource GStaticRWLock GStringChunk GString GStrvBuilder GSubprocessLauncher GSubprocess GTaskClass GTask GTcpConnectionClass GTcpConnectionPrivate GTcpConnection GTcpWrapperConnectionClass GTcpWrapperConnectionPrivate GTcpWrapperConnection GTestCase GTestDBus GTestSuite GThemedIconClass GThemedIcon GThreadedSocketServiceClass GThreadedSocketServicePrivate GThreadedSocketService GThreadFunctions GThreadPool GThread GTimer GTimeVal GTimeZone GTlsBackendInterface GTlsBackend GTlsCertificateClass GTlsCertificatePrivate GTlsCertificate GTlsClientConnectionInterface GTlsClientConnection GTlsConnectionClass GTlsConnectionPrivate GTlsConnection GTlsDatabaseClass GTlsDatabasePrivate GTlsDatabase GTlsFileDatabaseInterface GTlsFileDatabase GTlsInteractionClass GTlsInteractionPrivate GTlsInteraction GTlsPasswordClass GTlsPasswordPrivate GTlsPassword GTlsServerConnectionInterface GTlsServerConnection GTrashStack GTreeNode GTree GTuples GTypeClass GTypeFundamentalInfo GTypeInfo GTypeInstance GTypeInterface GTypeModuleClass GTypeModule GTypePluginClass GTypePlugin GTypeQuery GTypeValueTable GUnixCredentialsMessage GUnixFDList GUriParamsIter GUri GValueArray GValue GVariantBuilder GVariantDict GVariantIter GVariant GVariantType GVfsClass GVfs GVolumeIface GVolumeMonitorClass GVolumeMonitor GVolume GZlibCompressorClass GZlibCompressor GZlibDecompressorClass GZlibDecompressor IOFILE
+all: GResource GError
+#all: GActionEntry GActionGroupInterface GActionGroup GActionInterface GActionMapInterface GActionMap GAction GAllocator GAppInfoIface GAppInfoMonitor GAppInfo GAppLaunchContextClass GAppLaunchContextPrivate GAppLaunchContext GApplicationClass GApplicationCommandLineClass GApplicationCommandLinePrivate GApplicationCommandLine GApplicationPrivate GApplication GArray GAsyncInitableIface GAsyncInitable GAsyncQueue GAsyncResultIface GAsyncResult GBinding GBookmarkFile GBufferedInputStreamClass GBufferedInputStreamPrivate GBufferedInputStream GBufferedOutputStreamClass GBufferedOutputStreamPrivate GBufferedOutputStream GByteArray GBytesIcon GBytes GCache GCancellableClass GCancellablePrivate GCancellable GCClosure GCharsetConverterClass GCharsetConverter GChecksum GClosureNotifyData GClosure GCompletion GCond GConverterIface GConverterInputStreamClass GConverterInputStreamPrivate GConverterInputStream GConverterOutputStreamClass GConverterOutputStreamPrivate GConverterOutputStream GConverter GCredentialsClass GCredentials GDatagramBasedInterface GDatagramBased GDataInputStreamClass GDataInputStreamPrivate GDataInputStream GDataOutputStreamClass GDataOutputStreamPrivate GDataOutputStream GData GDateTime GDate GDBusActionGroup GDBusAnnotationInfo GDBusArgInfo GDBusAuthObserver GDBusConnection GDBusErrorEntry GDBusInterfaceIface GDBusInterfaceInfo GDBusInterfaceSkeletonClass GDBusInterfaceSkeletonPrivate GDBusInterfaceSkeleton GDBusInterface GDBusInterfaceVTable GDBusMenuModel GDBusMessage GDBusMethodInfo GDBusMethodInvocation GDBusNodeInfo GDBusObjectIface GDBusObjectManagerClientClass GDBusObjectManagerClientPrivate GDBusObjectManagerClient GDBusObjectManagerIface GDBusObjectManagerServerClass GDBusObjectManagerServerPrivate GDBusObjectManagerServer GDBusObjectManager GDBusObjectProxyClass GDBusObjectProxyPrivate GDBusObjectProxy GDBusObjectSkeletonClass GDBusObjectSkeletonPrivate GDBusObjectSkeleton GDBusObject GDBusPropertyInfo GDBusProxyClass GDBusProxyPrivate GDBusProxy GDBusServer GDBusSignalInfo GDBusSubtreeVTable GDebugKey GDir GDriveIface GDrive GDtlsClientConnectionInterface GDtlsClientConnection GDtlsConnectionInterface GDtlsConnection GDtlsServerConnectionInterface GDtlsServerConnection GEmblemClass GEmblemedIconClass GEmblemedIconPrivate GEmblemedIcon GEmblem GEnumClass GEnumValue GError GFileAttributeInfoList GFileAttributeInfo GFileAttributeMatcher GFileDescriptorBased GFileEnumeratorClass GFileEnumeratorPrivate GFileEnumerator GFileIconClass GFileIcon GFileIface GFileInfoClass GFileInfo GFileInputStreamClass GFileInputStreamPrivate GFileInputStream GFileIOStreamClass GFileIOStreamPrivate GFileIOStream GFileMonitorClass GFileMonitorPrivate GFileMonitor GFilenameCompleterClass GFilenameCompleter GFileOutputStreamClass GFileOutputStreamPrivate GFileOutputStream GFile GFilterInputStreamClass GFilterInputStream GFilterOutputStreamClass GFilterOutputStream GFlagsClass GFlagsValue GHashTableIter GHashTable GHmac GHookList GHook GIconIface GIcon GIConv GInetAddressClass GInetAddressMaskClass GInetAddressMaskPrivate GInetAddressMask GInetAddressPrivate GInetAddress GInetSocketAddressClass GInetSocketAddressPrivate GInetSocketAddress GInitableIface GInitable GInputMessage GInputStreamClass GInputStreamPrivate GInputStream GInputVector GInterfaceInfo GIOChannel GIOExtensionPoint GIOExtension GIOFuncs GIOModuleClass GIOModuleScope GIOModule GIOSchedulerJob GIOStreamAdapter GIOStreamClass GIOStreamPrivate GIOStream GKeyFile GListModelInterface GListModel GListStore GList GLoadableIconIface GLoadableIcon GLogField GMainContext GMainLoop GMappedFile GMarkupParseContext GMarkupParser GMatchInfo GMemChunk GMemoryInputStreamClass GMemoryInputStreamPrivate GMemoryInputStream GMemoryMonitorInterface GMemoryMonitor GMemoryOutputStreamClass GMemoryOutputStreamPrivate GMemoryOutputStream GMemVTable GMenuAttributeIterClass GMenuAttributeIterPrivate GMenuAttributeIter GMenuItem GMenuLinkIterClass GMenuLinkIterPrivate GMenuLinkIter GMenuModelClass GMenuModelPrivate GMenuModel GMenu GModule GMountIface GMountOperationClass GMountOperationPrivate GMountOperation GMount GNativeSocketAddressClass GNativeSocketAddressPrivate GNativeSocketAddress GNativeVolumeMonitorClass GNativeVolumeMonitor GNetworkAddressClass GNetworkAddressPrivate GNetworkAddress GNetworkMonitorInterface GNetworkMonitor GNetworkServiceClass GNetworkServicePrivate GNetworkService GNode GNotification GObjectClass GObjectConstructParam GObject GOnce GOptionContext GOptionEntry GOptionGroup GOutputMessage GOutputStreamClass GOutputStreamPrivate GOutputStream GOutputVector GParameter GParamSpecBoolean GParamSpecBoxed GParamSpecChar GParamSpecClass GParamSpecDouble GParamSpecEnum GParamSpecFlags GParamSpecFloat GParamSpecGType GParamSpecInt64 GParamSpecInt GParamSpecLong GParamSpecObject GParamSpecOverride GParamSpecParam GParamSpecPointer GParamSpecPool GParamSpecString GParamSpec GParamSpecTypeInfo GParamSpecUChar GParamSpecUInt64 GParamSpecUInt GParamSpecULong GParamSpecUnichar GParamSpecValueArray GParamSpecVariant GPatternSpec GPermissionClass GPermissionPrivate GPermission GPollableInputStreamInterface GPollableInputStream GPollableOutputStreamInterface GPollableOutputStream GPollFD GPrivate GPropertyAction GProxyAddressClass GProxyAddressEnumeratorClass GProxyAddressEnumeratorPrivate GProxyAddressEnumerator GProxyAddressPrivate GProxyAddress GProxyInterface GProxyResolverInterface GProxyResolver GProxy GPtrArray GQueue GRand GRecMutex GRegex GRelation GRemoteActionGroupInterface GRemoteActionGroup GResolverClass GResolverPrivate GResolver GResource GRWLock GScannerConfig GScanner GSeekableIface GSeekable GSequenceNode GSequence GSettingsBackend GSettingsClass GSettingsPrivate GSettingsSchemaKey GSettingsSchemaSource GSettingsSchema GSettings GSignalInvocationHint GSignalQuery GSimpleActionGroupClass GSimpleActionGroupPrivate GSimpleActionGroup GSimpleAction GSimpleAsyncResultClass GSimpleAsyncResult GSimpleIOStream GSimplePermission GSimpleProxyResolverClass GSimpleProxyResolverPrivate GSimpleProxyResolver GSList GSocketAddressClass GSocketAddressEnumeratorClass GSocketAddressEnumerator GSocketAddress GSocketClass GSocketClientClass GSocketClientPrivate GSocketClient GSocketConnectableIface GSocketConnectable GSocketConnectionClass GSocketConnectionPrivate GSocketConnection GSocketControlMessageClass GSocketControlMessagePrivate GSocketControlMessage GSocketListenerClass GSocketListenerPrivate GSocketListener GSocketPrivate GSocketServiceClass GSocketServicePrivate GSocketService GSocket GSourceCallbackFuncs GSourceFuncs GSourcePrivate GSource GSrvTarget GStaticPrivate GStaticRecMutex GStaticResource GStaticRWLock GStringChunk GString GStrvBuilder GSubprocessLauncher GSubprocess GTaskClass GTask GTcpConnectionClass GTcpConnectionPrivate GTcpConnection GTcpWrapperConnectionClass GTcpWrapperConnectionPrivate GTcpWrapperConnection GTestCase GTestDBus GTestSuite GThemedIconClass GThemedIcon GThreadedSocketServiceClass GThreadedSocketServicePrivate GThreadedSocketService GThreadFunctions GThreadPool GThread GTimer GTimeVal GTimeZone GTlsBackendInterface GTlsBackend GTlsCertificateClass GTlsCertificatePrivate GTlsCertificate GTlsClientConnectionInterface GTlsClientConnection GTlsConnectionClass GTlsConnectionPrivate GTlsConnection GTlsDatabaseClass GTlsDatabasePrivate GTlsDatabase GTlsFileDatabaseInterface GTlsFileDatabase GTlsInteractionClass GTlsInteractionPrivate GTlsInteraction GTlsPasswordClass GTlsPasswordPrivate GTlsPassword GTlsServerConnectionInterface GTlsServerConnection GTrashStack GTreeNode GTree GTuples GTypeClass GTypeFundamentalInfo GTypeInfo GTypeInstance GTypeInterface GTypeModuleClass GTypeModule GTypePluginClass GTypePlugin GTypeQuery GTypeValueTable GUnixCredentialsMessage GUnixFDList GUriParamsIter GUri GValueArray GValue GVariantBuilder GVariantDict GVariantIter GVariant GVariantType GVfsClass GVfs GVolumeIface GVolumeMonitorClass GVolumeMonitor GVolume GZlibCompressorClass GZlibCompressor GZlibDecompressorClass GZlibDecompressor IOFILE
 
 #gobjecttemplates:
 #	saxon-he -xi rectemplate.xml mkrecord.xsl namespace=GObject class=GCClosure
@@ -113,954 +114,954 @@ all: GActionEntry GActionGroupInterface GActionGroup GActionInterface GActionMap
 #	saxon-he -xi rectemplate.xml mkrecord.xsl namespace=GLib class=GVariantType
 
 GActionEntry:
-	cp GActionEntry.txt ../../GLibSys/GActionEntry.pony
+	cp GActionEntry.txt ../../GLib/GActionEntry.pony
 GActionGroupInterface:
-	cp GActionGroupInterface.txt ../../GLibSys/GActionGroupInterface.pony
+	cp GActionGroupInterface.txt ../../GLib/GActionGroupInterface.pony
 GActionGroup:
-	cp GActionGroup.txt ../../GLibSys/GActionGroup.pony
+	cp GActionGroup.txt ../../GLib/GActionGroup.pony
 GActionInterface:
-	cp GActionInterface.txt ../../GLibSys/GActionInterface.pony
+	cp GActionInterface.txt ../../GLib/GActionInterface.pony
 GActionMapInterface:
-	cp GActionMapInterface.txt ../../GLibSys/GActionMapInterface.pony
+	cp GActionMapInterface.txt ../../GLib/GActionMapInterface.pony
 GActionMap:
-	cp GActionMap.txt ../../GLibSys/GActionMap.pony
+	cp GActionMap.txt ../../GLib/GActionMap.pony
 GAction:
-	cp GAction.txt ../../GLibSys/GAction.pony
+	cp GAction.txt ../../GLib/GAction.pony
 GAllocator:
-	cp GAllocator.txt ../../GLibSys/GAllocator.pony
+	cp GAllocator.txt ../../GLib/GAllocator.pony
 GAppInfoIface:
-	cp GAppInfoIface.txt ../../GLibSys/GAppInfoIface.pony
+	cp GAppInfoIface.txt ../../GLib/GAppInfoIface.pony
 GAppInfoMonitor:
-	cp GAppInfoMonitor.txt ../../GLibSys/GAppInfoMonitor.pony
+	cp GAppInfoMonitor.txt ../../GLib/GAppInfoMonitor.pony
 GAppInfo:
-	cp GAppInfo.txt ../../GLibSys/GAppInfo.pony
+	cp GAppInfo.txt ../../GLib/GAppInfo.pony
 GAppLaunchContextClass:
-	cp GAppLaunchContextClass.txt ../../GLibSys/GAppLaunchContextClass.pony
+	cp GAppLaunchContextClass.txt ../../GLib/GAppLaunchContextClass.pony
 GAppLaunchContextPrivate:
-	cp GAppLaunchContextPrivate.txt ../../GLibSys/GAppLaunchContextPrivate.pony
+	cp GAppLaunchContextPrivate.txt ../../GLib/GAppLaunchContextPrivate.pony
 GAppLaunchContext:
-	cp GAppLaunchContext.txt ../../GLibSys/GAppLaunchContext.pony
+	cp GAppLaunchContext.txt ../../GLib/GAppLaunchContext.pony
 GApplicationClass:
-	cp GApplicationClass.txt ../../GLibSys/GApplicationClass.pony
+	cp GApplicationClass.txt ../../GLib/GApplicationClass.pony
 GApplicationCommandLineClass:
-	cp GApplicationCommandLineClass.txt ../../GLibSys/GApplicationCommandLineClass.pony
+	cp GApplicationCommandLineClass.txt ../../GLib/GApplicationCommandLineClass.pony
 GApplicationCommandLinePrivate:
-	cp GApplicationCommandLinePrivate.txt ../../GLibSys/GApplicationCommandLinePrivate.pony
+	cp GApplicationCommandLinePrivate.txt ../../GLib/GApplicationCommandLinePrivate.pony
 GApplicationCommandLine:
-	cp GApplicationCommandLine.txt ../../GLibSys/GApplicationCommandLine.pony
+	cp GApplicationCommandLine.txt ../../GLib/GApplicationCommandLine.pony
 GApplicationPrivate:
-	cp GApplicationPrivate.txt ../../GLibSys/GApplicationPrivate.pony
+	cp GApplicationPrivate.txt ../../GLib/GApplicationPrivate.pony
 GApplication:
-	cp GApplication.txt ../../GLibSys/GApplication.pony
+	cp GApplication.txt ../../GLib/GApplication.pony
 GArray:
-	cp GArray.txt ../../GLibSys/GArray.pony
+	cp GArray.txt ../../GLib/GArray.pony
 GAsyncInitableIface:
-	cp GAsyncInitableIface.txt ../../GLibSys/GAsyncInitableIface.pony
+	cp GAsyncInitableIface.txt ../../GLib/GAsyncInitableIface.pony
 GAsyncInitable:
-	cp GAsyncInitable.txt ../../GLibSys/GAsyncInitable.pony
+	cp GAsyncInitable.txt ../../GLib/GAsyncInitable.pony
 GAsyncQueue:
-	cp GAsyncQueue.txt ../../GLibSys/GAsyncQueue.pony
+	cp GAsyncQueue.txt ../../GLib/GAsyncQueue.pony
 GAsyncResultIface:
-	cp GAsyncResultIface.txt ../../GLibSys/GAsyncResultIface.pony
+	cp GAsyncResultIface.txt ../../GLib/GAsyncResultIface.pony
 GAsyncResult:
-	cp GAsyncResult.txt ../../GLibSys/GAsyncResult.pony
+	cp GAsyncResult.txt ../../GLib/GAsyncResult.pony
 GBinding:
-	cp GBinding.txt ../../GLibSys/GBinding.pony
+	cp GBinding.txt ../../GLib/GBinding.pony
 GBookmarkFile:
-	cp GBookmarkFile.txt ../../GLibSys/GBookmarkFile.pony
+	cp GBookmarkFile.txt ../../GLib/GBookmarkFile.pony
 GBufferedInputStreamClass:
-	cp GBufferedInputStreamClass.txt ../../GLibSys/GBufferedInputStreamClass.pony
+	cp GBufferedInputStreamClass.txt ../../GLib/GBufferedInputStreamClass.pony
 GBufferedInputStreamPrivate:
-	cp GBufferedInputStreamPrivate.txt ../../GLibSys/GBufferedInputStreamPrivate.pony
+	cp GBufferedInputStreamPrivate.txt ../../GLib/GBufferedInputStreamPrivate.pony
 GBufferedInputStream:
-	cp GBufferedInputStream.txt ../../GLibSys/GBufferedInputStream.pony
+	cp GBufferedInputStream.txt ../../GLib/GBufferedInputStream.pony
 GBufferedOutputStreamClass:
-	cp GBufferedOutputStreamClass.txt ../../GLibSys/GBufferedOutputStreamClass.pony
+	cp GBufferedOutputStreamClass.txt ../../GLib/GBufferedOutputStreamClass.pony
 GBufferedOutputStreamPrivate:
-	cp GBufferedOutputStreamPrivate.txt ../../GLibSys/GBufferedOutputStreamPrivate.pony
+	cp GBufferedOutputStreamPrivate.txt ../../GLib/GBufferedOutputStreamPrivate.pony
 GBufferedOutputStream:
-	cp GBufferedOutputStream.txt ../../GLibSys/GBufferedOutputStream.pony
+	cp GBufferedOutputStream.txt ../../GLib/GBufferedOutputStream.pony
 GByteArray:
-	cp GByteArray.txt ../../GLibSys/GByteArray.pony
+	cp GByteArray.txt ../../GLib/GByteArray.pony
 GBytesIcon:
-	cp GBytesIcon.txt ../../GLibSys/GBytesIcon.pony
+	cp GBytesIcon.txt ../../GLib/GBytesIcon.pony
 GBytes:
-	cp GBytes.txt ../../GLibSys/GBytes.pony
+	cp GBytes.txt ../../GLib/GBytes.pony
 GCache:
-	cp GCache.txt ../../GLibSys/GCache.pony
+	cp GCache.txt ../../GLib/GCache.pony
 GCancellableClass:
-	cp GCancellableClass.txt ../../GLibSys/GCancellableClass.pony
+	cp GCancellableClass.txt ../../GLib/GCancellableClass.pony
 GCancellablePrivate:
-	cp GCancellablePrivate.txt ../../GLibSys/GCancellablePrivate.pony
+	cp GCancellablePrivate.txt ../../GLib/GCancellablePrivate.pony
 GCancellable:
-	cp GCancellable.txt ../../GLibSys/GCancellable.pony
+	cp GCancellable.txt ../../GLib/GCancellable.pony
 GCClosure:
-	cp GCClosure.txt ../../GLibSys/GCClosure.pony
+	cp GCClosure.txt ../../GLib/GCClosure.pony
 GCharsetConverterClass:
-	cp GCharsetConverterClass.txt ../../GLibSys/GCharsetConverterClass.pony
+	cp GCharsetConverterClass.txt ../../GLib/GCharsetConverterClass.pony
 GCharsetConverter:
-	cp GCharsetConverter.txt ../../GLibSys/GCharsetConverter.pony
+	cp GCharsetConverter.txt ../../GLib/GCharsetConverter.pony
 GChecksum:
-	cp GChecksum.txt ../../GLibSys/GChecksum.pony
+	cp GChecksum.txt ../../GLib/GChecksum.pony
 GClosureNotifyData:
-	cp GClosureNotifyData.txt ../../GLibSys/GClosureNotifyData.pony
+	cp GClosureNotifyData.txt ../../GLib/GClosureNotifyData.pony
 GClosure:
-	cp GClosure.txt ../../GLibSys/GClosure.pony
+	cp GClosure.txt ../../GLib/GClosure.pony
 GCompletion:
-	cp GCompletion.txt ../../GLibSys/GCompletion.pony
+	cp GCompletion.txt ../../GLib/GCompletion.pony
 GCond:
-	cp GCond.txt ../../GLibSys/GCond.pony
+	cp GCond.txt ../../GLib/GCond.pony
 GConverterIface:
-	cp GConverterIface.txt ../../GLibSys/GConverterIface.pony
+	cp GConverterIface.txt ../../GLib/GConverterIface.pony
 GConverterInputStreamClass:
-	cp GConverterInputStreamClass.txt ../../GLibSys/GConverterInputStreamClass.pony
+	cp GConverterInputStreamClass.txt ../../GLib/GConverterInputStreamClass.pony
 GConverterInputStreamPrivate:
-	cp GConverterInputStreamPrivate.txt ../../GLibSys/GConverterInputStreamPrivate.pony
+	cp GConverterInputStreamPrivate.txt ../../GLib/GConverterInputStreamPrivate.pony
 GConverterInputStream:
-	cp GConverterInputStream.txt ../../GLibSys/GConverterInputStream.pony
+	cp GConverterInputStream.txt ../../GLib/GConverterInputStream.pony
 GConverterOutputStreamClass:
-	cp GConverterOutputStreamClass.txt ../../GLibSys/GConverterOutputStreamClass.pony
+	cp GConverterOutputStreamClass.txt ../../GLib/GConverterOutputStreamClass.pony
 GConverterOutputStreamPrivate:
-	cp GConverterOutputStreamPrivate.txt ../../GLibSys/GConverterOutputStreamPrivate.pony
+	cp GConverterOutputStreamPrivate.txt ../../GLib/GConverterOutputStreamPrivate.pony
 GConverterOutputStream:
-	cp GConverterOutputStream.txt ../../GLibSys/GConverterOutputStream.pony
+	cp GConverterOutputStream.txt ../../GLib/GConverterOutputStream.pony
 GConverter:
-	cp GConverter.txt ../../GLibSys/GConverter.pony
+	cp GConverter.txt ../../GLib/GConverter.pony
 GCredentialsClass:
-	cp GCredentialsClass.txt ../../GLibSys/GCredentialsClass.pony
+	cp GCredentialsClass.txt ../../GLib/GCredentialsClass.pony
 GCredentials:
-	cp GCredentials.txt ../../GLibSys/GCredentials.pony
+	cp GCredentials.txt ../../GLib/GCredentials.pony
 GDatagramBasedInterface:
-	cp GDatagramBasedInterface.txt ../../GLibSys/GDatagramBasedInterface.pony
+	cp GDatagramBasedInterface.txt ../../GLib/GDatagramBasedInterface.pony
 GDatagramBased:
-	cp GDatagramBased.txt ../../GLibSys/GDatagramBased.pony
+	cp GDatagramBased.txt ../../GLib/GDatagramBased.pony
 GDataInputStreamClass:
-	cp GDataInputStreamClass.txt ../../GLibSys/GDataInputStreamClass.pony
+	cp GDataInputStreamClass.txt ../../GLib/GDataInputStreamClass.pony
 GDataInputStreamPrivate:
-	cp GDataInputStreamPrivate.txt ../../GLibSys/GDataInputStreamPrivate.pony
+	cp GDataInputStreamPrivate.txt ../../GLib/GDataInputStreamPrivate.pony
 GDataInputStream:
-	cp GDataInputStream.txt ../../GLibSys/GDataInputStream.pony
+	cp GDataInputStream.txt ../../GLib/GDataInputStream.pony
 GDataOutputStreamClass:
-	cp GDataOutputStreamClass.txt ../../GLibSys/GDataOutputStreamClass.pony
+	cp GDataOutputStreamClass.txt ../../GLib/GDataOutputStreamClass.pony
 GDataOutputStreamPrivate:
-	cp GDataOutputStreamPrivate.txt ../../GLibSys/GDataOutputStreamPrivate.pony
+	cp GDataOutputStreamPrivate.txt ../../GLib/GDataOutputStreamPrivate.pony
 GDataOutputStream:
-	cp GDataOutputStream.txt ../../GLibSys/GDataOutputStream.pony
+	cp GDataOutputStream.txt ../../GLib/GDataOutputStream.pony
 GData:
-	cp GData.txt ../../GLibSys/GData.pony
+	cp GData.txt ../../GLib/GData.pony
 GDateTime:
-	cp GDateTime.txt ../../GLibSys/GDateTime.pony
+	cp GDateTime.txt ../../GLib/GDateTime.pony
 GDate:
-	cp GDate.txt ../../GLibSys/GDate.pony
+	cp GDate.txt ../../GLib/GDate.pony
 GDBusActionGroup:
-	cp GDBusActionGroup.txt ../../GLibSys/GDBusActionGroup.pony
+	cp GDBusActionGroup.txt ../../GLib/GDBusActionGroup.pony
 GDBusAnnotationInfo:
-	cp GDBusAnnotationInfo.txt ../../GLibSys/GDBusAnnotationInfo.pony
+	cp GDBusAnnotationInfo.txt ../../GLib/GDBusAnnotationInfo.pony
 GDBusArgInfo:
-	cp GDBusArgInfo.txt ../../GLibSys/GDBusArgInfo.pony
+	cp GDBusArgInfo.txt ../../GLib/GDBusArgInfo.pony
 GDBusAuthObserver:
-	cp GDBusAuthObserver.txt ../../GLibSys/GDBusAuthObserver.pony
+	cp GDBusAuthObserver.txt ../../GLib/GDBusAuthObserver.pony
 GDBusConnection:
-	cp GDBusConnection.txt ../../GLibSys/GDBusConnection.pony
+	cp GDBusConnection.txt ../../GLib/GDBusConnection.pony
 GDBusErrorEntry:
-	cp GDBusErrorEntry.txt ../../GLibSys/GDBusErrorEntry.pony
+	cp GDBusErrorEntry.txt ../../GLib/GDBusErrorEntry.pony
 GDBusInterfaceIface:
-	cp GDBusInterfaceIface.txt ../../GLibSys/GDBusInterfaceIface.pony
+	cp GDBusInterfaceIface.txt ../../GLib/GDBusInterfaceIface.pony
 GDBusInterfaceInfo:
-	cp GDBusInterfaceInfo.txt ../../GLibSys/GDBusInterfaceInfo.pony
+	cp GDBusInterfaceInfo.txt ../../GLib/GDBusInterfaceInfo.pony
 GDBusInterfaceSkeletonClass:
-	cp GDBusInterfaceSkeletonClass.txt ../../GLibSys/GDBusInterfaceSkeletonClass.pony
+	cp GDBusInterfaceSkeletonClass.txt ../../GLib/GDBusInterfaceSkeletonClass.pony
 GDBusInterfaceSkeletonPrivate:
-	cp GDBusInterfaceSkeletonPrivate.txt ../../GLibSys/GDBusInterfaceSkeletonPrivate.pony
+	cp GDBusInterfaceSkeletonPrivate.txt ../../GLib/GDBusInterfaceSkeletonPrivate.pony
 GDBusInterfaceSkeleton:
-	cp GDBusInterfaceSkeleton.txt ../../GLibSys/GDBusInterfaceSkeleton.pony
+	cp GDBusInterfaceSkeleton.txt ../../GLib/GDBusInterfaceSkeleton.pony
 GDBusInterface:
-	cp GDBusInterface.txt ../../GLibSys/GDBusInterface.pony
+	cp GDBusInterface.txt ../../GLib/GDBusInterface.pony
 GDBusInterfaceVTable:
-	cp GDBusInterfaceVTable.txt ../../GLibSys/GDBusInterfaceVTable.pony
+	cp GDBusInterfaceVTable.txt ../../GLib/GDBusInterfaceVTable.pony
 GDBusMenuModel:
-	cp GDBusMenuModel.txt ../../GLibSys/GDBusMenuModel.pony
+	cp GDBusMenuModel.txt ../../GLib/GDBusMenuModel.pony
 GDBusMessage:
-	cp GDBusMessage.txt ../../GLibSys/GDBusMessage.pony
+	cp GDBusMessage.txt ../../GLib/GDBusMessage.pony
 GDBusMethodInfo:
-	cp GDBusMethodInfo.txt ../../GLibSys/GDBusMethodInfo.pony
+	cp GDBusMethodInfo.txt ../../GLib/GDBusMethodInfo.pony
 GDBusMethodInvocation:
-	cp GDBusMethodInvocation.txt ../../GLibSys/GDBusMethodInvocation.pony
+	cp GDBusMethodInvocation.txt ../../GLib/GDBusMethodInvocation.pony
 GDBusNodeInfo:
-	cp GDBusNodeInfo.txt ../../GLibSys/GDBusNodeInfo.pony
+	cp GDBusNodeInfo.txt ../../GLib/GDBusNodeInfo.pony
 GDBusObjectIface:
-	cp GDBusObjectIface.txt ../../GLibSys/GDBusObjectIface.pony
+	cp GDBusObjectIface.txt ../../GLib/GDBusObjectIface.pony
 GDBusObjectManagerClientClass:
-	cp GDBusObjectManagerClientClass.txt ../../GLibSys/GDBusObjectManagerClientClass.pony
+	cp GDBusObjectManagerClientClass.txt ../../GLib/GDBusObjectManagerClientClass.pony
 GDBusObjectManagerClientPrivate:
-	cp GDBusObjectManagerClientPrivate.txt ../../GLibSys/GDBusObjectManagerClientPrivate.pony
+	cp GDBusObjectManagerClientPrivate.txt ../../GLib/GDBusObjectManagerClientPrivate.pony
 GDBusObjectManagerClient:
-	cp GDBusObjectManagerClient.txt ../../GLibSys/GDBusObjectManagerClient.pony
+	cp GDBusObjectManagerClient.txt ../../GLib/GDBusObjectManagerClient.pony
 GDBusObjectManagerIface:
-	cp GDBusObjectManagerIface.txt ../../GLibSys/GDBusObjectManagerIface.pony
+	cp GDBusObjectManagerIface.txt ../../GLib/GDBusObjectManagerIface.pony
 GDBusObjectManagerServerClass:
-	cp GDBusObjectManagerServerClass.txt ../../GLibSys/GDBusObjectManagerServerClass.pony
+	cp GDBusObjectManagerServerClass.txt ../../GLib/GDBusObjectManagerServerClass.pony
 GDBusObjectManagerServerPrivate:
-	cp GDBusObjectManagerServerPrivate.txt ../../GLibSys/GDBusObjectManagerServerPrivate.pony
+	cp GDBusObjectManagerServerPrivate.txt ../../GLib/GDBusObjectManagerServerPrivate.pony
 GDBusObjectManagerServer:
-	cp GDBusObjectManagerServer.txt ../../GLibSys/GDBusObjectManagerServer.pony
+	cp GDBusObjectManagerServer.txt ../../GLib/GDBusObjectManagerServer.pony
 GDBusObjectManager:
-	cp GDBusObjectManager.txt ../../GLibSys/GDBusObjectManager.pony
+	cp GDBusObjectManager.txt ../../GLib/GDBusObjectManager.pony
 GDBusObjectProxyClass:
-	cp GDBusObjectProxyClass.txt ../../GLibSys/GDBusObjectProxyClass.pony
+	cp GDBusObjectProxyClass.txt ../../GLib/GDBusObjectProxyClass.pony
 GDBusObjectProxyPrivate:
-	cp GDBusObjectProxyPrivate.txt ../../GLibSys/GDBusObjectProxyPrivate.pony
+	cp GDBusObjectProxyPrivate.txt ../../GLib/GDBusObjectProxyPrivate.pony
 GDBusObjectProxy:
-	cp GDBusObjectProxy.txt ../../GLibSys/GDBusObjectProxy.pony
+	cp GDBusObjectProxy.txt ../../GLib/GDBusObjectProxy.pony
 GDBusObjectSkeletonClass:
-	cp GDBusObjectSkeletonClass.txt ../../GLibSys/GDBusObjectSkeletonClass.pony
+	cp GDBusObjectSkeletonClass.txt ../../GLib/GDBusObjectSkeletonClass.pony
 GDBusObjectSkeletonPrivate:
-	cp GDBusObjectSkeletonPrivate.txt ../../GLibSys/GDBusObjectSkeletonPrivate.pony
+	cp GDBusObjectSkeletonPrivate.txt ../../GLib/GDBusObjectSkeletonPrivate.pony
 GDBusObjectSkeleton:
-	cp GDBusObjectSkeleton.txt ../../GLibSys/GDBusObjectSkeleton.pony
+	cp GDBusObjectSkeleton.txt ../../GLib/GDBusObjectSkeleton.pony
 GDBusObject:
-	cp GDBusObject.txt ../../GLibSys/GDBusObject.pony
+	cp GDBusObject.txt ../../GLib/GDBusObject.pony
 GDBusPropertyInfo:
-	cp GDBusPropertyInfo.txt ../../GLibSys/GDBusPropertyInfo.pony
+	cp GDBusPropertyInfo.txt ../../GLib/GDBusPropertyInfo.pony
 GDBusProxyClass:
-	cp GDBusProxyClass.txt ../../GLibSys/GDBusProxyClass.pony
+	cp GDBusProxyClass.txt ../../GLib/GDBusProxyClass.pony
 GDBusProxyPrivate:
-	cp GDBusProxyPrivate.txt ../../GLibSys/GDBusProxyPrivate.pony
+	cp GDBusProxyPrivate.txt ../../GLib/GDBusProxyPrivate.pony
 GDBusProxy:
-	cp GDBusProxy.txt ../../GLibSys/GDBusProxy.pony
+	cp GDBusProxy.txt ../../GLib/GDBusProxy.pony
 GDBusServer:
-	cp GDBusServer.txt ../../GLibSys/GDBusServer.pony
+	cp GDBusServer.txt ../../GLib/GDBusServer.pony
 GDBusSignalInfo:
-	cp GDBusSignalInfo.txt ../../GLibSys/GDBusSignalInfo.pony
+	cp GDBusSignalInfo.txt ../../GLib/GDBusSignalInfo.pony
 GDBusSubtreeVTable:
-	cp GDBusSubtreeVTable.txt ../../GLibSys/GDBusSubtreeVTable.pony
+	cp GDBusSubtreeVTable.txt ../../GLib/GDBusSubtreeVTable.pony
 GDebugKey:
-	cp GDebugKey.txt ../../GLibSys/GDebugKey.pony
+	cp GDebugKey.txt ../../GLib/GDebugKey.pony
 GDir:
-	cp GDir.txt ../../GLibSys/GDir.pony
+	cp GDir.txt ../../GLib/GDir.pony
 GDriveIface:
-	cp GDriveIface.txt ../../GLibSys/GDriveIface.pony
+	cp GDriveIface.txt ../../GLib/GDriveIface.pony
 GDrive:
-	cp GDrive.txt ../../GLibSys/GDrive.pony
+	cp GDrive.txt ../../GLib/GDrive.pony
 GDtlsClientConnectionInterface:
-	cp GDtlsClientConnectionInterface.txt ../../GLibSys/GDtlsClientConnectionInterface.pony
+	cp GDtlsClientConnectionInterface.txt ../../GLib/GDtlsClientConnectionInterface.pony
 GDtlsClientConnection:
-	cp GDtlsClientConnection.txt ../../GLibSys/GDtlsClientConnection.pony
+	cp GDtlsClientConnection.txt ../../GLib/GDtlsClientConnection.pony
 GDtlsConnectionInterface:
-	cp GDtlsConnectionInterface.txt ../../GLibSys/GDtlsConnectionInterface.pony
+	cp GDtlsConnectionInterface.txt ../../GLib/GDtlsConnectionInterface.pony
 GDtlsConnection:
-	cp GDtlsConnection.txt ../../GLibSys/GDtlsConnection.pony
+	cp GDtlsConnection.txt ../../GLib/GDtlsConnection.pony
 GDtlsServerConnectionInterface:
-	cp GDtlsServerConnectionInterface.txt ../../GLibSys/GDtlsServerConnectionInterface.pony
+	cp GDtlsServerConnectionInterface.txt ../../GLib/GDtlsServerConnectionInterface.pony
 GDtlsServerConnection:
-	cp GDtlsServerConnection.txt ../../GLibSys/GDtlsServerConnection.pony
+	cp GDtlsServerConnection.txt ../../GLib/GDtlsServerConnection.pony
 GEmblemClass:
-	cp GEmblemClass.txt ../../GLibSys/GEmblemClass.pony
+	cp GEmblemClass.txt ../../GLib/GEmblemClass.pony
 GEmblemedIconClass:
-	cp GEmblemedIconClass.txt ../../GLibSys/GEmblemedIconClass.pony
+	cp GEmblemedIconClass.txt ../../GLib/GEmblemedIconClass.pony
 GEmblemedIconPrivate:
-	cp GEmblemedIconPrivate.txt ../../GLibSys/GEmblemedIconPrivate.pony
+	cp GEmblemedIconPrivate.txt ../../GLib/GEmblemedIconPrivate.pony
 GEmblemedIcon:
-	cp GEmblemedIcon.txt ../../GLibSys/GEmblemedIcon.pony
+	cp GEmblemedIcon.txt ../../GLib/GEmblemedIcon.pony
 GEmblem:
-	cp GEmblem.txt ../../GLibSys/GEmblem.pony
+	cp GEmblem.txt ../../GLib/GEmblem.pony
 GEnumClass:
-	cp GEnumClass.txt ../../GLibSys/GEnumClass.pony
+	cp GEnumClass.txt ../../GLib/GEnumClass.pony
 GEnumValue:
-	cp GEnumValue.txt ../../GLibSys/GEnumValue.pony
+	cp GEnumValue.txt ../../GLib/GEnumValue.pony
 GError:
-	cp GError.txt ../../GLibSys/GError.pony
+	cp GError.txt ../../GLib/GError.pony
 GFileAttributeInfoList:
-	cp GFileAttributeInfoList.txt ../../GLibSys/GFileAttributeInfoList.pony
+	cp GFileAttributeInfoList.txt ../../GLib/GFileAttributeInfoList.pony
 GFileAttributeInfo:
-	cp GFileAttributeInfo.txt ../../GLibSys/GFileAttributeInfo.pony
+	cp GFileAttributeInfo.txt ../../GLib/GFileAttributeInfo.pony
 GFileAttributeMatcher:
-	cp GFileAttributeMatcher.txt ../../GLibSys/GFileAttributeMatcher.pony
+	cp GFileAttributeMatcher.txt ../../GLib/GFileAttributeMatcher.pony
 GFileDescriptorBased:
-	cp GFileDescriptorBased.txt ../../GLibSys/GFileDescriptorBased.pony
+	cp GFileDescriptorBased.txt ../../GLib/GFileDescriptorBased.pony
 GFileEnumeratorClass:
-	cp GFileEnumeratorClass.txt ../../GLibSys/GFileEnumeratorClass.pony
+	cp GFileEnumeratorClass.txt ../../GLib/GFileEnumeratorClass.pony
 GFileEnumeratorPrivate:
-	cp GFileEnumeratorPrivate.txt ../../GLibSys/GFileEnumeratorPrivate.pony
+	cp GFileEnumeratorPrivate.txt ../../GLib/GFileEnumeratorPrivate.pony
 GFileEnumerator:
-	cp GFileEnumerator.txt ../../GLibSys/GFileEnumerator.pony
+	cp GFileEnumerator.txt ../../GLib/GFileEnumerator.pony
 GFileIconClass:
-	cp GFileIconClass.txt ../../GLibSys/GFileIconClass.pony
+	cp GFileIconClass.txt ../../GLib/GFileIconClass.pony
 GFileIcon:
-	cp GFileIcon.txt ../../GLibSys/GFileIcon.pony
+	cp GFileIcon.txt ../../GLib/GFileIcon.pony
 GFileIface:
-	cp GFileIface.txt ../../GLibSys/GFileIface.pony
+	cp GFileIface.txt ../../GLib/GFileIface.pony
 GFileInfoClass:
-	cp GFileInfoClass.txt ../../GLibSys/GFileInfoClass.pony
+	cp GFileInfoClass.txt ../../GLib/GFileInfoClass.pony
 GFileInfo:
-	cp GFileInfo.txt ../../GLibSys/GFileInfo.pony
+	cp GFileInfo.txt ../../GLib/GFileInfo.pony
 GFileInputStreamClass:
-	cp GFileInputStreamClass.txt ../../GLibSys/GFileInputStreamClass.pony
+	cp GFileInputStreamClass.txt ../../GLib/GFileInputStreamClass.pony
 GFileInputStreamPrivate:
-	cp GFileInputStreamPrivate.txt ../../GLibSys/GFileInputStreamPrivate.pony
+	cp GFileInputStreamPrivate.txt ../../GLib/GFileInputStreamPrivate.pony
 GFileInputStream:
-	cp GFileInputStream.txt ../../GLibSys/GFileInputStream.pony
+	cp GFileInputStream.txt ../../GLib/GFileInputStream.pony
 GFileIOStreamClass:
-	cp GFileIOStreamClass.txt ../../GLibSys/GFileIOStreamClass.pony
+	cp GFileIOStreamClass.txt ../../GLib/GFileIOStreamClass.pony
 GFileIOStreamPrivate:
-	cp GFileIOStreamPrivate.txt ../../GLibSys/GFileIOStreamPrivate.pony
+	cp GFileIOStreamPrivate.txt ../../GLib/GFileIOStreamPrivate.pony
 GFileIOStream:
-	cp GFileIOStream.txt ../../GLibSys/GFileIOStream.pony
+	cp GFileIOStream.txt ../../GLib/GFileIOStream.pony
 GFileMonitorClass:
-	cp GFileMonitorClass.txt ../../GLibSys/GFileMonitorClass.pony
+	cp GFileMonitorClass.txt ../../GLib/GFileMonitorClass.pony
 GFileMonitorPrivate:
-	cp GFileMonitorPrivate.txt ../../GLibSys/GFileMonitorPrivate.pony
+	cp GFileMonitorPrivate.txt ../../GLib/GFileMonitorPrivate.pony
 GFileMonitor:
-	cp GFileMonitor.txt ../../GLibSys/GFileMonitor.pony
+	cp GFileMonitor.txt ../../GLib/GFileMonitor.pony
 GFilenameCompleterClass:
-	cp GFilenameCompleterClass.txt ../../GLibSys/GFilenameCompleterClass.pony
+	cp GFilenameCompleterClass.txt ../../GLib/GFilenameCompleterClass.pony
 GFilenameCompleter:
-	cp GFilenameCompleter.txt ../../GLibSys/GFilenameCompleter.pony
+	cp GFilenameCompleter.txt ../../GLib/GFilenameCompleter.pony
 GFileOutputStreamClass:
-	cp GFileOutputStreamClass.txt ../../GLibSys/GFileOutputStreamClass.pony
+	cp GFileOutputStreamClass.txt ../../GLib/GFileOutputStreamClass.pony
 GFileOutputStreamPrivate:
-	cp GFileOutputStreamPrivate.txt ../../GLibSys/GFileOutputStreamPrivate.pony
+	cp GFileOutputStreamPrivate.txt ../../GLib/GFileOutputStreamPrivate.pony
 GFileOutputStream:
-	cp GFileOutputStream.txt ../../GLibSys/GFileOutputStream.pony
+	cp GFileOutputStream.txt ../../GLib/GFileOutputStream.pony
 GFile:
-	cp GFile.txt ../../GLibSys/GFile.pony
+	cp GFile.txt ../../GLib/GFile.pony
 GFilterInputStreamClass:
-	cp GFilterInputStreamClass.txt ../../GLibSys/GFilterInputStreamClass.pony
+	cp GFilterInputStreamClass.txt ../../GLib/GFilterInputStreamClass.pony
 GFilterInputStream:
-	cp GFilterInputStream.txt ../../GLibSys/GFilterInputStream.pony
+	cp GFilterInputStream.txt ../../GLib/GFilterInputStream.pony
 GFilterOutputStreamClass:
-	cp GFilterOutputStreamClass.txt ../../GLibSys/GFilterOutputStreamClass.pony
+	cp GFilterOutputStreamClass.txt ../../GLib/GFilterOutputStreamClass.pony
 GFilterOutputStream:
-	cp GFilterOutputStream.txt ../../GLibSys/GFilterOutputStream.pony
+	cp GFilterOutputStream.txt ../../GLib/GFilterOutputStream.pony
 GFlagsClass:
-	cp GFlagsClass.txt ../../GLibSys/GFlagsClass.pony
+	cp GFlagsClass.txt ../../GLib/GFlagsClass.pony
 GFlagsValue:
-	cp GFlagsValue.txt ../../GLibSys/GFlagsValue.pony
+	cp GFlagsValue.txt ../../GLib/GFlagsValue.pony
 GHashTableIter:
-	cp GHashTableIter.txt ../../GLibSys/GHashTableIter.pony
+	cp GHashTableIter.txt ../../GLib/GHashTableIter.pony
 GHashTable:
-	cp GHashTable.txt ../../GLibSys/GHashTable.pony
+	cp GHashTable.txt ../../GLib/GHashTable.pony
 GHmac:
-	cp GHmac.txt ../../GLibSys/GHmac.pony
+	cp GHmac.txt ../../GLib/GHmac.pony
 GHookList:
-	cp GHookList.txt ../../GLibSys/GHookList.pony
+	cp GHookList.txt ../../GLib/GHookList.pony
 GHook:
-	cp GHook.txt ../../GLibSys/GHook.pony
+	cp GHook.txt ../../GLib/GHook.pony
 GIconIface:
-	cp GIconIface.txt ../../GLibSys/GIconIface.pony
+	cp GIconIface.txt ../../GLib/GIconIface.pony
 GIcon:
-	cp GIcon.txt ../../GLibSys/GIcon.pony
+	cp GIcon.txt ../../GLib/GIcon.pony
 GIConv:
-	cp GIConv.txt ../../GLibSys/GIConv.pony
+	cp GIConv.txt ../../GLib/GIConv.pony
 GInetAddressClass:
-	cp GInetAddressClass.txt ../../GLibSys/GInetAddressClass.pony
+	cp GInetAddressClass.txt ../../GLib/GInetAddressClass.pony
 GInetAddressMaskClass:
-	cp GInetAddressMaskClass.txt ../../GLibSys/GInetAddressMaskClass.pony
+	cp GInetAddressMaskClass.txt ../../GLib/GInetAddressMaskClass.pony
 GInetAddressMaskPrivate:
-	cp GInetAddressMaskPrivate.txt ../../GLibSys/GInetAddressMaskPrivate.pony
+	cp GInetAddressMaskPrivate.txt ../../GLib/GInetAddressMaskPrivate.pony
 GInetAddressMask:
-	cp GInetAddressMask.txt ../../GLibSys/GInetAddressMask.pony
+	cp GInetAddressMask.txt ../../GLib/GInetAddressMask.pony
 GInetAddressPrivate:
-	cp GInetAddressPrivate.txt ../../GLibSys/GInetAddressPrivate.pony
+	cp GInetAddressPrivate.txt ../../GLib/GInetAddressPrivate.pony
 GInetAddress:
-	cp GInetAddress.txt ../../GLibSys/GInetAddress.pony
+	cp GInetAddress.txt ../../GLib/GInetAddress.pony
 GInetSocketAddressClass:
-	cp GInetSocketAddressClass.txt ../../GLibSys/GInetSocketAddressClass.pony
+	cp GInetSocketAddressClass.txt ../../GLib/GInetSocketAddressClass.pony
 GInetSocketAddressPrivate:
-	cp GInetSocketAddressPrivate.txt ../../GLibSys/GInetSocketAddressPrivate.pony
+	cp GInetSocketAddressPrivate.txt ../../GLib/GInetSocketAddressPrivate.pony
 GInetSocketAddress:
-	cp GInetSocketAddress.txt ../../GLibSys/GInetSocketAddress.pony
+	cp GInetSocketAddress.txt ../../GLib/GInetSocketAddress.pony
 GInitableIface:
-	cp GInitableIface.txt ../../GLibSys/GInitableIface.pony
+	cp GInitableIface.txt ../../GLib/GInitableIface.pony
 GInitable:
-	cp GInitable.txt ../../GLibSys/GInitable.pony
+	cp GInitable.txt ../../GLib/GInitable.pony
 GInputMessage:
-	cp GInputMessage.txt ../../GLibSys/GInputMessage.pony
+	cp GInputMessage.txt ../../GLib/GInputMessage.pony
 GInputStreamClass:
-	cp GInputStreamClass.txt ../../GLibSys/GInputStreamClass.pony
+	cp GInputStreamClass.txt ../../GLib/GInputStreamClass.pony
 GInputStreamPrivate:
-	cp GInputStreamPrivate.txt ../../GLibSys/GInputStreamPrivate.pony
+	cp GInputStreamPrivate.txt ../../GLib/GInputStreamPrivate.pony
 GInputStream:
-	cp GInputStream.txt ../../GLibSys/GInputStream.pony
+	cp GInputStream.txt ../../GLib/GInputStream.pony
 GInputVector:
-	cp GInputVector.txt ../../GLibSys/GInputVector.pony
+	cp GInputVector.txt ../../GLib/GInputVector.pony
 GInterfaceInfo:
-	cp GInterfaceInfo.txt ../../GLibSys/GInterfaceInfo.pony
+	cp GInterfaceInfo.txt ../../GLib/GInterfaceInfo.pony
 GIOChannel:
-	cp GIOChannel.txt ../../GLibSys/GIOChannel.pony
+	cp GIOChannel.txt ../../GLib/GIOChannel.pony
 GIOExtensionPoint:
-	cp GIOExtensionPoint.txt ../../GLibSys/GIOExtensionPoint.pony
+	cp GIOExtensionPoint.txt ../../GLib/GIOExtensionPoint.pony
 GIOExtension:
-	cp GIOExtension.txt ../../GLibSys/GIOExtension.pony
+	cp GIOExtension.txt ../../GLib/GIOExtension.pony
 GIOFuncs:
-	cp GIOFuncs.txt ../../GLibSys/GIOFuncs.pony
+	cp GIOFuncs.txt ../../GLib/GIOFuncs.pony
 GIOModuleClass:
-	cp GIOModuleClass.txt ../../GLibSys/GIOModuleClass.pony
+	cp GIOModuleClass.txt ../../GLib/GIOModuleClass.pony
 GIOModuleScope:
-	cp GIOModuleScope.txt ../../GLibSys/GIOModuleScope.pony
+	cp GIOModuleScope.txt ../../GLib/GIOModuleScope.pony
 GIOModule:
-	cp GIOModule.txt ../../GLibSys/GIOModule.pony
+	cp GIOModule.txt ../../GLib/GIOModule.pony
 GIOSchedulerJob:
-	cp GIOSchedulerJob.txt ../../GLibSys/GIOSchedulerJob.pony
+	cp GIOSchedulerJob.txt ../../GLib/GIOSchedulerJob.pony
 GIOStreamAdapter:
-	cp GIOStreamAdapter.txt ../../GLibSys/GIOStreamAdapter.pony
+	cp GIOStreamAdapter.txt ../../GLib/GIOStreamAdapter.pony
 GIOStreamClass:
-	cp GIOStreamClass.txt ../../GLibSys/GIOStreamClass.pony
+	cp GIOStreamClass.txt ../../GLib/GIOStreamClass.pony
 GIOStreamPrivate:
-	cp GIOStreamPrivate.txt ../../GLibSys/GIOStreamPrivate.pony
+	cp GIOStreamPrivate.txt ../../GLib/GIOStreamPrivate.pony
 GIOStream:
-	cp GIOStream.txt ../../GLibSys/GIOStream.pony
+	cp GIOStream.txt ../../GLib/GIOStream.pony
 GKeyFile:
-	cp GKeyFile.txt ../../GLibSys/GKeyFile.pony
+	cp GKeyFile.txt ../../GLib/GKeyFile.pony
 GListModelInterface:
-	cp GListModelInterface.txt ../../GLibSys/GListModelInterface.pony
+	cp GListModelInterface.txt ../../GLib/GListModelInterface.pony
 GListModel:
-	cp GListModel.txt ../../GLibSys/GListModel.pony
+	cp GListModel.txt ../../GLib/GListModel.pony
 GListStore:
-	cp GListStore.txt ../../GLibSys/GListStore.pony
+	cp GListStore.txt ../../GLib/GListStore.pony
 GList:
-	cp GList.txt ../../GLibSys/GList.pony
+	cp GList.txt ../../GLib/GList.pony
 GLoadableIconIface:
-	cp GLoadableIconIface.txt ../../GLibSys/GLoadableIconIface.pony
+	cp GLoadableIconIface.txt ../../GLib/GLoadableIconIface.pony
 GLoadableIcon:
-	cp GLoadableIcon.txt ../../GLibSys/GLoadableIcon.pony
+	cp GLoadableIcon.txt ../../GLib/GLoadableIcon.pony
 GLogField:
-	cp GLogField.txt ../../GLibSys/GLogField.pony
+	cp GLogField.txt ../../GLib/GLogField.pony
 GMainContext:
-	cp GMainContext.txt ../../GLibSys/GMainContext.pony
+	cp GMainContext.txt ../../GLib/GMainContext.pony
 GMainLoop:
-	cp GMainLoop.txt ../../GLibSys/GMainLoop.pony
+	cp GMainLoop.txt ../../GLib/GMainLoop.pony
 GMappedFile:
-	cp GMappedFile.txt ../../GLibSys/GMappedFile.pony
+	cp GMappedFile.txt ../../GLib/GMappedFile.pony
 GMarkupParseContext:
-	cp GMarkupParseContext.txt ../../GLibSys/GMarkupParseContext.pony
+	cp GMarkupParseContext.txt ../../GLib/GMarkupParseContext.pony
 GMarkupParser:
-	cp GMarkupParser.txt ../../GLibSys/GMarkupParser.pony
+	cp GMarkupParser.txt ../../GLib/GMarkupParser.pony
 GMatchInfo:
-	cp GMatchInfo.txt ../../GLibSys/GMatchInfo.pony
+	cp GMatchInfo.txt ../../GLib/GMatchInfo.pony
 GMemChunk:
-	cp GMemChunk.txt ../../GLibSys/GMemChunk.pony
+	cp GMemChunk.txt ../../GLib/GMemChunk.pony
 GMemoryInputStreamClass:
-	cp GMemoryInputStreamClass.txt ../../GLibSys/GMemoryInputStreamClass.pony
+	cp GMemoryInputStreamClass.txt ../../GLib/GMemoryInputStreamClass.pony
 GMemoryInputStreamPrivate:
-	cp GMemoryInputStreamPrivate.txt ../../GLibSys/GMemoryInputStreamPrivate.pony
+	cp GMemoryInputStreamPrivate.txt ../../GLib/GMemoryInputStreamPrivate.pony
 GMemoryInputStream:
-	cp GMemoryInputStream.txt ../../GLibSys/GMemoryInputStream.pony
+	cp GMemoryInputStream.txt ../../GLib/GMemoryInputStream.pony
 GMemoryMonitorInterface:
-	cp GMemoryMonitorInterface.txt ../../GLibSys/GMemoryMonitorInterface.pony
+	cp GMemoryMonitorInterface.txt ../../GLib/GMemoryMonitorInterface.pony
 GMemoryMonitor:
-	cp GMemoryMonitor.txt ../../GLibSys/GMemoryMonitor.pony
+	cp GMemoryMonitor.txt ../../GLib/GMemoryMonitor.pony
 GMemoryOutputStreamClass:
-	cp GMemoryOutputStreamClass.txt ../../GLibSys/GMemoryOutputStreamClass.pony
+	cp GMemoryOutputStreamClass.txt ../../GLib/GMemoryOutputStreamClass.pony
 GMemoryOutputStreamPrivate:
-	cp GMemoryOutputStreamPrivate.txt ../../GLibSys/GMemoryOutputStreamPrivate.pony
+	cp GMemoryOutputStreamPrivate.txt ../../GLib/GMemoryOutputStreamPrivate.pony
 GMemoryOutputStream:
-	cp GMemoryOutputStream.txt ../../GLibSys/GMemoryOutputStream.pony
+	cp GMemoryOutputStream.txt ../../GLib/GMemoryOutputStream.pony
 GMemVTable:
-	cp GMemVTable.txt ../../GLibSys/GMemVTable.pony
+	cp GMemVTable.txt ../../GLib/GMemVTable.pony
 GMenuAttributeIterClass:
-	cp GMenuAttributeIterClass.txt ../../GLibSys/GMenuAttributeIterClass.pony
+	cp GMenuAttributeIterClass.txt ../../GLib/GMenuAttributeIterClass.pony
 GMenuAttributeIterPrivate:
-	cp GMenuAttributeIterPrivate.txt ../../GLibSys/GMenuAttributeIterPrivate.pony
+	cp GMenuAttributeIterPrivate.txt ../../GLib/GMenuAttributeIterPrivate.pony
 GMenuAttributeIter:
-	cp GMenuAttributeIter.txt ../../GLibSys/GMenuAttributeIter.pony
+	cp GMenuAttributeIter.txt ../../GLib/GMenuAttributeIter.pony
 GMenuItem:
-	cp GMenuItem.txt ../../GLibSys/GMenuItem.pony
+	cp GMenuItem.txt ../../GLib/GMenuItem.pony
 GMenuLinkIterClass:
-	cp GMenuLinkIterClass.txt ../../GLibSys/GMenuLinkIterClass.pony
+	cp GMenuLinkIterClass.txt ../../GLib/GMenuLinkIterClass.pony
 GMenuLinkIterPrivate:
-	cp GMenuLinkIterPrivate.txt ../../GLibSys/GMenuLinkIterPrivate.pony
+	cp GMenuLinkIterPrivate.txt ../../GLib/GMenuLinkIterPrivate.pony
 GMenuLinkIter:
-	cp GMenuLinkIter.txt ../../GLibSys/GMenuLinkIter.pony
+	cp GMenuLinkIter.txt ../../GLib/GMenuLinkIter.pony
 GMenuModelClass:
-	cp GMenuModelClass.txt ../../GLibSys/GMenuModelClass.pony
+	cp GMenuModelClass.txt ../../GLib/GMenuModelClass.pony
 GMenuModelPrivate:
-	cp GMenuModelPrivate.txt ../../GLibSys/GMenuModelPrivate.pony
+	cp GMenuModelPrivate.txt ../../GLib/GMenuModelPrivate.pony
 GMenuModel:
-	cp GMenuModel.txt ../../GLibSys/GMenuModel.pony
+	cp GMenuModel.txt ../../GLib/GMenuModel.pony
 GMenu:
-	cp GMenu.txt ../../GLibSys/GMenu.pony
+	cp GMenu.txt ../../GLib/GMenu.pony
 GModule:
-	cp GModule.txt ../../GLibSys/GModule.pony
+	cp GModule.txt ../../GLib/GModule.pony
 GMountIface:
-	cp GMountIface.txt ../../GLibSys/GMountIface.pony
+	cp GMountIface.txt ../../GLib/GMountIface.pony
 GMountOperationClass:
-	cp GMountOperationClass.txt ../../GLibSys/GMountOperationClass.pony
+	cp GMountOperationClass.txt ../../GLib/GMountOperationClass.pony
 GMountOperationPrivate:
-	cp GMountOperationPrivate.txt ../../GLibSys/GMountOperationPrivate.pony
+	cp GMountOperationPrivate.txt ../../GLib/GMountOperationPrivate.pony
 GMountOperation:
-	cp GMountOperation.txt ../../GLibSys/GMountOperation.pony
+	cp GMountOperation.txt ../../GLib/GMountOperation.pony
 GMount:
-	cp GMount.txt ../../GLibSys/GMount.pony
+	cp GMount.txt ../../GLib/GMount.pony
 GNativeSocketAddressClass:
-	cp GNativeSocketAddressClass.txt ../../GLibSys/GNativeSocketAddressClass.pony
+	cp GNativeSocketAddressClass.txt ../../GLib/GNativeSocketAddressClass.pony
 GNativeSocketAddressPrivate:
-	cp GNativeSocketAddressPrivate.txt ../../GLibSys/GNativeSocketAddressPrivate.pony
+	cp GNativeSocketAddressPrivate.txt ../../GLib/GNativeSocketAddressPrivate.pony
 GNativeSocketAddress:
-	cp GNativeSocketAddress.txt ../../GLibSys/GNativeSocketAddress.pony
+	cp GNativeSocketAddress.txt ../../GLib/GNativeSocketAddress.pony
 GNativeVolumeMonitorClass:
-	cp GNativeVolumeMonitorClass.txt ../../GLibSys/GNativeVolumeMonitorClass.pony
+	cp GNativeVolumeMonitorClass.txt ../../GLib/GNativeVolumeMonitorClass.pony
 GNativeVolumeMonitor:
-	cp GNativeVolumeMonitor.txt ../../GLibSys/GNativeVolumeMonitor.pony
+	cp GNativeVolumeMonitor.txt ../../GLib/GNativeVolumeMonitor.pony
 GNetworkAddressClass:
-	cp GNetworkAddressClass.txt ../../GLibSys/GNetworkAddressClass.pony
+	cp GNetworkAddressClass.txt ../../GLib/GNetworkAddressClass.pony
 GNetworkAddressPrivate:
-	cp GNetworkAddressPrivate.txt ../../GLibSys/GNetworkAddressPrivate.pony
+	cp GNetworkAddressPrivate.txt ../../GLib/GNetworkAddressPrivate.pony
 GNetworkAddress:
-	cp GNetworkAddress.txt ../../GLibSys/GNetworkAddress.pony
+	cp GNetworkAddress.txt ../../GLib/GNetworkAddress.pony
 GNetworkMonitorInterface:
-	cp GNetworkMonitorInterface.txt ../../GLibSys/GNetworkMonitorInterface.pony
+	cp GNetworkMonitorInterface.txt ../../GLib/GNetworkMonitorInterface.pony
 GNetworkMonitor:
-	cp GNetworkMonitor.txt ../../GLibSys/GNetworkMonitor.pony
+	cp GNetworkMonitor.txt ../../GLib/GNetworkMonitor.pony
 GNetworkServiceClass:
-	cp GNetworkServiceClass.txt ../../GLibSys/GNetworkServiceClass.pony
+	cp GNetworkServiceClass.txt ../../GLib/GNetworkServiceClass.pony
 GNetworkServicePrivate:
-	cp GNetworkServicePrivate.txt ../../GLibSys/GNetworkServicePrivate.pony
+	cp GNetworkServicePrivate.txt ../../GLib/GNetworkServicePrivate.pony
 GNetworkService:
-	cp GNetworkService.txt ../../GLibSys/GNetworkService.pony
+	cp GNetworkService.txt ../../GLib/GNetworkService.pony
 GNode:
-	cp GNode.txt ../../GLibSys/GNode.pony
+	cp GNode.txt ../../GLib/GNode.pony
 GNotification:
-	cp GNotification.txt ../../GLibSys/GNotification.pony
+	cp GNotification.txt ../../GLib/GNotification.pony
 GObjectClass:
-	cp GObjectClass.txt ../../GLibSys/GObjectClass.pony
+	cp GObjectClass.txt ../../GLib/GObjectClass.pony
 GObjectConstructParam:
-	cp GObjectConstructParam.txt ../../GLibSys/GObjectConstructParam.pony
+	cp GObjectConstructParam.txt ../../GLib/GObjectConstructParam.pony
 GObject:
-	cp GObject.txt ../../GLibSys/GObject.pony
+	cp GObject.txt ../../GLib/GObject.pony
 GOnce:
-	cp GOnce.txt ../../GLibSys/GOnce.pony
+	cp GOnce.txt ../../GLib/GOnce.pony
 GOptionContext:
-	cp GOptionContext.txt ../../GLibSys/GOptionContext.pony
+	cp GOptionContext.txt ../../GLib/GOptionContext.pony
 GOptionEntry:
-	cp GOptionEntry.txt ../../GLibSys/GOptionEntry.pony
+	cp GOptionEntry.txt ../../GLib/GOptionEntry.pony
 GOptionGroup:
-	cp GOptionGroup.txt ../../GLibSys/GOptionGroup.pony
+	cp GOptionGroup.txt ../../GLib/GOptionGroup.pony
 GOutputMessage:
-	cp GOutputMessage.txt ../../GLibSys/GOutputMessage.pony
+	cp GOutputMessage.txt ../../GLib/GOutputMessage.pony
 GOutputStreamClass:
-	cp GOutputStreamClass.txt ../../GLibSys/GOutputStreamClass.pony
+	cp GOutputStreamClass.txt ../../GLib/GOutputStreamClass.pony
 GOutputStreamPrivate:
-	cp GOutputStreamPrivate.txt ../../GLibSys/GOutputStreamPrivate.pony
+	cp GOutputStreamPrivate.txt ../../GLib/GOutputStreamPrivate.pony
 GOutputStream:
-	cp GOutputStream.txt ../../GLibSys/GOutputStream.pony
+	cp GOutputStream.txt ../../GLib/GOutputStream.pony
 GOutputVector:
-	cp GOutputVector.txt ../../GLibSys/GOutputVector.pony
+	cp GOutputVector.txt ../../GLib/GOutputVector.pony
 GParameter:
-	cp GParameter.txt ../../GLibSys/GParameter.pony
+	cp GParameter.txt ../../GLib/GParameter.pony
 GParamSpecBoolean:
-	cp GParamSpecBoolean.txt ../../GLibSys/GParamSpecBoolean.pony
+	cp GParamSpecBoolean.txt ../../GLib/GParamSpecBoolean.pony
 GParamSpecBoxed:
-	cp GParamSpecBoxed.txt ../../GLibSys/GParamSpecBoxed.pony
+	cp GParamSpecBoxed.txt ../../GLib/GParamSpecBoxed.pony
 GParamSpecChar:
-	cp GParamSpecChar.txt ../../GLibSys/GParamSpecChar.pony
+	cp GParamSpecChar.txt ../../GLib/GParamSpecChar.pony
 GParamSpecClass:
-	cp GParamSpecClass.txt ../../GLibSys/GParamSpecClass.pony
+	cp GParamSpecClass.txt ../../GLib/GParamSpecClass.pony
 GParamSpecDouble:
-	cp GParamSpecDouble.txt ../../GLibSys/GParamSpecDouble.pony
+	cp GParamSpecDouble.txt ../../GLib/GParamSpecDouble.pony
 GParamSpecEnum:
-	cp GParamSpecEnum.txt ../../GLibSys/GParamSpecEnum.pony
+	cp GParamSpecEnum.txt ../../GLib/GParamSpecEnum.pony
 GParamSpecFlags:
-	cp GParamSpecFlags.txt ../../GLibSys/GParamSpecFlags.pony
+	cp GParamSpecFlags.txt ../../GLib/GParamSpecFlags.pony
 GParamSpecFloat:
-	cp GParamSpecFloat.txt ../../GLibSys/GParamSpecFloat.pony
+	cp GParamSpecFloat.txt ../../GLib/GParamSpecFloat.pony
 GParamSpecGType:
-	cp GParamSpecGType.txt ../../GLibSys/GParamSpecGType.pony
+	cp GParamSpecGType.txt ../../GLib/GParamSpecGType.pony
 GParamSpecInt64:
-	cp GParamSpecInt64.txt ../../GLibSys/GParamSpecInt64.pony
+	cp GParamSpecInt64.txt ../../GLib/GParamSpecInt64.pony
 GParamSpecInt:
-	cp GParamSpecInt.txt ../../GLibSys/GParamSpecInt.pony
+	cp GParamSpecInt.txt ../../GLib/GParamSpecInt.pony
 GParamSpecLong:
-	cp GParamSpecLong.txt ../../GLibSys/GParamSpecLong.pony
+	cp GParamSpecLong.txt ../../GLib/GParamSpecLong.pony
 GParamSpecObject:
-	cp GParamSpecObject.txt ../../GLibSys/GParamSpecObject.pony
+	cp GParamSpecObject.txt ../../GLib/GParamSpecObject.pony
 GParamSpecOverride:
-	cp GParamSpecOverride.txt ../../GLibSys/GParamSpecOverride.pony
+	cp GParamSpecOverride.txt ../../GLib/GParamSpecOverride.pony
 GParamSpecParam:
-	cp GParamSpecParam.txt ../../GLibSys/GParamSpecParam.pony
+	cp GParamSpecParam.txt ../../GLib/GParamSpecParam.pony
 GParamSpecPointer:
-	cp GParamSpecPointer.txt ../../GLibSys/GParamSpecPointer.pony
+	cp GParamSpecPointer.txt ../../GLib/GParamSpecPointer.pony
 GParamSpecPool:
-	cp GParamSpecPool.txt ../../GLibSys/GParamSpecPool.pony
+	cp GParamSpecPool.txt ../../GLib/GParamSpecPool.pony
 GParamSpecString:
-	cp GParamSpecString.txt ../../GLibSys/GParamSpecString.pony
+	cp GParamSpecString.txt ../../GLib/GParamSpecString.pony
 GParamSpec:
-	cp GParamSpec.txt ../../GLibSys/GParamSpec.pony
+	cp GParamSpec.txt ../../GLib/GParamSpec.pony
 GParamSpecTypeInfo:
-	cp GParamSpecTypeInfo.txt ../../GLibSys/GParamSpecTypeInfo.pony
+	cp GParamSpecTypeInfo.txt ../../GLib/GParamSpecTypeInfo.pony
 GParamSpecUChar:
-	cp GParamSpecUChar.txt ../../GLibSys/GParamSpecUChar.pony
+	cp GParamSpecUChar.txt ../../GLib/GParamSpecUChar.pony
 GParamSpecUInt64:
-	cp GParamSpecUInt64.txt ../../GLibSys/GParamSpecUInt64.pony
+	cp GParamSpecUInt64.txt ../../GLib/GParamSpecUInt64.pony
 GParamSpecUInt:
-	cp GParamSpecUInt.txt ../../GLibSys/GParamSpecUInt.pony
+	cp GParamSpecUInt.txt ../../GLib/GParamSpecUInt.pony
 GParamSpecULong:
-	cp GParamSpecULong.txt ../../GLibSys/GParamSpecULong.pony
+	cp GParamSpecULong.txt ../../GLib/GParamSpecULong.pony
 GParamSpecUnichar:
-	cp GParamSpecUnichar.txt ../../GLibSys/GParamSpecUnichar.pony
+	cp GParamSpecUnichar.txt ../../GLib/GParamSpecUnichar.pony
 GParamSpecValueArray:
-	cp GParamSpecValueArray.txt ../../GLibSys/GParamSpecValueArray.pony
+	cp GParamSpecValueArray.txt ../../GLib/GParamSpecValueArray.pony
 GParamSpecVariant:
-	cp GParamSpecVariant.txt ../../GLibSys/GParamSpecVariant.pony
+	cp GParamSpecVariant.txt ../../GLib/GParamSpecVariant.pony
 GPatternSpec:
-	cp GPatternSpec.txt ../../GLibSys/GPatternSpec.pony
+	cp GPatternSpec.txt ../../GLib/GPatternSpec.pony
 GPermissionClass:
-	cp GPermissionClass.txt ../../GLibSys/GPermissionClass.pony
+	cp GPermissionClass.txt ../../GLib/GPermissionClass.pony
 GPermissionPrivate:
-	cp GPermissionPrivate.txt ../../GLibSys/GPermissionPrivate.pony
+	cp GPermissionPrivate.txt ../../GLib/GPermissionPrivate.pony
 GPermission:
-	cp GPermission.txt ../../GLibSys/GPermission.pony
+	cp GPermission.txt ../../GLib/GPermission.pony
 GPollableInputStreamInterface:
-	cp GPollableInputStreamInterface.txt ../../GLibSys/GPollableInputStreamInterface.pony
+	cp GPollableInputStreamInterface.txt ../../GLib/GPollableInputStreamInterface.pony
 GPollableInputStream:
-	cp GPollableInputStream.txt ../../GLibSys/GPollableInputStream.pony
+	cp GPollableInputStream.txt ../../GLib/GPollableInputStream.pony
 GPollableOutputStreamInterface:
-	cp GPollableOutputStreamInterface.txt ../../GLibSys/GPollableOutputStreamInterface.pony
+	cp GPollableOutputStreamInterface.txt ../../GLib/GPollableOutputStreamInterface.pony
 GPollableOutputStream:
-	cp GPollableOutputStream.txt ../../GLibSys/GPollableOutputStream.pony
+	cp GPollableOutputStream.txt ../../GLib/GPollableOutputStream.pony
 GPollFD:
-	cp GPollFD.txt ../../GLibSys/GPollFD.pony
+	cp GPollFD.txt ../../GLib/GPollFD.pony
 GPrivate:
-	cp GPrivate.txt ../../GLibSys/GPrivate.pony
+	cp GPrivate.txt ../../GLib/GPrivate.pony
 GPropertyAction:
-	cp GPropertyAction.txt ../../GLibSys/GPropertyAction.pony
+	cp GPropertyAction.txt ../../GLib/GPropertyAction.pony
 GProxyAddressClass:
-	cp GProxyAddressClass.txt ../../GLibSys/GProxyAddressClass.pony
+	cp GProxyAddressClass.txt ../../GLib/GProxyAddressClass.pony
 GProxyAddressEnumeratorClass:
-	cp GProxyAddressEnumeratorClass.txt ../../GLibSys/GProxyAddressEnumeratorClass.pony
+	cp GProxyAddressEnumeratorClass.txt ../../GLib/GProxyAddressEnumeratorClass.pony
 GProxyAddressEnumeratorPrivate:
-	cp GProxyAddressEnumeratorPrivate.txt ../../GLibSys/GProxyAddressEnumeratorPrivate.pony
+	cp GProxyAddressEnumeratorPrivate.txt ../../GLib/GProxyAddressEnumeratorPrivate.pony
 GProxyAddressEnumerator:
-	cp GProxyAddressEnumerator.txt ../../GLibSys/GProxyAddressEnumerator.pony
+	cp GProxyAddressEnumerator.txt ../../GLib/GProxyAddressEnumerator.pony
 GProxyAddressPrivate:
-	cp GProxyAddressPrivate.txt ../../GLibSys/GProxyAddressPrivate.pony
+	cp GProxyAddressPrivate.txt ../../GLib/GProxyAddressPrivate.pony
 GProxyAddress:
-	cp GProxyAddress.txt ../../GLibSys/GProxyAddress.pony
+	cp GProxyAddress.txt ../../GLib/GProxyAddress.pony
 GProxyInterface:
-	cp GProxyInterface.txt ../../GLibSys/GProxyInterface.pony
+	cp GProxyInterface.txt ../../GLib/GProxyInterface.pony
 GProxyResolverInterface:
-	cp GProxyResolverInterface.txt ../../GLibSys/GProxyResolverInterface.pony
+	cp GProxyResolverInterface.txt ../../GLib/GProxyResolverInterface.pony
 GProxyResolver:
-	cp GProxyResolver.txt ../../GLibSys/GProxyResolver.pony
+	cp GProxyResolver.txt ../../GLib/GProxyResolver.pony
 GProxy:
-	cp GProxy.txt ../../GLibSys/GProxy.pony
+	cp GProxy.txt ../../GLib/GProxy.pony
 GPtrArray:
-	cp GPtrArray.txt ../../GLibSys/GPtrArray.pony
+	cp GPtrArray.txt ../../GLib/GPtrArray.pony
 GQueue:
-	cp GQueue.txt ../../GLibSys/GQueue.pony
+	cp GQueue.txt ../../GLib/GQueue.pony
 GRand:
-	cp GRand.txt ../../GLibSys/GRand.pony
+	cp GRand.txt ../../GLib/GRand.pony
 GRecMutex:
-	cp GRecMutex.txt ../../GLibSys/GRecMutex.pony
+	cp GRecMutex.txt ../../GLib/GRecMutex.pony
 GRegex:
-	cp GRegex.txt ../../GLibSys/GRegex.pony
+	cp GRegex.txt ../../GLib/GRegex.pony
 GRelation:
-	cp GRelation.txt ../../GLibSys/GRelation.pony
+	cp GRelation.txt ../../GLib/GRelation.pony
 GRemoteActionGroupInterface:
-	cp GRemoteActionGroupInterface.txt ../../GLibSys/GRemoteActionGroupInterface.pony
+	cp GRemoteActionGroupInterface.txt ../../GLib/GRemoteActionGroupInterface.pony
 GRemoteActionGroup:
-	cp GRemoteActionGroup.txt ../../GLibSys/GRemoteActionGroup.pony
+	cp GRemoteActionGroup.txt ../../GLib/GRemoteActionGroup.pony
 GResolverClass:
-	cp GResolverClass.txt ../../GLibSys/GResolverClass.pony
+	cp GResolverClass.txt ../../GLib/GResolverClass.pony
 GResolverPrivate:
-	cp GResolverPrivate.txt ../../GLibSys/GResolverPrivate.pony
+	cp GResolverPrivate.txt ../../GLib/GResolverPrivate.pony
 GResolver:
-	cp GResolver.txt ../../GLibSys/GResolver.pony
+	cp GResolver.txt ../../GLib/GResolver.pony
 GResource:
-	cp GResource.txt ../../GLibSys/GResource.pony
+	cp GResource.txt ../../GLib/GResource.pony
 GRWLock:
-	cp GRWLock.txt ../../GLibSys/GRWLock.pony
+	cp GRWLock.txt ../../GLib/GRWLock.pony
 GScannerConfig:
-	cp GScannerConfig.txt ../../GLibSys/GScannerConfig.pony
+	cp GScannerConfig.txt ../../GLib/GScannerConfig.pony
 GScanner:
-	cp GScanner.txt ../../GLibSys/GScanner.pony
+	cp GScanner.txt ../../GLib/GScanner.pony
 GSeekableIface:
-	cp GSeekableIface.txt ../../GLibSys/GSeekableIface.pony
+	cp GSeekableIface.txt ../../GLib/GSeekableIface.pony
 GSeekable:
-	cp GSeekable.txt ../../GLibSys/GSeekable.pony
+	cp GSeekable.txt ../../GLib/GSeekable.pony
 GSequenceNode:
-	cp GSequenceNode.txt ../../GLibSys/GSequenceNode.pony
+	cp GSequenceNode.txt ../../GLib/GSequenceNode.pony
 GSequence:
-	cp GSequence.txt ../../GLibSys/GSequence.pony
+	cp GSequence.txt ../../GLib/GSequence.pony
 GSettingsBackend:
-	cp GSettingsBackend.txt ../../GLibSys/GSettingsBackend.pony
+	cp GSettingsBackend.txt ../../GLib/GSettingsBackend.pony
 GSettingsClass:
-	cp GSettingsClass.txt ../../GLibSys/GSettingsClass.pony
+	cp GSettingsClass.txt ../../GLib/GSettingsClass.pony
 GSettingsPrivate:
-	cp GSettingsPrivate.txt ../../GLibSys/GSettingsPrivate.pony
+	cp GSettingsPrivate.txt ../../GLib/GSettingsPrivate.pony
 GSettingsSchemaKey:
-	cp GSettingsSchemaKey.txt ../../GLibSys/GSettingsSchemaKey.pony
+	cp GSettingsSchemaKey.txt ../../GLib/GSettingsSchemaKey.pony
 GSettingsSchemaSource:
-	cp GSettingsSchemaSource.txt ../../GLibSys/GSettingsSchemaSource.pony
+	cp GSettingsSchemaSource.txt ../../GLib/GSettingsSchemaSource.pony
 GSettingsSchema:
-	cp GSettingsSchema.txt ../../GLibSys/GSettingsSchema.pony
+	cp GSettingsSchema.txt ../../GLib/GSettingsSchema.pony
 GSettings:
-	cp GSettings.txt ../../GLibSys/GSettings.pony
+	cp GSettings.txt ../../GLib/GSettings.pony
 GSignalInvocationHint:
-	cp GSignalInvocationHint.txt ../../GLibSys/GSignalInvocationHint.pony
+	cp GSignalInvocationHint.txt ../../GLib/GSignalInvocationHint.pony
 GSignalQuery:
-	cp GSignalQuery.txt ../../GLibSys/GSignalQuery.pony
+	cp GSignalQuery.txt ../../GLib/GSignalQuery.pony
 GSimpleActionGroupClass:
-	cp GSimpleActionGroupClass.txt ../../GLibSys/GSimpleActionGroupClass.pony
+	cp GSimpleActionGroupClass.txt ../../GLib/GSimpleActionGroupClass.pony
 GSimpleActionGroupPrivate:
-	cp GSimpleActionGroupPrivate.txt ../../GLibSys/GSimpleActionGroupPrivate.pony
+	cp GSimpleActionGroupPrivate.txt ../../GLib/GSimpleActionGroupPrivate.pony
 GSimpleActionGroup:
-	cp GSimpleActionGroup.txt ../../GLibSys/GSimpleActionGroup.pony
+	cp GSimpleActionGroup.txt ../../GLib/GSimpleActionGroup.pony
 GSimpleAction:
-	cp GSimpleAction.txt ../../GLibSys/GSimpleAction.pony
+	cp GSimpleAction.txt ../../GLib/GSimpleAction.pony
 GSimpleAsyncResultClass:
-	cp GSimpleAsyncResultClass.txt ../../GLibSys/GSimpleAsyncResultClass.pony
+	cp GSimpleAsyncResultClass.txt ../../GLib/GSimpleAsyncResultClass.pony
 GSimpleAsyncResult:
-	cp GSimpleAsyncResult.txt ../../GLibSys/GSimpleAsyncResult.pony
+	cp GSimpleAsyncResult.txt ../../GLib/GSimpleAsyncResult.pony
 GSimpleIOStream:
-	cp GSimpleIOStream.txt ../../GLibSys/GSimpleIOStream.pony
+	cp GSimpleIOStream.txt ../../GLib/GSimpleIOStream.pony
 GSimplePermission:
-	cp GSimplePermission.txt ../../GLibSys/GSimplePermission.pony
+	cp GSimplePermission.txt ../../GLib/GSimplePermission.pony
 GSimpleProxyResolverClass:
-	cp GSimpleProxyResolverClass.txt ../../GLibSys/GSimpleProxyResolverClass.pony
+	cp GSimpleProxyResolverClass.txt ../../GLib/GSimpleProxyResolverClass.pony
 GSimpleProxyResolverPrivate:
-	cp GSimpleProxyResolverPrivate.txt ../../GLibSys/GSimpleProxyResolverPrivate.pony
+	cp GSimpleProxyResolverPrivate.txt ../../GLib/GSimpleProxyResolverPrivate.pony
 GSimpleProxyResolver:
-	cp GSimpleProxyResolver.txt ../../GLibSys/GSimpleProxyResolver.pony
+	cp GSimpleProxyResolver.txt ../../GLib/GSimpleProxyResolver.pony
 GSList:
-	cp GSList.txt ../../GLibSys/GSList.pony
+	cp GSList.txt ../../GLib/GSList.pony
 GSocketAddressClass:
-	cp GSocketAddressClass.txt ../../GLibSys/GSocketAddressClass.pony
+	cp GSocketAddressClass.txt ../../GLib/GSocketAddressClass.pony
 GSocketAddressEnumeratorClass:
-	cp GSocketAddressEnumeratorClass.txt ../../GLibSys/GSocketAddressEnumeratorClass.pony
+	cp GSocketAddressEnumeratorClass.txt ../../GLib/GSocketAddressEnumeratorClass.pony
 GSocketAddressEnumerator:
-	cp GSocketAddressEnumerator.txt ../../GLibSys/GSocketAddressEnumerator.pony
+	cp GSocketAddressEnumerator.txt ../../GLib/GSocketAddressEnumerator.pony
 GSocketAddress:
-	cp GSocketAddress.txt ../../GLibSys/GSocketAddress.pony
+	cp GSocketAddress.txt ../../GLib/GSocketAddress.pony
 GSocketClass:
-	cp GSocketClass.txt ../../GLibSys/GSocketClass.pony
+	cp GSocketClass.txt ../../GLib/GSocketClass.pony
 GSocketClientClass:
-	cp GSocketClientClass.txt ../../GLibSys/GSocketClientClass.pony
+	cp GSocketClientClass.txt ../../GLib/GSocketClientClass.pony
 GSocketClientPrivate:
-	cp GSocketClientPrivate.txt ../../GLibSys/GSocketClientPrivate.pony
+	cp GSocketClientPrivate.txt ../../GLib/GSocketClientPrivate.pony
 GSocketClient:
-	cp GSocketClient.txt ../../GLibSys/GSocketClient.pony
+	cp GSocketClient.txt ../../GLib/GSocketClient.pony
 GSocketConnectableIface:
-	cp GSocketConnectableIface.txt ../../GLibSys/GSocketConnectableIface.pony
+	cp GSocketConnectableIface.txt ../../GLib/GSocketConnectableIface.pony
 GSocketConnectable:
-	cp GSocketConnectable.txt ../../GLibSys/GSocketConnectable.pony
+	cp GSocketConnectable.txt ../../GLib/GSocketConnectable.pony
 GSocketConnectionClass:
-	cp GSocketConnectionClass.txt ../../GLibSys/GSocketConnectionClass.pony
+	cp GSocketConnectionClass.txt ../../GLib/GSocketConnectionClass.pony
 GSocketConnectionPrivate:
-	cp GSocketConnectionPrivate.txt ../../GLibSys/GSocketConnectionPrivate.pony
+	cp GSocketConnectionPrivate.txt ../../GLib/GSocketConnectionPrivate.pony
 GSocketConnection:
-	cp GSocketConnection.txt ../../GLibSys/GSocketConnection.pony
+	cp GSocketConnection.txt ../../GLib/GSocketConnection.pony
 GSocketControlMessageClass:
-	cp GSocketControlMessageClass.txt ../../GLibSys/GSocketControlMessageClass.pony
+	cp GSocketControlMessageClass.txt ../../GLib/GSocketControlMessageClass.pony
 GSocketControlMessagePrivate:
-	cp GSocketControlMessagePrivate.txt ../../GLibSys/GSocketControlMessagePrivate.pony
+	cp GSocketControlMessagePrivate.txt ../../GLib/GSocketControlMessagePrivate.pony
 GSocketControlMessage:
-	cp GSocketControlMessage.txt ../../GLibSys/GSocketControlMessage.pony
+	cp GSocketControlMessage.txt ../../GLib/GSocketControlMessage.pony
 GSocketListenerClass:
-	cp GSocketListenerClass.txt ../../GLibSys/GSocketListenerClass.pony
+	cp GSocketListenerClass.txt ../../GLib/GSocketListenerClass.pony
 GSocketListenerPrivate:
-	cp GSocketListenerPrivate.txt ../../GLibSys/GSocketListenerPrivate.pony
+	cp GSocketListenerPrivate.txt ../../GLib/GSocketListenerPrivate.pony
 GSocketListener:
-	cp GSocketListener.txt ../../GLibSys/GSocketListener.pony
+	cp GSocketListener.txt ../../GLib/GSocketListener.pony
 GSocketPrivate:
-	cp GSocketPrivate.txt ../../GLibSys/GSocketPrivate.pony
+	cp GSocketPrivate.txt ../../GLib/GSocketPrivate.pony
 GSocketServiceClass:
-	cp GSocketServiceClass.txt ../../GLibSys/GSocketServiceClass.pony
+	cp GSocketServiceClass.txt ../../GLib/GSocketServiceClass.pony
 GSocketServicePrivate:
-	cp GSocketServicePrivate.txt ../../GLibSys/GSocketServicePrivate.pony
+	cp GSocketServicePrivate.txt ../../GLib/GSocketServicePrivate.pony
 GSocketService:
-	cp GSocketService.txt ../../GLibSys/GSocketService.pony
+	cp GSocketService.txt ../../GLib/GSocketService.pony
 GSocket:
-	cp GSocket.txt ../../GLibSys/GSocket.pony
+	cp GSocket.txt ../../GLib/GSocket.pony
 GSourceCallbackFuncs:
-	cp GSourceCallbackFuncs.txt ../../GLibSys/GSourceCallbackFuncs.pony
+	cp GSourceCallbackFuncs.txt ../../GLib/GSourceCallbackFuncs.pony
 GSourceFuncs:
-	cp GSourceFuncs.txt ../../GLibSys/GSourceFuncs.pony
+	cp GSourceFuncs.txt ../../GLib/GSourceFuncs.pony
 GSourcePrivate:
-	cp GSourcePrivate.txt ../../GLibSys/GSourcePrivate.pony
+	cp GSourcePrivate.txt ../../GLib/GSourcePrivate.pony
 GSource:
-	cp GSource.txt ../../GLibSys/GSource.pony
+	cp GSource.txt ../../GLib/GSource.pony
 GSrvTarget:
-	cp GSrvTarget.txt ../../GLibSys/GSrvTarget.pony
+	cp GSrvTarget.txt ../../GLib/GSrvTarget.pony
 GStaticPrivate:
-	cp GStaticPrivate.txt ../../GLibSys/GStaticPrivate.pony
+	cp GStaticPrivate.txt ../../GLib/GStaticPrivate.pony
 GStaticRecMutex:
-	cp GStaticRecMutex.txt ../../GLibSys/GStaticRecMutex.pony
+	cp GStaticRecMutex.txt ../../GLib/GStaticRecMutex.pony
 GStaticResource:
-	cp GStaticResource.txt ../../GLibSys/GStaticResource.pony
+	cp GStaticResource.txt ../../GLib/GStaticResource.pony
 GStaticRWLock:
-	cp GStaticRWLock.txt ../../GLibSys/GStaticRWLock.pony
+	cp GStaticRWLock.txt ../../GLib/GStaticRWLock.pony
 GStringChunk:
-	cp GStringChunk.txt ../../GLibSys/GStringChunk.pony
+	cp GStringChunk.txt ../../GLib/GStringChunk.pony
 GString:
-	cp GString.txt ../../GLibSys/GString.pony
+	cp GString.txt ../../GLib/GString.pony
 GStrvBuilder:
-	cp GStrvBuilder.txt ../../GLibSys/GStrvBuilder.pony
+	cp GStrvBuilder.txt ../../GLib/GStrvBuilder.pony
 GSubprocessLauncher:
-	cp GSubprocessLauncher.txt ../../GLibSys/GSubprocessLauncher.pony
+	cp GSubprocessLauncher.txt ../../GLib/GSubprocessLauncher.pony
 GSubprocess:
-	cp GSubprocess.txt ../../GLibSys/GSubprocess.pony
+	cp GSubprocess.txt ../../GLib/GSubprocess.pony
 GTaskClass:
-	cp GTaskClass.txt ../../GLibSys/GTaskClass.pony
+	cp GTaskClass.txt ../../GLib/GTaskClass.pony
 GTask:
-	cp GTask.txt ../../GLibSys/GTask.pony
+	cp GTask.txt ../../GLib/GTask.pony
 GTcpConnectionClass:
-	cp GTcpConnectionClass.txt ../../GLibSys/GTcpConnectionClass.pony
+	cp GTcpConnectionClass.txt ../../GLib/GTcpConnectionClass.pony
 GTcpConnectionPrivate:
-	cp GTcpConnectionPrivate.txt ../../GLibSys/GTcpConnectionPrivate.pony
+	cp GTcpConnectionPrivate.txt ../../GLib/GTcpConnectionPrivate.pony
 GTcpConnection:
-	cp GTcpConnection.txt ../../GLibSys/GTcpConnection.pony
+	cp GTcpConnection.txt ../../GLib/GTcpConnection.pony
 GTcpWrapperConnectionClass:
-	cp GTcpWrapperConnectionClass.txt ../../GLibSys/GTcpWrapperConnectionClass.pony
+	cp GTcpWrapperConnectionClass.txt ../../GLib/GTcpWrapperConnectionClass.pony
 GTcpWrapperConnectionPrivate:
-	cp GTcpWrapperConnectionPrivate.txt ../../GLibSys/GTcpWrapperConnectionPrivate.pony
+	cp GTcpWrapperConnectionPrivate.txt ../../GLib/GTcpWrapperConnectionPrivate.pony
 GTcpWrapperConnection:
-	cp GTcpWrapperConnection.txt ../../GLibSys/GTcpWrapperConnection.pony
+	cp GTcpWrapperConnection.txt ../../GLib/GTcpWrapperConnection.pony
 GTestCase:
-	cp GTestCase.txt ../../GLibSys/GTestCase.pony
+	cp GTestCase.txt ../../GLib/GTestCase.pony
 GTestDBus:
-	cp GTestDBus.txt ../../GLibSys/GTestDBus.pony
+	cp GTestDBus.txt ../../GLib/GTestDBus.pony
 GTestSuite:
-	cp GTestSuite.txt ../../GLibSys/GTestSuite.pony
+	cp GTestSuite.txt ../../GLib/GTestSuite.pony
 GThemedIconClass:
-	cp GThemedIconClass.txt ../../GLibSys/GThemedIconClass.pony
+	cp GThemedIconClass.txt ../../GLib/GThemedIconClass.pony
 GThemedIcon:
-	cp GThemedIcon.txt ../../GLibSys/GThemedIcon.pony
+	cp GThemedIcon.txt ../../GLib/GThemedIcon.pony
 GThreadedSocketServiceClass:
-	cp GThreadedSocketServiceClass.txt ../../GLibSys/GThreadedSocketServiceClass.pony
+	cp GThreadedSocketServiceClass.txt ../../GLib/GThreadedSocketServiceClass.pony
 GThreadedSocketServicePrivate:
-	cp GThreadedSocketServicePrivate.txt ../../GLibSys/GThreadedSocketServicePrivate.pony
+	cp GThreadedSocketServicePrivate.txt ../../GLib/GThreadedSocketServicePrivate.pony
 GThreadedSocketService:
-	cp GThreadedSocketService.txt ../../GLibSys/GThreadedSocketService.pony
+	cp GThreadedSocketService.txt ../../GLib/GThreadedSocketService.pony
 GThreadFunctions:
-	cp GThreadFunctions.txt ../../GLibSys/GThreadFunctions.pony
+	cp GThreadFunctions.txt ../../GLib/GThreadFunctions.pony
 GThreadPool:
-	cp GThreadPool.txt ../../GLibSys/GThreadPool.pony
+	cp GThreadPool.txt ../../GLib/GThreadPool.pony
 GThread:
-	cp GThread.txt ../../GLibSys/GThread.pony
+	cp GThread.txt ../../GLib/GThread.pony
 GTimer:
-	cp GTimer.txt ../../GLibSys/GTimer.pony
+	cp GTimer.txt ../../GLib/GTimer.pony
 GTimeVal:
-	cp GTimeVal.txt ../../GLibSys/GTimeVal.pony
+	cp GTimeVal.txt ../../GLib/GTimeVal.pony
 GTimeZone:
-	cp GTimeZone.txt ../../GLibSys/GTimeZone.pony
+	cp GTimeZone.txt ../../GLib/GTimeZone.pony
 GTlsBackendInterface:
-	cp GTlsBackendInterface.txt ../../GLibSys/GTlsBackendInterface.pony
+	cp GTlsBackendInterface.txt ../../GLib/GTlsBackendInterface.pony
 GTlsBackend:
-	cp GTlsBackend.txt ../../GLibSys/GTlsBackend.pony
+	cp GTlsBackend.txt ../../GLib/GTlsBackend.pony
 GTlsCertificateClass:
-	cp GTlsCertificateClass.txt ../../GLibSys/GTlsCertificateClass.pony
+	cp GTlsCertificateClass.txt ../../GLib/GTlsCertificateClass.pony
 GTlsCertificatePrivate:
-	cp GTlsCertificatePrivate.txt ../../GLibSys/GTlsCertificatePrivate.pony
+	cp GTlsCertificatePrivate.txt ../../GLib/GTlsCertificatePrivate.pony
 GTlsCertificate:
-	cp GTlsCertificate.txt ../../GLibSys/GTlsCertificate.pony
+	cp GTlsCertificate.txt ../../GLib/GTlsCertificate.pony
 GTlsClientConnectionInterface:
-	cp GTlsClientConnectionInterface.txt ../../GLibSys/GTlsClientConnectionInterface.pony
+	cp GTlsClientConnectionInterface.txt ../../GLib/GTlsClientConnectionInterface.pony
 GTlsClientConnection:
-	cp GTlsClientConnection.txt ../../GLibSys/GTlsClientConnection.pony
+	cp GTlsClientConnection.txt ../../GLib/GTlsClientConnection.pony
 GTlsConnectionClass:
-	cp GTlsConnectionClass.txt ../../GLibSys/GTlsConnectionClass.pony
+	cp GTlsConnectionClass.txt ../../GLib/GTlsConnectionClass.pony
 GTlsConnectionPrivate:
-	cp GTlsConnectionPrivate.txt ../../GLibSys/GTlsConnectionPrivate.pony
+	cp GTlsConnectionPrivate.txt ../../GLib/GTlsConnectionPrivate.pony
 GTlsConnection:
-	cp GTlsConnection.txt ../../GLibSys/GTlsConnection.pony
+	cp GTlsConnection.txt ../../GLib/GTlsConnection.pony
 GTlsDatabaseClass:
-	cp GTlsDatabaseClass.txt ../../GLibSys/GTlsDatabaseClass.pony
+	cp GTlsDatabaseClass.txt ../../GLib/GTlsDatabaseClass.pony
 GTlsDatabasePrivate:
-	cp GTlsDatabasePrivate.txt ../../GLibSys/GTlsDatabasePrivate.pony
+	cp GTlsDatabasePrivate.txt ../../GLib/GTlsDatabasePrivate.pony
 GTlsDatabase:
-	cp GTlsDatabase.txt ../../GLibSys/GTlsDatabase.pony
+	cp GTlsDatabase.txt ../../GLib/GTlsDatabase.pony
 GTlsFileDatabaseInterface:
-	cp GTlsFileDatabaseInterface.txt ../../GLibSys/GTlsFileDatabaseInterface.pony
+	cp GTlsFileDatabaseInterface.txt ../../GLib/GTlsFileDatabaseInterface.pony
 GTlsFileDatabase:
-	cp GTlsFileDatabase.txt ../../GLibSys/GTlsFileDatabase.pony
+	cp GTlsFileDatabase.txt ../../GLib/GTlsFileDatabase.pony
 GTlsInteractionClass:
-	cp GTlsInteractionClass.txt ../../GLibSys/GTlsInteractionClass.pony
+	cp GTlsInteractionClass.txt ../../GLib/GTlsInteractionClass.pony
 GTlsInteractionPrivate:
-	cp GTlsInteractionPrivate.txt ../../GLibSys/GTlsInteractionPrivate.pony
+	cp GTlsInteractionPrivate.txt ../../GLib/GTlsInteractionPrivate.pony
 GTlsInteraction:
-	cp GTlsInteraction.txt ../../GLibSys/GTlsInteraction.pony
+	cp GTlsInteraction.txt ../../GLib/GTlsInteraction.pony
 GTlsPasswordClass:
-	cp GTlsPasswordClass.txt ../../GLibSys/GTlsPasswordClass.pony
+	cp GTlsPasswordClass.txt ../../GLib/GTlsPasswordClass.pony
 GTlsPasswordPrivate:
-	cp GTlsPasswordPrivate.txt ../../GLibSys/GTlsPasswordPrivate.pony
+	cp GTlsPasswordPrivate.txt ../../GLib/GTlsPasswordPrivate.pony
 GTlsPassword:
-	cp GTlsPassword.txt ../../GLibSys/GTlsPassword.pony
+	cp GTlsPassword.txt ../../GLib/GTlsPassword.pony
 GTlsServerConnectionInterface:
-	cp GTlsServerConnectionInterface.txt ../../GLibSys/GTlsServerConnectionInterface.pony
+	cp GTlsServerConnectionInterface.txt ../../GLib/GTlsServerConnectionInterface.pony
 GTlsServerConnection:
-	cp GTlsServerConnection.txt ../../GLibSys/GTlsServerConnection.pony
+	cp GTlsServerConnection.txt ../../GLib/GTlsServerConnection.pony
 GTrashStack:
-	cp GTrashStack.txt ../../GLibSys/GTrashStack.pony
+	cp GTrashStack.txt ../../GLib/GTrashStack.pony
 GTreeNode:
-	cp GTreeNode.txt ../../GLibSys/GTreeNode.pony
+	cp GTreeNode.txt ../../GLib/GTreeNode.pony
 GTree:
-	cp GTree.txt ../../GLibSys/GTree.pony
+	cp GTree.txt ../../GLib/GTree.pony
 GTuples:
-	cp GTuples.txt ../../GLibSys/GTuples.pony
+	cp GTuples.txt ../../GLib/GTuples.pony
 GTypeClass:
-	cp GTypeClass.txt ../../GLibSys/GTypeClass.pony
+	cp GTypeClass.txt ../../GLib/GTypeClass.pony
 GTypeFundamentalInfo:
-	cp GTypeFundamentalInfo.txt ../../GLibSys/GTypeFundamentalInfo.pony
+	cp GTypeFundamentalInfo.txt ../../GLib/GTypeFundamentalInfo.pony
 GTypeInfo:
-	cp GTypeInfo.txt ../../GLibSys/GTypeInfo.pony
+	cp GTypeInfo.txt ../../GLib/GTypeInfo.pony
 GTypeInstance:
-	cp GTypeInstance.txt ../../GLibSys/GTypeInstance.pony
+	cp GTypeInstance.txt ../../GLib/GTypeInstance.pony
 GTypeInterface:
-	cp GTypeInterface.txt ../../GLibSys/GTypeInterface.pony
+	cp GTypeInterface.txt ../../GLib/GTypeInterface.pony
 GTypeModuleClass:
-	cp GTypeModuleClass.txt ../../GLibSys/GTypeModuleClass.pony
+	cp GTypeModuleClass.txt ../../GLib/GTypeModuleClass.pony
 GTypeModule:
-	cp GTypeModule.txt ../../GLibSys/GTypeModule.pony
+	cp GTypeModule.txt ../../GLib/GTypeModule.pony
 GTypePluginClass:
-	cp GTypePluginClass.txt ../../GLibSys/GTypePluginClass.pony
+	cp GTypePluginClass.txt ../../GLib/GTypePluginClass.pony
 GTypePlugin:
-	cp GTypePlugin.txt ../../GLibSys/GTypePlugin.pony
+	cp GTypePlugin.txt ../../GLib/GTypePlugin.pony
 GTypeQuery:
-	cp GTypeQuery.txt ../../GLibSys/GTypeQuery.pony
+	cp GTypeQuery.txt ../../GLib/GTypeQuery.pony
 GTypeValueTable:
-	cp GTypeValueTable.txt ../../GLibSys/GTypeValueTable.pony
+	cp GTypeValueTable.txt ../../GLib/GTypeValueTable.pony
 GUnixCredentialsMessage:
-	cp GUnixCredentialsMessage.txt ../../GLibSys/GUnixCredentialsMessage.pony
+	cp GUnixCredentialsMessage.txt ../../GLib/GUnixCredentialsMessage.pony
 GUnixFDList:
-	cp GUnixFDList.txt ../../GLibSys/GUnixFDList.pony
+	cp GUnixFDList.txt ../../GLib/GUnixFDList.pony
 GUriParamsIter:
-	cp GUriParamsIter.txt ../../GLibSys/GUriParamsIter.pony
+	cp GUriParamsIter.txt ../../GLib/GUriParamsIter.pony
 GUri:
-	cp GUri.txt ../../GLibSys/GUri.pony
+	cp GUri.txt ../../GLib/GUri.pony
 GValueArray:
-	cp GValueArray.txt ../../GLibSys/GValueArray.pony
+	cp GValueArray.txt ../../GLib/GValueArray.pony
 GValue:
-	cp GValue.txt ../../GLibSys/GValue.pony
+	cp GValue.txt ../../GLib/GValue.pony
 GVariantBuilder:
-	cp GVariantBuilder.txt ../../GLibSys/GVariantBuilder.pony
+	cp GVariantBuilder.txt ../../GLib/GVariantBuilder.pony
 GVariantDict:
-	cp GVariantDict.txt ../../GLibSys/GVariantDict.pony
+	cp GVariantDict.txt ../../GLib/GVariantDict.pony
 GVariantIter:
-	cp GVariantIter.txt ../../GLibSys/GVariantIter.pony
+	cp GVariantIter.txt ../../GLib/GVariantIter.pony
 GVariant:
-	cp GVariant.txt ../../GLibSys/GVariant.pony
+	cp GVariant.txt ../../GLib/GVariant.pony
 GVariantType:
-	cp GVariantType.txt ../../GLibSys/GVariantType.pony
+	cp GVariantType.txt ../../GLib/GVariantType.pony
 GVfsClass:
-	cp GVfsClass.txt ../../GLibSys/GVfsClass.pony
+	cp GVfsClass.txt ../../GLib/GVfsClass.pony
 GVfs:
-	cp GVfs.txt ../../GLibSys/GVfs.pony
+	cp GVfs.txt ../../GLib/GVfs.pony
 GVolumeIface:
-	cp GVolumeIface.txt ../../GLibSys/GVolumeIface.pony
+	cp GVolumeIface.txt ../../GLib/GVolumeIface.pony
 GVolumeMonitorClass:
-	cp GVolumeMonitorClass.txt ../../GLibSys/GVolumeMonitorClass.pony
+	cp GVolumeMonitorClass.txt ../../GLib/GVolumeMonitorClass.pony
 GVolumeMonitor:
-	cp GVolumeMonitor.txt ../../GLibSys/GVolumeMonitor.pony
+	cp GVolumeMonitor.txt ../../GLib/GVolumeMonitor.pony
 GVolume:
-	cp GVolume.txt ../../GLibSys/GVolume.pony
+	cp GVolume.txt ../../GLib/GVolume.pony
 GZlibCompressorClass:
-	cp GZlibCompressorClass.txt ../../GLibSys/GZlibCompressorClass.pony
+	cp GZlibCompressorClass.txt ../../GLib/GZlibCompressorClass.pony
 GZlibCompressor:
-	cp GZlibCompressor.txt ../../GLibSys/GZlibCompressor.pony
+	cp GZlibCompressor.txt ../../GLib/GZlibCompressor.pony
 GZlibDecompressorClass:
-	cp GZlibDecompressorClass.txt ../../GLibSys/GZlibDecompressorClass.pony
+	cp GZlibDecompressorClass.txt ../../GLib/GZlibDecompressorClass.pony
 GZlibDecompressor:
-	cp GZlibDecompressor.txt ../../GLibSys/GZlibDecompressor.pony
+	cp GZlibDecompressor.txt ../../GLib/GZlibDecompressor.pony
 IOFILE:
-	cp IOFILE.txt ../../GLibSys/IOFILE.pony
+	cp IOFILE.txt ../../GLib/IOFILE.pony
