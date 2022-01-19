@@ -1,5 +1,5 @@
 {
-  "packages": ["GLib"],
+  "packages": ["GLib", "GObject"],
   "deps": [],
   "info": {
     "description": "Pony wrapper for GLib",
