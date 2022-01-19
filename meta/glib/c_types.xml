@@ -10,7 +10,35 @@
       <suffix>    consume p</suffix>
     </suffixes>
   </type>
+  <type name="const gchar*" ponyusearg="Pointer[U8] tag" ponyuserv="Pointer[U8]" ponyfnrv="String" pony2c=".cstring()">
+    <prefixes>
+      <prefix>    var cstr: Pointer[U8] ref =</prefix>
+    </prefixes>
+    <suffixes>
+      <suffix>    let p: String iso = String.from_cstring(cstr).clone()</suffix>
+      <suffix>    consume p</suffix>
+    </suffixes>
+  </type>
+  <type name="char*" ponyusearg="Pointer[U8] tag" ponyuserv="Pointer[U8]" ponyfnrv="String" pony2c=".cstring()">
+    <prefixes>
+      <prefix>    var cstr: Pointer[U8] ref =</prefix>
+    </prefixes>
+    <suffixes>
+      <suffix>    let p: String iso = String.from_cstring(cstr).clone()</suffix>
+      <suffix>    consume p</suffix>
+    </suffixes>
+  </type>
+  <type name="gchar*" ponyusearg="Pointer[U8] tag" ponyuserv="Pointer[U8]" ponyfnrv="String" pony2c=".cstring()">
+    <prefixes>
+      <prefix>    var cstr: Pointer[U8] ref =</prefix>
+    </prefixes>
+    <suffixes>
+      <suffix>    let p: String iso = String.from_cstring(cstr).clone()</suffix>
+      <suffix>    consume p</suffix>
+    </suffixes>
+  </type>
   <type name="void" ponyusearg="None" ponyuserv="None" ponyfnrv="None"/>
+  <type name="gpointer" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
   <type name="gint8" ponyusearg="I8" ponyuserv="I8" ponyfnrv="I8"/>
   <type name="guint8" ponyusearg="U8" ponyuserv="U8" ponyfnrv="U8"/>
   <type name="gint16" ponyusearg="I16" ponyuserv="I16" ponyfnrv="I16"/>
@@ -25,32 +53,206 @@
   <type name="gssize" ponyusearg="ISize" ponyuserv="ISize" ponyfnrv="ISize"/>
   <type name="char" ponyusearg="U8" ponyuserv="U8" ponyfnrv="U8"/>
   <type name="gchar" ponyusearg="U8" ponyuserv="U8" ponyfnrv="U8"/>
+  <type name="float" ponyusearg="F32" ponyuserv="F32" ponyfnrv="F32"/>
+  <type name="float*" ponyusearg="Pointer[F32]" ponyuserv="Pointer[F32]" ponyfnrv="Pointer[F32]"/>
+  <type name="double" ponyusearg="F64" ponyuserv="F64" ponyfnrv="F64"/>
+  <type name="double*" ponyusearg="Pointer[F64]" ponyuserv="Pointer[F64]" ponyfnrv="Pointer[F64]"/>
   <type name="gdouble" ponyusearg="F64" ponyuserv="F64" ponyfnrv="F64"/>
-  <type name="gchar*" ponyusearg="Pointer[U8]" ponyuserv="Pointer[U8]" ponyfnrv="String"/>
   <type name="gchar**" ponyusearg="Pointer[Pointer[U8]]" ponyuserv="Pointer[Pointer[U8]]" ponyfnrv="Pointer[Pointer[U8]]"/>
   <type name="char**" ponyusearg="Pointer[Pointer[U8]]" ponyuserv="Pointer[Pointer[U8]]" ponyfnrv="Pointer[Pointer[U8]]"/>
   <type name="const char**" ponyusearg="Pointer[Pointer[U8]]" ponyuserv="Pointer[Pointer[U8]]" ponyfnrv="Pointer[Pointer[U8]]"/>
   <type name="gboolean" ponyusearg="Bool" ponyuserv="Bool" ponyfnrv="Bool"/>
+  <type name="gconstpointer" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
 
   <type name="GtkWindow*" ponyusearg="GtkWindow" ponyuserv="GtkWindow" ponyfnrv="GtkWindow"/>
+  <type name="GtkWindowGroup*" ponyusearg="GtkWindowGroup" ponyuserv="GtkWindowGroup" ponyfnrv="GtkWindowGroup"/>
   <type name="GtkWidget*" ponyusearg="GtkWidget" ponyuserv="GtkWidget" ponyfnrv="GtkWidget"/>
+  <type name="GtkActionBar*" ponyusearg="GtkActionBar" ponyuserv="GtkActionBar" ponyfnrv="GtkActionBar"/>
+  <type name="GtkAdjustment*" ponyusearg="GtkAdjustment" ponyuserv="GtkAdjustment" ponyfnrv="GtkAdjustment"/>
   <type name="GtkApplication*" ponyusearg="GtkApplication" ponyuserv="GtkApplication" ponyfnrv="GtkApplication"/>
   <type name="GtkAboutDialog*" ponyusearg="GtkAboutDialog" ponyuserv="GtkAboutDialog" ponyfnrv="GtkAboutDialog"/>
   <type name="GtkApplicationWindow*" ponyusearg="GtkApplicationWindow" ponyuserv="GtkApplicationWindow" ponyfnrv="GtkApplicationWindow"/>
+  <type name="GtkAppChooserButton*" ponyusearg="GtkAppChooserButton" ponyuserv="GtkAppChooserButton" ponyfnrv="GtkAppChooserButton"/>
+  <type name="GtkAppChooserDialog*" ponyusearg="GtkAppChooserDialog" ponyuserv="GtkAppChooserDialog" ponyfnrv="GtkAppChooserDialog"/>
+  <type name="GtkAppChooserWidget*" ponyusearg="GtkAppChooserWidget" ponyuserv="GtkAppChooserWidget" ponyfnrv="GtkAppChooserWidget"/>
+  <type name="GtkAlternativeTrigger*" ponyusearg="GtkAlternativeTrigger" ponyuserv="GtkAlternativeTrigger" ponyfnrv="GtkAlternativeTrigger"/>
+  <type name="GtkAspectFrame*" ponyusearg="GtkAspectFrame" ponyuserv="GtkAspectFrame" ponyfnrv="GtkAspectFrame"/>
+  <type name="GtkAssistant*" ponyusearg="GtkAssistant" ponyuserv="GtkAssistant" ponyfnrv="GtkAssistant"/>
+  <type name="GtkAssistantPage*" ponyusearg="GtkAssistantPage" ponyuserv="GtkAssistantPage" ponyfnrv="GtkAssistantPage"/>
+  <type name="GtkBookmarkList*" ponyusearg="GtkBookmarkList" ponyuserv="GtkBookmarkList" ponyfnrv="GtkBookmarkList"/>
+  <type name="GtkShortcutTrigger*" ponyusearg="GtkShortcutTrigger" ponyuserv="GtkShortcutTrigger" ponyfnrv="GtkShortcutTrigger"/>
   <type name="GtkBox*" ponyusearg="GtkBox" ponyuserv="GtkBox" ponyfnrv="GtkBox"/>
+  <type name="GtkBoxLayout*" ponyusearg="GtkBoxLayout" ponyuserv="GtkBoxLayout" ponyfnrv="GtkBoxLayout"/>
+  <type name="GtkBoolFilter*" ponyusearg="GtkBoolFilter" ponyuserv="GtkBoolFilter" ponyfnrv="GtkBoolFilter"/>
   <type name="GtkBuilder*" ponyusearg="GtkBuilder" ponyuserv="GtkBuilder" ponyfnrv="GtkBuilder"/>
+  <type name="GtkBuilderCScope*" ponyusearg="GtkBuilderCScope" ponyuserv="GtkBuilderCScope" ponyfnrv="GtkBuilderCScope"/>
+  <type name="GtkBuilderListItemFactory*" ponyusearg="GtkBuilderListItemFactory" ponyuserv="GtkBuilderListItemFactory" ponyfnrv="GtkBuilderListItemFactory"/>
   <type name="GtkButton*" ponyusearg="GtkButton" ponyuserv="GtkButton" ponyfnrv="GtkButton"/>
+  <type name="GtkCalendar*" ponyusearg="GtkCalendar" ponyuserv="GtkCalendar" ponyfnrv="GtkCalendar"/>
+  <type name="GtkCallbackAction*" ponyusearg="GtkCallbackAction" ponyuserv="GtkCallbackAction" ponyfnrv="GtkCallbackAction"/>
+  <type name="GtkCellArea*" ponyusearg="GtkCellArea" ponyuserv="GtkCellArea" ponyfnrv="GtkCellArea"/>
+  <type name="GtkCellAreaBox*" ponyusearg="GtkCellAreaBox" ponyuserv="GtkCellAreaBox" ponyfnrv="GtkCellAreaBox"/>
+  <type name="GtkCellAreaContext*" ponyusearg="GtkCellAreaContext" ponyuserv="GtkCellAreaContext" ponyfnrv="GtkCellAreaContext"/>
+  <type name="GtkCellEditable*" ponyusearg="GtkCellEditable" ponyuserv="GtkCellEditable" ponyfnrv="GtkCellEditable"/>
+  <type name="GtkCellRenderer*" ponyusearg="GtkCellRenderer" ponyuserv="GtkCellRenderer" ponyfnrv="GtkCellRenderer"/>
+  <type name="GtkCellRendererAccel*" ponyusearg="GtkCellRendererAccel" ponyuserv="GtkCellRendererAccel" ponyfnrv="GtkCellRendererAccel"/>
+  <type name="GtkCellRendererCombo*" ponyusearg="GtkCellRendererCombo" ponyuserv="GtkCellRendererCombo" ponyfnrv="GtkCellRendererCombo"/>
+  <type name="GtkCellRendererPixbuf*" ponyusearg="GtkCellRendererPixbuf" ponyuserv="GtkCellRendererPixbuf" ponyfnrv="GtkCellRendererPixbuf"/>
+  <type name="GtkCellRendererProgress*" ponyusearg="GtkCellRendererProgress" ponyuserv="GtkCellRendererProgress" ponyfnrv="GtkCellRendererProgress"/>
+  <type name="GtkCellRendererSpin*" ponyusearg="GtkCellRendererSpin" ponyuserv="GtkCellRendererSpin" ponyfnrv="GtkCellRendererSpin"/>
+  <type name="GtkCellRendererSpinner*" ponyusearg="GtkCellRendererSpinner" ponyuserv="GtkCellRendererSpinner" ponyfnrv="GtkCellRendererSpinner"/>
+  <type name="GtkCellRendererText*" ponyusearg="GtkCellRendererText" ponyuserv="GtkCellRendererText" ponyfnrv="GtkCellRendererText"/>
+  <type name="GtkCellRendererToggle*" ponyusearg="GtkCellRendererToggle" ponyuserv="GtkCellRendererToggle" ponyfnrv="GtkCellRendererToggle"/>
+  <type name="GtkCellRendererView*" ponyusearg="GtkCellRendererView" ponyuserv="GtkCellRendererView" ponyfnrv="GtkCellRendererView"/>
+  <type name="GtkCellView*" ponyusearg="GtkCellView" ponyuserv="GtkCellView" ponyfnrv="GtkCellView"/>
+  <type name="GtkCenterBox*" ponyusearg="GtkCenterBox" ponyuserv="GtkCenterBox" ponyfnrv="GtkCenterBox"/>
+  <type name="GtkCenterLayout*" ponyusearg="GtkCenterLayout" ponyuserv="GtkCenterLayout" ponyfnrv="GtkCenterLayout"/>
+  <type name="GtkCheckButton*" ponyusearg="GtkCheckButton" ponyuserv="GtkCheckButton" ponyfnrv="GtkCheckButton"/>
+  <type name="GtkCClosureExpression*" ponyusearg="GtkCClosureExpression" ponyuserv="GtkCClosureExpression" ponyfnrv="GtkCClosureExpression"/>
+  <type name="GtkClosureExpression*" ponyusearg="GtkClosureExpression" ponyuserv="GtkClosureExpression" ponyfnrv="GtkClosureExpression"/>
+  <type name="GtkColorButton*" ponyusearg="GtkColorButton" ponyuserv="GtkColorButton" ponyfnrv="GtkColorButton"/>
+  <type name="GtkColorChooserDialog*" ponyusearg="GtkChooserDialog" ponyuserv="GtkChooserDialog" ponyfnrv="GtkChooserDialog"/>
+  <type name="GtkColorChooserWidget*" ponyusearg="GtkChooserWidget" ponyuserv="GtkChooserWidget" ponyfnrv="GtkChooserWidget"/>
+  <type name="GtkColumnView*" ponyusearg="GtkColumnView" ponyuserv="GtkColumnView" ponyfnrv="GtkColumnView"/>
+  <type name="GtkComboBox*" ponyusearg="GtkComboBox" ponyuserv="GtkComboBox" ponyfnrv="GtkComboBox"/>
+  <type name="GtkComboBoxText*" ponyusearg="GtkComboBoxText" ponyuserv="GtkComboBoxText" ponyfnrv="GtkComboBoxText"/>
+  <type name="GtkConstraint*" ponyusearg="GtkConstraint" ponyuserv="GtkConstraint" ponyfnrv="GtkConstraint"/>
+  <type name="GtkConstraintGuide*" ponyusearg="GtkConstraintGuide" ponyuserv="GtkConstraintGuide" ponyfnrv="GtkConstraintGuide"/>
+  <type name="GtkConstraintLayout*" ponyusearg="GtkConstraintLayout" ponyuserv="GtkConstraintLayout" ponyfnrv="GtkConstraintLayout"/>
+  <type name="GtkConstraintLayoutChild*" ponyusearg="GtkConstraintLayoutChild" ponyuserv="GtkConstraintLayoutChild" ponyfnrv="GtkConstraintLayoutChild"/>
+  <type name="GtkConstraintTarget*" ponyusearg="GtkConstraintTarget" ponyuserv="GtkConstraintTarget" ponyfnrv="GtkConstraintTarget"/>
+  <type name="GtkColumnViewColumn*" ponyusearg="GtkColumnViewColumn" ponyuserv="GtkColumnViewColumn" ponyfnrv="GtkColumnViewColumn"/>
+  <type name="GtkCssProvider*" ponyusearg="GtkCssProvider" ponyuserv="GtkCssProvider" ponyfnrv="GtkCssProvider"/>
+  <type name="GtkCustomFilter*" ponyusearg="GtkCustomFilter" ponyuserv="GtkCustomFilter" ponyfnrv="GtkCustomFilter"/>
+  <type name="GtkCustomLayout*" ponyusearg="GtkCustomLayout" ponyuserv="GtkCustomLayout" ponyfnrv="GtkCustomLayout"/>
+  <type name="GtkCustomSorter*" ponyusearg="GtkCustomSorter" ponyuserv="GtkCustomSorter" ponyfnrv="GtkCustomSorter"/>
+  <type name="GtkDialog*" ponyusearg="GtkDialog" ponyuserv="GtkDialog" ponyfnrv="GtkDialog"/>
+  <type name="GtkDirectoryList*" ponyusearg="GtkDirectoryList" ponyuserv="GtkDirectoryList" ponyfnrv="GtkDirectoryList"/>
+  <type name="GtkDragIcon*" ponyusearg="GtkDragIcon" ponyuserv="GtkDragIcon" ponyfnrv="GtkDragIcon"/>
+  <type name="GtkDragSource*" ponyusearg="GtkDragSource" ponyuserv="GtkDragSource" ponyfnrv="GtkDragSource"/>
+  <type name="GtkDrawingArea*" ponyusearg="GtkDrawingArea" ponyuserv="GtkDrawingArea" ponyfnrv="GtkDrawingArea"/>
+  <type name="GtkDropControllerMotion*" ponyusearg="GtkDropControllerMotion" ponyuserv="GtkDropControllerMotion" ponyfnrv="GtkDropControllerMotion"/>
+  <type name="GtkDropDown*" ponyusearg="GtkDropDown" ponyuserv="GtkDropDown" ponyfnrv="GtkDropDown"/>
+  <type name="GtkDropTarget*" ponyusearg="GtkDropTarget" ponyuserv="GtkDropTarget" ponyfnrv="GtkDropTarget"/>
+  <type name="GtkDropTargetAsync*" ponyusearg="GtkDropTargetAsync" ponyuserv="GtkDropTargetAsync" ponyfnrv="GtkDropTargetAsync"/>
+  <type name="GtkEditable*" ponyusearg="GtkEditable" ponyuserv="GtkEditable" ponyfnrv="GtkEditable"/>
+  <type name="GtkEditableLabel*" ponyusearg="GtkEditableLabel" ponyuserv="GtkEditableLabel" ponyfnrv="GtkEditableLabel"/>
+  <type name="GtkEmojiChooser*" ponyusearg="GtkEmojiChooser" ponyuserv="GtkEmojiChooser" ponyfnrv="GtkEmojiChooser"/>
+  <type name="GtkEntry*" ponyusearg="GtkEntry" ponyuserv="GtkEntry" ponyfnrv="GtkEntry"/>
+  <type name="GtkEntryBuffer*" ponyusearg="GtkEntryBuffer" ponyuserv="GtkEntryBuffer" ponyfnrv="GtkEntryBuffer"/>
+  <type name="GtkEntryCompletion*" ponyusearg="GtkEntryCompletion" ponyuserv="GtkEntryCompletion" ponyfnrv="GtkEntryCompletion"/>
+  <type name="GtkEventController*" ponyusearg="GtkEventController" ponyuserv="GtkEventController" ponyfnrv="GtkEventController"/>
+  <type name="GtkEventControllerFocus*" ponyusearg="GtkEventControllerFocus" ponyuserv="GtkEventControllerFocus" ponyfnrv="GtkEventControllerFocus"/>
+  <type name="GtkEventControllerKey*" ponyusearg="GtkEventControllerKey" ponyuserv="GtkEventControllerKey" ponyfnrv="GtkEventControllerKey"/>
+  <type name="GtkEventControllerLegacy*" ponyusearg="GtkEventControllerLegacy" ponyuserv="GtkEventControllerLegacy" ponyfnrv="GtkEventControllerLegacy"/>
+  <type name="GtkEventControllerMotion*" ponyusearg="GtkEventControllerMotion" ponyuserv="GtkEventControllerMotion" ponyfnrv="GtkEventControllerMotion"/>
+  <type name="GtkEventControllerScroll*" ponyusearg="GtkEventControllerScroll" ponyuserv="GtkEventControllerScroll" ponyfnrv="GtkEventControllerScroll"/>
+  <type name="GtkEveryFilter*" ponyusearg="GtkEveryFilter" ponyuserv="GtkEveryFilter" ponyfnrv="GtkEveryFilter"/>
+  <type name="GtkExpander*" ponyusearg="GtkExpander" ponyuserv="GtkExpander" ponyfnrv="GtkExpander"/>
+  <type name="GtkExpression*" ponyusearg="GtkExpression" ponyuserv="GtkExpression" ponyfnrv="GtkExpression"/>
+  <type name="GtkFileChooserDialog*" ponyusearg="GtkFileChooserDialog" ponyuserv="GtkFileChooserDialog" ponyfnrv="GtkFileChooserDialog"/>
+  <type name="GtkFileChooserWidget*" ponyusearg="GtkFileChooserWidget" ponyuserv="GtkFileChooserWidget" ponyfnrv="GtkFileChooserWidget"/>
+  <type name="GtkFileChooserNative*" ponyusearg="GtkFileChooserNative" ponyuserv="GtkFileChooserNative" ponyfnrv="GtkFileChooserNative"/>
+  <type name="GtkFileFilter*" ponyusearg="GtkFileFilter" ponyuserv="GtkFileFilter" ponyfnrv="GtkFileFilter"/>
+  <type name="GtkFilter*" ponyusearg="GtkFilter" ponyuserv="GtkFilter" ponyfnrv="GtkFilter"/>
+  <type name="GtkFilterListModel*" ponyusearg="GtkFilterListModel" ponyuserv="GtkFilterListModel" ponyfnrv="GtkFilterListModel"/>
+  <type name="GtkFixed*" ponyusearg="GtkFixed" ponyuserv="GtkFixed" ponyfnrv="GtkFixed"/>
+  <type name="GtkFixedLayout*" ponyusearg="GtkFixedLayout" ponyuserv="GtkFixedLayout" ponyfnrv="GtkFixedLayout"/>
+  <type name="GtkFixedLayoutChild*" ponyusearg="GtkFixedLayoutChild" ponyuserv="GtkFixedLayoutChild" ponyfnrv="GtkFixedLayoutChild"/>
+  <type name="GtkFlattenListModel*" ponyusearg="GtkFlattenListModel" ponyuserv="GtkFlattenListModel" ponyfnrv="GtkFlattenListModel"/>
+  <type name="GtkFlowBox*" ponyusearg="GtkFlowBox" ponyuserv="GtkFlowBox" ponyfnrv="GtkFlowBox"/>
+  <type name="GtkFlowBoxChild*" ponyusearg="GtkFlowBoxChild" ponyuserv="GtkFlowBoxChild" ponyfnrv="GtkFlowBoxChild"/>
+  <type name="GtkFontButton*" ponyusearg="GtkFontButton" ponyuserv="GtkFontButton" ponyfnrv="GtkFontButton"/>
+  <type name="GtkFontChooserDialog*" ponyusearg="GtkFontChooserDialog" ponyuserv="GtkFontChooserDialog" ponyfnrv="GtkFontChooserDialog"/>
+  <type name="GtkFontChooserWidget*" ponyusearg="GtkFontChooserWidget" ponyuserv="GtkFontChooserWidget" ponyfnrv="GtkFontChooserWidget"/>
+  <type name="GtkFrame*" ponyusearg="GtkFrame" ponyuserv="GtkFrame" ponyfnrv="GtkFrame"/>
+  <type name="GtkGesture*" ponyusearg="GtkGesture" ponyuserv="GtkGesture" ponyfnrv="GtkGesture"/>
+  <type name="GtkGestureClick*" ponyusearg="GtkGestureClick" ponyuserv="GtkGestureClick" ponyfnrv="GtkGestureClick"/>
+  <type name="GtkGestureDrag*" ponyusearg="GtkGestureDrag" ponyuserv="GtkGestureDrag" ponyfnrv="GtkGestureDrag"/>
+  <type name="GtkGestureLongPress*" ponyusearg="GtkGestureLongPress" ponyuserv="GtkGestureLongPress" ponyfnrv="GtkGestureLongPress"/>
+  <type name="GtkGesturePan*" ponyusearg="GtkGesturePan" ponyuserv="GtkGesturePan" ponyfnrv="GtkGesturePan"/>
+  <type name="GtkGestureRotate*" ponyusearg="GtkGestureRotate" ponyuserv="GtkGestureRotate" ponyfnrv="GtkGestureRotate"/>
+  <type name="GtkGestureSingle*" ponyusearg="GtkGestureSingle" ponyuserv="GtkGestureSingle" ponyfnrv="GtkGestureSingle"/>
+  <type name="GtkGestureStylus*" ponyusearg="GtkGestureStylus" ponyuserv="GtkGestureStylus" ponyfnrv="GtkGestureStylus"/>
+  <type name="GtkGestureSwipe*" ponyusearg="GtkGestureSwipe" ponyuserv="GtkGestureSwipe" ponyfnrv="GtkGestureSwipe"/>
+  <type name="GtkGestureZoom*" ponyusearg="GtkGestureZoom" ponyuserv="GtkGestureZoom" ponyfnrv="GtkGestureZoom"/>
+  <type name="GtkGLArea*" ponyusearg="GtkGLArea" ponyuserv="GtkGLArea" ponyfnrv="GtkGLArea"/>
+  <type name="GtkGrid*" ponyusearg="GtkGrid" ponyuserv="GtkGrid" ponyfnrv="GtkGrid"/>
+  <type name="GtkGridLayout*" ponyusearg="GtkGridLayout" ponyuserv="GtkGridLayout" ponyfnrv="GtkGridLayout"/>
+  <type name="GtkGridLayoutChild*" ponyusearg="GtkGridLayoutChild" ponyuserv="GtkGridLayoutChild" ponyfnrv="GtkGridLayoutChild"/>
+  <type name="GtkGridView*" ponyusearg="GtkGridView" ponyuserv="GtkGridView" ponyfnrv="GtkGridView"/>
+  <type name="GtkHeaderBar*" ponyusearg="GtkHeaderBar" ponyuserv="GtkHeaderBar" ponyfnrv="GtkHeaderBar"/>
+
+  <type name="GtkListItemFactory*" ponyusearg="GtkListItemFactory" ponyuserv="GtkListItemFactory" ponyfnrv="GtkListItemFactory"/>
+  <type name="GtkListView*" ponyusearg="GtkListView" ponyuserv="GtkListView" ponyfnrv="GtkListView"/>
+  <type name="GtkMapListModel*" ponyusearg="GtkMapListModel" ponyuserv="GtkMapListModel" ponyfnrv="GtkMapListModel"/>
+  <type name="GtkLockButton*" ponyusearg="GtkLockButton" ponyuserv="GtkLockButton" ponyfnrv="GtkLockButton"/>
+  <type name="GtkMediaControls*" ponyusearg="GtkMediaControls" ponyuserv="GtkMediaControls" ponyfnrv="GtkMediaControls"/>
+  <type name="GtkMediaFile*" ponyusearg="GtkMediaFile" ponyuserv="GtkMediaFile" ponyfnrv="GtkMediaFile"/>
+  <type name="GtkMediaStream*" ponyusearg="GtkMediaStream" ponyuserv="GtkMediaStream" ponyfnrv="GtkMediaStream"/>
+  <type name="GtkNativeDialog*" ponyusearg="GtkNativeDialog" ponyuserv="GtkNativeDialog" ponyfnrv="GtkNativeDialog"/>
+  <type name="GtkSelectionModel*" ponyusearg="GtkSelectionModel" ponyuserv="GtkSelectionModel" ponyfnrv="GtkSelectionModel"/>
+  <type name="GtkSorter*" ponyusearg="GtkSorter" ponyuserv="GtkSorter" ponyfnrv="GtkSorter"/>
+  <type name="GtkSnapshot*" ponyusearg="GtkSnapshot" ponyuserv="GtkSnapshot" ponyfnrv="GtkSnapshot"/>
+  <type name="GtkTreeModel*" ponyusearg="GtkTreeModel" ponyuserv="GtkTreeModel" ponyfnrv="GtkTreeModel"/>
+  <type name="GtkTreeIter*" ponyusearg="GtkTreeIter" ponyuserv="GtkTreeIter" ponyfnrv="GtkTreeIter"/>
+  <type name="GtkTreePath*" ponyusearg="GtkTreePath" ponyuserv="GtkTreePath" ponyfnrv="GtkTreePath"/>
+  <type name="GtkListStore*" ponyusearg="GtkListStore" ponyuserv="GtkListStore" ponyfnrv="GtkListStore"/>
+
+
+
   <type name="GObject*" ponyusearg="GObject" ponyuserv="GObject" ponyfnrv="GObject"/>
+  <type name="GInputStream*" ponyusearg="GInputStream" ponyuserv="GInputStream" ponyfnrv="GInputStream"/>
   <type name="GSList*" ponyusearg="GSList" ponyuserv="GSList" ponyfnrv="GSList"/>
+  <type name="GFile*" ponyusearg="GFile" ponyuserv="GFile" ponyfnrv="GFile"/>
+  <type name="GValue*" ponyusearg="GValue" ponyuserv="GValue" ponyfnrv="GValue"/>
+  <type name="const GValue*" ponyusearg="GValue" ponyuserv="GValue" ponyfnrv="GValue"/>
+  <type name="GIcon*" ponyusearg="GIcon" ponyuserv="GIcon" ponyfnrv="GIcon"/>
+  <type name="GBytes*" ponyusearg="GBytes" ponyuserv="GBytes" ponyfnrv="GBytes"/>
+  <type name="GDateTime*" ponyusearg="GDateTime" ponyuserv="GDateTime" ponyfnrv="GDateTime"/>
+  <type name="GListModel*" ponyusearg="GListModel" ponyuserv="GListModel" ponyfnrv="GListModel"/>
+  <type name="GType" ponyusearg="U64" ponyuserv="U64" ponyfnrv="U64"/>
+  <type name="GType*" ponyusearg="U64" ponyuserv="U64" ponyfnrv="U64"/>
+  <type name="GList*" ponyusearg="GList" ponyuserv="GList" ponyfnrv="GList"/>
+  <type name="GResource*" ponyusearg="GResource" ponyuserv="GResource" ponyfnrv="GResource"/>
+  <type name="const GError*" ponyusearg="GError" ponyuserv="GError" ponyfnrv="GError"/>
 
 
 
+  <type name="const GdkRGBA*" ponyusearg="U64" ponyuserv="U64" ponyfnrv="U64"/>
 
 
   <type name="GApplicationFlags" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
   <type name="GtkBaselinePosition" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
   <type name="GtkOrientation" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkDialogFlags" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
   <type name="GtkLicense" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkAssistantPageType" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkSortType" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkCellEditable" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkCellRendererState" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkCellAllocCallback" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GtkCellCallback" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GtkMapListModelMapFunc" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GtkFlowBoxCreateWidgetFunc" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GtkFlowBoxForeachFunc" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GtkFlowBoxFilterFunc" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GtkFlowBoxSortFunc" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GDestroyNotify" ponyusearg="Pointer[None]" ponyuserv="Pointer[None]" ponyfnrv="Pointer[None]"/>
+  <type name="GtkConstraintRelation" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkPositionType" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkConstraintAttribute" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkConstraintStrength" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkResponseType" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkEntryIconPosition" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkSizeRequestMode" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkDirectionType" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkStateFlags" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkEventControllerScrollFlags" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GtkSelectionMode" ponyusearg="I32" ponyuserv="I32" ponyfnrv="I32"/>
+  <type name="GdkRectangle*" ponyusearg="GdkRectangle" ponyuserv="GdkRectangle" ponyfnrv="GdkRectangle"/>
+  <type name="GdkEvent*" ponyusearg="GdkEvent" ponyuserv="GdkEvent" ponyfnrv="GdkEvent"/>
+  <type name="const GdkRectangle*" ponyusearg="GdkRectangle" ponyuserv="GdkRectangle" ponyfnrv="GdkRectangle"/>
 
   <reservedfns>
     <reserved name="new" newname="gnew"/>
